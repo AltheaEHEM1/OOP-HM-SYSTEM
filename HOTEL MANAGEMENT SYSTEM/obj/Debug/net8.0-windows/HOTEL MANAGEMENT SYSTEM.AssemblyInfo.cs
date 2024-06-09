@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HOTEL MANAGEMENT SYSTEM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1681b06efe6851de674ef96455cd2af3f6ff38e")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d6814a88e0f212ccd785d08372df7f24343d1a6")]
+>>>>>>> dev/darben
 [assembly: System.Reflection.AssemblyProductAttribute("HOTEL MANAGEMENT SYSTEM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HOTEL MANAGEMENT SYSTEM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
