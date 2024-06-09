@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HOTEL_MANAGEMENT_SYSTEM
+namespace HOTEL_MANAGEMENT_SYSTEM.Models
 {
     public class DataContext : DbContext
     {
 
-        
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source = HotelManagement.db"); //connection string and to use sqlite
