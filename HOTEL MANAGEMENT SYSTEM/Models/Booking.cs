@@ -13,5 +13,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
         public string BookingDate { get; set; }
         public int NumberOfGuest { get; set; }
         public string BookingStatus { get; set; }
+
     }
 }

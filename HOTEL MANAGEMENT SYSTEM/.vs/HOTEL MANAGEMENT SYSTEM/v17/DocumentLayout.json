@@ -3,20 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\controllers\\suitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:controllers\\suitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\models\\suite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\suite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\controllers\\deluxeroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:controllers\\deluxeroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\models\\deluxeroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\deluxeroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\controllers\\standardroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:controllers\\standardroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\models\\standardroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\standardroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\models\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\models\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\hotel management system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:hotel management system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\models\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,19 +79,174 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SuiteController.cs",
+              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Controllers\\SuiteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SuiteController.cs",
+              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Controllers\\SuiteController.cs",
+              "RelativeToolTip": "Controllers\\SuiteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T08:07:28.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeluxeRoomController.cs",
+              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Controllers\\DeluxeRoomController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DeluxeRoomController.cs",
+              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Controllers\\DeluxeRoomController.cs",
+              "RelativeToolTip": "Controllers\\DeluxeRoomController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T08:07:17.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StandardRoomController.cs",
+              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Controllers\\StandardRoomController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StandardRoomController.cs",
+              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Controllers\\StandardRoomController.cs",
+              "RelativeToolTip": "Controllers\\StandardRoomController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAlwAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T08:07:00.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\DataContext.cs",
+              "RelativeDocumentMoniker": "Models\\DataContext.cs",
+              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\DataContext.cs",
+              "RelativeToolTip": "Models\\DataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T08:05:20.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Suite.cs",
+              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\Suite.cs",
+              "RelativeDocumentMoniker": "Models\\Suite.cs",
+              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\Suite.cs",
+              "RelativeToolTip": "Models\\Suite.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T08:04:36.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeluxeRoom.cs",
+              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\DeluxeRoom.cs",
+              "RelativeDocumentMoniker": "Models\\DeluxeRoom.cs",
+              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\DeluxeRoom.cs",
+              "RelativeToolTip": "Models\\DeluxeRoom.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T08:03:05.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StandardRoom.cs",
+              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\StandardRoom.cs",
+              "RelativeDocumentMoniker": "Models\\StandardRoom.cs",
+              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\StandardRoom.cs",
+              "RelativeToolTip": "Models\\StandardRoom.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T08:00:25.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoomController.cs",
+              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "Controllers\\RoomController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAowAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T07:35:54.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "Controllers\\BookingController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T05:58:01.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HOTEL MANAGEMENT SYSTEM",
+              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+              "RelativeDocumentMoniker": "HOTEL MANAGEMENT SYSTEM.csproj",
+              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+              "RelativeToolTip": "HOTEL MANAGEMENT SYSTEM.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-10T05:57:22.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Form1.cs",
+              "RelativeDocumentMoniker": "UI\\Form1.cs",
+              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Form1.cs [Design]",
+              "RelativeToolTip": "UI\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T05:40:35.16Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T04:34:45.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T13:03:36.949Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "Guest.cs",
               "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\Guest.cs",
               "RelativeDocumentMoniker": "Models\\Guest.cs",
@@ -56,26 +259,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Booking.cs",
               "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "Models\\Booking.cs",
               "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\Booking.cs",
               "RelativeToolTip": "Models\\Booking.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T12:46:19.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Room.cs",
               "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\Room.cs",
               "RelativeDocumentMoniker": "Models\\Room.cs",
               "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\Room.cs",
               "RelativeToolTip": "Models\\Room.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T12:37:24.34Z",
               "EditorCaption": ""
