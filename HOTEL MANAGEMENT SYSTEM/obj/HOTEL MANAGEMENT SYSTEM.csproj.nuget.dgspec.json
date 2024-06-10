@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {}
+    "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {
+    "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+        "projectUniqueName": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
         "projectName": "HOTEL MANAGEMENT SYSTEM",
-        "projectPath": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
-        "packagesPath": "C:\\Users\\Darben\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\obj\\",
+        "projectPath": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+        "packagesPath": "C:\\Users\\Shanella Cagulang\\.nuget\\packages\\",
+        "outputPath": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Darben\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Shanella Cagulang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,9 +49,17 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "Guna.UI2.WinForms": {
+              "target": "Package",
+              "version": "[2.0.4.6, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "font-awesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
@@ -69,7 +81,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

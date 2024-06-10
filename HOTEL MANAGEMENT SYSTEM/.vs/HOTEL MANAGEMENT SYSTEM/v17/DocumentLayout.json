@@ -1,32 +1,85 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\",
+  "WorkspaceRootPath": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\darben\\source\\repos\\oop-hm-system\\hotel management system\\ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\oop hmsystem final\\oop-hm-system\\hotel management system\\ui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\ui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\ui\\loginpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\loginpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Form1.cs",
-              "RelativeDocumentMoniker": "UI\\Form1.cs",
-              "ToolTip": "C:\\Users\\Darben\\source\\repos\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Form1.cs [Design]",
-              "RelativeToolTip": "UI\\Form1.cs [Design]",
+              "Title": "LoginPage.cs [Design]",
+              "DocumentMoniker": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginPage.cs",
+              "RelativeDocumentMoniker": "UI\\LoginPage.cs",
+              "ToolTip": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginPage.cs [Design]",
+              "RelativeToolTip": "UI\\LoginPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T14:11:35.824Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.Designer.cs",
+              "DocumentMoniker": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginPage.Designer.cs",
+              "RelativeDocumentMoniker": "UI\\LoginPage.Designer.cs",
+              "ToolTip": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginPage.Designer.cs",
+              "RelativeToolTip": "UI\\LoginPage.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:22:03.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginPage.cs",
+              "RelativeDocumentMoniker": "UI\\LoginPage.cs",
+              "ToolTip": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginPage.cs",
+              "RelativeToolTip": "UI\\LoginPage.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwB8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:07:51.479Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
