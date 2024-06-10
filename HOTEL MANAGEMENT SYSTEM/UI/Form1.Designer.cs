@@ -322,7 +322,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.bg;
+            //BackgroundImage = Properties.Resources.bg;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1600, 900);
             Controls.Add(panelContainer);
