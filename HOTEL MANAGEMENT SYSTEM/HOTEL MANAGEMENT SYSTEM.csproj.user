@@ -1,8 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Update="UI\LoginPage.cs">
+=======
+    <Compile Update="UI\Booknow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Form1.cs">
+>>>>>>> dev/althea
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Reservations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Rooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Transactions.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>

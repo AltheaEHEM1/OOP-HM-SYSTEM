@@ -2,9 +2,12 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
+<<<<<<< HEAD
       "font-awesome/4.7.0": {
         "type": "package"
       },
+=======
+>>>>>>> dev/althea
       "Guna.UI2.WinForms/2.0.4.6": {
         "type": "package",
         "dependencies": {
@@ -545,6 +548,7 @@
     }
   },
   "libraries": {
+<<<<<<< HEAD
     "font-awesome/4.7.0": {
       "sha512": "MCuSOl63d8b9Etn7Jm4FJS1lp8d8W9fGwQ6xu5SqrRu8e/p+FZv2a8W/LguziecV1ZpTqZPamG5nfmZs28SahA==",
       "type": "package",
@@ -566,6 +570,8 @@
         "tools/install.ps1"
       ]
     },
+=======
+>>>>>>> dev/althea
     "Guna.UI2.WinForms/2.0.4.6": {
       "sha512": "NYzSJp7e47Cz3NgGCHvzadash8ycmxxUnpLg4Rr/MSYG9WDw0HOoTI4SkbDW+HbACrf6tsWYCuzWkgvjuM/O6w==",
       "type": "package",
@@ -1340,28 +1346,48 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "Guna.UI2.WinForms >= 2.0.4.6",
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.6",
       "font-awesome >= 4.7.0"
     ]
   },
   "packageFolders": {
     "C:\\Users\\Shanella Cagulang\\.nuget\\packages\\": {},
+=======
+      "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.6"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Althea\\.nuget\\packages\\": {},
+>>>>>>> dev/althea
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
       "projectName": "HOTEL MANAGEMENT SYSTEM",
       "projectPath": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
       "packagesPath": "C:\\Users\\Shanella Cagulang\\.nuget\\packages\\",
       "outputPath": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\obj\\",
+=======
+      "projectUniqueName": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+      "projectName": "HOTEL MANAGEMENT SYSTEM",
+      "projectPath": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+      "packagesPath": "C:\\Users\\Althea\\.nuget\\packages\\",
+      "outputPath": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\obj\\",
+>>>>>>> dev/althea
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Shanella Cagulang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Althea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> dev/althea
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1370,6 +1396,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

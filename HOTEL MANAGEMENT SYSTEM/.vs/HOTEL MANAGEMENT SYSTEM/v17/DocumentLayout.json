@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\",
   "Documents": [
     {
@@ -21,6 +22,41 @@
     {
       "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\oop hmsystem final\\oop-hm-system\\hotel management system\\ui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+  "WorkspaceRootPath": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|d:\\2ndyear\\2nd sem\\object oriented programming\\oop system repository\\oop-hm-system\\hotel management system\\ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|d:\\2ndyear\\2nd sem\\object oriented programming\\oop system repository\\oop-hm-system\\hotel management system\\ui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|d:\\2ndyear\\2nd sem\\object oriented programming\\oop system repository\\oop-hm-system\\hotel management system\\ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|d:\\2ndyear\\2nd sem\\object oriented programming\\oop system repository\\oop-hm-system\\hotel management system\\ui\\rooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\rooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|d:\\2ndyear\\2nd sem\\object oriented programming\\oop system repository\\oop-hm-system\\hotel management system\\ui\\booknow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\booknow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|d:\\2ndyear\\2nd sem\\object oriented programming\\oop system repository\\oop-hm-system\\hotel management system\\ui\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|d:\\2ndyear\\2nd sem\\object oriented programming\\oop system repository\\oop-hm-system\\hotel management system\\ui\\transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|d:\\2ndyear\\2nd sem\\object oriented programming\\oop system repository\\oop-hm-system\\hotel management system\\ui\\reservations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\reservations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> dev/althea
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +70,16 @@
           "Children": [
             {
               "$type": "Bookmark",
+<<<<<<< HEAD
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+=======
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+>>>>>>> dev/althea
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "Room.cs",
               "DocumentMoniker": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\Room.cs",
               "RelativeDocumentMoniker": "Models\\Room.cs",
@@ -48,10 +89,21 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T08:32:59.417Z",
               "EditorCaption": ""
+=======
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Form1.cs",
+              "RelativeDocumentMoniker": "UI\\Form1.cs",
+              "ToolTip": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Form1.cs [Design]*",
+              "RelativeToolTip": "UI\\Form1.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T07:19:19.754Z",
+              "EditorCaption": " [Design]"
+>>>>>>> dev/althea
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
               "Title": "Guest.cs",
               "DocumentMoniker": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\Guest.cs",
               "RelativeDocumentMoniker": "Models\\Guest.cs",
@@ -60,11 +112,22 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T08:32:58.248Z",
+=======
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "UI\\Form1.Designer.cs",
+              "ToolTip": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Form1.Designer.cs*",
+              "RelativeToolTip": "UI\\Form1.Designer.cs*",
+              "ViewState": "AQIAADoBAAAAAAAAAAAkwD8BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T06:56:35.135Z",
+>>>>>>> dev/althea
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "DataContext.cs",
               "DocumentMoniker": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\Models\\DataContext.cs",
               "RelativeDocumentMoniker": "Models\\DataContext.cs",
@@ -73,10 +136,21 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T08:32:55.808Z",
+=======
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Form1.cs",
+              "RelativeDocumentMoniker": "UI\\Form1.cs",
+              "ToolTip": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Form1.cs*",
+              "RelativeToolTip": "UI\\Form1.cs*",
+              "ViewState": "AQIAACMAAAAAAAAAAAAzwDgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T06:18:10.829Z",
+>>>>>>> dev/althea
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "LoginPage.cs [Design]",
               "DocumentMoniker": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginPage.cs",
@@ -85,6 +159,64 @@
               "RelativeToolTip": "UI\\LoginPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T08:32:24.145Z",
+=======
+              "DocumentIndex": 5,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Dashboard.cs",
+              "RelativeDocumentMoniker": "UI\\Dashboard.cs",
+              "ToolTip": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Dashboard.cs [Design]",
+              "RelativeToolTip": "UI\\Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T05:22:52.015Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Booknow.cs [Design]",
+              "DocumentMoniker": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Booknow.cs",
+              "RelativeDocumentMoniker": "UI\\Booknow.cs",
+              "ToolTip": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Booknow.cs [Design]",
+              "RelativeToolTip": "UI\\Booknow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T05:39:33.418Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Rooms.cs [Design]",
+              "DocumentMoniker": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Rooms.cs",
+              "RelativeDocumentMoniker": "UI\\Rooms.cs",
+              "ToolTip": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Rooms.cs [Design]",
+              "RelativeToolTip": "UI\\Rooms.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T05:40:19.148Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Reservations.cs [Design]",
+              "DocumentMoniker": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Reservations.cs",
+              "RelativeDocumentMoniker": "UI\\Reservations.cs",
+              "ToolTip": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Reservations.cs [Design]",
+              "RelativeToolTip": "UI\\Reservations.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T05:41:10.363Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Transactions.cs [Design]",
+              "DocumentMoniker": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Transactions.cs",
+              "RelativeDocumentMoniker": "UI\\Transactions.cs",
+              "ToolTip": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\UI\\Transactions.cs [Design]",
+              "RelativeToolTip": "UI\\Transactions.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T05:41:38.066Z",
+>>>>>>> dev/althea
               "EditorCaption": " [Design]"
             },
             {

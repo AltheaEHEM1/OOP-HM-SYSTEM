@@ -14,6 +14,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HOTEL_MANAGEMENT_SYSTEM
+<<<<<<< HEAD
 build_property.ProjectDir = C:\OOP HMSYSTEM FINAL\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\
+=======
+build_property.ProjectDir = D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\
+>>>>>>> dev/althea
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

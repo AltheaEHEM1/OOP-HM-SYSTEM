@@ -9,14 +9,21 @@
       "HOTEL MANAGEMENT SYSTEM/1.0.0": {
         "dependencies": {
           "Guna.UI2.WinForms": "2.0.4.6",
+<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.6",
           "font-awesome": "4.7.0"
+=======
+          "Microsoft.EntityFrameworkCore.Sqlite": "8.0.6"
+>>>>>>> dev/althea
         },
         "runtime": {
           "HOTEL MANAGEMENT SYSTEM.dll": {}
         }
       },
+<<<<<<< HEAD
       "font-awesome/4.7.0": {},
+=======
+>>>>>>> dev/althea
       "Guna.UI2.WinForms/2.0.4.6": {
         "dependencies": {
           "System.Management": "7.0.0"
@@ -378,6 +385,7 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "font-awesome/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -385,6 +393,8 @@
       "path": "font-awesome/4.7.0",
       "hashPath": "font-awesome.4.7.0.nupkg.sha512"
     },
+=======
+>>>>>>> dev/althea
     "Guna.UI2.WinForms/2.0.4.6": {
       "type": "package",
       "serviceable": true,

@@ -63,9 +63,15 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap FINAL__4_ {
             get {
                 object obj = ResourceManager.GetObject("FINAL (4)", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap bg {
+            get {
+                object obj = ResourceManager.GetObject("bg", resourceCulture);
+>>>>>>> dev/althea
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +79,15 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap icons8_location_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-location-24", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap headerpic_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("headerpic-removebg-preview", resourceCulture);
+>>>>>>> dev/althea
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,6 +95,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap icons8_password_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-password-24", resourceCulture);
@@ -126,6 +139,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Properties {
         internal static System.Drawing.Bitmap Picture1 {
             get {
                 object obj = ResourceManager.GetObject("Picture1", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap profile {
+            get {
+                object obj = ResourceManager.GetObject("profile", resourceCulture);
+>>>>>>> dev/althea
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
