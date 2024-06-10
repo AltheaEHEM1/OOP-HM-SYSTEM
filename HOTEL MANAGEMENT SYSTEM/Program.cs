@@ -11,6 +11,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+<<<<<<< HEAD
 
             // Ensure the database is created and schema is applied before starting the application
             using (var context = new Models.DataContext())
@@ -21,6 +22,9 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 
             // Start the main form of the application
             Application.Run(new Form1());
+=======
+            Application.Run(new LoginPage());
+>>>>>>> 698f8ee2c87f4891063421bff0fcb6d3da92ed00
         }
     }
 }

@@ -1,57 +1,67 @@
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.exe
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.deps.json
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.runtimeconfig.json
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.pdb
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Data.Sqlite.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\SQLitePCLRaw.batteries_v2.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\SQLitePCLRaw.core.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-arm\native\e_sqlite3.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-x64\native\e_sqlite3.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.csproj.AssemblyReference.cache
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.Form1.resources
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.csproj.GenerateResource.cache
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.AssemblyInfoInputs.cache
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.AssemblyInfo.cs
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.csproj.CoreCompileInputs.cache
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.sourcelink.json
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MA.0E65EEC8.Up2Date
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\refint\HOTEL MANAGEMENT SYSTEM.dll
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.pdb
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.genruntimeconfig.cache
-C:\Users\Darben\source\repos\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\ref\HOTEL MANAGEMENT SYSTEM.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.csproj.AssemblyReference.cache
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Booknow.resources
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Dashboard.resources
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.LoginPage.resources
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Reservations.resources
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Rooms.resources
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Transactions.resources
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.csproj.GenerateResource.cache
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.exe
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.deps.json
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.runtimeconfig.json
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.pdb
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Guna.UI2.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Data.Sqlite.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\SQLitePCLRaw.batteries_v2.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\SQLitePCLRaw.core.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\System.Management.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.Properties.Resources.resources
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.GeneratedMSBuildEditorConfig.editorconfig
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.AssemblyInfoInputs.cache
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.AssemblyInfo.cs
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.csproj.CoreCompileInputs.cache
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.sourcelink.json
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MA.0E65EEC8.Up2Date
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\refint\HOTEL MANAGEMENT SYSTEM.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.pdb
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.genruntimeconfig.cache
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\ref\HOTEL MANAGEMENT SYSTEM.dll
+C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.Form1.resources
