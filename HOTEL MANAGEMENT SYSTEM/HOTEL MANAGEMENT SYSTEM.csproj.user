@@ -10,7 +10,13 @@
     <Compile Update="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI\log.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UI\LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\PaymentInfo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\Reservations.cs">

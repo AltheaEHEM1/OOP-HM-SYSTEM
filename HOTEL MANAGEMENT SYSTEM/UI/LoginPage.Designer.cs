@@ -34,6 +34,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             panel1 = new Panel();
             pictureBox3 = new PictureBox();
             label2 = new Label();
@@ -63,7 +64,7 @@
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
-            panel1.Dock = DockStyle.Fill;
+            panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1600, 900);
@@ -110,7 +111,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(438, 385);
             panel2.TabIndex = 2;
-            panel2.Paint += panel2_Paint;
             // 
             // guna2HtmlLabel2
             // 
@@ -152,6 +152,7 @@
             guna2Button1.Size = new Size(182, 45);
             guna2Button1.TabIndex = 3;
             guna2Button1.Text = "Log in";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // guna2TextBox2
             // 
@@ -221,10 +222,11 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.Picture1;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(713, 12);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(263, 143);
+            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
@@ -245,6 +247,7 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "LoginPage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

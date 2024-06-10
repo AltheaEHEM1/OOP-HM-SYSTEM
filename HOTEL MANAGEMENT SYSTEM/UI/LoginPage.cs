@@ -25,26 +25,17 @@ namespace HOTEL_MANAGEMENT_SYSTEM
         {
             InitializeComponent();
             panel2.Parent = pictureBox1;
-
             panel2.BackColor = Color.FromArgb(200, Color.White);
             panel2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel2.Width, panel2.Height, 20, 20));
-
-            
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-            // No need to set the region again here
-        }
+            Form1 form1 = new Form1();
+            form1.Show();
 
-        private void Username_TextChanged1(object sender, EventArgs e) // Change PaintEventArgs to EventArgs
-        {
-
-        }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
+            // Hide the LoginPage form
+            this.Hide();
         }
     }
 }

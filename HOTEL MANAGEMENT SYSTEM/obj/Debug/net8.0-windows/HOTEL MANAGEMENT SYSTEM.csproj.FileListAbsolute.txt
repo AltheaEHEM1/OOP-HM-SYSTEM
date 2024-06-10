@@ -65,3 +65,72 @@ C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTE
 C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.genruntimeconfig.cache
 C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\ref\HOTEL MANAGEMENT SYSTEM.dll
 C:\OOP REPOS\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.Form1.resources
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.exe
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.deps.json
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.runtimeconfig.json
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.pdb
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Guna.UI2.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Data.Sqlite.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\SQLitePCLRaw.batteries_v2.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\SQLitePCLRaw.core.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\System.Management.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.csproj.AssemblyReference.cache
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.Properties.Resources.resources
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Booknow.resources
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Dashboard.resources
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.Form1.resources
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.LoginPage.resources
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Reservations.resources
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Rooms.resources
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Transactions.resources
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.csproj.GenerateResource.cache
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.GeneratedMSBuildEditorConfig.editorconfig
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.AssemblyInfoInputs.cache
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.AssemblyInfo.cs
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.csproj.CoreCompileInputs.cache
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.sourcelink.json
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MA.0E65EEC8.Up2Date
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\refint\HOTEL MANAGEMENT SYSTEM.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.pdb
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.genruntimeconfig.cache
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\ref\HOTEL MANAGEMENT SYSTEM.dll
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.log.resources
+D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.PaymentInfo.resources

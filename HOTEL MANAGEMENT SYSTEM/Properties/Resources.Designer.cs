@@ -73,6 +73,16 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg1 {
+            get {
+                object obj = ResourceManager.GetObject("bg1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FINAL__4_ {
             get {
                 object obj = ResourceManager.GetObject("FINAL (4)", resourceCulture);
@@ -86,6 +96,16 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Properties {
         internal static System.Drawing.Bitmap headerpic_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("headerpic-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap headerpic_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("headerpic-removebg-preview1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
