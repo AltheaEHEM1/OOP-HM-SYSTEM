@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OOP REPOS\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {}
+    "C:\\Users\\Darben\\source\\repos\\OOP System\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {}
   },
   "projects": {
-    "C:\\OOP REPOS\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {
+    "C:\\Users\\Darben\\source\\repos\\OOP System\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OOP REPOS\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+        "projectUniqueName": "C:\\Users\\Darben\\source\\repos\\OOP System\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
         "projectName": "HOTEL MANAGEMENT SYSTEM",
-        "projectPath": "C:\\OOP REPOS\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
-        "packagesPath": "C:\\Users\\Shanella Cagulang\\.nuget\\packages\\",
-        "outputPath": "C:\\OOP REPOS\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\obj\\",
+        "projectPath": "C:\\Users\\Darben\\source\\repos\\OOP System\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+        "packagesPath": "C:\\Users\\Darben\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Darben\\source\\repos\\OOP System\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Shanella Cagulang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Darben\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
