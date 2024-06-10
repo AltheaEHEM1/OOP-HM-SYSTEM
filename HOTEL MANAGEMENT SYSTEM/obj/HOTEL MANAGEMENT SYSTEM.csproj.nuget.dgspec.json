@@ -1,41 +1,23 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {}
+    "C:\\OOP REPOS\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {}
   },
   "projects": {
-    "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {
+    "C:\\OOP REPOS\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+        "projectUniqueName": "C:\\OOP REPOS\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
         "projectName": "HOTEL MANAGEMENT SYSTEM",
-        "projectPath": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+        "projectPath": "C:\\OOP REPOS\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
         "packagesPath": "C:\\Users\\Shanella Cagulang\\.nuget\\packages\\",
-        "outputPath": "C:\\OOP HMSYSTEM FINAL\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\obj\\",
-=======
-    "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {}
-  },
-  "projects": {
-    "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
-        "projectName": "HOTEL MANAGEMENT SYSTEM",
-        "projectPath": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
-        "packagesPath": "C:\\Users\\Althea\\.nuget\\packages\\",
-        "outputPath": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\obj\\",
->>>>>>> dev/althea
+        "outputPath": "C:\\OOP REPOS\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\Shanella Cagulang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\Althea\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> dev/althea
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HOTEL MANAGEMENT SYSTEM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07e34ba1d48c101daf09052b7110332c20afa87d")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdcc1320735337bfa3e2d7050345acc6c8cc7508")]
->>>>>>> dev/althea
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b83cf7e972d512ad18e308bd8f19c0a17858d8cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("HOTEL MANAGEMENT SYSTEM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HOTEL MANAGEMENT SYSTEM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
