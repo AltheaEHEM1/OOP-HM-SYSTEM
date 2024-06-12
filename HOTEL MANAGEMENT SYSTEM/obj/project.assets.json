@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "font-awesome/4.7.0": {
         "type": "package"
       },
@@ -545,6 +558,37 @@
     }
   },
   "libraries": {
+    "BCrypt.Net-Next/4.0.3": {
+      "sha512": "W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "type": "package",
+      "path": "bcrypt.net-next/4.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net-next.4.0.3.nupkg.sha512",
+        "bcrypt.net-next.nuspec",
+        "ico.png",
+        "lib/net20/BCrypt.Net-Next.dll",
+        "lib/net20/BCrypt.Net-Next.xml",
+        "lib/net35/BCrypt.Net-Next.dll",
+        "lib/net35/BCrypt.Net-Next.xml",
+        "lib/net462/BCrypt.Net-Next.dll",
+        "lib/net462/BCrypt.Net-Next.xml",
+        "lib/net472/BCrypt.Net-Next.dll",
+        "lib/net472/BCrypt.Net-Next.xml",
+        "lib/net48/BCrypt.Net-Next.dll",
+        "lib/net48/BCrypt.Net-Next.xml",
+        "lib/net5.0/BCrypt.Net-Next.dll",
+        "lib/net5.0/BCrypt.Net-Next.xml",
+        "lib/net6.0/BCrypt.Net-Next.dll",
+        "lib/net6.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.0/BCrypt.Net-Next.dll",
+        "lib/netstandard2.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.1/BCrypt.Net-Next.dll",
+        "lib/netstandard2.1/BCrypt.Net-Next.xml",
+        "readme.md"
+      ]
+    },
     "font-awesome/4.7.0": {
       "sha512": "MCuSOl63d8b9Etn7Jm4FJS1lp8d8W9fGwQ6xu5SqrRu8e/p+FZv2a8W/LguziecV1ZpTqZPamG5nfmZs28SahA==",
       "type": "package",
@@ -1339,29 +1383,30 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "BCrypt.Net-Next >= 4.0.3",
       "Guna.UI2.WinForms >= 2.0.4.6",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.6",
       "font-awesome >= 4.7.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Althea\\.nuget\\packages\\": {},
+    "C:\\Users\\erice\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+      "projectUniqueName": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
       "projectName": "HOTEL MANAGEMENT SYSTEM",
-      "projectPath": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
-      "packagesPath": "C:\\Users\\Althea\\.nuget\\packages\\",
-      "outputPath": "D:\\2NDYEAR\\2ND SEM\\Object Oriented Programming\\OOP SYSTEM REPOSITORY\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\obj\\",
+      "projectPath": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+      "packagesPath": "C:\\Users\\erice\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Althea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\erice\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1370,7 +1415,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1394,6 +1438,10 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
+          "BCrypt.Net-Next": {
+            "target": "Package",
+            "version": "[4.0.3, )"
+          },
           "Guna.UI2.WinForms": {
             "target": "Package",
             "version": "[2.0.4.6, )"
@@ -1426,7 +1474,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
