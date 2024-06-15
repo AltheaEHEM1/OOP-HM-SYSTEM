@@ -1,4 +1,6 @@
 using HOTEL_MANAGEMENT_SYSTEM.UI;
+using Microsoft.VisualBasic.Logging;
+using static Guna.UI2.Native.WinApi;
 
 namespace HOTEL_MANAGEMENT_SYSTEM
 {
@@ -61,6 +63,31 @@ namespace HOTEL_MANAGEMENT_SYSTEM
         {
             Booknow uc = new Booknow();
             addUserControl(uc);
+        }
+
+        private void ProfileButton_Click(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp(this);
+            profilePopUp.Show();
+
+        }
+
+        private void ProfileEmail_Click(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp(this);
+            profilePopUp.Show();
+        }
+
+        private void ProfileName_Click(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp(this);
+            profilePopUp.Show();
+        }
+
+        private void ProfilePicture_Click(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp(this);
+            profilePopUp.Show();
         }
     }
 }
