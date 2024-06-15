@@ -33,6 +33,13 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             }
         }
 
+        /*
+        private void Dashboard_Enter(object sender, EventArgs e)
+        {
+            Dashboard.HoverState.CustomBorderColor = Color.FromArgb(149, 106, 62);
+            Dashboard.HoverState.FillColor = Color.FromArgb(100, 223, 182, 89);
+        }
+        */
         private void Dashboard_Click_1(object sender, EventArgs e)
         {
             Dashboard uc = new Dashboard();
@@ -61,6 +68,15 @@ namespace HOTEL_MANAGEMENT_SYSTEM
         {
             Booknow uc = new Booknow();
             addUserControl(uc);
+        }
+
+        private void Paymentbutton_Click(object sender, EventArgs e)
+        {
+            PaymentInfo paymentInfo = new PaymentInfo();
+            paymentInfo.Show();
+
+            // Hide the LoginPage form
+            this.Hide();
         }
     }
 }
