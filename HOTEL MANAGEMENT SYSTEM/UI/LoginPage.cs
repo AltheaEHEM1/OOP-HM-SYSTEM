@@ -9,7 +9,7 @@ using Guna.UI2.WinForms; // Add this namespace
 
 namespace HOTEL_MANAGEMENT_SYSTEM
 {
-    public partial class LoginPage : Form
+    public partial class CreateAccount : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(
@@ -21,7 +21,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             int nHeightEllipse
         );
 
-        public LoginPage()
+        public CreateAccount()
         {
             InitializeComponent();
             panel2.Parent = pictureBox1;
@@ -36,6 +36,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 
             // Hide the LoginPage form
             this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
