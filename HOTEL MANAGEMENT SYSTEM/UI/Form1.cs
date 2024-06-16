@@ -11,7 +11,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             addUserControl(uc);
         }
 
-        private void addUserControl(UserControl userControl)
+        public void addUserControl(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
             panelContainer.Controls.Clear();
@@ -70,6 +70,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             addUserControl(uc);
         }
 
+<<<<<<< Updated upstream
         private void Paymentbutton_Click(object sender, EventArgs e)
         {
             PaymentInfo paymentInfo = new PaymentInfo();
@@ -77,6 +78,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 
             // Hide the LoginPage form
             this.Hide();
+=======
+        private void panelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+>>>>>>> Stashed changes
         }
     }
 }

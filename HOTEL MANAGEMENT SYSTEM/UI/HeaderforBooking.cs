@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
-    public partial class log : UserControl
+    public partial class HeaderforBooking : Form
     {
-        public log()
+        public HeaderforBooking()
         {
             InitializeComponent();
         }
