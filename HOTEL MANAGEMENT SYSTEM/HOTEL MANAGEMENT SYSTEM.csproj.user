@@ -1,17 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
+    <Compile Update="UI\addroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UI\BookingSummary.cs">
       <SubType>Form</SubType>
     </Compile>
->>>>>>> dev/althea
     <Compile Update="UI\Booknow.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UI\Booknow_recep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UI\CardPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\CashPayment.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\ContactInfo.cs">
@@ -23,35 +28,13 @@
     <Compile Update="UI\Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UI\DeluxeRoom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="UI\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-<<<<<<< HEAD
-    <Compile Update="UI\log.cs">
-      <SubType>UserControl</SubType>
-=======
-    <Compile Update="UI\addroom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="UI\Booknow.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="UI\Booknow_recep.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="UI\CashPayment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="UI\Dashboard.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="UI\Dashboard_admin.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UI\Deleteroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\DeluxeRoom.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\DeluxeRooms.cs">
@@ -77,22 +60,10 @@
     </Compile>
     <Compile Update="UI\HeaderforBooking.cs">
       <SubType>Form</SubType>
->>>>>>> Stashed changes
     </Compile>
     <Compile Update="UI\LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< Updated upstream
-    <Compile Update="UI\PaymentInfo.cs">
-=======
-    <Compile Update="UI\HeaderforBooking.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="UI\LoginPage.cs">
->>>>>>> dev/althea
-      <SubType>Form</SubType>
-    </Compile>
-=======
     <Compile Update="UI\OccupancyRate.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,7 +73,6 @@
     <Compile Update="UI\Reports_admin.cs">
       <SubType>UserControl</SubType>
     </Compile>
->>>>>>> Stashed changes
     <Compile Update="UI\Reservations.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -115,11 +85,11 @@
     <Compile Update="UI\Rooms.cs">
       <SubType>UserControl</SubType>
     </Compile>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
     <Compile Update="UI\Rooms_admin.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\SelectRoom.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\Standardroom.cs">
       <SubType>Form</SubType>
@@ -127,18 +97,12 @@
     <Compile Update="UI\successmessagebk.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UI\SuitesRoom.cs">
-      <SubType>Form</SubType>
-    </Compile>
->>>>>>> Stashed changes
-=======
-    <Compile Update="UI\SelectRoom.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="UI\Suites.cs">
       <SubType>Form</SubType>
     </Compile>
->>>>>>> dev/althea
+    <Compile Update="UI\SuitesRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UI\Transactions.cs">
       <SubType>UserControl</SubType>
     </Compile>

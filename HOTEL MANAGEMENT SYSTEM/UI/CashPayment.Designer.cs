@@ -178,7 +178,7 @@
             // 
             // backicon
             // 
-            backicon.Image = Properties.Resources.icons8_back_64;
+            //backicon.Image = Properties.Resources.icons8_back_64;
             backicon.Location = new Point(37, 35);
             backicon.Name = "backicon";
             backicon.Size = new Size(47, 47);
