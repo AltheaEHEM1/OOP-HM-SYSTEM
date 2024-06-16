@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+<<<<<<< Updated upstream
     <Compile Update="UI\Booknow.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -12,20 +13,105 @@
     </Compile>
     <Compile Update="UI\log.cs">
       <SubType>UserControl</SubType>
+=======
+    <Compile Update="UI\addroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Booknow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Booknow_recep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\CashPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Dashboard_admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Deleteroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\DeluxeRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Form_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Form_receptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\GuestDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Guest_recep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\HeaderforBooking.cs">
+      <SubType>Form</SubType>
+>>>>>>> Stashed changes
     </Compile>
     <Compile Update="UI\LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Update="UI\PaymentInfo.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+    <Compile Update="UI\OccupancyRate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\PaymentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Reports_admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+>>>>>>> Stashed changes
     <Compile Update="UI\Reservations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Reservations_recep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Revenue.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UI\Rooms.cs">
       <SubType>UserControl</SubType>
     </Compile>
+<<<<<<< Updated upstream
+=======
+    <Compile Update="UI\Rooms_admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Standardroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\successmessagebk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\SuitesRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> Stashed changes
     <Compile Update="UI\Transactions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Transactions_admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Transactions_recep.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
