@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
-    public partial class log : UserControl
+    public partial class OccupancyRate : UserControl
     {
-        public log()
+        public OccupancyRate()
         {
             InitializeComponent();
         }

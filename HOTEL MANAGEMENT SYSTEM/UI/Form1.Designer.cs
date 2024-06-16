@@ -30,9 +30,9 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -43,42 +43,126 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
+            locationpic = new PictureBox();
+            QCTEXT = new Label();
+            philtext = new Label();
+            Paymentbutton = new Guna.UI2.WinForms.Guna2Button();
+            logo = new PictureBox();
             navigationbar = new Panel();
-            profilepanel = new Panel();
+<<<<<<< Updated upstream
+            profilegroup = new Guna.UI2.WinForms.Guna2GroupBox();
+            labelemail = new Label();
+            circilephotoprofile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            labelname = new Label();
+            Transactions = new Guna.UI2.WinForms.Guna2Button();
+=======
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            Transactions = new Guna.UI2.WinForms.Guna2Button();
             profilename = new Guna.UI2.WinForms.Guna2Button();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            Transactions = new Guna.UI2.WinForms.Guna2Button();
+>>>>>>> Stashed changes
             Reservations = new Guna.UI2.WinForms.Guna2Button();
             Rooms = new Guna.UI2.WinForms.Guna2Button();
             Booknow = new Guna.UI2.WinForms.Guna2Button();
             Dashboard = new Guna.UI2.WinForms.Guna2Button();
+            profilepanel = new Panel();
             panelContainer = new Panel();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)locationpic).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
             navigationbar.SuspendLayout();
-            profilepanel.SuspendLayout();
+<<<<<<< Updated upstream
+            profilegroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)circilephotoprofile).BeginInit();
+=======
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
+>>>>>>> Stashed changes
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(13, 22, 29);
-            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(locationpic);
+            panel1.Controls.Add(QCTEXT);
+            panel1.Controls.Add(philtext);
+            panel1.Controls.Add(Paymentbutton);
+            panel1.Controls.Add(logo);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1600, 141);
+            panel1.Size = new Size(1440, 141);
             panel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // locationpic
             // 
-            pictureBox1.Dock = DockStyle.Fill;
+<<<<<<< Updated upstream
+            locationpic.Image = Properties.Resources.icons8_location_24;
+            locationpic.Location = new Point(55, 47);
+            locationpic.Name = "locationpic";
+            locationpic.Size = new Size(31, 29);
+            locationpic.TabIndex = 11;
+            locationpic.TabStop = false;
+            // 
+            // QCTEXT
+            // 
+            QCTEXT.AutoSize = true;
+            QCTEXT.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            QCTEXT.ForeColor = Color.White;
+            QCTEXT.Location = new Point(55, 79);
+            QCTEXT.Name = "QCTEXT";
+            QCTEXT.Size = new Size(102, 20);
+            QCTEXT.TabIndex = 10;
+            QCTEXT.Text = "Quezon City.";
+            // 
+            // philtext
+            // 
+            philtext.AutoSize = true;
+            philtext.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            philtext.ForeColor = Color.White;
+            philtext.Location = new Point(55, 99);
+            philtext.Name = "philtext";
+            philtext.Size = new Size(84, 20);
+            philtext.TabIndex = 9;
+            philtext.Text = "Philippines";
+            // 
+            // Paymentbutton
+            // 
+            Paymentbutton.BackColor = Color.Transparent;
+            Paymentbutton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            Paymentbutton.CustomBorderColor = Color.Transparent;
+            Paymentbutton.CustomBorderThickness = new Padding(0, 4, 0, 0);
+            Paymentbutton.CustomizableEdges = customizableEdges1;
+            Paymentbutton.DisabledState.BorderColor = Color.DarkGray;
+            Paymentbutton.DisabledState.CustomBorderColor = Color.DarkGray;
+            Paymentbutton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            Paymentbutton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            Paymentbutton.FillColor = Color.Transparent;
+            Paymentbutton.FocusedColor = Color.FromArgb(223, 182, 89);
+            Paymentbutton.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Paymentbutton.ForeColor = Color.White;
+            Paymentbutton.HoverState.CustomBorderColor = Color.FromArgb(149, 106, 62);
+            Paymentbutton.HoverState.FillColor = Color.FromArgb(100, 223, 182, 89);
+            Paymentbutton.Location = new Point(1009, 42);
+            Paymentbutton.Name = "Paymentbutton";
+            Paymentbutton.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            Paymentbutton.Size = new Size(231, 77);
+            Paymentbutton.TabIndex = 8;
+            Paymentbutton.Text = "PAYMENT";
+            Paymentbutton.Click += Paymentbutton_Click;
+            // 
+            // logo
+            // 
+            logo.Dock = DockStyle.Fill;
+            logo.Image = Properties.Resources.headerpic_removebg_preview1;
+            logo.Location = new Point(0, 0);
+            logo.Name = "logo";
+            logo.Size = new Size(1440, 141);
+            logo.SizeMode = PictureBoxSizeMode.CenterImage;
+            logo.TabIndex = 1;
+            logo.TabStop = false;
+=======
             pictureBox1.Image = Properties.Resources.headerpic_removebg_preview1;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
@@ -86,34 +170,66 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            //pictureBox1.Click += pictureBox1_Click;
+>>>>>>> Stashed changes
             // 
             // navigationbar
             // 
             navigationbar.BackColor = SystemColors.ActiveCaptionText;
-            navigationbar.Controls.Add(profilepanel);
+<<<<<<< Updated upstream
+            navigationbar.Controls.Add(profilegroup);
+=======
+            navigationbar.Controls.Add(guna2Button2);
+            navigationbar.Controls.Add(guna2CirclePictureBox1);
+>>>>>>> Stashed changes
             navigationbar.Controls.Add(Transactions);
+            navigationbar.Controls.Add(profilename);
+            navigationbar.Controls.Add(guna2Button1);
             navigationbar.Controls.Add(Reservations);
             navigationbar.Controls.Add(Rooms);
             navigationbar.Controls.Add(Booknow);
             navigationbar.Controls.Add(Dashboard);
+            navigationbar.Controls.Add(profilepanel);
             navigationbar.Dock = DockStyle.Top;
             navigationbar.Location = new Point(0, 141);
             navigationbar.Name = "navigationbar";
-            navigationbar.Size = new Size(1600, 80);
+            navigationbar.Size = new Size(1440, 80);
             navigationbar.TabIndex = 3;
             navigationbar.Paint += navigationbar_Paint_1;
             // 
-            // profilepanel
+<<<<<<< Updated upstream
+            // profilegroup
             // 
-            profilepanel.Controls.Add(guna2Button2);
-            profilepanel.Controls.Add(guna2CirclePictureBox1);
-            profilepanel.Controls.Add(profilename);
-            profilepanel.Controls.Add(guna2Button1);
-            profilepanel.Location = new Point(1286, 3);
-            profilepanel.Name = "profilepanel";
-            profilepanel.Size = new Size(302, 77);
-            profilepanel.TabIndex = 1;
+            profilegroup.BackColor = Color.Transparent;
+            profilegroup.BorderColor = Color.White;
+            profilegroup.BorderRadius = 20;
+            profilegroup.BorderThickness = 2;
+            profilegroup.Controls.Add(labelemail);
+            profilegroup.Controls.Add(circilephotoprofile);
+            profilegroup.Controls.Add(labelname);
+            profilegroup.CustomBorderColor = Color.White;
+            profilegroup.CustomBorderThickness = new Padding(4);
+            profilegroup.CustomizableEdges = customizableEdges4;
+            profilegroup.FillColor = Color.Transparent;
+            profilegroup.Font = new Font("Segoe UI", 9F);
+            profilegroup.ForeColor = Color.FromArgb(125, 137, 149);
+            profilegroup.Location = new Point(1157, 6);
+            profilegroup.Name = "profilegroup";
+            profilegroup.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            profilegroup.Size = new Size(262, 68);
+            profilegroup.TabIndex = 0;
             // 
+            // labelemail
+            // 
+            labelemail.AutoSize = true;
+            labelemail.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelemail.ForeColor = Color.White;
+            labelemail.Location = new Point(80, 35);
+            labelemail.Name = "labelemail";
+            labelemail.Size = new Size(175, 17);
+            labelemail.TabIndex = 1;
+            labelemail.Text = "miyukimharie@gmail.com";
+=======
             // guna2Button2
             // 
             guna2Button2.BackColor = Color.Transparent;
@@ -126,18 +242,44 @@
             guna2Button2.FillColor = Color.Transparent;
             guna2Button2.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(90, 32);
+            guna2Button2.Location = new Point(1201, 44);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button2.Size = new Size(193, 25);
             guna2Button2.TabIndex = 3;
             guna2Button2.Text = "miyukiMhanrie@gmail.com";
+>>>>>>> Stashed changes
             // 
-            // guna2CirclePictureBox1
+            // circilephotoprofile
             // 
+<<<<<<< Updated upstream
+            circilephotoprofile.Image = Properties.Resources.profile;
+            circilephotoprofile.ImageRotate = 0F;
+            circilephotoprofile.Location = new Point(21, 5);
+            circilephotoprofile.Name = "circilephotoprofile";
+            circilephotoprofile.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            circilephotoprofile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            circilephotoprofile.Size = new Size(60, 55);
+            circilephotoprofile.SizeMode = PictureBoxSizeMode.StretchImage;
+            circilephotoprofile.TabIndex = 2;
+            circilephotoprofile.TabStop = false;
+            // 
+            // labelname
+            // 
+            labelname.AutoSize = true;
+            labelname.BackColor = Color.Transparent;
+            labelname.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelname.ForeColor = Color.White;
+            labelname.Location = new Point(90, 18);
+            labelname.Name = "labelname";
+            labelname.Size = new Size(156, 17);
+            labelname.TabIndex = 0;
+            labelname.Text = "Miyuki Mharie Parocha ";
+            // 
+=======
             guna2CirclePictureBox1.Image = Properties.Resources.profile;
             guna2CirclePictureBox1.ImageRotate = 0F;
-            guna2CirclePictureBox1.Location = new Point(24, 9);
+            guna2CirclePictureBox1.Location = new Point(1135, 14);
             guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges3;
             guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -146,11 +288,47 @@
             guna2CirclePictureBox1.TabIndex = 2;
             guna2CirclePictureBox1.TabStop = false;
             // 
+>>>>>>> Stashed changes
+            // Transactions
+            // 
+            Transactions.BackColor = Color.Transparent;
+            Transactions.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            Transactions.CustomBorderColor = Color.Transparent;
+            Transactions.CustomBorderThickness = new Padding(0, 4, 0, 0);
+<<<<<<< Updated upstream
+            Transactions.CustomizableEdges = customizableEdges6;
+=======
+            Transactions.CustomizableEdges = customizableEdges4;
+>>>>>>> Stashed changes
+            Transactions.DisabledState.BorderColor = Color.DarkGray;
+            Transactions.DisabledState.CustomBorderColor = Color.DarkGray;
+            Transactions.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            Transactions.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            Transactions.FillColor = Color.Transparent;
+            Transactions.FocusedColor = Color.FromArgb(223, 182, 89);
+            Transactions.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Transactions.ForeColor = Color.White;
+            Transactions.HoverState.CustomBorderColor = Color.FromArgb(119, 85, 50);
+            Transactions.HoverState.FillColor = Color.FromArgb(100, 223, 182, 89);
+<<<<<<< Updated upstream
+            Transactions.Location = new Point(800, 3);
+            Transactions.Name = "Transactions";
+            Transactions.ShadowDecoration.CustomizableEdges = customizableEdges7;
+=======
+            Transactions.Location = new Point(801, 3);
+            Transactions.Name = "Transactions";
+            Transactions.ShadowDecoration.CustomizableEdges = customizableEdges5;
+>>>>>>> Stashed changes
+            Transactions.Size = new Size(200, 77);
+            Transactions.TabIndex = 7;
+            Transactions.Text = "TRANSACTIONS";
+            Transactions.Click += Transactions_Click_1;
+            // 
             // profilename
             // 
             profilename.BackColor = Color.Transparent;
             profilename.BorderColor = Color.White;
-            profilename.CustomizableEdges = customizableEdges4;
+            profilename.CustomizableEdges = customizableEdges6;
             profilename.DisabledState.BorderColor = Color.DarkGray;
             profilename.DisabledState.CustomBorderColor = Color.DarkGray;
             profilename.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -158,9 +336,9 @@
             profilename.FillColor = Color.Transparent;
             profilename.Font = new Font("Segoe UI", 9F);
             profilename.ForeColor = Color.White;
-            profilename.Location = new Point(90, 13);
+            profilename.Location = new Point(1201, 18);
             profilename.Name = "profilename";
-            profilename.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            profilename.ShadowDecoration.CustomizableEdges = customizableEdges7;
             profilename.Size = new Size(191, 25);
             profilename.TabIndex = 2;
             profilename.Text = "Miyuki Mharie Parocha ";
@@ -171,7 +349,7 @@
             guna2Button1.BorderColor = Color.FromArgb(13, 22, 29);
             guna2Button1.BorderRadius = 20;
             guna2Button1.BorderThickness = 2;
-            guna2Button1.CustomizableEdges = customizableEdges6;
+            guna2Button1.CustomizableEdges = customizableEdges8;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -179,36 +357,11 @@
             guna2Button1.FillColor = Color.Transparent;
             guna2Button1.Font = new Font("Segoe UI", 9F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(5, 3);
+            guna2Button1.Location = new Point(1116, 8);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            guna2Button1.Size = new Size(297, 68);
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            guna2Button1.Size = new Size(299, 68);
             guna2Button1.TabIndex = 2;
-            // 
-            // Transactions
-            // 
-            Transactions.BackColor = Color.Transparent;
-            Transactions.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            Transactions.CustomBorderColor = Color.Transparent;
-            Transactions.CustomBorderThickness = new Padding(0, 4, 0, 0);
-            Transactions.CustomizableEdges = customizableEdges8;
-            Transactions.DisabledState.BorderColor = Color.DarkGray;
-            Transactions.DisabledState.CustomBorderColor = Color.DarkGray;
-            Transactions.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            Transactions.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            Transactions.FillColor = Color.Transparent;
-            Transactions.FocusedColor = Color.FromArgb(223, 182, 89);
-            Transactions.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Transactions.ForeColor = Color.White;
-            Transactions.HoverState.CustomBorderColor = Color.FromArgb(149, 106, 62);
-            Transactions.HoverState.FillColor = Color.FromArgb(100, 223, 182, 89);
-            Transactions.Location = new Point(924, 3);
-            Transactions.Name = "Transactions";
-            Transactions.ShadowDecoration.CustomizableEdges = customizableEdges9;
-            Transactions.Size = new Size(231, 77);
-            Transactions.TabIndex = 7;
-            Transactions.Text = "TRANSACTIONS";
-            Transactions.Click += Transactions_Click_1;
             // 
             // Reservations
             // 
@@ -216,21 +369,27 @@
             Reservations.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             Reservations.CustomBorderColor = Color.Transparent;
             Reservations.CustomBorderThickness = new Padding(0, 4, 0, 0);
-            Reservations.CustomizableEdges = customizableEdges10;
+            Reservations.CustomizableEdges = customizableEdges8;
             Reservations.DisabledState.BorderColor = Color.DarkGray;
             Reservations.DisabledState.CustomBorderColor = Color.DarkGray;
             Reservations.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             Reservations.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             Reservations.FillColor = Color.Transparent;
             Reservations.FocusedColor = Color.FromArgb(223, 182, 89);
-            Reservations.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Reservations.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Reservations.ForeColor = Color.White;
-            Reservations.HoverState.CustomBorderColor = Color.FromArgb(149, 106, 62);
+            Reservations.HoverState.CustomBorderColor = Color.FromArgb(119, 85, 50);
             Reservations.HoverState.FillColor = Color.FromArgb(100, 223, 182, 89);
-            Reservations.Location = new Point(693, 3);
+<<<<<<< Updated upstream
+            Reservations.Location = new Point(600, 3);
+            Reservations.Name = "Reservations";
+            Reservations.ShadowDecoration.CustomizableEdges = customizableEdges9;
+=======
+            Reservations.Location = new Point(595, 3);
             Reservations.Name = "Reservations";
             Reservations.ShadowDecoration.CustomizableEdges = customizableEdges11;
-            Reservations.Size = new Size(231, 77);
+>>>>>>> Stashed changes
+            Reservations.Size = new Size(200, 77);
             Reservations.TabIndex = 6;
             Reservations.Text = "RESERVATIONS";
             Reservations.Click += Reservations_Click_1;
@@ -241,21 +400,27 @@
             Rooms.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             Rooms.CustomBorderColor = Color.Transparent;
             Rooms.CustomBorderThickness = new Padding(0, 4, 0, 0);
-            Rooms.CustomizableEdges = customizableEdges12;
+            Rooms.CustomizableEdges = customizableEdges10;
             Rooms.DisabledState.BorderColor = Color.DarkGray;
             Rooms.DisabledState.CustomBorderColor = Color.DarkGray;
             Rooms.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             Rooms.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             Rooms.FillColor = Color.Transparent;
             Rooms.FocusedColor = Color.FromArgb(223, 182, 89);
-            Rooms.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Rooms.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Rooms.ForeColor = Color.White;
-            Rooms.HoverState.CustomBorderColor = Color.FromArgb(149, 106, 62);
+            Rooms.HoverState.CustomBorderColor = Color.FromArgb(119, 85, 50);
             Rooms.HoverState.FillColor = Color.FromArgb(100, 223, 182, 89);
-            Rooms.Location = new Point(462, 3);
+<<<<<<< Updated upstream
+            Rooms.Location = new Point(400, 3);
+            Rooms.Name = "Rooms";
+            Rooms.ShadowDecoration.CustomizableEdges = customizableEdges11;
+=======
+            Rooms.Location = new Point(389, 3);
             Rooms.Name = "Rooms";
             Rooms.ShadowDecoration.CustomizableEdges = customizableEdges13;
-            Rooms.Size = new Size(231, 77);
+>>>>>>> Stashed changes
+            Rooms.Size = new Size(200, 77);
             Rooms.TabIndex = 5;
             Rooms.Text = "ROOMS";
             Rooms.Click += Rooms_Click_1;
@@ -266,21 +431,27 @@
             Booknow.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             Booknow.CustomBorderColor = Color.Transparent;
             Booknow.CustomBorderThickness = new Padding(0, 4, 0, 0);
-            Booknow.CustomizableEdges = customizableEdges14;
+            Booknow.CustomizableEdges = customizableEdges12;
             Booknow.DisabledState.BorderColor = Color.DarkGray;
             Booknow.DisabledState.CustomBorderColor = Color.DarkGray;
             Booknow.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             Booknow.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             Booknow.FillColor = Color.Transparent;
             Booknow.FocusedColor = Color.FromArgb(223, 182, 89);
-            Booknow.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Booknow.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Booknow.ForeColor = Color.White;
-            Booknow.HoverState.CustomBorderColor = Color.FromArgb(149, 106, 62);
+            Booknow.HoverState.CustomBorderColor = Color.FromArgb(119, 85, 50);
             Booknow.HoverState.FillColor = Color.FromArgb(100, 223, 182, 89);
-            Booknow.Location = new Point(231, 3);
+<<<<<<< Updated upstream
+            Booknow.Location = new Point(200, 3);
+            Booknow.Name = "Booknow";
+            Booknow.ShadowDecoration.CustomizableEdges = customizableEdges13;
+=======
+            Booknow.Location = new Point(183, 3);
             Booknow.Name = "Booknow";
             Booknow.ShadowDecoration.CustomizableEdges = customizableEdges15;
-            Booknow.Size = new Size(231, 77);
+>>>>>>> Stashed changes
+            Booknow.Size = new Size(200, 77);
             Booknow.TabIndex = 4;
             Booknow.Text = "BOOK NOW";
             Booknow.Click += Booknow_Click;
@@ -289,34 +460,46 @@
             // 
             Dashboard.BackColor = Color.Transparent;
             Dashboard.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            Dashboard.Checked = true;
             Dashboard.CustomBorderColor = Color.Transparent;
             Dashboard.CustomBorderThickness = new Padding(0, 4, 0, 0);
-            Dashboard.CustomizableEdges = customizableEdges16;
+            Dashboard.CustomizableEdges = customizableEdges14;
             Dashboard.DisabledState.BorderColor = Color.DarkGray;
             Dashboard.DisabledState.CustomBorderColor = Color.DarkGray;
             Dashboard.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             Dashboard.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             Dashboard.FillColor = Color.Transparent;
-            Dashboard.FocusedColor = Color.FromArgb(223, 182, 89);
-            Dashboard.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Dashboard.FocusedColor = Color.Transparent;
+            Dashboard.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Dashboard.ForeColor = Color.White;
-            Dashboard.HoverState.CustomBorderColor = Color.FromArgb(149, 106, 62);
+            Dashboard.HoverState.CustomBorderColor = Color.FromArgb(119, 85, 50);
             Dashboard.HoverState.FillColor = Color.FromArgb(100, 223, 182, 89);
             Dashboard.Location = new Point(0, 3);
             Dashboard.Name = "Dashboard";
+<<<<<<< Updated upstream
+            Dashboard.ShadowDecoration.CustomizableEdges = customizableEdges15;
+=======
             Dashboard.ShadowDecoration.CustomizableEdges = customizableEdges17;
-            Dashboard.Size = new Size(231, 77);
+>>>>>>> Stashed changes
+            Dashboard.Size = new Size(200, 77);
             Dashboard.TabIndex = 3;
             Dashboard.Text = "DASHBOARD";
             Dashboard.Click += Dashboard_Click_1;
             // 
+            // profilepanel
+            // 
+            profilepanel.Location = new Point(1116, 3);
+            profilepanel.Name = "profilepanel";
+            profilepanel.Size = new Size(302, 77);
+            profilepanel.TabIndex = 1;
+            // 
             // panelContainer
             // 
-            panelContainer.Dock = DockStyle.Fill;
             panelContainer.Location = new Point(0, 221);
             panelContainer.Name = "panelContainer";
-            panelContainer.Size = new Size(1600, 679);
+            panelContainer.Size = new Size(1440, 679);
             panelContainer.TabIndex = 4;
+            panelContainer.Paint += panelContainer_Paint;
             // 
             // Form1
             // 
@@ -324,7 +507,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bg;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1600, 900);
+            ClientSize = new Size(1440, 900);
             Controls.Add(panelContainer);
             Controls.Add(navigationbar);
             Controls.Add(panel1);
@@ -334,22 +517,27 @@
             Text = "Form1";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)locationpic).EndInit();
+            ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             navigationbar.ResumeLayout(false);
-            profilepanel.ResumeLayout(false);
+<<<<<<< Updated upstream
+            profilegroup.ResumeLayout(false);
+            profilegroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)circilephotoprofile).EndInit();
+=======
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).EndInit();
+>>>>>>> Stashed changes
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private PictureBox pictureBox1;
+        private PictureBox logo;
         private Panel navigationbar;
         private Panel profilepanel;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2Button profilename;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox circilephotoprofile;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button Transactions;
         private Guna.UI2.WinForms.Guna2Button Reservations;
@@ -357,5 +545,13 @@
         private Guna.UI2.WinForms.Guna2Button Booknow;
         private Guna.UI2.WinForms.Guna2Button Dashboard;
         private Panel panelContainer;
+        private Guna.UI2.WinForms.Guna2Button Paymentbutton;
+        private Label philtext;
+        private Label QCTEXT;
+        private PictureBox locationpic;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private Guna.UI2.WinForms.Guna2GroupBox profilegroup;
+        private Label labelname;
+        private Label labelemail;
     }
 }

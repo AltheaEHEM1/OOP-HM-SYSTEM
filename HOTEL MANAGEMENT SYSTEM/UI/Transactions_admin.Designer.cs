@@ -1,6 +1,6 @@
 ﻿namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
-    partial class log
+    partial class Transactions_admin
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,17 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             SuspendLayout();
             // 
-            // log
+            // guna2HtmlLabel1
+            // 
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel1.Location = new Point(507, 288);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(426, 61);
+            guna2HtmlLabel1.TabIndex = 1;
+            guna2HtmlLabel1.Text = "transactions for admin";
+            // 
+            // Transactions_admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Name = "log";
-            Size = new Size(1238, 592);
+            Controls.Add(guna2HtmlLabel1);
+            Name = "Transactions_admin";
+            Size = new Size(1440, 636);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }
