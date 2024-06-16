@@ -29,7 +29,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void backicon_Click(object sender, EventArgs e)
         {
-            Rooms rooms = new Rooms();
+            Rooms_admin rooms = new Rooms_admin();
             rooms.Show();
 
             // Hide the LoginPage form
