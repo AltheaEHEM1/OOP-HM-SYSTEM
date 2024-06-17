@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
-    public partial class Transactions : UserControl
+    public partial class TransactionDetails : Form
     {
-        public Transactions()
+        public TransactionDetails()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void TransactionDetailsText_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
