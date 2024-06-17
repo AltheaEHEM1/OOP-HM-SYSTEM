@@ -145,7 +145,6 @@ C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New fo
 C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New folder\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.DeluxeRoom.resources
 C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New folder\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.Form1.resources
 C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New folder\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.log.resources
-C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New folder\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.CreateAccount.resources
 C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New folder\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.PaymentInfo.resources
 C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New folder\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Reservations.resources
 C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New folder\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Rooms.resources
@@ -211,3 +210,5 @@ C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New fo
 C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New folder\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.pdb
 C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New folder\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.genruntimeconfig.cache
 C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New folder\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\ref\HOTEL MANAGEMENT SYSTEM.dll
+C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New folder\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.Login.resources
+C:\Users\erice\OneDrive\Documents\Erice\ALL PROGRAMMING\BSIT-2-2\C# - OOP\New folder\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.LoginTest.resources

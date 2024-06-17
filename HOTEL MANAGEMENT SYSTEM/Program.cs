@@ -11,7 +11,19 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new CreateAccount());
+
+            // Ensure the database is created and schema is applied before starting the application
+            using (var context = new Models.DataContext())
+            {
+                // database schema is created if not exists
+                context.Database.EnsureCreated();
+            }
+
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+            Application.Run(new Login());
+
         }
     }
-}
+}        

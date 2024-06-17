@@ -12,8 +12,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
 {
     public class UserController
     {
-        // Register form but no UI
-        public void RegisterUser(string employeeNumber, string username, string password, string lastName, string firstName, string middleName, string jobPosition, string email, string schedule)
+        // Create account CreateAccount.cs
+        public void RegisterUser(string employeeName, string email, string birthdate, string phoneNumber, string password)
         {
             using (var context = new DataContext())
             {
@@ -24,16 +24,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
                 // Create a new user instance
                 var user = new User
                 {
-                    EmployeeNumber = employeeNumber,
-                    Username = username,
-                    Salt = salt,
-                    SaltedPassword = saltedPassword,
-                    LastName = lastName,
-                    FirstName = firstName,
-                    MiddleName = middleName,
-                    JobPosition = jobPosition,
+                    EmployeeName = employeeName,
                     Email = email,
-                    Schedule = schedule
+                    Birthdate = birthdate,
+                    PhoneNumber = phoneNumber,
+                    Salt = salt,
+                    SaltedPassword = saltedPassword
                 };
 
                 // Add the user to the database
@@ -41,6 +37,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
                 context.SaveChanges();
             }
         }
+
+        // Login LoginPage.cs
         public bool AuthenticateUser(string username, string password)
         {
             using (var context = new DataContext())
@@ -56,11 +54,14 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
                 return PasswordHasher.VerifyPassword(password, user.Salt, user.SaltedPassword);
             }
         }
+        
+        // Logout Form1.cs
         public void Logout()
         {
             // Implement logout logic if necessary (e.g., clear session, tokens, etc.)
         }
 
+        // Update user information ProfilePage.cs
         public void UpdateUser(User user)
         {
             using (var context = new DataContext())

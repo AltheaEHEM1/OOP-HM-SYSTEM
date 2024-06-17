@@ -57,9 +57,17 @@
               "target": "Package",
               "version": "[2.0.4.6, )"
             },
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "Paymongo.Sharp": {
+              "target": "Package",
+              "version": "[0.5.1, )"
             },
             "font-awesome": {
               "target": "Package",

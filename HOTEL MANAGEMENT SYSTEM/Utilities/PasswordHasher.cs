@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BCrypt.Net;
-
-namespace HOTEL_MANAGEMENT_SYSTEM.Utilities
+﻿namespace HOTEL_MANAGEMENT_SYSTEM.Utilities
 {
-
     public static class PasswordHasher
     {
         public static string GenerateSalt()
@@ -25,5 +17,4 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Utilities
             return BCrypt.Net.BCrypt.Verify(password + salt, hashedPassword);
         }
     }
-
 }

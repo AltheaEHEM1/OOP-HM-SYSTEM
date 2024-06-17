@@ -1,9 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+// DB stored in ...HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows
+// DB name is HotelManagement.db
 
 namespace HOTEL_MANAGEMENT_SYSTEM.Models
 {
@@ -18,6 +16,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source = HotelManagement.db"); //connection string and to use sqlite
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            // Customize the model here if needed
         }
     }
 }
