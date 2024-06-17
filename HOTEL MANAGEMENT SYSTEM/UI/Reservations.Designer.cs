@@ -112,10 +112,10 @@
             TablePanelSample.BorderThickness = 1;
             TablePanelSample.Controls.Add(ReservationsTable);
             TablePanelSample.CustomizableEdges = customizableEdges5;
-            TablePanelSample.Location = new Point(147, 100);
+            TablePanelSample.Location = new Point(72, 100);
             TablePanelSample.Name = "TablePanelSample";
             TablePanelSample.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            TablePanelSample.Size = new Size(1117, 393);
+            TablePanelSample.Size = new Size(1117, 330);
             TablePanelSample.TabIndex = 2;
             // 
             // ReservationsTable
@@ -160,7 +160,7 @@
             ReservationsTable.RowTemplate.DividerHeight = 2;
             ReservationsTable.RowTemplate.Height = 50;
             ReservationsTable.ScrollBars = ScrollBars.Vertical;
-            ReservationsTable.Size = new Size(1117, 393);
+            ReservationsTable.Size = new Size(1117, 330);
             ReservationsTable.TabIndex = 0;
             ReservationsTable.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             ReservationsTable.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -236,10 +236,10 @@
             ReservationEditBttn.FillColor = Color.FromArgb(213, 171, 97);
             ReservationEditBttn.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ReservationEditBttn.ForeColor = Color.White;
-            ReservationEditBttn.Location = new Point(357, 631);
+            ReservationEditBttn.Location = new Point(307, 436);
             ReservationEditBttn.Name = "ReservationEditBttn";
             ReservationEditBttn.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            ReservationEditBttn.Size = new Size(210, 60);
+            ReservationEditBttn.Size = new Size(231, 60);
             ReservationEditBttn.TabIndex = 3;
             ReservationEditBttn.Text = "Edit";
             ReservationEditBttn.Click += ReservationEditBttn_Click;
@@ -255,7 +255,7 @@
             ReservationCancelBttn.FillColor = Color.FromArgb(126, 6, 6);
             ReservationCancelBttn.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ReservationCancelBttn.ForeColor = Color.White;
-            ReservationCancelBttn.Location = new Point(833, 631);
+            ReservationCancelBttn.Location = new Point(745, 436);
             ReservationCancelBttn.Name = "ReservationCancelBttn";
             ReservationCancelBttn.ShadowDecoration.CustomizableEdges = customizableEdges10;
             ReservationCancelBttn.Size = new Size(210, 60);
@@ -275,7 +275,7 @@
             Controls.Add(SearchBar);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Reservations";
-            Size = new Size(1400, 734);
+            Size = new Size(1260, 509);
             Load += Reservations_Load;
             TablePanelSample.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ReservationsTable).EndInit();

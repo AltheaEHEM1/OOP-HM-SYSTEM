@@ -44,15 +44,15 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             this.Close(); // Close the ModifyPage form
         }
 
-       
+
 
         private void SaveChangesBttn_Click(object sender, EventArgs e)
         {
             ChangesSaved callChangesSaved = new ChangesSaved();
-            callChangesSaved.FormClosed += ChangesSaved_FormClosed;
             callChangesSaved.Show();
 
-            //this.Hide();
+
+            //this.Close();
 
 
 
@@ -92,12 +92,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 
 
 
-        }
-
-        private void ChangesSaved_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            // Close the ModifyPage form
-            this.Close();
         }
 
         private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
