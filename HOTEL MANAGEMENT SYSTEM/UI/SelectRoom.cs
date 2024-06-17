@@ -33,7 +33,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             userControl.BringToFront();
         }
 
-        private void SelectRoom_Load(object sender, EventArgs e)
+        public void SelectRoom_Load(object sender, EventArgs e)
         {
 
             Booknow booknow = new Booknow(); // Create an instance of Booknow

@@ -12,7 +12,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class DeluxeRoom : Form
     {
-        private Form1 parentForm;
+        public Form1 parentForm;
 
         public DeluxeRoom()
         {
@@ -40,7 +40,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             this.Close();
         }
 
-        private void DeluxeRoom_Load(object sender, EventArgs e)
+        public void DeluxeRoom_Load(object sender, EventArgs e)
         {
             Booknow booknow = new Booknow(); // Create an instance of Booknow
             parentForm.addUserControl(booknow); // Add Booknow to Form1

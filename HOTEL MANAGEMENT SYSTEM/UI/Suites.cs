@@ -18,7 +18,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             InitializeComponent();
             InitializeParentForm();
         }
-        private void InitializeParentForm()
+        public void InitializeParentForm()
         {
             parentForm = new Form1();  // Create an instance of Form1
         }
@@ -58,7 +58,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         }
 
-        private void Suites_Load(object sender, EventArgs e)
+        public void Suites_Load(object sender, EventArgs e)
         {
 
             Booknow booknow = new Booknow(); // Create an instance of Booknow
@@ -66,7 +66,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             parentForm.Show(); // Show Form1
         }
 
-        private void Suites_Click(object sender, EventArgs e)
+        public void Suites_Click(object sender, EventArgs e)
         {
             Booknow booknow = new Booknow(); // Create an instance of Booknow
             parentForm.addUserControl(booknow); // Add Booknow to Form1
