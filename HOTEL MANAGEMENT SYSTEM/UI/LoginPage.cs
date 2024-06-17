@@ -5,11 +5,12 @@ using System.Drawing.Text;
 using System.Reflection;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using Guna.UI2.WinForms; // Add this namespace
+using Guna.UI2.WinForms;
+using HOTEL_MANAGEMENT_SYSTEM.UI; // Add this namespace
 
 namespace HOTEL_MANAGEMENT_SYSTEM
 {
-    public partial class CreateAccount : Form
+    public partial class LoginPage : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(
@@ -21,7 +22,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             int nHeightEllipse
         );
 
-        public CreateAccount()
+        public LoginPage()
         {
             InitializeComponent();
             panel2.Parent = pictureBox1;
@@ -31,8 +32,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
+            Form_receptionist form_Receptionist = new Form_receptionist();
+            form_Receptionist.Show();
 
             // Hide the LoginPage form
             this.Hide();
@@ -41,6 +42,17 @@ namespace HOTEL_MANAGEMENT_SYSTEM
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+       
+
+        private void Createacc_Click(object sender, EventArgs e)
+        {
+            CreateAccountForm createAccountform = new CreateAccountForm();
+            createAccountform.Show();
+
+            // Hide the LoginPage form
+            this.Hide();
         }
     }
 }
