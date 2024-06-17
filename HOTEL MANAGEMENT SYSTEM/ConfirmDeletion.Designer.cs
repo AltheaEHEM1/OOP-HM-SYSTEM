@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             ConfirmDelLab = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ContinueTxt = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -69,16 +69,14 @@
             // 
             PasswordPanel.BorderColor = Color.Black;
             PasswordPanel.BorderRadius = 10;
-            PasswordPanel.CustomizableEdges = customizableEdges3;
+            PasswordPanel.CustomizableEdges = customizableEdges7;
             PasswordPanel.DefaultText = "";
             PasswordPanel.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             PasswordPanel.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             PasswordPanel.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             PasswordPanel.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             PasswordPanel.FocusedState.BorderColor = Color.Black;
-            PasswordPanel.FocusedState.PlaceholderForeColor = Color.Black;
             PasswordPanel.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            PasswordPanel.ForeColor = Color.Black;
             PasswordPanel.HoverState.BorderColor = Color.Black;
             PasswordPanel.Location = new Point(82, 160);
             PasswordPanel.Name = "PasswordPanel";
@@ -86,14 +84,14 @@
             PasswordPanel.PlaceholderForeColor = Color.DimGray;
             PasswordPanel.PlaceholderText = "Password";
             PasswordPanel.SelectedText = "";
-            PasswordPanel.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            PasswordPanel.ShadowDecoration.CustomizableEdges = customizableEdges8;
             PasswordPanel.Size = new Size(430, 57);
             PasswordPanel.TabIndex = 2;
             // 
             // ConfirmBttn
             // 
             ConfirmBttn.BorderRadius = 10;
-            ConfirmBttn.CustomizableEdges = customizableEdges1;
+            ConfirmBttn.CustomizableEdges = customizableEdges5;
             ConfirmBttn.DisabledState.BorderColor = Color.DarkGray;
             ConfirmBttn.DisabledState.CustomBorderColor = Color.DarkGray;
             ConfirmBttn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -103,11 +101,11 @@
             ConfirmBttn.ForeColor = Color.White;
             ConfirmBttn.Location = new Point(195, 306);
             ConfirmBttn.Name = "ConfirmBttn";
-            ConfirmBttn.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            ConfirmBttn.ShadowDecoration.CustomizableEdges = customizableEdges6;
             ConfirmBttn.Size = new Size(210, 45);
             ConfirmBttn.TabIndex = 3;
             ConfirmBttn.Text = "Confirm";
-            //ConfirmBttn.Click += ConfirmBttn_Click;
+            ConfirmBttn.Click += ConfirmBttn_Click;
             // 
             // ConfirmDeletion
             // 

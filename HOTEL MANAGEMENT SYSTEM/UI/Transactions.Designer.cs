@@ -34,22 +34,19 @@
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(579, 230);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
+            textBox1.Location = new Point(662, 307);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(288, 53);
+            textBox1.Size = new Size(329, 65);
             textBox1.TabIndex = 1;
             textBox1.Text = "TRANSACTIONS";
             // 
             // Transactions
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(textBox1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Transactions";
-            Size = new Size(1400, 509);
-            Load += Transactions_Load;
+            Size = new Size(1600, 679);
             ResumeLayout(false);
             PerformLayout();
         }

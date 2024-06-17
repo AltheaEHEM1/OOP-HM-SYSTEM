@@ -16,10 +16,5 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             InitializeComponent();
         }
-
-        private void Transactions_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

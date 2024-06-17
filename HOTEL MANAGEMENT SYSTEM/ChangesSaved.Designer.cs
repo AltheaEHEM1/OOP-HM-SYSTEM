@@ -53,6 +53,7 @@
             CheckPic.Size = new Size(115, 110);
             CheckPic.TabIndex = 0;
             CheckPic.TabStop = false;
+            //CheckPic.Click += CheckPic_Click;
             // 
             // ChangesSavedTxt
             // 
@@ -63,6 +64,7 @@
             ChangesSavedTxt.Size = new Size(153, 25);
             ChangesSavedTxt.TabIndex = 1;
             ChangesSavedTxt.Text = "Changes saved!";
+            //ChangesSavedTxt.Click += ChangesSavedTxt_Click;
             // 
             // ChangesSaved
             // 
@@ -77,8 +79,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ChangesSaved";
             TopMost = true;
-            Load += ChangesSaved_Load;
-            MouseMove += ChangesSaved_MouseMove;
+            //Load += ChangesSaved_Load;
             ((System.ComponentModel.ISupportInitialize)CheckPic).EndInit();
             ResumeLayout(false);
             PerformLayout();

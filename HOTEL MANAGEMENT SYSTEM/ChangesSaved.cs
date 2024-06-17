@@ -17,19 +17,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             InitializeComponent();
         }
 
-        private void ChangesSaved_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ChangesSaved_MouseMove(object sender, MouseEventArgs e)
-        {
-            this.Close();
-        }
-
-
-
-
         //private void CheckPic_Click(object sender, EventArgs e)
         //{
 
