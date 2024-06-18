@@ -45,10 +45,17 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
             using (var context = new DataContext())
             {
                 // assign list of bookings to variables
-                BookingRecords = context.Bookings.ToList();
+                BookingRecords = context.Bookings.Where(x => x.BookingStatus != "Cancelled").ToList();
 
-                // return all booking records
-                return BookingRecords;
+                if (BookingRecords.Count == 0)
+                {
+                    return null;
+                }
+                else
+                {
+                    // return all booking records
+                    return BookingRecords;
+                }
 
             }
         }
@@ -90,7 +97,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
             }
 
         }
-
+        
         // method to delete booking record
         public void DeleteBookingRecord(int bookingId)
         {
@@ -105,15 +112,16 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
                         throw new Exception("Booking not found");
                     }
 
-                    // Remove the booking record
-                    context.Bookings.Remove(booking);
+                    // replaced booking status to cancelled
+                    Booking cancelBooking = new Booking();
+                    cancelBooking.BookingStatus = "Cancelled";
 
                     // Save changes to the database
                     context.SaveChanges();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, $"{ex}", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message);
                 }
             }
         }

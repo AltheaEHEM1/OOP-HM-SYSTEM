@@ -10,6 +10,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
         public int RoomNumber { get; set; }
         public string RoomStatus { get; set; }
         public float RoomPrice { get; set; }
-
+        public int OccupancyLimit { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }

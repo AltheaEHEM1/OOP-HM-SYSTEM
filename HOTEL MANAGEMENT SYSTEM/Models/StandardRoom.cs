@@ -8,7 +8,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
 {
     public class StandardRoom : Room
     {
-        public int OccupancyLimit { get; set; }
+        public bool HasFreeWifi { get; set; }
     }
 
 }
