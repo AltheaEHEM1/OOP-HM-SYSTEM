@@ -1,50 +1,92 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using System.Windows.Forms;
 using HOTEL_MANAGEMENT_SYSTEM.Models;
 using HOTEL_MANAGEMENT_SYSTEM.Utilities;
-
 
 namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
 {
     public class UserController
     {
-        // Create account CreateAccount.cs
-        public void RegisterUser(string employeeName, string email, string birthdate, string phoneNumber, string password)
+        // Create account
+        public bool CreateAccount(string employeeName, string email, string birthdate, string phoneNumber, string password)
         {
-            using (var context = new DataContext())
+            try
             {
-                // Generate salt and hash the password
-                string salt = PasswordHasher.GenerateSalt();
-                string saltedPassword = PasswordHasher.HashPassword(password, salt);
-
-                // Create a new user instance
-                var user = new User
+                using (var context = new DataContext())
                 {
-                    EmployeeName = employeeName,
-                    Email = email,
-                    Birthdate = birthdate,
-                    PhoneNumber = phoneNumber,
-                    Salt = salt,
-                    SaltedPassword = saltedPassword
-                };
+                    // Generate salt and hash the password
+                    string salt = PasswordHasher.GenerateSalt();
+                    string saltedPassword = PasswordHasher.HashPassword(password, salt);
+                    string jobposition = "Receptionist";
+                    string schedule = "Unknown";
 
-                // Add the user to the database
-                context.Users.Add(user);
-                context.SaveChanges();
+                    // Load the default profile picture from resources
+                    byte[] defaultProfilePicture = ImageToByteArray(Properties.Resources.defaultprofilepicture);
+
+                    // Create a new user instance
+                    var user = new User
+                    {
+                        EmployeeName = employeeName,
+                        EmailAddress = email,
+                        Birthdate = birthdate,
+                        PhoneNumber = phoneNumber,
+                        Salt = salt,
+                        SaltedPassword = saltedPassword,
+                        CreatedAt = DateTime.Now,
+                        JobPosition = jobposition,
+                        Schedule = schedule,
+                        ProfilePicture = defaultProfilePicture
+                    };
+
+                    // Add the user to the database
+                    context.Users.Add(user);
+                    context.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                var errorMessage = new StringBuilder();
+                errorMessage.AppendLine($"Message: {ex.Message}");
+                errorMessage.AppendLine($"Source: {ex.Source}");
+                errorMessage.AppendLine($"Stack Trace: {ex.StackTrace}");
+
+                var inner = ex.InnerException;
+                while (inner != null)
+                {
+                    errorMessage.AppendLine("---- Inner Exception ----");
+                    errorMessage.AppendLine($"Message: {inner.Message}");
+                    errorMessage.AppendLine($"Source: {inner.Source}");
+                    errorMessage.AppendLine($"Stack Trace: {inner.StackTrace}");
+                    inner = inner.InnerException;
+                }
+
+                MessageBox.Show(errorMessage.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        // Method to convert an Image to a byte array
+        private byte[] ImageToByteArray(Image image)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                image.Save(ms, image.RawFormat);
+                return ms.ToArray();
             }
         }
 
         // Login LoginPage.cs
-        public bool AuthenticateUser(string username, string password)
+        public bool LoginAccount(string emailaddress, string password)
         {
             using (var context = new DataContext())
             {
                 // Retrieve the user from the database
-                var user = context.Users.FirstOrDefault(u => u.Username == username);
+                var user = context.Users.FirstOrDefault(u => u.EmailAddress == emailaddress);
                 if (user == null)
                 {
                     return false;
@@ -54,28 +96,38 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
                 return PasswordHasher.VerifyPassword(password, user.Salt, user.SaltedPassword);
             }
         }
-        
+
+        // Get User Job Position
+        public string GetUserJobPosition(string emailaddress)
+        {
+            using (var context = new DataContext())
+            {
+                var user = context.Users.FirstOrDefault(u => u.EmailAddress == emailaddress);
+                return user?.JobPosition;
+            }
+        }
+
         // Logout Form1.cs
-        public void Logout()
+        public void LogoutAccount()
         {
             // Implement logout logic if necessary (e.g., clear session, tokens, etc.)
         }
 
         // Update user information ProfilePage.cs
-        public void UpdateUser(User user)
+        public void EditProfile(User user)
         {
             using (var context = new DataContext())
             {
                 var existingUser = context.Users.FirstOrDefault(u => u.EmployeeNumber == user.EmployeeNumber);
                 if (existingUser != null)
                 {
-                    existingUser.Username = user.Username;
-                    existingUser.LastName = user.LastName;
-                    existingUser.FirstName = user.FirstName;
-                    existingUser.MiddleName = user.MiddleName;
+                    existingUser.EmployeeName = user.EmployeeName;
+                    existingUser.EmailAddress = user.EmailAddress;
+                    existingUser.Birthdate = user.Birthdate;
+                    existingUser.PhoneNumber = user.PhoneNumber;
                     existingUser.JobPosition = user.JobPosition;
-                    existingUser.Email = user.Email;
                     existingUser.Schedule = user.Schedule;
+                    // existingUser.ProfilePicture = user.ProfilePicture;
 
                     context.SaveChanges();
                 }
@@ -83,5 +135,3 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
         }
     }
 }
-
-

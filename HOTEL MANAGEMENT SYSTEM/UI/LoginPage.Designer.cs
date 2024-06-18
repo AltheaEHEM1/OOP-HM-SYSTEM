@@ -1,6 +1,6 @@
 ﻿namespace HOTEL_MANAGEMENT_SYSTEM
 {
-    partial class CreateAccount
+    partial class LoginPage
     {
         /// <summary>
         ///  Required designer variable.
@@ -34,12 +34,14 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateAccount));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             panel1 = new Panel();
             pictureBox3 = new PictureBox();
             label2 = new Label();
             label1 = new Label();
             panel2 = new Panel();
+            Createacc = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            label4 = new Label();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             LoginButton = new Guna.UI2.WinForms.Guna2Button();
             PasswordTextbox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -64,17 +66,19 @@
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(0, -1);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1605, 901);
+            panel1.Size = new Size(1404, 676);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.icons8_location_24;
-            pictureBox3.Location = new Point(60, 39);
+            pictureBox3.Location = new Point(52, 29);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(31, 29);
+            pictureBox3.Size = new Size(27, 22);
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
             // 
@@ -82,9 +86,9 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(60, 91);
+            label2.Location = new Point(52, 68);
             label2.Name = "label2";
-            label2.Size = new Size(81, 20);
+            label2.Size = new Size(65, 15);
             label2.TabIndex = 4;
             label2.Text = "Philippines";
             // 
@@ -92,30 +96,57 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(60, 71);
+            label1.Location = new Point(52, 53);
             label1.Name = "label1";
-            label1.Size = new Size(92, 20);
+            label1.Size = new Size(75, 15);
             label1.TabIndex = 3;
             label1.Text = "Quezon City.";
             // 
             // panel2
             // 
+            panel2.Controls.Add(Createacc);
+            panel2.Controls.Add(label4);
             panel2.Controls.Add(guna2HtmlLabel1);
             panel2.Controls.Add(LoginButton);
             panel2.Controls.Add(PasswordTextbox);
             panel2.Controls.Add(Username);
             panel2.Controls.Add(label3);
-            panel2.Location = new Point(1074, 146);
+            panel2.Location = new Point(940, 110);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(438, 385);
+            panel2.Size = new Size(383, 289);
             panel2.TabIndex = 2;
+            // 
+            // Createacc
+            // 
+            Createacc.BackColor = Color.Transparent;
+            Createacc.Font = new Font("Century Gothic", 6F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Createacc.Location = new Point(228, 266);
+            Createacc.Margin = new Padding(3, 2, 3, 2);
+            Createacc.Name = "Createacc";
+            Createacc.Size = new Size(42, 14);
+            Createacc.TabIndex = 6;
+            Createacc.Text = "Click here";
+            Createacc.Click += Createacc_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Century Gothic", 6F);
+            label4.Location = new Point(118, 266);
+            label4.Name = "label4";
+            label4.Size = new Size(102, 12);
+            label4.TabIndex = 5;
+            label4.Text = "Don't have an account?";
             // 
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel1.ForeColor = Color.Black;
-            guna2HtmlLabel1.Location = new Point(92, 109);
+            guna2HtmlLabel1.Location = new Point(80, 82);
+            guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(3, 2);
             guna2HtmlLabel1.TabIndex = 4;
@@ -133,10 +164,11 @@
             LoginButton.FillColor = Color.FromArgb(214, 164, 38);
             LoginButton.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LoginButton.ForeColor = Color.White;
-            LoginButton.Location = new Point(135, 294);
+            LoginButton.Location = new Point(118, 220);
+            LoginButton.Margin = new Padding(3, 2, 3, 2);
             LoginButton.Name = "LoginButton";
             LoginButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            LoginButton.Size = new Size(182, 45);
+            LoginButton.Size = new Size(159, 34);
             LoginButton.TabIndex = 3;
             LoginButton.Text = "Log in";
             LoginButton.Click += guna2Button1_Click;
@@ -156,15 +188,14 @@
             PasswordTextbox.Font = new Font("Segoe UI", 9F);
             PasswordTextbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             PasswordTextbox.IconLeft = Properties.Resources.icons8_password_24;
-            PasswordTextbox.Location = new Point(85, 201);
-            PasswordTextbox.Margin = new Padding(3, 4, 3, 4);
+            PasswordTextbox.Location = new Point(74, 151);
             PasswordTextbox.Name = "PasswordTextbox";
             PasswordTextbox.PasswordChar = '\0';
             PasswordTextbox.PlaceholderForeColor = Color.Gray;
             PasswordTextbox.PlaceholderText = "Password";
             PasswordTextbox.SelectedText = "";
             PasswordTextbox.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            PasswordTextbox.Size = new Size(286, 43);
+            PasswordTextbox.Size = new Size(250, 32);
             PasswordTextbox.TabIndex = 2;
             // 
             // Username
@@ -184,15 +215,14 @@
             Username.Font = new Font("Segoe UI", 9F);
             Username.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             Username.IconLeft = Properties.Resources.icons8_user_30__1_1;
-            Username.Location = new Point(85, 135);
-            Username.Margin = new Padding(3, 4, 3, 4);
+            Username.Location = new Point(74, 101);
             Username.Name = "Username";
             Username.PasswordChar = '\0';
             Username.PlaceholderForeColor = Color.Gray;
-            Username.PlaceholderText = "Username";
+            Username.PlaceholderText = "Email";
             Username.SelectedText = "";
             Username.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            Username.Size = new Size(286, 43);
+            Username.Size = new Size(250, 32);
             Username.TabIndex = 1;
             // 
             // label3
@@ -201,18 +231,19 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(120, 67);
+            label3.Location = new Point(105, 50);
             label3.Name = "label3";
-            label3.Size = new Size(222, 20);
+            label3.Size = new Size(179, 17);
             label3.TabIndex = 0;
             label3.Text = "Enter your credentials below.";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(713, 12);
+            pictureBox2.Location = new Point(624, 9);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(263, 143);
+            pictureBox2.Size = new Size(230, 107);
             pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -220,19 +251,21 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.FINAL__4_;
-            pictureBox1.Location = new Point(0, 182);
+            pictureBox1.Location = new Point(0, 136);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1602, 900);
+            pictureBox1.Size = new Size(1402, 675);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // LoginPage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1600, 900);
+            ClientSize = new Size(1278, 675);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "LoginPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -260,5 +293,8 @@
         private Guna.UI2.WinForms.Guna2TextBox PasswordTextbox;
         private Guna.UI2.WinForms.Guna2Button LoginButton;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        //private Label CreateAccclick;
+        private Label label4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Createacc;
     }
 }

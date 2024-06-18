@@ -15,11 +15,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Utilities
                 {
                     // Ensure database and tables are created
                     context.Database.EnsureCreated();
+                    MessageBox.Show("Created Successfully", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

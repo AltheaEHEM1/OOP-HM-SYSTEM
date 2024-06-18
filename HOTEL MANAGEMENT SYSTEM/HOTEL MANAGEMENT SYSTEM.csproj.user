@@ -13,7 +13,7 @@
     <Compile Update="UI\ContactInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UI\CreateAccount.cs">
+    <Compile Update="UI\CreateAccountForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\Dashboard.cs">
@@ -23,6 +23,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Form_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Form_receptionist.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\log.cs">

@@ -1,50 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\",
+  "WorkspaceRootPath": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\new folder\\hotel management system\\utilities\\paymongo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:utilities\\paymongo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\new folder\\hotel management system\\utilities\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:utilities\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\new folder\\hotel management system\\ui\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\new folder\\hotel management system\\models\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\new folder\\hotel management system\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\new folder\\hotel management system\\ui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\new folder\\hotel management system\\models\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\new folder\\hotel management system\\ui\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\clean erice brancgh\\hotel management system\\models\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:models\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\new folder\\hotel management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\clean erice brancgh\\hotel management system\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\new folder\\hotel management system\\ui\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|c:\\users\\erice\\onedrive\\documents\\erice\\all programming\\bsit-2-2\\c# - oop\\clean erice brancgh\\hotel management system\\ui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\ui\\createaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3354A4A8-45D7-4412-8E3A-9B860E710DEE}|HOTEL MANAGEMENT SYSTEM.csproj|solutionrelative:ui\\createaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,8 +29,8 @@
       "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
-          "DockedWidth": 141,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 91,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,150 +50,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Paymongo.cs",
-              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Utilities\\Paymongo.cs",
-              "RelativeDocumentMoniker": "Utilities\\Paymongo.cs",
-              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Utilities\\Paymongo.cs*",
-              "RelativeToolTip": "Utilities\\Paymongo.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T08:46:22.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginTest.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginTest.cs",
-              "RelativeDocumentMoniker": "UI\\LoginTest.cs",
-              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginTest.cs [Design]*",
-              "RelativeToolTip": "UI\\LoginTest.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T08:35:20.567Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LoginTest.cs",
-              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Models\\LoginTest.cs",
-              "RelativeDocumentMoniker": "Models\\LoginTest.cs",
-              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Models\\LoginTest.cs",
-              "RelativeToolTip": "Models\\LoginTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAyAAAA",
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginPage.cs",
+              "RelativeDocumentMoniker": "UI\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginPage.cs",
+              "RelativeToolTip": "UI\\LoginPage.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAgwFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T08:29:49.579Z",
+              "WhenOpened": "2024-06-10T10:58:30.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Utilities\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "Utilities\\PasswordHasher.cs",
-              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Utilities\\PasswordHasher.cs",
-              "RelativeToolTip": "Utilities\\PasswordHasher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\Models\\User.cs*",
+              "RelativeToolTip": "Models\\User.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T08:27:42.737Z",
+              "WhenOpened": "2024-06-17T12:44:10.719Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwC4AAAAtAAAA",
+              "Title": "CreateAccountForm.cs",
+              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\UI\\CreateAccountForm.cs",
+              "RelativeDocumentMoniker": "UI\\CreateAccountForm.cs",
+              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\UI\\CreateAccountForm.cs",
+              "RelativeToolTip": "UI\\CreateAccountForm.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAcwEMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T08:10:04.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginPage.cs",
-              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginPage.cs",
-              "RelativeDocumentMoniker": "UI\\LoginPage.cs",
-              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\UI\\LoginPage.cs",
-              "RelativeToolTip": "UI\\LoginPage.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA5wD0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T03:00:17.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CreateAccount.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\UI\\CreateAccount.cs",
-              "RelativeDocumentMoniker": "UI\\CreateAccount.cs",
-              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\UI\\CreateAccount.cs [Design]",
-              "RelativeToolTip": "UI\\CreateAccount.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T08:12:11.334Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateAccount.cs",
-              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\UI\\CreateAccount.cs",
-              "RelativeDocumentMoniker": "UI\\CreateAccount.cs",
-              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\UI\\CreateAccount.cs",
-              "RelativeToolTip": "UI\\CreateAccount.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACgAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T06:39:50.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T06:05:27.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T07:40:59.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Models\\DataContext.cs",
-              "RelativeDocumentMoniker": "Models\\DataContext.cs",
-              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\New folder\\HOTEL MANAGEMENT SYSTEM\\Models\\DataContext.cs",
-              "RelativeToolTip": "Models\\DataContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T04:38:53.829Z",
+              "WhenOpened": "2024-06-17T11:23:17.254Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 344,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 191,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -226,6 +100,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\Models\\DataContext.cs",
+              "RelativeDocumentMoniker": "Models\\DataContext.cs",
+              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\Models\\DataContext.cs",
+              "RelativeToolTip": "Models\\DataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T03:55:45.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\erice\\OneDrive\\Documents\\Erice\\ALL PROGRAMMING\\BSIT-2-2\\C# - OOP\\clean erice brancgh\\HOTEL MANAGEMENT SYSTEM\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T12:45:24.895Z",
+              "EditorCaption": ""
             }
           ]
         }

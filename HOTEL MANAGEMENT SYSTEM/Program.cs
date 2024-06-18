@@ -1,3 +1,7 @@
+using HOTEL_MANAGEMENT_SYSTEM.UI;
+using HOTEL_MANAGEMENT_SYSTEM.Models;
+using HOTEL_MANAGEMENT_SYSTEM.Utilities;
+
 namespace HOTEL_MANAGEMENT_SYSTEM
 {
     internal static class Program
@@ -17,12 +21,16 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             {
                 // database schema is created if not exists
                 context.Database.EnsureCreated();
+                MessageBox.Show("Created Successfully", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            DatabaseHelper.CreateDatabaseIfNotExists();
+
 
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Login());
+            Application.Run(new LoginPage());
 
         }
     }

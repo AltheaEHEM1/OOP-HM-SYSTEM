@@ -154,4 +154,7 @@
   <data name="headerpic-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\headerpic-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="defaultprofilepicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\default-avatar-icon-of-social-media-user-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
