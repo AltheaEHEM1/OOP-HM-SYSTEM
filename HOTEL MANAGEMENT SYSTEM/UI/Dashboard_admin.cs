@@ -11,7 +11,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             InitializeComponent();
             InitializeHoverEffects();
-            GuestDemo uc = new GuestDemo();
+            Guestdemographics_db uc = new Guestdemographics_db();
             addUserControl(uc);
         }
 
@@ -33,19 +33,19 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void Guestbutton_Click(object sender, EventArgs e)
         {
-            GuestDemo uc = new GuestDemo();
+            Guestdemographics_db uc = new Guestdemographics_db();
             addUserControl(uc);
         }
 
         private void Ocupancyratebutton_Click(object sender, EventArgs e)
         {
-            OccupancyRate uc = new OccupancyRate();
+            OccupancyRate_db uc = new OccupancyRate_db();
             addUserControl(uc);
         }
 
         private void Revenuebutton_Click(object sender, EventArgs e)
         {
-            Revenue uc = new Revenue();
+            Revenue_db uc = new Revenue_db();
             addUserControl(uc);
         }
 

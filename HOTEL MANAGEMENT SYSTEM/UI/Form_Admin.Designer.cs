@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Headerpanelforformadmin = new Guna.UI2.WinForms.Guna2Panel();
             locationpic = new PictureBox();
             QCTEXT = new Label();
             philtext = new Label();
             logoheader_admin = new PictureBox();
             profilegroup = new Guna.UI2.WinForms.Guna2GroupBox();
-            label1 = new Label();
+            label1name = new Label();
             labelemail = new Label();
             circilephotoprofile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             labelname = new Label();
@@ -72,11 +72,11 @@
             Headerpanelforformadmin.Controls.Add(QCTEXT);
             Headerpanelforformadmin.Controls.Add(philtext);
             Headerpanelforformadmin.Controls.Add(logoheader_admin);
-            Headerpanelforformadmin.CustomizableEdges = customizableEdges1;
+            Headerpanelforformadmin.CustomizableEdges = customizableEdges14;
             Headerpanelforformadmin.Dock = DockStyle.Top;
             Headerpanelforformadmin.Location = new Point(0, 0);
             Headerpanelforformadmin.Name = "Headerpanelforformadmin";
-            Headerpanelforformadmin.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            Headerpanelforformadmin.ShadowDecoration.CustomizableEdges = customizableEdges15;
             Headerpanelforformadmin.Size = new Size(1440, 141);
             Headerpanelforformadmin.TabIndex = 0;
             // 
@@ -128,33 +128,35 @@
             profilegroup.BorderColor = Color.White;
             profilegroup.BorderRadius = 20;
             profilegroup.BorderThickness = 2;
-            profilegroup.Controls.Add(label1);
+            profilegroup.Controls.Add(label1name);
             profilegroup.Controls.Add(labelemail);
             profilegroup.Controls.Add(circilephotoprofile);
             profilegroup.Controls.Add(labelname);
             profilegroup.CustomBorderColor = Color.White;
             profilegroup.CustomBorderThickness = new Padding(4);
-            profilegroup.CustomizableEdges = customizableEdges4;
+            profilegroup.CustomizableEdges = customizableEdges17;
             profilegroup.FillColor = Color.Transparent;
             profilegroup.Font = new Font("Segoe UI", 9F);
             profilegroup.ForeColor = Color.FromArgb(125, 137, 149);
             profilegroup.Location = new Point(1156, 9);
             profilegroup.Name = "profilegroup";
-            profilegroup.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            profilegroup.ShadowDecoration.CustomizableEdges = customizableEdges18;
             profilegroup.Size = new Size(272, 68);
             profilegroup.TabIndex = 15;
+            profilegroup.Click += profilegroup_Click;
             // 
-            // label1
+            // label1name
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(87, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(156, 17);
-            label1.TabIndex = 15;
-            label1.Text = "Miyuki Mharie Parocha ";
+            label1name.AutoSize = true;
+            label1name.BackColor = Color.Transparent;
+            label1name.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1name.ForeColor = Color.White;
+            label1name.Location = new Point(87, 17);
+            label1name.Name = "label1name";
+            label1name.Size = new Size(156, 17);
+            label1name.TabIndex = 15;
+            label1name.Text = "Miyuki Mharie Parocha ";
+            label1name.Click += label1_Click;
             // 
             // labelemail
             // 
@@ -166,6 +168,7 @@
             labelemail.Size = new Size(175, 17);
             labelemail.TabIndex = 1;
             labelemail.Text = "miyukimharie@gmail.com";
+            labelemail.Click += labelemail_Click;
             // 
             // circilephotoprofile
             // 
@@ -173,12 +176,13 @@
             circilephotoprofile.ImageRotate = 0F;
             circilephotoprofile.Location = new Point(21, 5);
             circilephotoprofile.Name = "circilephotoprofile";
-            circilephotoprofile.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            circilephotoprofile.ShadowDecoration.CustomizableEdges = customizableEdges16;
             circilephotoprofile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             circilephotoprofile.Size = new Size(60, 55);
             circilephotoprofile.SizeMode = PictureBoxSizeMode.StretchImage;
             circilephotoprofile.TabIndex = 2;
             circilephotoprofile.TabStop = false;
+            circilephotoprofile.Click += circilephotoprofile_Click;
             // 
             // labelname
             // 
@@ -213,7 +217,7 @@
             Reports_Button.CheckedState.CustomBorderColor = Color.FromArgb(119, 85, 50);
             Reports_Button.CheckedState.FillColor = Color.FromArgb(100, 223, 182, 89);
             Reports_Button.CustomBorderThickness = new Padding(0, 5, 0, 0);
-            Reports_Button.CustomizableEdges = customizableEdges6;
+            Reports_Button.CustomizableEdges = customizableEdges19;
             Reports_Button.DisabledState.BorderColor = Color.Yellow;
             Reports_Button.DisabledState.CustomBorderColor = Color.Lime;
             Reports_Button.DisabledState.FillColor = Color.Cyan;
@@ -225,7 +229,7 @@
             Reports_Button.HoverState.FillColor = Color.FromArgb(115, 115, 115, 90);
             Reports_Button.Location = new Point(600, 3);
             Reports_Button.Name = "Reports_Button";
-            Reports_Button.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            Reports_Button.ShadowDecoration.CustomizableEdges = customizableEdges20;
             Reports_Button.Size = new Size(200, 77);
             Reports_Button.TabIndex = 3;
             Reports_Button.Text = "REPORTS";
@@ -237,7 +241,7 @@
             Transactions_Button.CheckedState.CustomBorderColor = Color.FromArgb(119, 85, 50);
             Transactions_Button.CheckedState.FillColor = Color.FromArgb(100, 223, 182, 89);
             Transactions_Button.CustomBorderThickness = new Padding(0, 5, 0, 0);
-            Transactions_Button.CustomizableEdges = customizableEdges8;
+            Transactions_Button.CustomizableEdges = customizableEdges21;
             Transactions_Button.DisabledState.BorderColor = Color.Yellow;
             Transactions_Button.DisabledState.CustomBorderColor = Color.Lime;
             Transactions_Button.DisabledState.FillColor = Color.Cyan;
@@ -249,7 +253,7 @@
             Transactions_Button.HoverState.FillColor = Color.FromArgb(115, 115, 115, 90);
             Transactions_Button.Location = new Point(400, 3);
             Transactions_Button.Name = "Transactions_Button";
-            Transactions_Button.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            Transactions_Button.ShadowDecoration.CustomizableEdges = customizableEdges22;
             Transactions_Button.Size = new Size(200, 77);
             Transactions_Button.TabIndex = 3;
             Transactions_Button.Text = "TRANSACTIONS";
@@ -261,7 +265,7 @@
             Rooms_Button.CheckedState.CustomBorderColor = Color.FromArgb(119, 85, 50);
             Rooms_Button.CheckedState.FillColor = Color.FromArgb(100, 223, 182, 89);
             Rooms_Button.CustomBorderThickness = new Padding(0, 5, 0, 0);
-            Rooms_Button.CustomizableEdges = customizableEdges10;
+            Rooms_Button.CustomizableEdges = customizableEdges23;
             Rooms_Button.DisabledState.BorderColor = Color.Yellow;
             Rooms_Button.DisabledState.CustomBorderColor = Color.Lime;
             Rooms_Button.DisabledState.FillColor = Color.Cyan;
@@ -273,7 +277,7 @@
             Rooms_Button.HoverState.FillColor = Color.FromArgb(115, 115, 115, 90);
             Rooms_Button.Location = new Point(200, 3);
             Rooms_Button.Name = "Rooms_Button";
-            Rooms_Button.ShadowDecoration.CustomizableEdges = customizableEdges11;
+            Rooms_Button.ShadowDecoration.CustomizableEdges = customizableEdges24;
             Rooms_Button.Size = new Size(200, 77);
             Rooms_Button.TabIndex = 3;
             Rooms_Button.Text = "ROOMS";
@@ -286,7 +290,7 @@
             Dashboard_button.CheckedState.CustomBorderColor = Color.FromArgb(119, 85, 50);
             Dashboard_button.CheckedState.FillColor = Color.FromArgb(100, 223, 182, 89);
             Dashboard_button.CustomBorderThickness = new Padding(0, 5, 0, 0);
-            Dashboard_button.CustomizableEdges = customizableEdges12;
+            Dashboard_button.CustomizableEdges = customizableEdges25;
             Dashboard_button.DisabledState.BorderColor = Color.Yellow;
             Dashboard_button.DisabledState.CustomBorderColor = Color.Lime;
             Dashboard_button.DisabledState.FillColor = Color.Cyan;
@@ -298,7 +302,7 @@
             Dashboard_button.HoverState.FillColor = Color.FromArgb(115, 115, 115, 90);
             Dashboard_button.Location = new Point(0, 3);
             Dashboard_button.Name = "Dashboard_button";
-            Dashboard_button.ShadowDecoration.CustomizableEdges = customizableEdges13;
+            Dashboard_button.ShadowDecoration.CustomizableEdges = customizableEdges26;
             Dashboard_button.Size = new Size(200, 77);
             Dashboard_button.TabIndex = 2;
             Dashboard_button.Text = "DASHBOARD";
@@ -353,7 +357,7 @@
         private Label labelemail;
         private Guna.UI2.WinForms.Guna2CirclePictureBox circilephotoprofile;
         private Label labelname;
-        private Label label1;
+        private Label label1name;
         private PictureBox logoheader_admin;
     }
 }

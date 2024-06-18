@@ -33,7 +33,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void Dashboard_button_Click(object sender, EventArgs e)
         {
-            Dashboard_admin  uc = new Dashboard_admin();
+            Dashboard_admin uc = new Dashboard_admin();
             addUserControl(uc);
         }
 
@@ -45,7 +45,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void Transactions_Button_Click(object sender, EventArgs e)
         {
-            Transactions_admin uc = new Transactions_admin();
+            Transactions uc = new Transactions();
             addUserControl(uc);
         }
 
@@ -53,6 +53,30 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             Reports_admin uc = new Reports_admin();
             addUserControl(uc);
+        }
+
+        private void circilephotoprofile_Click(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp();
+            profilePopUp.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp();
+            profilePopUp.Show();
+        }
+
+        private void labelemail_Click(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp();
+            profilePopUp.Show();
+        }
+
+        private void profilegroup_Click(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp();
+            profilePopUp.Show();
         }
     }
 }

@@ -59,7 +59,7 @@
             panelforfirsttable.Dock = DockStyle.Top;
             panelforfirsttable.Location = new Point(0, 0);
             panelforfirsttable.Name = "panelforfirsttable";
-            panelforfirsttable.Size = new Size(1201, 124);
+            panelforfirsttable.Size = new Size(1045, 181);
             panelforfirsttable.TabIndex = 6;
             // 
             // gridviewtable1
@@ -68,7 +68,7 @@
             gridviewtable1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(13, 22, 29);
-            dataGridViewCellStyle2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = Color.White;
             dataGridViewCellStyle2.SelectionForeColor = Color.Black;
@@ -92,7 +92,7 @@
             gridviewtable1.Name = "gridviewtable1";
             gridviewtable1.RowHeadersVisible = false;
             gridviewtable1.RowHeadersWidth = 51;
-            gridviewtable1.Size = new Size(1201, 124);
+            gridviewtable1.Size = new Size(1045, 181);
             gridviewtable1.TabIndex = 0;
             gridviewtable1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             gridviewtable1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -150,7 +150,7 @@
             gridviewtable2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = Color.FromArgb(13, 22, 29);
-            dataGridViewCellStyle5.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle5.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle5.ForeColor = Color.White;
             dataGridViewCellStyle5.SelectionBackColor = Color.White;
             dataGridViewCellStyle5.SelectionForeColor = Color.Black;
@@ -170,11 +170,11 @@
             gridviewtable2.Dock = DockStyle.Fill;
             gridviewtable2.Enabled = false;
             gridviewtable2.GridColor = Color.FromArgb(231, 229, 255);
-            gridviewtable2.Location = new Point(0, 124);
+            gridviewtable2.Location = new Point(0, 181);
             gridviewtable2.Name = "gridviewtable2";
             gridviewtable2.RowHeadersVisible = false;
             gridviewtable2.RowHeadersWidth = 51;
-            gridviewtable2.Size = new Size(1201, 235);
+            gridviewtable2.Size = new Size(1045, 244);
             gridviewtable2.TabIndex = 7;
             gridviewtable2.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             gridviewtable2.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -240,7 +240,7 @@
             Controls.Add(gridviewtable2);
             Controls.Add(panelforfirsttable);
             Name = "Revenue";
-            Size = new Size(1201, 359);
+            Size = new Size(1045, 425);
             panelforfirsttable.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)gridviewtable1).EndInit();
             ((System.ComponentModel.ISupportInitialize)gridviewtable2).EndInit();

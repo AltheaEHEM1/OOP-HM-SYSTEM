@@ -53,7 +53,7 @@
             gridviewguesdemo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(13, 22, 29);
-            dataGridViewCellStyle2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
@@ -86,7 +86,7 @@
             gridviewguesdemo.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             gridviewguesdemo.RowHeadersVisible = false;
             gridviewguesdemo.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
-            gridviewguesdemo.Size = new Size(1211, 405);
+            gridviewguesdemo.Size = new Size(1045, 425);
             gridviewguesdemo.TabIndex = 0;
             gridviewguesdemo.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             gridviewguesdemo.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -109,6 +109,7 @@
             gridviewguesdemo.ThemeStyle.RowsStyle.Height = 29;
             gridviewguesdemo.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             gridviewguesdemo.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            gridviewguesdemo.CellContentClick += gridviewguesdemo_CellContentClick;
             // 
             // Classification
             // 
@@ -142,7 +143,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(gridviewguesdemo);
             Name = "GuestDemo";
-            Size = new Size(1211, 405);
+            Size = new Size(1045, 425);
             ((System.ComponentModel.ISupportInitialize)gridviewguesdemo).EndInit();
             ResumeLayout(false);
         }
@@ -154,7 +155,7 @@
         private DataGridViewTextBoxColumn Classification;
         private DataGridViewTextBoxColumn Variables;
         private DataGridViewTextBoxColumn Frequency;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+       // private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse radiusdown;
     }
 }

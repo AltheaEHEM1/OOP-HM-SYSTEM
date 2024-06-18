@@ -29,19 +29,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_admin));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             reportsummarytext = new Label();
             Newbookingspanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             labellnum = new Label();
@@ -60,6 +60,7 @@
             label3 = new Label();
             label4 = new Label();
             pictureBox2 = new PictureBox();
+            sqliteCommand1 = new Microsoft.Data.Sqlite.SqliteCommand();
             Newbookingspanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Iconbooking).BeginInit();
             transactionpaneldash.SuspendLayout();
@@ -86,14 +87,14 @@
             Newbookingspanel.Controls.Add(labellnum);
             Newbookingspanel.Controls.Add(Newbookingstext);
             Newbookingspanel.Controls.Add(Iconbooking);
-            Newbookingspanel.CustomizableEdges = customizableEdges13;
+            Newbookingspanel.CustomizableEdges = customizableEdges1;
             Newbookingspanel.FillColor = Color.FromArgb(13, 29, 20);
             Newbookingspanel.FillColor2 = Color.FromArgb(13, 29, 20);
             Newbookingspanel.FillColor3 = Color.FromArgb(16, 19, 20);
             Newbookingspanel.FillColor4 = Color.FromArgb(16, 19, 20);
             Newbookingspanel.Location = new Point(203, 32);
             Newbookingspanel.Name = "Newbookingspanel";
-            Newbookingspanel.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            Newbookingspanel.ShadowDecoration.CustomizableEdges = customizableEdges2;
             Newbookingspanel.Size = new Size(268, 82);
             Newbookingspanel.TabIndex = 1;
             // 
@@ -144,7 +145,7 @@
             Guestbutton.BorderRadius = 10;
             Guestbutton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             Guestbutton.Checked = true;
-            Guestbutton.CustomizableEdges = customizableEdges15;
+            Guestbutton.CustomizableEdges = customizableEdges3;
             Guestbutton.DisabledState.BorderColor = Color.DarkGray;
             Guestbutton.DisabledState.CustomBorderColor = Color.DarkGray;
             Guestbutton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -156,7 +157,7 @@
             Guestbutton.HoverState.ForeColor = Color.White;
             Guestbutton.Location = new Point(115, 169);
             Guestbutton.Name = "Guestbutton";
-            Guestbutton.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            Guestbutton.ShadowDecoration.CustomizableEdges = customizableEdges4;
             Guestbutton.Size = new Size(209, 46);
             Guestbutton.TabIndex = 5;
             Guestbutton.Text = "Guest Demographics";
@@ -168,7 +169,7 @@
             Ocupancyratebutton.BorderColor = Color.Transparent;
             Ocupancyratebutton.BorderRadius = 10;
             Ocupancyratebutton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            Ocupancyratebutton.CustomizableEdges = customizableEdges17;
+            Ocupancyratebutton.CustomizableEdges = customizableEdges5;
             Ocupancyratebutton.DisabledState.BorderColor = Color.DarkGray;
             Ocupancyratebutton.DisabledState.CustomBorderColor = Color.DarkGray;
             Ocupancyratebutton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -180,7 +181,7 @@
             Ocupancyratebutton.HoverState.ForeColor = Color.White;
             Ocupancyratebutton.Location = new Point(330, 169);
             Ocupancyratebutton.Name = "Ocupancyratebutton";
-            Ocupancyratebutton.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            Ocupancyratebutton.ShadowDecoration.CustomizableEdges = customizableEdges6;
             Ocupancyratebutton.Size = new Size(209, 46);
             Ocupancyratebutton.TabIndex = 6;
             Ocupancyratebutton.Text = "Occupancy Rate";
@@ -192,7 +193,7 @@
             Revenuebutton.BorderColor = Color.Transparent;
             Revenuebutton.BorderRadius = 10;
             Revenuebutton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            Revenuebutton.CustomizableEdges = customizableEdges19;
+            Revenuebutton.CustomizableEdges = customizableEdges7;
             Revenuebutton.DisabledState.BorderColor = Color.DarkGray;
             Revenuebutton.DisabledState.CustomBorderColor = Color.DarkGray;
             Revenuebutton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -204,7 +205,7 @@
             Revenuebutton.HoverState.ForeColor = Color.White;
             Revenuebutton.Location = new Point(545, 169);
             Revenuebutton.Name = "Revenuebutton";
-            Revenuebutton.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            Revenuebutton.ShadowDecoration.CustomizableEdges = customizableEdges8;
             Revenuebutton.Size = new Size(209, 46);
             Revenuebutton.TabIndex = 7;
             Revenuebutton.Text = "Revenue";
@@ -216,6 +217,7 @@
             panelreportsummary.Name = "panelreportsummary";
             panelreportsummary.Size = new Size(1211, 434);
             panelreportsummary.TabIndex = 8;
+            //panelreportsummary.Paint += panelreportsummary_Paint;
             // 
             // transactionpaneldash
             // 
@@ -224,14 +226,14 @@
             transactionpaneldash.Controls.Add(label1);
             transactionpaneldash.Controls.Add(transactionpanel);
             transactionpaneldash.Controls.Add(pictureBox1);
-            transactionpaneldash.CustomizableEdges = customizableEdges21;
+            transactionpaneldash.CustomizableEdges = customizableEdges9;
             transactionpaneldash.FillColor = Color.FromArgb(13, 29, 20);
             transactionpaneldash.FillColor2 = Color.FromArgb(13, 29, 20);
             transactionpaneldash.FillColor3 = Color.FromArgb(16, 19, 20);
             transactionpaneldash.FillColor4 = Color.FromArgb(16, 19, 20);
             transactionpaneldash.Location = new Point(586, 32);
             transactionpaneldash.Name = "transactionpaneldash";
-            transactionpaneldash.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            transactionpaneldash.ShadowDecoration.CustomizableEdges = customizableEdges10;
             transactionpaneldash.Size = new Size(268, 82);
             transactionpaneldash.TabIndex = 9;
             // 
@@ -274,14 +276,14 @@
             Staynowpanel.Controls.Add(label3);
             Staynowpanel.Controls.Add(label4);
             Staynowpanel.Controls.Add(pictureBox2);
-            Staynowpanel.CustomizableEdges = customizableEdges23;
+            Staynowpanel.CustomizableEdges = customizableEdges11;
             Staynowpanel.FillColor = Color.FromArgb(13, 29, 20);
             Staynowpanel.FillColor2 = Color.FromArgb(13, 29, 20);
             Staynowpanel.FillColor3 = Color.FromArgb(16, 19, 20);
             Staynowpanel.FillColor4 = Color.FromArgb(16, 19, 20);
             Staynowpanel.Location = new Point(954, 32);
             Staynowpanel.Name = "Staynowpanel";
-            Staynowpanel.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            Staynowpanel.ShadowDecoration.CustomizableEdges = customizableEdges12;
             Staynowpanel.Size = new Size(268, 82);
             Staynowpanel.TabIndex = 10;
             // 
@@ -316,6 +318,13 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
+            // 
+            // sqliteCommand1
+            // 
+            sqliteCommand1.CommandTimeout = 30;
+            sqliteCommand1.Connection = null;
+            sqliteCommand1.Transaction = null;
+            sqliteCommand1.UpdatedRowSource = System.Data.UpdateRowSource.None;
             // 
             // Dashboard_admin
             // 
@@ -365,5 +374,6 @@
         private Label label3;
         private Label label4;
         private PictureBox pictureBox2;
+        private Microsoft.Data.Sqlite.SqliteCommand sqliteCommand1;
     }
 }

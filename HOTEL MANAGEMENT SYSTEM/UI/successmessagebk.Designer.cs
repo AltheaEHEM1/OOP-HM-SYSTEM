@@ -47,10 +47,10 @@
             // LABELBOOK
             // 
             LABELBOOK.AutoSize = true;
-            LABELBOOK.Font = new Font("Century Schoolbook", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LABELBOOK.Location = new Point(143, 249);
+            LABELBOOK.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LABELBOOK.Location = new Point(154, 249);
             LABELBOOK.Name = "LABELBOOK";
-            LABELBOOK.Size = new Size(322, 34);
+            LABELBOOK.Size = new Size(300, 34);
             LABELBOOK.TabIndex = 1;
             LABELBOOK.Text = "Successfully Booked!";
             // 

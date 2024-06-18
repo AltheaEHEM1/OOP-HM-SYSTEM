@@ -31,9 +31,10 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
-        private void Deleteroom_Load(object sender, EventArgs e)
+        private void deletebutton_Click(object sender, EventArgs e)
         {
-
+            DeletePassword deletePassword = new DeletePassword();
+            deletePassword.Show();
         }
     }
 }

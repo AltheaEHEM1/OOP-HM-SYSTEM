@@ -1,18 +1,25 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.Models
 {
     public class User
     {
-        [Key] // indication that this is primary key
-        public string EmployeeNumber { get; set; }
-        public string LastName { get; set; }
-        public string FirstName { get; set; }
-        public string MiddleName { get; set; }
-        public string JobPosition { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string Schedule { get; set; }
+        // Necessary for Login
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int EmployeeNumber { get; set; }
+        public string? EmployeeName { get; set; }
+        public string? EmailAddress { get; set; }
+        public string? Birthdate { get; set; }
+        public string? Salt { get; set; }
+        public string? SaltedPassword { get; set; }
+        public DateTime CreatedAt { get; set; }
 
+
+        // For profile purposes    
+        public string? JobPosition { get; set; }
+        public string? Schedule { get; set; }
+        public byte[]? ProfilePicture { get; set; }
     }
 }

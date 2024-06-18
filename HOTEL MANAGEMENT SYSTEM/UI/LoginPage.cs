@@ -1,11 +1,7 @@
-using System.Reflection.Metadata;
+using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using HOTEL_MANAGEMENT_SYSTEM.UI;
+using HOTEL_MANAGEMENT_SYSTEM.Utilities;
 using System.Runtime.InteropServices;
-using System.IO;
-using System.Drawing.Text;
-using System.Reflection;
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using Guna.UI2.WinForms; // Add this namespace
 
 namespace HOTEL_MANAGEMENT_SYSTEM
 {
@@ -29,13 +25,79 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             panel2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel2.Width, panel2.Height, 20, 20));
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            Form1 form1 = new Form1();
-            form1.Show();
 
-            // Hide the LoginPage form
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void Createacc_Click(object sender, EventArgs e)
+        {
+            CreateAccountForm createAccountform = new CreateAccountForm();
+            createAccountform.Show();
+
             this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void login_Click(object sender, EventArgs e)
+        {
+            string emailaddress = Username.Text;
+
+            string password = PasswordTextbox.Text;
+
+            var controller = new UserController();
+
+            if (string.IsNullOrWhiteSpace(emailaddress) || string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("All fields must be filled out.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (controller.LoginAccount(emailaddress, password))
+            {
+                string jobPosition = controller.GetUserJobPosition(emailaddress);
+
+                if (jobPosition != null)
+                {
+                    if (jobPosition.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                    {
+                        Form_Admin form_admin = new Form_Admin();
+                        form_admin.Show();
+                    }
+                    else if (jobPosition.Equals("Receptionist", StringComparison.OrdinalIgnoreCase))
+                    {
+                        Form_receptionist form_receptionist = new Form_receptionist();
+                        form_receptionist.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid user role.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    var utilities = new CurrentUser();
+
+                    utilities.GetCurrentUserDetails(emailaddress);
+
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Failed to retrieve user role.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Email or Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ShowPassBttn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -47,7 +47,7 @@
             gridviewoccupancy.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(13, 22, 29);
-            dataGridViewCellStyle2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = Color.White;
             dataGridViewCellStyle2.SelectionForeColor = Color.Black;
@@ -70,7 +70,7 @@
             gridviewoccupancy.Name = "gridviewoccupancy";
             gridviewoccupancy.RowHeadersVisible = false;
             gridviewoccupancy.RowHeadersWidth = 51;
-            gridviewoccupancy.Size = new Size(1211, 405);
+            gridviewoccupancy.Size = new Size(1045, 425);
             gridviewoccupancy.TabIndex = 0;
             gridviewoccupancy.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             gridviewoccupancy.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -129,7 +129,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(gridviewoccupancy);
             Name = "OccupancyRate";
-            Size = new Size(1211, 405);
+            Size = new Size(1045, 425);
             ((System.ComponentModel.ISupportInitialize)gridviewoccupancy).EndInit();
             ResumeLayout(false);
         }

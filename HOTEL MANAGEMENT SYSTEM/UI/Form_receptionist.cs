@@ -19,7 +19,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             addUserControl(uc);
         }
 
-        private void addUserControl(UserControl userControl)
+        public void addUserControl(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
             panelinformreceptionist_usercontrol.Controls.Clear();
@@ -38,19 +38,19 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void Transaction_button_recep_Click(object sender, EventArgs e)
         {
-            Transactions_recep uc = new Transactions_recep();
+            Transactions uc = new Transactions();
             addUserControl(uc);
         }
 
         private void Booknow_button_recep_Click(object sender, EventArgs e)
         {
-            Booknow_recep uc = new Booknow_recep();
+            Booknow uc = new Booknow();
             addUserControl(uc);
         }
 
         private void Reservation_button_recep_Click(object sender, EventArgs e)
         {
-            Reservations_recep uc = new Reservations_recep();
+            Reservations uc = new Reservations();
             addUserControl(uc);
         }
 
@@ -58,6 +58,30 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             Guest_recep uc = new Guest_recep();
             addUserControl(uc);
+        }
+
+        private void circilephotoprofile_Click(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp();
+            profilePopUp.Show();
+        }
+
+        private void label1name_Click(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp();
+            profilePopUp.Show();
+        }
+
+        private void labelemail_Click(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp();
+            profilePopUp.Show();
+        }
+
+        private void profilegroup_Click(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp();
+            profilePopUp.Show();
         }
     }
 }

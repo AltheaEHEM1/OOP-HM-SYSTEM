@@ -16,5 +16,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             InitializeComponent();
         }
+        private void ModifyButton_Click(object sender, EventArgs e)
+        {
+            ModifyGuest modifyGuest = new ModifyGuest();
+            modifyGuest.Show();
+            this.Hide();
+        }
     }
 }

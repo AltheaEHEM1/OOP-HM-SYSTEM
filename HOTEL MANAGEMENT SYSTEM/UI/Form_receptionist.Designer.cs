@@ -46,7 +46,7 @@
             logoheader_recep = new PictureBox();
             panel_navigation_transparent_recep = new Panel();
             profilegroup = new Guna.UI2.WinForms.Guna2GroupBox();
-            label1 = new Label();
+            label1name = new Label();
             labelemail = new Label();
             circilephotoprofile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             labelname = new Label();
@@ -139,7 +139,7 @@
             profilegroup.BorderColor = Color.White;
             profilegroup.BorderRadius = 20;
             profilegroup.BorderThickness = 2;
-            profilegroup.Controls.Add(label1);
+            profilegroup.Controls.Add(label1name);
             profilegroup.Controls.Add(labelemail);
             profilegroup.Controls.Add(circilephotoprofile);
             profilegroup.Controls.Add(labelname);
@@ -154,18 +154,20 @@
             profilegroup.ShadowDecoration.CustomizableEdges = customizableEdges3;
             profilegroup.Size = new Size(262, 68);
             profilegroup.TabIndex = 18;
+            profilegroup.Click += profilegroup_Click;
             // 
-            // label1
+            // label1name
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(87, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(156, 17);
-            label1.TabIndex = 16;
-            label1.Text = "Miyuki Mharie Parocha ";
+            label1name.AutoSize = true;
+            label1name.BackColor = Color.Transparent;
+            label1name.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1name.ForeColor = Color.White;
+            label1name.Location = new Point(87, 17);
+            label1name.Name = "label1name";
+            label1name.Size = new Size(156, 17);
+            label1name.TabIndex = 16;
+            label1name.Text = "Miyuki Mharie Parocha ";
+            label1name.Click += label1name_Click;
             // 
             // labelemail
             // 
@@ -177,6 +179,7 @@
             labelemail.Size = new Size(175, 17);
             labelemail.TabIndex = 1;
             labelemail.Text = "miyukimharie@gmail.com";
+            labelemail.Click += labelemail_Click;
             // 
             // circilephotoprofile
             // 
@@ -190,6 +193,7 @@
             circilephotoprofile.SizeMode = PictureBoxSizeMode.StretchImage;
             circilephotoprofile.TabIndex = 2;
             circilephotoprofile.TabStop = false;
+            circilephotoprofile.Click += circilephotoprofile_Click;
             // 
             // labelname
             // 
@@ -349,7 +353,7 @@
         private Label labelemail;
         private Guna.UI2.WinForms.Guna2CirclePictureBox circilephotoprofile;
         private Label labelname;
-        private Label label1;
+        private Label label1name;
         private Panel panelinformreceptionist_usercontrol;
     }
 }

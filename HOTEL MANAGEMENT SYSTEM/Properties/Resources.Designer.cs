@@ -83,9 +83,29 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap defaultprofilepicture {
+            get {
+                object obj = ResourceManager.GetObject("defaultprofilepicture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FINAL__4_ {
             get {
                 object obj = ResourceManager.GetObject("FINAL (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap headerpic {
+            get {
+                object obj = ResourceManager.GetObject("headerpic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +126,66 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Properties {
         internal static System.Drawing.Bitmap headerpic_removebg_preview1 {
             get {
                 object obj = ResourceManager.GetObject("headerpic-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_asterisk_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-asterisk-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_back_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-back-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_booking_100__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-booking-100 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_check_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-check-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_eye_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eye-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_hide_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-hide-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
