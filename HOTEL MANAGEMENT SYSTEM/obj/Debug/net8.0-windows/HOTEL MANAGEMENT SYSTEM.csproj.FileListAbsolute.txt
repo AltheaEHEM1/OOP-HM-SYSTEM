@@ -134,7 +134,54 @@ D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYST
 D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\ref\HOTEL MANAGEMENT SYSTEM.dll
 D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.log.resources
 D:\2NDYEAR\2ND SEM\Object Oriented Programming\OOP SYSTEM REPOSITORY\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.PaymentInfo.resources
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.exe
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.deps.json
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.runtimeconfig.json
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.pdb
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Guna.UI2.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Data.Sqlite.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\SQLitePCLRaw.batteries_v2.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\SQLitePCLRaw.core.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\System.Management.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.csproj.AssemblyReference.cache
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.DRselectroom.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.Properties.Resources.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.addroom.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.BookingSummary.resources
@@ -144,19 +191,22 @@ C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOT
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.CashPayment.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.ContactInfo.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.CreateAccount.resources
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.CreateAccountForm.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Dashboard.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Dashboard_admin.resources
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.DeletePassword.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Deleteroom.resources
-C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.DeluxeRoom.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.DeluxeRooms.resources
-C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Edit.resources
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.EditRoom.resources
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.ErrorPopUp.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.Form1.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Form_Admin.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Form_receptionist.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.GuestDemo.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Guest_recep.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.HeaderforBooking.resources
-C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.CreateAccount.resources
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.LoginPage.resources
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.ModifyGuest.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.OccupancyRate.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Reports_admin.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Reservations.resources
@@ -164,7 +214,8 @@ C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOT
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Revenue.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Rooms.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Rooms_admin.resources
-C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.SelectRoom.resources
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.SRSelectRoom.resources
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.SSelectRoom.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Standardroom.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.successmessagebk.resources
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL_MANAGEMENT_SYSTEM.UI.Suites.resources
@@ -178,3 +229,9 @@ C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOT
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.AssemblyInfo.cs
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.csproj.CoreCompileInputs.cache
 C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.sourcelink.json
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MA.0E65EEC8.Up2Date
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\refint\HOTEL MANAGEMENT SYSTEM.dll
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.pdb
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\HOTEL MANAGEMENT SYSTEM.genruntimeconfig.cache
+C:\OOP SYSTEM\OOP-HM-SYSTEM\HOTEL MANAGEMENT SYSTEM\obj\Debug\net8.0-windows\ref\HOTEL MANAGEMENT SYSTEM.dll

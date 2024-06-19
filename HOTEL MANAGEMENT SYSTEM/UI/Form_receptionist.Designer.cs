@@ -149,7 +149,7 @@
             profilegroup.FillColor = Color.Transparent;
             profilegroup.Font = new Font("Segoe UI", 9F);
             profilegroup.ForeColor = Color.FromArgb(125, 137, 149);
-            profilegroup.Location = new Point(1166, 3);
+            profilegroup.Location = new Point(1166, 9);
             profilegroup.Name = "profilegroup";
             profilegroup.ShadowDecoration.CustomizableEdges = customizableEdges3;
             profilegroup.Size = new Size(262, 68);

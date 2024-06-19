@@ -44,7 +44,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 
         }
 
-       
+
 
         private void Createacc_Click(object sender, EventArgs e)
         {
@@ -53,6 +53,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 
             // Hide the LoginPage form
             this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

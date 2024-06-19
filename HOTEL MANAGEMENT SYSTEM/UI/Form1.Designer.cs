@@ -56,12 +56,12 @@
             circilephotoprofile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             labelname = new Label();
             Transactions = new Guna.UI2.WinForms.Guna2Button();
-
+            /*
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             Transactions = new Guna.UI2.WinForms.Guna2Button();
             profilename = new Guna.UI2.WinForms.Guna2Button();
-
+            */
             Reservations = new Guna.UI2.WinForms.Guna2Button();
             Rooms = new Guna.UI2.WinForms.Guna2Button();
             Booknow = new Guna.UI2.WinForms.Guna2Button();
@@ -76,7 +76,7 @@
             profilegroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)circilephotoprofile).BeginInit();
 
-            ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
+           // ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
 
             SuspendLayout();
             // 
@@ -161,7 +161,8 @@
             logo.SizeMode = PictureBoxSizeMode.CenterImage;
             logo.TabIndex = 1;
             logo.TabStop = false;
-           pictureBox1.Image = Properties.Resources.headerpic_removebg_preview1;
+            /*
+            pictureBox1.Image = Properties.Resources.headerpic_removebg_preview1;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1600, 141);
@@ -169,7 +170,7 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             //pictureBox1.Click += pictureBox1_Click;
-
+            */
             // 
             // navigationbar
             // 
@@ -177,11 +178,11 @@
 
             navigationbar.Controls.Add(profilegroup);
 
-            navigationbar.Controls.Add(guna2Button2);
-            navigationbar.Controls.Add(guna2CirclePictureBox1);
+           // navigationbar.Controls.Add(guna2Button2);
+           // navigationbar.Controls.Add(guna2CirclePictureBox1);
 
             navigationbar.Controls.Add(Transactions);
-            navigationbar.Controls.Add(profilename);
+           // navigationbar.Controls.Add(profilename);
             navigationbar.Controls.Add(guna2Button1);
             navigationbar.Controls.Add(Reservations);
             navigationbar.Controls.Add(Rooms);
@@ -229,7 +230,7 @@
             labelemail.Text = "miyukimharie@gmail.com";
 
             // guna2Button2
-            // 
+            /*
             guna2Button2.BackColor = Color.Transparent;
             guna2Button2.BorderColor = Color.Transparent;
             guna2Button2.CustomizableEdges = customizableEdges1;
@@ -246,7 +247,7 @@
             guna2Button2.Size = new Size(193, 25);
             guna2Button2.TabIndex = 3;
             guna2Button2.Text = "miyukiMhanrie@gmail.com";
-
+            */
             // 
             // circilephotoprofile
             // 
@@ -274,7 +275,7 @@
             labelname.TabIndex = 0;
             labelname.Text = "Miyuki Mharie Parocha ";
             // 
-
+            /*
             guna2CirclePictureBox1.Image = Properties.Resources.profile;
             guna2CirclePictureBox1.ImageRotate = 0F;
             guna2CirclePictureBox1.Location = new Point(1135, 14);
@@ -285,7 +286,7 @@
             guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2CirclePictureBox1.TabIndex = 2;
             guna2CirclePictureBox1.TabStop = false;
-            // 
+            */
 
             // Transactions
             // 
@@ -323,7 +324,7 @@
             Transactions.Click += Transactions_Click_1;
             // 
             // profilename
-            // 
+            /*
             profilename.BackColor = Color.Transparent;
             profilename.BorderColor = Color.White;
             profilename.CustomizableEdges = customizableEdges6;
@@ -340,7 +341,7 @@
             profilename.Size = new Size(191, 25);
             profilename.TabIndex = 2;
             profilename.Text = "Miyuki Mharie Parocha ";
-            // 
+            */
             // guna2Button1
             // 
             guna2Button1.BackColor = Color.Transparent;
@@ -477,7 +478,7 @@
 
             Dashboard.ShadowDecoration.CustomizableEdges = customizableEdges15;
 
-            Dashboard.ShadowDecoration.CustomizableEdges = customizableEdges17;
+           // Dashboard.ShadowDecoration.CustomizableEdges = customizableEdges17;
 
             Dashboard.Size = new Size(200, 77);
             Dashboard.TabIndex = 3;
@@ -497,7 +498,7 @@
             panelContainer.Name = "panelContainer";
             panelContainer.Size = new Size(1440, 679);
             panelContainer.TabIndex = 4;
-            panelContainer.Paint += panelContainer_Paint;
+         //   panelContainer.Paint += panelContainer_Paint;
             // 
             // Form1
             // 
@@ -524,7 +525,7 @@
             profilegroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)circilephotoprofile).EndInit();
 
-            ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).EndInit();
+           // ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).EndInit();
 
             ResumeLayout(false);
         }

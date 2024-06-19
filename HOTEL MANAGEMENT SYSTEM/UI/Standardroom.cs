@@ -44,8 +44,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void Editbuttonstandard_Click(object sender, EventArgs e)
         {
-            Edit edit = new Edit();
-            edit.Show();
+            EditRoom editroom = new EditRoom();
+            editroom.Show();
         }
 
         private void deletebuttonstandard_Click(object sender, EventArgs e)

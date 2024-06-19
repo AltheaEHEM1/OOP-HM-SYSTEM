@@ -1,6 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="DRAddroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DREditRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DRselectroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SRAddroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SREditRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SuiteAddroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SuiteEditRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UI\addroom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -25,22 +46,37 @@
     <Compile Update="UI\CreateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI\CreateAccountErrorPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\CreateAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UI\Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UI\Dashboard_admin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UI\Deleteroom.cs">
+    <Compile Update="UI\DeletePassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UI\DeluxeRoom.cs">
+    <Compile Update="UI\Deleteroom.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\DeluxeRooms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UI\Edit.cs">
+    <Compile Update="UI\E-wallet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\EditRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\EmailErrorPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\ErrorPopUp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\Form1.cs">
@@ -64,8 +100,17 @@
     <Compile Update="UI\LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI\ModifyGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UI\OccupancyRate.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\PasswordNotMatchPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\PasswordPatternErrorPopUp.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\PaymentInfo.cs">
       <SubType>Form</SubType>
@@ -88,7 +133,10 @@
     <Compile Update="UI\Rooms_admin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UI\SelectRoom.cs">
+    <Compile Update="UI\SRSelectRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\SSelectRoom.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\Standardroom.cs">

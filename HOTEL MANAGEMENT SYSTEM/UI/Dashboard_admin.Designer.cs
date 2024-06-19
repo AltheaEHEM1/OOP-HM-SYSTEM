@@ -121,7 +121,7 @@
             // 
             // Iconbooking
             // 
-            Iconbooking.Image = Properties.Resources.icons8_booking_100__1_;
+         //   Iconbooking.Image = Properties.Resources.icons8_booking_100__1_;
             Iconbooking.Location = new Point(9, 20);
             Iconbooking.Name = "Iconbooking";
             Iconbooking.Size = new Size(59, 36);

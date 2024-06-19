@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             panel1 = new Panel();
             pictureBox3 = new PictureBox();
             label2 = new Label();
             label1 = new Label();
             panel2 = new Panel();
+            Createacc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             label4 = new Label();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             LoginButton = new Guna.UI2.WinForms.Guna2Button();
@@ -48,7 +49,6 @@
             label3 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            Createacc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel2.SuspendLayout();
@@ -113,6 +113,18 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(438, 385);
             panel2.TabIndex = 2;
+            panel2.Paint += panel2_Paint;
+            // 
+            // Createacc
+            // 
+            Createacc.BackColor = Color.Transparent;
+            Createacc.Font = new Font("Century Gothic", 6F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Createacc.Location = new Point(260, 354);
+            Createacc.Name = "Createacc";
+            Createacc.Size = new Size(52, 17);
+            Createacc.TabIndex = 6;
+            Createacc.Text = "Click here";
+            Createacc.Click += Createacc_Click;
             // 
             // label4
             // 
@@ -140,7 +152,7 @@
             // 
             LoginButton.BackColor = Color.Transparent;
             LoginButton.BorderRadius = 25;
-            LoginButton.CustomizableEdges = customizableEdges7;
+            LoginButton.CustomizableEdges = customizableEdges1;
             LoginButton.DisabledState.BorderColor = Color.DarkGray;
             LoginButton.DisabledState.CustomBorderColor = Color.DarkGray;
             LoginButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -150,7 +162,7 @@
             LoginButton.ForeColor = Color.White;
             LoginButton.Location = new Point(135, 294);
             LoginButton.Name = "LoginButton";
-            LoginButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            LoginButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
             LoginButton.Size = new Size(182, 45);
             LoginButton.TabIndex = 3;
             LoginButton.Text = "Log in";
@@ -161,7 +173,7 @@
             PasswordTextbox.BackColor = Color.Transparent;
             PasswordTextbox.BorderColor = Color.FromArgb(13, 22, 29);
             PasswordTextbox.BorderRadius = 12;
-            PasswordTextbox.CustomizableEdges = customizableEdges9;
+            PasswordTextbox.CustomizableEdges = customizableEdges3;
             PasswordTextbox.DefaultText = "";
             PasswordTextbox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             PasswordTextbox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -178,7 +190,7 @@
             PasswordTextbox.PlaceholderForeColor = Color.Gray;
             PasswordTextbox.PlaceholderText = "Password";
             PasswordTextbox.SelectedText = "";
-            PasswordTextbox.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            PasswordTextbox.ShadowDecoration.CustomizableEdges = customizableEdges4;
             PasswordTextbox.Size = new Size(286, 43);
             PasswordTextbox.TabIndex = 2;
             // 
@@ -189,7 +201,7 @@
             Username.BackgroundImageLayout = ImageLayout.Center;
             Username.BorderColor = Color.FromArgb(13, 22, 29);
             Username.BorderRadius = 12;
-            Username.CustomizableEdges = customizableEdges11;
+            Username.CustomizableEdges = customizableEdges5;
             Username.DefaultText = "";
             Username.DisabledState.BorderColor = Color.FromArgb(13, 22, 29);
             Username.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -206,7 +218,7 @@
             Username.PlaceholderForeColor = Color.Gray;
             Username.PlaceholderText = "Username";
             Username.SelectedText = "";
-            Username.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            Username.ShadowDecoration.CustomizableEdges = customizableEdges6;
             Username.Size = new Size(286, 43);
             Username.TabIndex = 1;
             // 
@@ -240,17 +252,6 @@
             pictureBox1.Size = new Size(1602, 900);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // Createacc
-            // 
-            Createacc.BackColor = Color.Transparent;
-            Createacc.Font = new Font("Century Gothic", 6F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Createacc.Location = new Point(260, 354);
-            Createacc.Name = "Createacc";
-            Createacc.Size = new Size(52, 17);
-            Createacc.TabIndex = 6;
-            Createacc.Text = "Click here";
-            Createacc.Click += Createacc_Click;
             // 
             // LoginPage
             // 

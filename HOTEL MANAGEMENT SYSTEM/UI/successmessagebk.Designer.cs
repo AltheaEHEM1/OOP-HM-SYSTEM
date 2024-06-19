@@ -37,9 +37,9 @@
             // checkmark
             // 
             checkmark.Image = (Image)resources.GetObject("checkmark.Image");
-            checkmark.Location = new Point(177, 50);
+            checkmark.Location = new Point(159, 28);
             checkmark.Name = "checkmark";
-            checkmark.Size = new Size(254, 196);
+            checkmark.Size = new Size(145, 139);
             checkmark.SizeMode = PictureBoxSizeMode.Zoom;
             checkmark.TabIndex = 0;
             checkmark.TabStop = false;
@@ -47,10 +47,10 @@
             // LABELBOOK
             // 
             LABELBOOK.AutoSize = true;
-            LABELBOOK.Font = new Font("Century Schoolbook", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LABELBOOK.Location = new Point(143, 249);
+            LABELBOOK.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LABELBOOK.Location = new Point(126, 189);
             LABELBOOK.Name = "LABELBOOK";
-            LABELBOOK.Size = new Size(322, 34);
+            LABELBOOK.Size = new Size(217, 23);
             LABELBOOK.TabIndex = 1;
             LABELBOOK.Text = "Successfully Booked!";
             // 
@@ -58,7 +58,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(608, 371);
+            BackColor = Color.White;
+            ClientSize = new Size(468, 292);
             Controls.Add(LABELBOOK);
             Controls.Add(checkmark);
             FormBorderStyle = FormBorderStyle.None;

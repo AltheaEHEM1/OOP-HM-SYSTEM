@@ -45,9 +45,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         // Event handler method for SRPanel click event
         private void SRPanel_Click(object sender, EventArgs e)
         {
-            SelectRoom selectRoom = new SelectRoom();
-            selectRoom.Show();
-
+            SRSelectRoom sRSelectRoom = new SRSelectRoom();
+            sRSelectRoom.Show();
             // Close the parent form
             Form parentForm = this.FindForm();
             parentForm.Close();
@@ -57,8 +56,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         // Event handler method for DRPanel click event
         private void DRPanel_Click(object sender, EventArgs e)
         {
-            DeluxeRoom deluxeRoom = new DeluxeRoom();
-            deluxeRoom.Show();
+            DRselectroom dRselectroom = new DRselectroom();
+            dRselectroom.Show();
 
             // Close the parent form
             Form parentForm = this.FindForm();
@@ -68,9 +67,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         // Event handler method for SuitesPanel click event
         private void SuitesPanel_Click(object sender, EventArgs e)
         {
-            Suites suites = new Suites();
-            suites.Show();
-
+            SSelectRoom sSelectRoom = new SSelectRoom();
+            sSelectRoom.Show();
             // Close the parent form
             Form parentForm = this.FindForm();
             parentForm.Hide();

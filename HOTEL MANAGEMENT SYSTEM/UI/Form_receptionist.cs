@@ -19,7 +19,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             addUserControl(uc);
         }
 
-        private void addUserControl(UserControl userControl)
+        public void addUserControl(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
             panelinformreceptionist_usercontrol.Controls.Clear();
@@ -44,7 +44,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void Booknow_button_recep_Click(object sender, EventArgs e)
         {
-            Booknow_recep uc = new Booknow_recep();
+            Booknow uc = new Booknow();
             addUserControl(uc);
         }
 

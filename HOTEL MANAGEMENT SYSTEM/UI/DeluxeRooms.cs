@@ -44,7 +44,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void Editbuttondeluxe_Click(object sender, EventArgs e)
         {
-            Edit edit = new Edit();
+            EditRoom edit = new EditRoom();
             edit.Show();
         }
 
