@@ -1,4 +1,5 @@
 ﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using HOTEL_MANAGEMENT_SYSTEM.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -87,11 +88,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void panelinformreceptionist_usercontrol_Paint(object sender, PaintEventArgs e)
         {
-            var getdetails = new UserController();
-            var employeeNumber = getdetails.RetrieveStoredEmployeeNumber();
-
-            labelnameprofile.Text = getdetails.GetEmployeeName(employeeNumber);
-            labeljobposition.Text = getdetails.GetUserJobPosition(employeeNumber);
+            labelnameprofile.Text = UserSession.EmployeeName;
+            labeljobposition.Text = UserSession.JobPosition;
         }
 
         private void Form_receptionist_Load(object sender, EventArgs e)

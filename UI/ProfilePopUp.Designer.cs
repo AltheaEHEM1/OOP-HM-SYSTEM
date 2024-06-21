@@ -54,12 +54,11 @@
             ProfilePicturePopUp.BackgroundImageLayout = ImageLayout.Stretch;
             ProfilePicturePopUp.FillColor = Color.Transparent;
             ProfilePicturePopUp.ImageRotate = 0F;
-            ProfilePicturePopUp.Location = new Point(173, 27);
-            ProfilePicturePopUp.Margin = new Padding(3, 4, 3, 4);
+            ProfilePicturePopUp.Location = new Point(151, 20);
             ProfilePicturePopUp.Name = "ProfilePicturePopUp";
             ProfilePicturePopUp.ShadowDecoration.CustomizableEdges = customizableEdges5;
             ProfilePicturePopUp.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            ProfilePicturePopUp.Size = new Size(90, 95);
+            ProfilePicturePopUp.Size = new Size(79, 71);
             ProfilePicturePopUp.TabIndex = 0;
             ProfilePicturePopUp.TabStop = false;
             // 
@@ -76,11 +75,10 @@
             ViewProfileButton.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ViewProfileButton.ForeColor = Color.White;
             ViewProfileButton.ImageSize = new Size(20, 30);
-            ViewProfileButton.Location = new Point(43, 183);
-            ViewProfileButton.Margin = new Padding(3, 4, 3, 4);
+            ViewProfileButton.Location = new Point(38, 137);
             ViewProfileButton.Name = "ViewProfileButton";
             ViewProfileButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            ViewProfileButton.Size = new Size(343, 33);
+            ViewProfileButton.Size = new Size(300, 25);
             ViewProfileButton.TabIndex = 12;
             ViewProfileButton.Text = "View Profile";
             ViewProfileButton.Click += ViewProfileButton_Click_1;
@@ -98,37 +96,36 @@
             LogOutButton.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LogOutButton.ForeColor = Color.Black;
             LogOutButton.ImageSize = new Size(20, 30);
-            LogOutButton.Location = new Point(43, 228);
-            LogOutButton.Margin = new Padding(3, 4, 3, 4);
+            LogOutButton.Location = new Point(38, 171);
             LogOutButton.Name = "LogOutButton";
             LogOutButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            LogOutButton.Size = new Size(343, 33);
+            LogOutButton.Size = new Size(300, 25);
             LogOutButton.TabIndex = 13;
             LogOutButton.Text = "Log Out";
+            LogOutButton.Click += LogOutButton_Click;
             // 
             // ProfileNamePopUp
             // 
             ProfileNamePopUp.AutoSize = true;
             ProfileNamePopUp.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ProfileNamePopUp.Location = new Point(115, 125);
+            ProfileNamePopUp.Location = new Point(101, 94);
             ProfileNamePopUp.Name = "ProfileNamePopUp";
-            ProfileNamePopUp.Size = new Size(222, 23);
+            ProfileNamePopUp.Size = new Size(179, 18);
             ProfileNamePopUp.TabIndex = 14;
             ProfileNamePopUp.Text = "Miyuki Mharie Parocha";
             // 
             // ProfilePopUp
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(427, 307);
+            ClientSize = new Size(374, 230);
             Controls.Add(ProfileNamePopUp);
             Controls.Add(LogOutButton);
             Controls.Add(ViewProfileButton);
             Controls.Add(ProfilePicturePopUp);
             FormBorderStyle = FormBorderStyle.None;
             Location = new Point(1255, 280);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "ProfilePopUp";
             StartPosition = FormStartPosition.Manual;
             Text = "ProfilePopUp";

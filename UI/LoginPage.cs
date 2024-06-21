@@ -1,5 +1,6 @@
 using HOTEL_MANAGEMENT_SYSTEM.Controllers;
 using HOTEL_MANAGEMENT_SYSTEM.UI;
+using HOTEL_MANAGEMENT_SYSTEM.Utilities;
 using System.Runtime.InteropServices;
 
 namespace HOTEL_MANAGEMENT_SYSTEM
@@ -48,22 +49,16 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             string password = PasswordTextbox.Text;
 
             var controller = new UserController();
-
-            controller.StoreEmployee(employeeNumber);
-
-            // How to Get Employee Name
-            // var name = controller.GetEmployeeName(employeeNumber);                
-
-
+       
             if (string.IsNullOrWhiteSpace(employeeNumber) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("All fields must be filled out.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            if (controller.LoginAccount(employeeNumber, password))
+            if (controller.LoginUser(employeeNumber, password))
             {
-                string jobPosition = controller.GetUserJobPosition(employeeNumber);
+                string jobPosition = UserSession.JobPosition;
 
                 if (jobPosition != null)
                 {

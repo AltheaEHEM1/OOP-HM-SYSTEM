@@ -8,9 +8,13 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
         // Necessary for Login
         [Key]
         public string EmployeeNumber { get; set; }
+        [Required]
         public string? EmployeeName { get; set; }
+        [Required]
         public string? Birthdate { get; set; }
+        [Required]
         public string? Salt { get; set; }
+        [Required]
         public string? SaltedPassword { get; set; }
         public DateTime CreatedAt { get; set; }
 

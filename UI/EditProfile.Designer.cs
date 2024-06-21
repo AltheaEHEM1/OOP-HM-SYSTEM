@@ -263,7 +263,7 @@
             guna2Panel1.Size = new Size(1272, 738);
             guna2Panel1.TabIndex = 16;
             // 
-            // EditProfile
+            // EditUser
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -272,9 +272,9 @@
             Controls.Add(guna2Panel1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
-            Name = "EditProfile";
+            Name = "EditUser";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "EditProfile";
+            Text = "EditUser";
             guna2Panel1.ResumeLayout(false);
             guna2Panel1.PerformLayout();
             ResumeLayout(false);

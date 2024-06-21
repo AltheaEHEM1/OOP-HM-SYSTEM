@@ -77,7 +77,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 // If all validations pass, proceed with account creation
                 var controller = new UserController();
                 // Catching any exceptions that may occur
-                if (!controller.CreateAccount(EmployeeNumber, FullName, Birthdate, Password))
+                if (!controller.CreateUser(EmployeeNumber, FullName, Birthdate, Password))
                 {
                     MessageBox.Show("Error creating your account.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;

@@ -124,7 +124,6 @@
             Name = "LogOutPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LogOutPage";
-            Load += LogOutPage_Load;
             ResumeLayout(false);
             PerformLayout();
         }

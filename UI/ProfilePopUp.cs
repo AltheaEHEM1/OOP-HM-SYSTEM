@@ -1,4 +1,5 @@
 ﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using HOTEL_MANAGEMENT_SYSTEM.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,11 +35,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void ProfilePopUp_Load(object sender, EventArgs e)
         {
-            var getdetails = new UserController();
-            var employeeNumber = getdetails.RetrieveStoredEmployeeNumber();
-
-            ProfileNamePopUp.Text = getdetails.GetEmployeeName(employeeNumber);
-
+            ProfileNamePopUp.Text = UserSession.EmployeeName;
         }
     }
 }

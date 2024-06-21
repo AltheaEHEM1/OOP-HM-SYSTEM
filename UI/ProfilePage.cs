@@ -49,11 +49,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void ProfilePage_Load(object sender, EventArgs e)
         {
-            var getdetails = new UserController();
-            var employeeNumber = getdetails.RetrieveStoredEmployeeNumber();
-
-            Name.Text = getdetails.GetEmployeeName(employeeNumber);
-            JobPosition.Text = getdetails.GetUserJobPosition(employeeNumber);
+            Name.Text = UserSession.EmployeeName;
+            JobPosition.Text = UserSession.JobPosition;
         }
 
         private void JobPosition_Click(object sender, EventArgs e)
@@ -68,11 +65,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void BackButton_Click_1(object sender, EventArgs e)
         {
-            var getdetails = new UserController();
-            var employeeNumber = getdetails.RetrieveStoredEmployeeNumber();
-
-
-            if (getdetails.GetUserJobPosition(employeeNumber) == "Admin")
+            if (UserSession.JobPosition == "Admin")
             {
                 Form_Admin form_admin = new Form_Admin();
                 form_admin.Show();
