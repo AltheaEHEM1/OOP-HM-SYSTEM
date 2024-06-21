@@ -72,17 +72,18 @@
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(0, -1);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1646, 1200);
+            panel1.Size = new Size(1440, 900);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.icons8_location_24;
-            pictureBox3.Location = new Point(59, 39);
+            pictureBox3.Location = new Point(52, 29);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(31, 29);
+            pictureBox3.Size = new Size(27, 22);
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
             // 
@@ -90,9 +91,9 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(59, 91);
+            label2.Location = new Point(52, 68);
             label2.Name = "label2";
-            label2.Size = new Size(81, 20);
+            label2.Size = new Size(65, 15);
             label2.TabIndex = 4;
             label2.Text = "Philippines";
             // 
@@ -100,9 +101,9 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(59, 71);
+            label1.Location = new Point(52, 53);
             label1.Name = "label1";
-            label1.Size = new Size(92, 20);
+            label1.Size = new Size(75, 15);
             label1.TabIndex = 3;
             label1.Text = "Quezon City.";
             // 
@@ -117,9 +118,10 @@
             panel2.Controls.Add(HidePassBttn);
             panel2.Controls.Add(ShowPassIcon);
             panel2.Controls.Add(PasswordTextbox);
-            panel2.Location = new Point(1082, 284);
+            panel2.Location = new Point(947, 213);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(438, 385);
+            panel2.Size = new Size(383, 289);
             panel2.TabIndex = 2;
             // 
             // login
@@ -134,11 +136,10 @@
             login.FillColor = Color.FromArgb(214, 164, 38);
             login.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             login.ForeColor = Color.White;
-            login.Location = new Point(120, 279);
-            login.Margin = new Padding(3, 4, 3, 4);
+            login.Location = new Point(105, 209);
             login.Name = "login";
             login.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            login.Size = new Size(206, 43);
+            login.Size = new Size(180, 32);
             login.TabIndex = 6;
             login.Text = "Log in";
             login.Click += login_Click;
@@ -147,9 +148,10 @@
             // 
             Createacc.BackColor = Color.Transparent;
             Createacc.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Createacc.Location = new Point(262, 340);
+            Createacc.Location = new Point(229, 255);
+            Createacc.Margin = new Padding(3, 2, 3, 2);
             Createacc.Name = "Createacc";
-            Createacc.Size = new Size(77, 22);
+            Createacc.Size = new Size(62, 19);
             Createacc.TabIndex = 6;
             Createacc.Text = "Click here";
             Createacc.Click += Createacc_Click;
@@ -159,9 +161,9 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(91, 341);
+            label4.Location = new Point(80, 256);
             label4.Name = "label4";
-            label4.Size = new Size(189, 20);
+            label4.Size = new Size(152, 17);
             label4.TabIndex = 5;
             label4.Text = "Don't have an account?";
             // 
@@ -170,7 +172,8 @@
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel1.ForeColor = Color.Black;
-            guna2HtmlLabel1.Location = new Point(91, 109);
+            guna2HtmlLabel1.Location = new Point(80, 82);
+            guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(3, 2);
             guna2HtmlLabel1.TabIndex = 4;
@@ -192,16 +195,15 @@
             EmployeeNum.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             EmployeeNum.Font = new Font("Segoe UI", 9F);
             EmployeeNum.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            EmployeeNum.IconLeft = Properties.Resources.icons8_user_30__1_1;
-            EmployeeNum.Location = new Point(85, 135);
-            EmployeeNum.Margin = new Padding(3, 5, 3, 5);
+            EmployeeNum.Location = new Point(74, 101);
+            EmployeeNum.Margin = new Padding(3, 4, 3, 4);
             EmployeeNum.Name = "EmployeeNum";
             EmployeeNum.PasswordChar = '\0';
             EmployeeNum.PlaceholderForeColor = Color.Gray;
             EmployeeNum.PlaceholderText = "Employee Number";
             EmployeeNum.SelectedText = "";
             EmployeeNum.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            EmployeeNum.Size = new Size(286, 43);
+            EmployeeNum.Size = new Size(250, 32);
             EmployeeNum.TabIndex = 1;
             EmployeeNum.TextChanged += EmployeeID_TextChanged;
             // 
@@ -211,9 +213,9 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(120, 67);
+            label3.Location = new Point(105, 50);
             label3.Name = "label3";
-            label3.Size = new Size(222, 20);
+            label3.Size = new Size(179, 17);
             label3.TabIndex = 0;
             label3.Text = "Enter your credentials below.";
             // 
@@ -232,13 +234,12 @@
             HidePassBttn.Font = new Font("Segoe UI", 9F);
             HidePassBttn.ForeColor = Color.White;
             HidePassBttn.Image = (Image)resources.GetObject("HidePassBttn.Image");
-            HidePassBttn.Location = new Point(331, 207);
-            HidePassBttn.Margin = new Padding(3, 4, 3, 4);
+            HidePassBttn.Location = new Point(290, 155);
             HidePassBttn.Name = "HidePassBttn";
             HidePassBttn.PressedColor = Color.Transparent;
             HidePassBttn.PressedDepth = 10;
             HidePassBttn.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            HidePassBttn.Size = new Size(23, 27);
+            HidePassBttn.Size = new Size(20, 20);
             HidePassBttn.TabIndex = 7;
             HidePassBttn.Click += HidePassBttn_Click;
             // 
@@ -258,13 +259,12 @@
             ShowPassIcon.Font = new Font("Segoe UI", 9F);
             ShowPassIcon.ForeColor = Color.White;
             ShowPassIcon.Image = (Image)resources.GetObject("ShowPassIcon.Image");
-            ShowPassIcon.Location = new Point(331, 207);
-            ShowPassIcon.Margin = new Padding(3, 4, 3, 4);
+            ShowPassIcon.Location = new Point(290, 155);
             ShowPassIcon.Name = "ShowPassIcon";
             ShowPassIcon.PressedColor = Color.Transparent;
             ShowPassIcon.PressedDepth = 10;
             ShowPassIcon.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            ShowPassIcon.Size = new Size(23, 27);
+            ShowPassIcon.Size = new Size(20, 20);
             ShowPassIcon.TabIndex = 6;
             ShowPassIcon.Tag = "";
             ShowPassIcon.Click += ShowPassIcon_Click;
@@ -283,45 +283,45 @@
             PasswordTextbox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             PasswordTextbox.Font = new Font("Segoe UI", 9F);
             PasswordTextbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            PasswordTextbox.IconLeft = Properties.Resources.icons8_password_24;
-            PasswordTextbox.Location = new Point(85, 201);
-            PasswordTextbox.Margin = new Padding(3, 5, 3, 5);
+            PasswordTextbox.Location = new Point(74, 151);
+            PasswordTextbox.Margin = new Padding(3, 4, 3, 4);
             PasswordTextbox.Name = "PasswordTextbox";
             PasswordTextbox.PasswordChar = '*';
             PasswordTextbox.PlaceholderForeColor = Color.Gray;
             PasswordTextbox.PlaceholderText = "Password";
             PasswordTextbox.SelectedText = "";
             PasswordTextbox.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            PasswordTextbox.Size = new Size(286, 43);
+            PasswordTextbox.Size = new Size(250, 32);
             PasswordTextbox.TabIndex = 2;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(624, 5);
+            pictureBox2.Location = new Point(546, 4);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(328, 167);
+            pictureBox2.Size = new Size(287, 125);
             pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.FINAL__4_;
-            pictureBox1.Location = new Point(0, 188);
+            pictureBox1.Location = new Point(0, 141);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1646, 1176);
+            pictureBox1.Size = new Size(1440, 882);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
             // LoginPage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1646, 1102);
+            ClientSize = new Size(1213, 591);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "LoginPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Formloin";

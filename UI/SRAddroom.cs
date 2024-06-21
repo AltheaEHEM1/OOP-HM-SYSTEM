@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,6 +29,34 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+        }
+
+        private void Saveeditbutton_Click(object sender, EventArgs e)
+        {
+            // assign the value to the variables
+            int roomNumber = Convert.ToInt32(Roomnumberadd.Text);
+            double roomPrice = Convert.ToDouble(Roompriceadd.Text);
+            int occupancyLimit = Convert.ToInt32(occupancylimitadd.Text);
+            string roomStatus = roomStatusadd.Text;
+            string bedType = bedTypeadd.Text;
+            string bathroomInclusion = bathroomInclusionadd.Text;
+
+            // create standardRoomController instance
+            StandardRoomController standardRoomController = new StandardRoomController();
+
+            bool success = standardRoomController.AddStandardRoom(roomNumber, roomStatus, roomPrice, occupancyLimit, bedType, bathroomInclusion);
+
+            // checks if added to the database
+            if (success == true)
+            {
+                // show success message
+                MessageBox.Show("Room Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                // show error message
+                MessageBox.Show("Failed to Add Room", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
