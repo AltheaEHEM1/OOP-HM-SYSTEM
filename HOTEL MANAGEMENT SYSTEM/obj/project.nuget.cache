@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fsQlbpDsfuE=",
+  "dgSpecHash": "5jUPmSNPQpg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Darben\\source\\repos\\OOP System\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+  "projectFilePath": "C:\\Users\\Darben\\source\\repos\\CLONED HM SYSTEM\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Darben\\.nuget\\packages\\font-awesome\\4.7.0\\font-awesome.4.7.0.nupkg.sha512",
     "C:\\Users\\Darben\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",

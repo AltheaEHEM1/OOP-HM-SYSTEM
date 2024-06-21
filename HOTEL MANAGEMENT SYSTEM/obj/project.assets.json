@@ -1350,11 +1350,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Darben\\source\\repos\\OOP System\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+      "projectUniqueName": "C:\\Users\\Darben\\source\\repos\\CLONED HM SYSTEM\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
       "projectName": "HOTEL MANAGEMENT SYSTEM",
-      "projectPath": "C:\\Users\\Darben\\source\\repos\\OOP System\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
+      "projectPath": "C:\\Users\\Darben\\source\\repos\\CLONED HM SYSTEM\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\HOTEL MANAGEMENT SYSTEM.csproj",
       "packagesPath": "C:\\Users\\Darben\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Darben\\source\\repos\\OOP System\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\obj\\",
+      "outputPath": "C:\\Users\\Darben\\source\\repos\\CLONED HM SYSTEM\\OOP-HM-SYSTEM\\HOTEL MANAGEMENT SYSTEM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Darben\\AppData\\Roaming\\NuGet\\NuGet.Config",
