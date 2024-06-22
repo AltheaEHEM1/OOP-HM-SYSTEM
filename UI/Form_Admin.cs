@@ -9,8 +9,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class Form_Admin : Form
     {
-        private ProfilePopUp profilePopUp;
-
         public Form_Admin()
         {
             InitializeComponent();
@@ -61,25 +59,25 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void circilephotoprofile_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp();
+            ProfilePopUp profilePopUp = new ProfilePopUp(this);
             profilePopUp.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp();
+            ProfilePopUp profilePopUp = new ProfilePopUp(this);
             profilePopUp.Show();
         }
 
         private void labelemail_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp();
+            ProfilePopUp profilePopUp = new ProfilePopUp(this);
             profilePopUp.Show();
         }
 
         private void profilegroup_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp();
+            ProfilePopUp profilePopUp = new ProfilePopUp(this);
             profilePopUp.Show();
         }
 
@@ -87,11 +85,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             labelnameprofile.Text = UserSession.EmployeeName;
             labeljobposition.Text = UserSession.JobPosition;
-        }
-
-        private void Form_admin_Load(object sender, EventArgs e)
-        {
-
+            circilephotoprofile.Image = ImageHelper.ByteArrayToImage(UserSession.ProfilePicture);
         }
     }
 }

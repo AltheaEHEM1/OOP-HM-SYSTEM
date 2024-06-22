@@ -12,20 +12,49 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class SavedChangesConfirmation : Form
     {
-        private EditProfile _profile;
-        
-        public SavedChangesConfirmation(EditProfile profile)
+        private Form _parentForm;
+        private System.Timers.Timer timer;
+
+        public SavedChangesConfirmation(Form form)
         {
             InitializeComponent();
-            _profile = profile;
+            InitializeTimer();
+            _parentForm = form;
         }
-        
+
+        private void InitializeTimer()
+        {
+            timer = new System.Timers.Timer();
+            timer.Interval = 2000;
+            timer.Elapsed += Timer_Elapsed;
+        }
+
         private void SavedChangesConfirmation_Click(object sender, EventArgs e)
         {
             ProfilePage profilePage = new ProfilePage();
             profilePage.Show();
-            _profile.Close();
-            this.Close();
+            _parentForm.Hide();
+            this.Hide();
+        }
+
+        private void SavedChangesConfirmation_Load(object sender, EventArgs e)
+        {
+            timer.Start();
+        }
+        
+        private void Timer_Elapsed(object sender, EventArgs e)
+        {
+            timer.Stop();
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new Action(() => this.Hide()));
+            }
+            else
+            {
+                this.Hide();
+            }
+
+            _parentForm.Hide();
         }
     }
 }

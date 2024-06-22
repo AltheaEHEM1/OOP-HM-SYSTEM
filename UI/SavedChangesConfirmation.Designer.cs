@@ -48,12 +48,11 @@
             CheckPicture.BackgroundImageLayout = ImageLayout.Stretch;
             CheckPicture.FillColor = Color.Transparent;
             CheckPicture.ImageRotate = 0F;
-            CheckPicture.Location = new Point(216, 80);
-            CheckPicture.Margin = new Padding(3, 4, 3, 4);
+            CheckPicture.Location = new Point(189, 60);
             CheckPicture.Name = "CheckPicture";
             CheckPicture.ShadowDecoration.CustomizableEdges = customizableEdges1;
             CheckPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            CheckPicture.Size = new Size(131, 147);
+            CheckPicture.Size = new Size(115, 110);
             CheckPicture.TabIndex = 1;
             CheckPicture.TabStop = false;
             // 
@@ -61,25 +60,25 @@
             // 
             Message.AutoSize = true;
             Message.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Message.Location = new Point(147, 251);
+            Message.Location = new Point(129, 188);
             Message.Name = "Message";
-            Message.Size = new Size(310, 28);
+            Message.Size = new Size(245, 23);
             Message.TabIndex = 2;
             Message.Text = "Changes has been saved";
             // 
             // SavedChangesConfirmation
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(571, 400);
+            ClientSize = new Size(500, 300);
             Controls.Add(Message);
             Controls.Add(CheckPicture);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "SavedChangesConfirmation";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SavedChangesConfirmation";
+            Load += SavedChangesConfirmation_Load;
             Click += SavedChangesConfirmation_Click;
             ((System.ComponentModel.ISupportInitialize)CheckPicture).EndInit();
             ResumeLayout(false);

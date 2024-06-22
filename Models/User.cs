@@ -9,19 +9,19 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
         [Key]
         public string EmployeeNumber { get; set; }
         [Required]
-        public string? EmployeeName { get; set; }
+        public string EmployeeName { get; set; }
         [Required]
-        public string? Birthdate { get; set; }
+        public string Birthdate { get; set; }
         [Required]
-        public string? Salt { get; set; }
+        public string Salt { get; set; }
         [Required]
-        public string? SaltedPassword { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public string SaltedPassword { get; set; }
+        public DateTime? CreatedAt { get; set; }
 
 
         // For profile purposes    
-        public string? JobPosition { get; set; }
+        public string JobPosition { get; set; }
         public string? Schedule { get; set; }
-        public byte[]? ProfilePicture { get; set; }
+        public byte[] ProfilePicture { get; set; }
     }
 }

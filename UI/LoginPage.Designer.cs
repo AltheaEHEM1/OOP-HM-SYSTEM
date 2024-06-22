@@ -75,7 +75,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1646, 1200);
             panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
             // 
             // pictureBox3
             // 
@@ -203,7 +202,6 @@
             EmployeeNum.ShadowDecoration.CustomizableEdges = customizableEdges4;
             EmployeeNum.Size = new Size(286, 43);
             EmployeeNum.TabIndex = 1;
-            EmployeeNum.TextChanged += EmployeeID_TextChanged;
             // 
             // label3
             // 
@@ -313,7 +311,6 @@
             pictureBox1.Size = new Size(1646, 1176);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // LoginPage
             // 

@@ -25,11 +25,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             panel2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel2.Width, panel2.Height, 20, 20));
         }
 
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
         private void Createacc_Click(object sender, EventArgs e)
         {
             CreateAccountForm createAccountform = new CreateAccountForm();
@@ -38,61 +33,59 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             this.Hide();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void login_Click(object sender, EventArgs e)
         {
-            string employeeNumber = EmployeeNum.Text;
-            string password = PasswordTextbox.Text;
-
             var controller = new UserController();
-       
-            if (string.IsNullOrWhiteSpace(employeeNumber) || string.IsNullOrWhiteSpace(password))
-            {
-                MessageBox.Show("All fields must be filled out.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            var eh = new ExceptionHandling();
 
-            if (controller.LoginUser(employeeNumber, password))
+            try
             {
-                string jobPosition = UserSession.JobPosition;
+                string employeeNumber = EmployeeNum.Text;
+                string password = PasswordTextbox.Text;
 
-                if (jobPosition != null)
+                if (string.IsNullOrWhiteSpace(employeeNumber) || string.IsNullOrWhiteSpace(password))
                 {
-                    if (jobPosition.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                    MessageBox.Show("All fields must be filled out.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (controller.LoginUser(employeeNumber, password))
+                {
+                    string jobPosition = UserSession.JobPosition;
+
+                    if (jobPosition != null)
                     {
-                        Form_Admin form_admin = new Form_Admin();
-                        form_admin.Show();
-                    }
-                    else if (jobPosition.Equals("Receptionist", StringComparison.OrdinalIgnoreCase))
-                    {
-                        Form_receptionist form_receptionist = new Form_receptionist();
-                        form_receptionist.Show();
+                        if (jobPosition.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Form_Admin form_admin = new Form_Admin();
+                            form_admin.Show();
+                        }
+                        else if (jobPosition.Equals("Receptionist", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Form_receptionist form_receptionist = new Form_receptionist();
+                            form_receptionist.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid user role.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+                        this.Hide();
                     }
                     else
                     {
-                        MessageBox.Show("Invalid user role.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Failed to retrieve user role.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-
-                    this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Failed to retrieve user role.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Incorrect Email or Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Incorrect Email or Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                eh.HandleException(ex);
             }
-        }
-
-        private void EmployeeID_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void ShowPassIcon_Click(object sender, EventArgs e)
@@ -105,8 +98,5 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             ShowPassIcon.BringToFront();
             PasswordTextbox.PasswordChar = '\0';
         }
-
-
-       
     }
 }

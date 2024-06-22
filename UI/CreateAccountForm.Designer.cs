@@ -117,7 +117,6 @@
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges24;
             guna2Panel2.Size = new Size(1646, 1001);
             guna2Panel2.TabIndex = 0;
-            guna2Panel2.Paint += guna2Panel2_Paint;
             // 
             // guna2Panel3
             // 
@@ -378,7 +377,6 @@
             employeenumber.ShadowDecoration.CustomizableEdges = customizableEdges16;
             employeenumber.Size = new Size(367, 44);
             employeenumber.TabIndex = 0;
-            employeenumber.TextChanged += employeeuser_TextChanged;
             // 
             // CreateShowPassBttn
             // 

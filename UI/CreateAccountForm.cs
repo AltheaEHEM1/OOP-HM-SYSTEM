@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using HOTEL_MANAGEMENT_SYSTEM.Controllers;
-using HOTEL_MANAGEMENT_SYSTEM.Models;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
@@ -38,6 +28,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             LoginPage loginPage = new LoginPage();
             loginPage.Show();
+
+            this.Hide();
         }
 
         private void CreateAcc_Click(object sender, EventArgs e)
@@ -59,7 +51,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                     return;
                 }
 
-                // Validate password requirements
+                // Validate password requirements:
+                // - one small letter,              (?=.*[a-z])
+                // - one capital letter,            (?=.*[A-Z])
+                // - one number,                    (?=.*\d)
+                // - one special character, and     (?=.*[~`!@#$%^&*()_\-+={[}\]|\:;""'<,>.?/])
+                // - at least 8 characters long     {8,}
                 string passwordPattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[~`!@#$%^&*()_\-+={[}\]|\:;""'<,>.?/]).{8,}$";
                 if (!Regex.IsMatch(Password, passwordPattern))
                 {
@@ -93,22 +90,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-        }
-
-        private void phonenum_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void employeeuser_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void CreateShowPassBttn_Click(object sender, EventArgs e)
@@ -133,11 +114,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             ConfirmPassShowBttn.BringToFront();
             confirmpass.PasswordChar = '\0';
-        }
-
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

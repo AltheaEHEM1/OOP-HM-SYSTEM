@@ -7,8 +7,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
     public class UserController
     {
         // Static field to store the employee number and declare the DataContext
-        public static string? _storedEmployeeNumber;
         private static readonly DataContext context = new();
+        private static readonly ExceptionHandling eH = new();
 
         // CreateAccountForm.cs
         public bool CreateUser(string employeeNumber, string fullName, string birthdate, string password)
@@ -25,11 +25,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
                 // Generate salt and hash the password
                 string salt = PasswordHasher.GenerateSalt();
                 string saltedPassword = PasswordHasher.HashPassword(password, salt);
-                string jobposition = "Receptionist";
+                string jobposition = "Admin";
                 string schedule = "Unknown";
 
                 // Load the default profile picture from resources
-                byte[] defaultProfilePicture = ImageToByteArray(Properties.Resources.defaultprofilepicture);
+                byte[] defaultProfilePicture = ImageHelper.ImageToByteArray(Properties.Resources.defaultprofilepicture);
 
                 // Create a new user instance
                 var user = new User
@@ -52,7 +52,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
             }
             catch (Exception ex)  // For detailed error messages
             {
-                HandleException(ex);
+                eH.HandleException(ex);
                 return false;
             }
         }
@@ -82,7 +82,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
             }
             catch (Exception ex)
             {
-                HandleException(ex);
+                eH.HandleException(ex);
                 return false;
             }
         }
@@ -120,73 +120,60 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
             }
             catch (Exception ex)
             {
-                HandleException(ex);
+                eH.HandleException(ex);
             }
         }
 
-
         // Update user information ProfilePage.cs
-        public void EditUser(User user)
+        // no birthdate yet
+        public bool EditUser(User user)
         {
             try
             {
+                /*
+                    EmployeeNumber = employeeNumber,
+                    EmployeeName = fullName,
+                    Birthdate = birthdate,
+                    Salt = salt,
+                    SaltedPassword = saltedPassword,
+                    CreatedAt = DateTime.Now,
+                    JobPosition = jobposition,
+                    Schedule = schedule,
+                    ProfilePicture = defaultProfilePicture
+                */
+
+
+                var context = new DataContext();
+                MessageBox.Show("before exisintg");
                 var existingUser = context.Users.FirstOrDefault(u => u.EmployeeNumber == user.EmployeeNumber);
+                MessageBox.Show("after exisintg");
                 if (existingUser != null)
                 {
+                    MessageBox.Show("uSER IS FOUND");
                     existingUser.EmployeeNumber = user.EmployeeNumber;
                     existingUser.EmployeeName = user.EmployeeName;
                     existingUser.Birthdate = user.Birthdate;
+                    existingUser.Salt = existingUser.Salt;
+                    existingUser.SaltedPassword = existingUser.SaltedPassword;
+                    existingUser.CreatedAt = existingUser.CreatedAt;
                     existingUser.JobPosition = user.JobPosition;
                     existingUser.Schedule = user.Schedule;
                     existingUser.ProfilePicture = user.ProfilePicture;
 
                     context.SaveChanges();
+                    return true;
                 }
-
-            }
-            catch (Exception ex)
-            {
-                HandleException(ex);
-            }
-        }
-
-        // Method to convert an Image to a byte array
-        private byte[] ImageToByteArray(Image image)
-        {
-            try
-            {
-                using (MemoryStream ms = new MemoryStream())
+                else
                 {
-                    image.Save(ms, image.RawFormat);
-                    return ms.ToArray();
+                    MessageBox.Show("uSER IS NOT FOUND");
+                    return false;
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return null;
+                eH.HandleException(ex);
+                return false;
             }
-        }
-
-        // Handle exceptions with error message
-        private void HandleException(Exception ex)
-        {
-            var errorMessage = new StringBuilder();
-            errorMessage.AppendLine($"Message: {ex.Message}");
-            errorMessage.AppendLine($"Source: {ex.Source}");
-            errorMessage.AppendLine($"Stack Trace: {ex.StackTrace}");
-
-            var inner = ex.InnerException;
-            while (inner != null)
-            {
-                errorMessage.AppendLine("---- Inner Exception ----");
-                errorMessage.AppendLine($"Message: {inner.Message}");
-                errorMessage.AppendLine($"Source: {inner.Source}");
-                errorMessage.AppendLine($"Stack Trace: {inner.StackTrace}");
-                inner = inner.InnerException;
-            }
-
-            MessageBox.Show(errorMessage.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

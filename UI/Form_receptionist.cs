@@ -64,25 +64,25 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void circilephotoprofile_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp();
+            ProfilePopUp profilePopUp = new ProfilePopUp(this);
             profilePopUp.Show();
         }
 
         private void label1name_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp();
+            ProfilePopUp profilePopUp = new ProfilePopUp(this);
             profilePopUp.Show();
         }
 
         private void labelemail_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp();
+            ProfilePopUp profilePopUp = new ProfilePopUp(this);
             profilePopUp.Show();
         }
 
         private void profilegroup_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp();
+            ProfilePopUp profilePopUp = new ProfilePopUp(this);
             profilePopUp.Show();
         }
 
@@ -90,6 +90,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             labelnameprofile.Text = UserSession.EmployeeName;
             labeljobposition.Text = UserSession.JobPosition;
+            circilephotoprofile.Image = ImageHelper.ByteArrayToImage(UserSession.ProfilePicture);
         }
 
         private void Form_receptionist_Load(object sender, EventArgs e)

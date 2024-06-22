@@ -148,7 +148,6 @@
             JobPosition.Size = new Size(245, 27);
             JobPosition.TabIndex = 0;
             JobPosition.Text = "Front Desk Employee";
-            JobPosition.Click += JobPosition_Click;
             // 
             // Name
             // 

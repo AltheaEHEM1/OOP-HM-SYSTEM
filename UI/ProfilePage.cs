@@ -9,24 +9,10 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class ProfilePage : Form
     {
-        public readonly string _emailaddress;
-
         public ProfilePage()
         {
             InitializeComponent();
         }
-        /*
-        private void ProfilePage_Load(object sender, EventArgs e)
-        {
-            var currentUser = new CurrentUser();
-            currentUser.GetCurrentUserDetails(_emailaddress);
-
-            // Display user details on the form
-            Name.Text = currentUser.EmployeeName;
-
-            label4.Text = currentUser.JobPosition;
-        }
-        */
 
         private void EditProfileButton_Click(object sender, EventArgs e)
         {
@@ -51,16 +37,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             Name.Text = UserSession.EmployeeName;
             JobPosition.Text = UserSession.JobPosition;
-        }
-
-        private void JobPosition_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BackButton_Click(object sender, EventArgs e)
-        {
-
+            ProfilePictureBox.Image = ImageHelper.ByteArrayToImage(UserSession.ProfilePicture);
         }
 
         private void BackButton_Click_1(object sender, EventArgs e)
