@@ -78,8 +78,9 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1440, 141);
+            panel1.Size = new Size(1213, 106);
             panel1.TabIndex = 0;
             // 
             // philtext
@@ -87,9 +88,9 @@
             philtext.AutoSize = true;
             philtext.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             philtext.ForeColor = Color.White;
-            philtext.Location = new Point(55, 99);
+            philtext.Location = new Point(48, 74);
             philtext.Name = "philtext";
-            philtext.Size = new Size(84, 20);
+            philtext.Size = new Size(70, 17);
             philtext.TabIndex = 14;
             philtext.Text = "Philippines";
             // 
@@ -98,18 +99,19 @@
             QCTEXT.AutoSize = true;
             QCTEXT.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             QCTEXT.ForeColor = Color.White;
-            QCTEXT.Location = new Point(55, 79);
+            QCTEXT.Location = new Point(48, 59);
             QCTEXT.Name = "QCTEXT";
-            QCTEXT.Size = new Size(102, 20);
+            QCTEXT.Size = new Size(82, 17);
             QCTEXT.TabIndex = 13;
             QCTEXT.Text = "Quezon City.";
             // 
             // locationpic
             // 
             locationpic.Image = Properties.Resources.icons8_location_24;
-            locationpic.Location = new Point(55, 47);
+            locationpic.Location = new Point(48, 35);
+            locationpic.Margin = new Padding(3, 2, 3, 2);
             locationpic.Name = "locationpic";
-            locationpic.Size = new Size(31, 29);
+            locationpic.Size = new Size(27, 22);
             locationpic.TabIndex = 12;
             locationpic.TabStop = false;
             // 
@@ -118,8 +120,9 @@
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.headerpic_removebg_preview;
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1440, 141);
+            pictureBox1.Size = new Size(1213, 106);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -128,9 +131,10 @@
             // 
             panelfortransparent.BackColor = Color.DimGray;
             panelfortransparent.Dock = DockStyle.Top;
-            panelfortransparent.Location = new Point(0, 141);
+            panelfortransparent.Location = new Point(0, 106);
+            panelfortransparent.Margin = new Padding(3, 2, 3, 2);
             panelfortransparent.Name = "panelfortransparent";
-            panelfortransparent.Size = new Size(1440, 66);
+            panelfortransparent.Size = new Size(1213, 50);
             panelfortransparent.TabIndex = 1;
             panelfortransparent.Paint += panelfortransparent_Paint;
             // 
@@ -144,9 +148,10 @@
             panelbgwhite.Controls.Add(standardtext);
             panelbgwhite.Controls.Add(backicon);
             panelbgwhite.Dock = DockStyle.Fill;
-            panelbgwhite.Location = new Point(0, 207);
+            panelbgwhite.Location = new Point(0, 156);
+            panelbgwhite.Margin = new Padding(3, 2, 3, 2);
             panelbgwhite.Name = "panelbgwhite";
-            panelbgwhite.Size = new Size(1440, 693);
+            panelbgwhite.Size = new Size(1213, 435);
             panelbgwhite.TabIndex = 2;
             // 
             // deletebuttonstandard
@@ -160,10 +165,11 @@
             deletebuttonstandard.FillColor = Color.FromArgb(126, 6, 6);
             deletebuttonstandard.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             deletebuttonstandard.ForeColor = Color.White;
-            deletebuttonstandard.Location = new Point(1165, 599);
+            deletebuttonstandard.Location = new Point(1019, 449);
+            deletebuttonstandard.Margin = new Padding(3, 2, 3, 2);
             deletebuttonstandard.Name = "deletebuttonstandard";
             deletebuttonstandard.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            deletebuttonstandard.Size = new Size(133, 45);
+            deletebuttonstandard.Size = new Size(116, 34);
             deletebuttonstandard.TabIndex = 11;
             deletebuttonstandard.Text = "Delete";
             deletebuttonstandard.Click += deletebuttonstandard_Click;
@@ -173,10 +179,11 @@
             panelforgridview.BorderRadius = 10;
             panelforgridview.Controls.Add(Standardroomgridview);
             panelforgridview.CustomizableEdges = customizableEdges3;
-            panelforgridview.Location = new Point(55, 88);
+            panelforgridview.Location = new Point(48, 66);
+            panelforgridview.Margin = new Padding(3, 2, 3, 2);
             panelforgridview.Name = "panelforgridview";
             panelforgridview.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            panelforgridview.Size = new Size(1310, 505);
+            panelforgridview.Size = new Size(1146, 379);
             panelforgridview.TabIndex = 9;
             // 
             // Standardroomgridview
@@ -208,10 +215,12 @@
             Standardroomgridview.Enabled = false;
             Standardroomgridview.GridColor = Color.FromArgb(231, 229, 255);
             Standardroomgridview.Location = new Point(0, 0);
+            Standardroomgridview.Margin = new Padding(3, 2, 3, 2);
             Standardroomgridview.Name = "Standardroomgridview";
             Standardroomgridview.RowHeadersVisible = false;
             Standardroomgridview.RowHeadersWidth = 51;
-            Standardroomgridview.Size = new Size(1310, 505);
+            Standardroomgridview.RowTemplate.Height = 29;
+            Standardroomgridview.Size = new Size(1146, 379);
             Standardroomgridview.TabIndex = 0;
             Standardroomgridview.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             Standardroomgridview.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -274,10 +283,11 @@
             Editbuttonstandard.FillColor = Color.FromArgb(214, 164, 38);
             Editbuttonstandard.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Editbuttonstandard.ForeColor = Color.White;
-            Editbuttonstandard.Location = new Point(1020, 599);
+            Editbuttonstandard.Location = new Point(892, 449);
+            Editbuttonstandard.Margin = new Padding(3, 2, 3, 2);
             Editbuttonstandard.Name = "Editbuttonstandard";
             Editbuttonstandard.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            Editbuttonstandard.Size = new Size(133, 45);
+            Editbuttonstandard.Size = new Size(116, 34);
             Editbuttonstandard.TabIndex = 10;
             Editbuttonstandard.Text = "Edit";
             Editbuttonstandard.Click += Editbuttonstandard_Click;
@@ -293,10 +303,11 @@
             Addroomicon.FillColor = Color.FromArgb(55, 73, 7);
             Addroomicon.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Addroomicon.ForeColor = Color.White;
-            Addroomicon.Location = new Point(1165, 37);
+            Addroomicon.Location = new Point(1019, 28);
+            Addroomicon.Margin = new Padding(3, 2, 3, 2);
             Addroomicon.Name = "Addroomicon";
             Addroomicon.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            Addroomicon.Size = new Size(200, 45);
+            Addroomicon.Size = new Size(175, 34);
             Addroomicon.TabIndex = 8;
             Addroomicon.Text = "Add Room";
             Addroomicon.Click += Addroomicon_Click;
@@ -305,18 +316,19 @@
             // 
             standardtext.AutoSize = true;
             standardtext.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            standardtext.Location = new Point(106, 45);
+            standardtext.Location = new Point(93, 34);
             standardtext.Name = "standardtext";
-            standardtext.Size = new Size(168, 23);
+            standardtext.Size = new Size(135, 19);
             standardtext.TabIndex = 2;
             standardtext.Text = "Standard Rooms";
             // 
             // backicon
             // 
             backicon.Image = Properties.Resources.icons8_back_64;
-            backicon.Location = new Point(48, 37);
+            backicon.Location = new Point(42, 28);
+            backicon.Margin = new Padding(3, 2, 3, 2);
             backicon.Name = "backicon";
-            backicon.Size = new Size(38, 38);
+            backicon.Size = new Size(33, 28);
             backicon.SizeMode = PictureBoxSizeMode.Zoom;
             backicon.TabIndex = 1;
             backicon.TabStop = false;
@@ -334,15 +346,16 @@
             // 
             // Standardroom
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bg;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1440, 900);
+            ClientSize = new Size(1213, 591);
             Controls.Add(panelbgwhite);
             Controls.Add(panelfortransparent);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Standardroom";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Standardroom";

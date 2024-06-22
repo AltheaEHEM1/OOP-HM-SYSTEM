@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.Models
 {
     public class Guest
     {
         [Key] // indication that this is primary key
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // auto increment
         public int GuestId { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.Models
 {
@@ -6,6 +7,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
     {
         // properties or columns of table
         [Key] // indication that this is primary key
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // auto increment
         public int RoomId { get; set; }
         public int RoomNumber { get; set; }
         public string RoomStatus { get; set; }

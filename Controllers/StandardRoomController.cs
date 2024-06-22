@@ -3,59 +3,61 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using System.Windows.Forms;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
 {
     public class StandardRoomController
     {
-        // method to add a standard room
+        // Method to add a standard room
         public bool AddStandardRoom(int roomNumber, string roomStatus, double roomPrice, int occupancyLimit, string bedType, string bathroomInclusion)
         {
             try
             {
-                // create instance of StandardRoom
-                StandardRoom standardRoom = new StandardRoom();
+                // Create instance of StandardRoom
+                StandardRoom standardRoom = new StandardRoom
+                {
+                    RoomNumber = roomNumber,
+                    RoomStatus = roomStatus,
+                    RoomPrice = roomPrice,
+                    OccupancyLimit = occupancyLimit,
+                    BedType = bedType,
+                    BathroomInclusion = bathroomInclusion,
+                    IsDeleted = false
+                };
 
-                standardRoom.RoomNumber = roomNumber;
-                standardRoom.RoomStatus = roomStatus;
-                standardRoom.RoomPrice = roomPrice;
-                standardRoom.OccupancyLimit = occupancyLimit;
-                standardRoom.BedType = bedType;
-                standardRoom.BathroomInclusion = bathroomInclusion;
-                standardRoom.IsDeleted = false;
-
-                // add the standard room to the database
+                // Add the standard room to the database
                 using (var context = new DataContext())
                 {
-                    context.StandardRooms.Add(standardRoom);
+                    context.Rooms.Add(standardRoom);
                     context.SaveChanges();
                 }
                 return true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 HandleException(ex);
                 return false;
             }
-
         }
 
-
-        // method to read or display all the standard rooms
+        // Method to read or display all the standard rooms
         public List<StandardRoom> GetStandardRooms()
         {
             try
             {
-                // create instance of DataContext
+                // Create instance of DataContext
                 using (var context = new DataContext())
                 {
-                    // assign list of standard rooms where IsDeleted column is false to variable
-                    var standardRooms = context.StandardRooms.Where(sr => sr.IsDeleted == false).ToList();
+                    // Assign list of standard rooms where IsDeleted column is false to variable
+                    var standardRooms = context.Rooms
+                        .OfType<StandardRoom>()
+                        .Where(sr => sr.IsDeleted == false)
+                        .ToList();
 
-                    // return all standard rooms
+                    // Return all standard rooms
                     return standardRooms;
-
                 }
             }
             catch (Exception ex)
@@ -65,68 +67,64 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
             }
         }
 
-
-        // method to edit standard room
-        public bool EditStandardRoom(int? roomNumber = null, string? roomStatus=null, double? roomPrice=null, int? occupancyLimit=null, string? bedType=null, string? bathroomInclusion=null)
+        // Method to edit standard room
+        public bool EditStandardRoom(int? roomNumber = null, string roomStatus = null, double? roomPrice = null, int? occupancyLimit = null, string bedType = null, string bathroomInclusion = null)
         {
             try
             {
-                StandardRoom standardRoom = new StandardRoom();
-
-                // check if the standard room exists
                 using (var context = new DataContext())
                 {
-                    standardRoom = context.StandardRooms.FirstOrDefault(sr => sr.RoomNumber == roomNumber);
-                    if (standardRoom == null || standardRoom.IsDeleted == true)
+                    // Check if the standard room exists
+                    var standardRoom = context.Rooms
+                        .OfType<StandardRoom>()
+                        .FirstOrDefault(sr => sr.RoomNumber == roomNumber);
+
+                    if (standardRoom == null || standardRoom.IsDeleted)
                     {
                         return false;
                     }
 
-                    // update the properties if they have new values
-                    if (roomNumber.HasValue) standardRoom.RoomNumber = roomNumber.Value;
+                    // Update the properties if they have new values
                     if (roomStatus != null) standardRoom.RoomStatus = roomStatus;
                     if (roomPrice.HasValue) standardRoom.RoomPrice = roomPrice.Value;
                     if (occupancyLimit.HasValue) standardRoom.OccupancyLimit = occupancyLimit.Value;
                     if (bedType != null) standardRoom.BedType = bedType;
                     if (bathroomInclusion != null) standardRoom.BathroomInclusion = bathroomInclusion;
 
-                    // update the standard room record in the database
-                    context.StandardRooms.Update(standardRoom);
+                    // Update the standard room record in the database
+                    context.Rooms.Update(standardRoom);
                     context.SaveChanges();
                     return true;
                 }
-
             }
             catch (Exception ex)
             {
-
                 HandleException(ex);
                 return false;
             }
-
         }
 
-
-        // method to delete standard room
+        // Method to delete standard room
         public bool DeleteStandardRoom(int roomId)
         {
             try
             {
                 using (var context = new DataContext())
                 {
-                    // create StandardRoom instance
-                    StandardRoom standardRoom = new StandardRoom();
-                    // checks if room id exists
-                    standardRoom = context.StandardRooms.FirstOrDefault(sr => sr.RoomId == roomId);
+                    // Check if the room id exists
+                    var standardRoom = context.Rooms
+                        .OfType<StandardRoom>()
+                        .FirstOrDefault(sr => sr.RoomId == roomId);
+
                     if (standardRoom == null)
                     {
                         return false;
                     }
 
-                    // soft delete the room from the database
+                    // Soft delete the room from the database
                     standardRoom.IsDeleted = true;
-                    context.StandardRooms.Update(standardRoom); // update the record
-                    context.SaveChanges(); // save changes
+                    context.Rooms.Update(standardRoom); // Update the record
+                    context.SaveChanges(); // Save changes
                     return true;
                 }
             }
@@ -136,7 +134,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
                 return false;
             }
         }
-
 
         // Handle exceptions with error message
         private void HandleException(Exception ex)
