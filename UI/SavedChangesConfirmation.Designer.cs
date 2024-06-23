@@ -78,7 +78,6 @@
             Name = "SavedChangesConfirmation";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SavedChangesConfirmation";
-            Load += SavedChangesConfirmation_Load;
             Click += SavedChangesConfirmation_Click;
             ((System.ComponentModel.ISupportInitialize)CheckPicture).EndInit();
             ResumeLayout(false);

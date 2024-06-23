@@ -80,7 +80,6 @@
             Name = "PasswordChangeConfirmation";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PasswordChangeConfirmation";
-            Load += PasswordChangeConfirmation_Load;
             Click += PasswordChangeConfirmation_Click;
             ((System.ComponentModel.ISupportInitialize)CheckPicture).EndInit();
             ResumeLayout(false);

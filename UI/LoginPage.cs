@@ -29,7 +29,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM
         {
             CreateAccountForm createAccountform = new CreateAccountForm();
             createAccountform.Show();
-
             this.Hide();
         }
 
@@ -43,43 +42,46 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                 string employeeNumber = EmployeeNum.Text;
                 string password = PasswordTextbox.Text;
 
-                if (string.IsNullOrWhiteSpace(employeeNumber) || string.IsNullOrWhiteSpace(password))
+                if (!Validation.ValidateLogin(employeeNumber, password))
                 {
-                    MessageBox.Show("All fields must be filled out.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                if (controller.LoginUser(employeeNumber, password))
-                {
-                    string jobPosition = UserSession.JobPosition;
+                int result = controller.LoginUser(employeeNumber, password);
 
-                    if (jobPosition != null)
-                    {
-                        if (jobPosition.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                switch (result)
+                {
+                    case 1:
+                        string jobPosition = UserSession.JobPosition;
+                        if (jobPosition != null)
                         {
-                            Form_Admin form_admin = new Form_Admin();
-                            form_admin.Show();
-                        }
-                        else if (jobPosition.Equals("Receptionist", StringComparison.OrdinalIgnoreCase))
-                        {
-                            Form_receptionist form_receptionist = new Form_receptionist();
-                            form_receptionist.Show();
+                            if (jobPosition.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Form_Admin form_admin = new Form_Admin();
+                                form_admin.Show();
+                            }
+                            else
+                            {
+                                Form_receptionist form_receptionist = new Form_receptionist();
+                                form_receptionist.Show();
+                            }
+                            this.Hide();
                         }
                         else
                         {
-                            MessageBox.Show("Invalid user role.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            Validation.ShowErrorMessage("Failed to retrieve user role.");
                         }
-
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Failed to retrieve user role.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Incorrect Email or Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                    case 2:
+                        Validation.ShowErrorMessage("User not found. Please check your Employee Number.");
+                        break;
+                    case 3:
+                        Validation.ShowErrorMessage("Incorrect password. Please try again.");
+                        break;
+                    case 0:
+                    default:
+                        Validation.ShowErrorMessage("An unexpected error occurred. Please try again later.");
+                        break;
                 }
             }
             catch (Exception ex)
@@ -93,6 +95,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             HidePassBttn.BringToFront();
             PasswordTextbox.PasswordChar = '*';
         }
+
         private void HidePassBttn_Click(object sender, EventArgs e)
         {
             ShowPassIcon.BringToFront();

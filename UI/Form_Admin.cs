@@ -1,14 +1,11 @@
-﻿using Guna.UI2.WinForms;
-using HOTEL_MANAGEMENT_SYSTEM.Controllers;
-using HOTEL_MANAGEMENT_SYSTEM.Utilities;
-using System;
-using System.Drawing;
-using System.Windows.Forms;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Utilities;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class Form_Admin : Form
     {
+        private static Image image;
+
         public Form_Admin()
         {
             InitializeComponent();
@@ -59,25 +56,25 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void circilephotoprofile_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp(this);
+            ProfilePopUp profilePopUp = new ProfilePopUp(this, image);
             profilePopUp.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp(this);
+            ProfilePopUp profilePopUp = new ProfilePopUp(this, image);
             profilePopUp.Show();
         }
 
         private void labelemail_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp(this);
+            ProfilePopUp profilePopUp = new ProfilePopUp(this, image);
             profilePopUp.Show();
         }
 
         private void profilegroup_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp(this);
+            ProfilePopUp profilePopUp = new ProfilePopUp(this, image);
             profilePopUp.Show();
         }
 
@@ -86,6 +83,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             labelnameprofile.Text = UserSession.EmployeeName;
             labeljobposition.Text = UserSession.JobPosition;
             circilephotoprofile.Image = ImageHelper.ByteArrayToImage(UserSession.ProfilePicture);
+
+            image = circilephotoprofile.Image;
         }
     }
 }

@@ -75,7 +75,7 @@
             ScheduleTextBox.ForeColor = Color.Black;
             ScheduleTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             ScheduleTextBox.Location = new Point(448, 363);
-            ScheduleTextBox.Margin = new Padding(4, 4, 4, 4);
+            ScheduleTextBox.Margin = new Padding(4);
             ScheduleTextBox.Name = "ScheduleTextBox";
             ScheduleTextBox.PasswordChar = '\0';
             ScheduleTextBox.PlaceholderForeColor = Color.Gray;
@@ -103,7 +103,7 @@
             PositionTextBox.ForeColor = Color.Black;
             PositionTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             PositionTextBox.Location = new Point(448, 316);
-            PositionTextBox.Margin = new Padding(4, 4, 4, 4);
+            PositionTextBox.Margin = new Padding(4);
             PositionTextBox.Name = "PositionTextBox";
             PositionTextBox.PasswordChar = '\0';
             PositionTextBox.PlaceholderForeColor = Color.Gray;
@@ -131,7 +131,7 @@
             IDNumberTextBox.ForeColor = Color.Black;
             IDNumberTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             IDNumberTextBox.Location = new Point(448, 268);
-            IDNumberTextBox.Margin = new Padding(4, 4, 4, 4);
+            IDNumberTextBox.Margin = new Padding(4);
             IDNumberTextBox.Name = "IDNumberTextBox";
             IDNumberTextBox.PasswordChar = '\0';
             IDNumberTextBox.PlaceholderForeColor = Color.Gray;
@@ -159,7 +159,7 @@
             EmailTextBox.ForeColor = Color.Black;
             EmailTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             EmailTextBox.Location = new Point(448, 221);
-            EmailTextBox.Margin = new Padding(4, 4, 4, 4);
+            EmailTextBox.Margin = new Padding(4);
             EmailTextBox.Name = "EmailTextBox";
             EmailTextBox.PasswordChar = '\0';
             EmailTextBox.PlaceholderForeColor = Color.Gray;

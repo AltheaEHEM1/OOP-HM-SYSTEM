@@ -1,4 +1,5 @@
 ﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using HOTEL_MANAGEMENT_SYSTEM.Utilities;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 
@@ -6,13 +7,29 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class CreateAccountForm : Form
     {
+        private static readonly ExceptionHandling exception = new ExceptionHandling();
         public CreateAccountForm()
         {
             InitializeComponent();
             guna2Panel3.Parent = guna2Panel2;
             guna2Panel3.BackColor = Color.FromArgb(200, Color.White);
             guna2Panel3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, guna2Panel3.Width, guna2Panel3.Height, 20, 20));
+            /*employeenumber.TextChanged += new EventHandler(TextBox_TextChanged);
+            fullname.TextChanged += new EventHandler(TextBox_TextChanged);
+            dob.TextChanged += new EventHandler(TextBox_TextChanged);
+            passacc.TextChanged += new EventHandler(TextBox_TextChanged);
+            confirmpass.TextChanged += new EventHandler(TextBox_TextChanged);*/
         }
+        /*
+        // Event handler to check if all fields are not null or empty
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
+            CreateAcc.Enabled = !string.IsNullOrWhiteSpace(employeenumber.Text)
+                                && !string.IsNullOrWhiteSpace(fullname.Text) 
+                                && !string.IsNullOrWhiteSpace(dob.Text)
+                                && !string.IsNullOrWhiteSpace(passacc.Text)
+                                && !string.IsNullOrWhiteSpace(confirmpass.Text);
+        }*/
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(
@@ -47,7 +64,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 if (string.IsNullOrWhiteSpace(EmployeeNumber) || string.IsNullOrWhiteSpace(FullName) || string.IsNullOrWhiteSpace(Birthdate) ||
                     string.IsNullOrWhiteSpace(Password) || string.IsNullOrWhiteSpace(ConfirmPass))
                 {
-                    MessageBox.Show("All fields must be filled out.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Validation.ShowErrorMessage("All fields must be filled out.");
                     return;
                 }
 
@@ -60,14 +77,14 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 string passwordPattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[~`!@#$%^&*()_\-+={[}\]|\:;""'<,>.?/]).{8,}$";
                 if (!Regex.IsMatch(Password, passwordPattern))
                 {
-                    MessageBox.Show("Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Validation.ShowErrorMessage("Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character.");
                     return;
                 }
 
                 // Validate password and confirm password match
                 if (Password != ConfirmPass)
                 {
-                    MessageBox.Show("Passwords do not match.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Validation.ShowErrorMessage("Passwords do not match.");
                     return;
                 }
 
@@ -76,7 +93,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 // Catching any exceptions that may occur
                 if (!controller.CreateUser(EmployeeNumber, FullName, Birthdate, Password))
                 {
-                    MessageBox.Show("Error creating your account.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Validation.ShowErrorMessage("Error creating your account.");
                     return;
                 }
 
@@ -88,7 +105,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                exception.HandleException(ex);
             }
         }
 

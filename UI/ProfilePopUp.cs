@@ -1,24 +1,16 @@
-﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
-using HOTEL_MANAGEMENT_SYSTEM.Utilities;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Utilities;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class ProfilePopUp : Form
     {
         private static Form _parentForm;
-        public ProfilePopUp(Form form)
+        private static Image _parentImage;
+        public ProfilePopUp(Form form, Image image)
         {
             InitializeComponent();
             _parentForm = form;
+            _parentImage = image;
             this.Deactivate += new EventHandler(ProfilePopUp_Deactivate);
         }
 
@@ -39,6 +31,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             ProfilePage profilePage = new ProfilePage();
             profilePage.Show();
             _parentForm.Hide();
+            _parentImage.Dispose();
             this.Close();
         }
 

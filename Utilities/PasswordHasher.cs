@@ -1,6 +1,6 @@
 ﻿namespace HOTEL_MANAGEMENT_SYSTEM.Utilities
 {
-    public static class PasswordHasher
+    public class PasswordHasher
     {
         public static string GenerateSalt()
         {

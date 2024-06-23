@@ -1,19 +1,11 @@
-﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
-using HOTEL_MANAGEMENT_SYSTEM.Utilities;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Utilities;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class Form_receptionist : Form
     {
+        private Image image;
+
         public Form_receptionist()
         {
             InitializeComponent();
@@ -64,25 +56,25 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void circilephotoprofile_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp(this);
+            ProfilePopUp profilePopUp = new ProfilePopUp(this, image);
             profilePopUp.Show();
         }
 
         private void label1name_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp(this);
+            ProfilePopUp profilePopUp = new ProfilePopUp(this, image);
             profilePopUp.Show();
         }
 
         private void labelemail_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp(this);
+            ProfilePopUp profilePopUp = new ProfilePopUp(this, image);
             profilePopUp.Show();
         }
 
         private void profilegroup_Click(object sender, EventArgs e)
         {
-            ProfilePopUp profilePopUp = new ProfilePopUp(this);
+            ProfilePopUp profilePopUp = new ProfilePopUp(this, image);
             profilePopUp.Show();
         }
 
@@ -91,11 +83,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             labelnameprofile.Text = UserSession.EmployeeName;
             labeljobposition.Text = UserSession.JobPosition;
             circilephotoprofile.Image = ImageHelper.ByteArrayToImage(UserSession.ProfilePicture);
-        }
 
-        private void Form_receptionist_Load(object sender, EventArgs e)
-        {
-            
+            image = circilephotoprofile.Image;
         }
     }
 }

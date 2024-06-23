@@ -1,178 +1,174 @@
 ﻿using HOTEL_MANAGEMENT_SYSTEM.Models;
 using HOTEL_MANAGEMENT_SYSTEM.Utilities;
-using System.Text;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
 {
     public class UserController
     {
-        // Static field to store the employee number and declare the DataContext
-        private static readonly DataContext context = new();
-        private static readonly ExceptionHandling eH = new();
+        private static readonly ExceptionHandling exception = new();
 
-        // CreateAccountForm.cs
         public bool CreateUser(string employeeNumber, string fullName, string birthdate, string password)
         {
-            try 
-            { 
-                // Check if the employee number already exists
-                if (context.Users.Any(u => u.EmployeeNumber == employeeNumber))
-                {
-                    MessageBox.Show("The employee number already exists. Please enter a unique employee number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return false;
-                }
-
-                // Generate salt and hash the password
-                string salt = PasswordHasher.GenerateSalt();
-                string saltedPassword = PasswordHasher.HashPassword(password, salt);
-                string jobposition = "Admin";
-                string schedule = "Unknown";
-
-                // Load the default profile picture from resources
-                byte[] defaultProfilePicture = ImageHelper.ImageToByteArray(Properties.Resources.defaultprofilepicture);
-
-                // Create a new user instance
-                var user = new User
-                {
-                    EmployeeNumber = employeeNumber,
-                    EmployeeName = fullName,
-                    Birthdate = birthdate,
-                    Salt = salt,
-                    SaltedPassword = saltedPassword,
-                    CreatedAt = DateTime.Now,
-                    JobPosition = jobposition,
-                    Schedule = schedule,
-                    ProfilePicture = defaultProfilePicture
-                };
-
-                // Add the user to the database
-                context.Users.Add(user);
-                context.SaveChanges();
-                return true;
-            }
-            catch (Exception ex)  // For detailed error messages
+            try
             {
-                eH.HandleException(ex);
+                using (var context = new DataContext(DatabaseHelper.GetDatabaseConnectionString()))
+                {
+                    if (context.Users.Any(u => u.EmployeeNumber == employeeNumber))
+                    {
+                        Validation.ShowErrorMessage("The employee number already exists. Please enter a unique employee number.");
+                        return false;
+                    }
+
+                    string salt = PasswordHasher.GenerateSalt();
+                    string saltedPassword = PasswordHasher.HashPassword(password, salt);
+                    string jobposition = "Admin";
+                    string schedule = "Unknown";
+
+                    byte[] defaultProfilePicture = ImageHelper.ImageToByteArray(Properties.Resources.defaultprofilepicture);
+
+                    var user = new User
+                    {
+                        EmployeeNumber = employeeNumber,
+                        EmployeeName = fullName,
+                        Birthdate = birthdate,
+                        Salt = salt,
+                        SaltedPassword = saltedPassword,
+                        CreatedAt = DateTime.Now,
+                        JobPosition = jobposition,
+                        Schedule = schedule,
+                        ProfilePicture = defaultProfilePicture
+                    };
+
+                    context.Users.Add(user);
+                    context.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                exception.HandleException(ex);
                 return false;
             }
         }
 
-        // LoginPage.cs   
-        public bool LoginUser(string employeeNumber, string password)
+        public int LoginUser(string employeeNumber, string password)
         {
             try
             {
-                // Retrieve the user from the database
-                var user = context.Users.FirstOrDefault(u => u.EmployeeNumber == employeeNumber);
-                if (user != null && PasswordHasher.VerifyPassword(password, user.Salt, user.SaltedPassword))
+                using (var context = new DataContext(DatabaseHelper.GetDatabaseConnectionString()))
                 {
-                    // Set user information in UserSession
+                    var user = context.Users.FirstOrDefault(u => u.EmployeeNumber == employeeNumber);
+                    if (user == null) return 2; // User not found
+                    if (!PasswordHasher.VerifyPassword(password, user.Salt, user.SaltedPassword)) return 3; // Incorrect password
+
                     UserSession.EmployeeNumber = user.EmployeeNumber;
                     UserSession.EmployeeName = user.EmployeeName;
+                    UserSession.Birthdate = user.Birthdate;
                     UserSession.JobPosition = user.JobPosition;
                     UserSession.Schedule = user.Schedule;
                     UserSession.ProfilePicture = user.ProfilePicture;
-                    return true;
+                    return 1;
                 }
-                else
-                {
-                    return false;
-                }
-
             }
             catch (Exception ex)
             {
-                eH.HandleException(ex);
-                return false;
+                exception.HandleException(ex);
+                return 0;
             }
         }
 
-        // Logout Form1.cs
-        public void LogoutUser()
+        public bool EditUser()
         {
             try
             {
-                // Clear user session or any related data
-                // For example, if you are using a static class to store user info, clear it
-                UserSession.EmployeeNumber = null;
-                UserSession.EmployeeName = null;
-                UserSession.JobPosition = null;
-                UserSession.Schedule = null;
-                UserSession.ProfilePicture = null;
-
-                // Create a list to store forms that need to be closed
-                List<Form> formsToClose = new List<Form>();
-
-                // Add forms to the list that need to be closed
-                foreach (Form form in Application.OpenForms)
+                using (var context = new DataContext(DatabaseHelper.GetDatabaseConnectionString()))
                 {
-                    if (form is not LoginPage)
+                    var user = context.Users.FirstOrDefault(u => u.EmployeeNumber == UserSession.EmployeeNumber);
+                    if (user == null)
                     {
-                        formsToClose.Add(form);
+                        Validation.ShowErrorMessage("User not found.");
+                        return false;
                     }
-                }
 
-                // Close forms in the separate list
-                foreach (Form form in formsToClose)
-                {
-                    form.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                eH.HandleException(ex);
-            }
-        }
-
-        // Update user information ProfilePage.cs
-        // no birthdate yet
-        public bool EditUser(User user)
-        {
-            try
-            {
-                /*
-                    EmployeeNumber = employeeNumber,
-                    EmployeeName = fullName,
-                    Birthdate = birthdate,
-                    Salt = salt,
-                    SaltedPassword = saltedPassword,
-                    CreatedAt = DateTime.Now,
-                    JobPosition = jobposition,
-                    Schedule = schedule,
-                    ProfilePicture = defaultProfilePicture
-                */
-
-
-                var context = new DataContext();
-                MessageBox.Show("before exisintg");
-                var existingUser = context.Users.FirstOrDefault(u => u.EmployeeNumber == user.EmployeeNumber);
-                MessageBox.Show("after exisintg");
-                if (existingUser != null)
-                {
-                    MessageBox.Show("uSER IS FOUND");
-                    existingUser.EmployeeNumber = user.EmployeeNumber;
-                    existingUser.EmployeeName = user.EmployeeName;
-                    existingUser.Birthdate = user.Birthdate;
-                    existingUser.Salt = existingUser.Salt;
-                    existingUser.SaltedPassword = existingUser.SaltedPassword;
-                    existingUser.CreatedAt = existingUser.CreatedAt;
-                    existingUser.JobPosition = user.JobPosition;
-                    existingUser.Schedule = user.Schedule;
-                    existingUser.ProfilePicture = user.ProfilePicture;
+                    user.EmployeeNumber = UserSession.EmployeeNumber;
+                    user.EmployeeName = UserSession.EmployeeName;
+                    user.Birthdate = UserSession.Birthdate;
+                    user.Salt = user.Salt;
+                    user.SaltedPassword = user.SaltedPassword;
+                    user.CreatedAt = user.CreatedAt;
+                    user.JobPosition = UserSession.JobPosition;
+                    user.Schedule = UserSession.Schedule;
+                    user.ProfilePicture = UserSession.ProfilePicture;
 
                     context.SaveChanges();
                     return true;
                 }
-                else
+
+            }
+            catch (Exception ex)
+            {
+                exception.HandleException(ex);
+                return false;
+            }
+        }
+
+        public bool ChangePassword(string currentPassword, string newPassword)
+        {
+            try
+            {
+                using (var context = new DataContext(DatabaseHelper.GetDatabaseConnectionString()))
                 {
-                    MessageBox.Show("uSER IS NOT FOUND");
-                    return false;
+                    var user = context.Users.FirstOrDefault(u => u.EmployeeNumber == UserSession.EmployeeNumber);
+                    if (user == null)
+                    {
+                        Validation.ShowErrorMessage("User not found.");
+                        return false;
+                    }
+
+                    if (!PasswordHasher.VerifyPassword(currentPassword, user.Salt, user.SaltedPassword))
+                    {
+                        Validation.ShowErrorMessage("Current password is incorrect.");
+                        return false;
+                    }
+
+                    user.EmployeeNumber = UserSession.EmployeeNumber;
+                    user.EmployeeName = UserSession.EmployeeName;
+                    user.Birthdate = UserSession.Birthdate;
+                    user.Salt = PasswordHasher.GenerateSalt();
+                    user.SaltedPassword = PasswordHasher.HashPassword(newPassword, user.Salt);
+                    user.CreatedAt = user.CreatedAt;
+                    user.JobPosition = UserSession.JobPosition;
+                    user.Schedule = UserSession.Schedule;
+                    user.ProfilePicture = UserSession.ProfilePicture;
+
+                    context.SaveChanges();
+                    return true;
                 }
             }
             catch (Exception ex)
             {
-                eH.HandleException(ex);
+                exception.HandleException(ex);
                 return false;
+            }
+        }
+
+        public void LogoutUser()
+        {
+            try
+            {
+                UserSession.Clear();
+
+                foreach (Form form in Application.OpenForms.Cast<Form>().ToList())
+                {
+                    if (form is not LoginPage)
+                    {
+                        form.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                exception.HandleException(ex);
             }
         }
     }

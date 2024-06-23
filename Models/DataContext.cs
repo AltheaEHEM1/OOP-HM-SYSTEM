@@ -1,31 +1,19 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.IO;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.Models
 {
     public class DataContext : DbContext
     {
+        private readonly string _connectionString;
+
+        public DataContext(string connectionString)
+        {
+            _connectionString = connectionString;
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // Get the current directory where the application is running
-            string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
-
-            // Navigate up to the project's root directory (assumes this file is in bin/{Debug|Release}/{net5.0|netcoreapp3.1})
-            string projectRoot = Directory.GetParent(currentDirectory).Parent.Parent.Parent.FullName;
-
-            // Ensure the Database directory exists
-            string databaseDirectory = Path.Combine(projectRoot, "Database");
-            if (!Directory.Exists(databaseDirectory))
-            {
-                Directory.CreateDirectory(databaseDirectory);
-            }
-
-            // Combine the project root with the Database folder and database file name
-            string dbPath = Path.Combine(databaseDirectory, "HotelManagement.db");
-
-            // Set the SQLite connection string
-            optionsBuilder.UseSqlite($"Data Source={dbPath}");
+            optionsBuilder.UseSqlite(_connectionString);
         }
 
         // Create the tables for the database

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Net.Mail;
-using System.Windows.Forms;
-using HOTEL_MANAGEMENT_SYSTEM.Controllers;
-using HOTEL_MANAGEMENT_SYSTEM.Utilities;
-using static System.Windows.Forms.DataFormats;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Utilities;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
@@ -28,16 +23,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             this.Hide();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void ProfilePage_Load(object sender, EventArgs e)
         {
             Name.Text = UserSession.EmployeeName;
             JobPosition.Text = UserSession.JobPosition;
             ProfilePictureBox.Image = ImageHelper.ByteArrayToImage(UserSession.ProfilePicture);
+
         }
 
         private void BackButton_Click_1(object sender, EventArgs e)
@@ -46,14 +37,14 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             {
                 Form_Admin form_admin = new Form_Admin();
                 form_admin.Show();
-                this.Hide();
             }
             else
             {
                 Form_receptionist form_Receptionist = new Form_receptionist();
                 form_Receptionist.Show();
-                this.Hide();
             }
+
+            this.Hide();
         }
     }
 }

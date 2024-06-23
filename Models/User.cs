@@ -6,7 +6,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
     public class User
     {
         // Necessary for Login
-        [Key]
+        [Key] [Required]
         public string EmployeeNumber { get; set; }
         [Required]
         public string EmployeeName { get; set; }
