@@ -10,23 +10,10 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
     public class SuiteRoomController
     {
         // Method to add a suite room
-        public bool AddSuiteRoom(int roomNumber, string roomStatus, double roomPrice, int occupancyLimit, int numberOfRooms, string suiteType)
+        public bool AddSuiteRoom(Suite suiteRoom)
         {
             try
             {
-                // Create instance of suite room
-                Suite suiteRoom = new Suite
-                {
-                    // assign the value to the variables
-                    RoomNumber = roomNumber,
-                    RoomStatus = roomStatus,
-                    RoomPrice = roomPrice,
-                    OccupancyLimit = occupancyLimit,
-                    NumberOfRooms = numberOfRooms,
-                    SuiteType = suiteType,
-                    IsDeleted = false
-                };
-
                 // Add the suite room to the database
                 using (var context = new DataContext())
                 {

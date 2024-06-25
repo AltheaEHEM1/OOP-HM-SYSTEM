@@ -29,36 +29,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuiteAddroom));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            suitetype = new Guna.UI2.WinForms.Guna2TextBox();
+            numberofrooms = new Guna.UI2.WinForms.Guna2TextBox();
+            roomstatus = new Guna.UI2.WinForms.Guna2TextBox();
             occupancylimit = new Guna.UI2.WinForms.Guna2TextBox();
-            Savebutton = new Guna.UI2.WinForms.Guna2Button();
+            addRoomBtn = new Guna.UI2.WinForms.Guna2Button();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             label1 = new Label();
             roomprice = new Guna.UI2.WinForms.Guna2TextBox();
             roomnumber = new Guna.UI2.WinForms.Guna2TextBox();
             NavBack = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            roomstatus = new Guna.UI2.WinForms.Guna2TextBox();
-            numberofrooms = new Guna.UI2.WinForms.Guna2TextBox();
-            suitetype = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Panel1.SuspendLayout();
             guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)NavBack).BeginInit();
@@ -74,24 +74,90 @@
             guna2Panel1.Controls.Add(numberofrooms);
             guna2Panel1.Controls.Add(roomstatus);
             guna2Panel1.Controls.Add(occupancylimit);
-            guna2Panel1.Controls.Add(Savebutton);
+            guna2Panel1.Controls.Add(addRoomBtn);
             guna2Panel1.Controls.Add(guna2Panel2);
             guna2Panel1.Controls.Add(roomprice);
             guna2Panel1.Controls.Add(roomnumber);
             guna2Panel1.Controls.Add(NavBack);
-            guna2Panel1.CustomizableEdges = customizableEdges18;
+            guna2Panel1.CustomizableEdges = customizableEdges37;
             guna2Panel1.Location = new Point(25, 14);
             guna2Panel1.Margin = new Padding(3, 2, 3, 2);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges38;
             guna2Panel1.Size = new Size(593, 309);
             guna2Panel1.TabIndex = 4;
+            // 
+            // suitetype
+            // 
+            suitetype.BorderColor = Color.Gray;
+            suitetype.BorderRadius = 10;
+            suitetype.CustomizableEdges = customizableEdges20;
+            suitetype.DefaultText = "";
+            suitetype.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            suitetype.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            suitetype.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            suitetype.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            suitetype.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            suitetype.Font = new Font("Century Gothic", 9F);
+            suitetype.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            suitetype.Location = new Point(261, 166);
+            suitetype.Name = "suitetype";
+            suitetype.PasswordChar = '\0';
+            suitetype.PlaceholderText = "Type of Suite";
+            suitetype.SelectedText = "";
+            suitetype.ShadowDecoration.CustomizableEdges = customizableEdges21;
+            suitetype.Size = new Size(262, 32);
+            suitetype.TabIndex = 47;
+            // 
+            // numberofrooms
+            // 
+            numberofrooms.BorderColor = Color.Gray;
+            numberofrooms.BorderRadius = 10;
+            numberofrooms.CustomizableEdges = customizableEdges22;
+            numberofrooms.DefaultText = "";
+            numberofrooms.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            numberofrooms.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            numberofrooms.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            numberofrooms.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            numberofrooms.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            numberofrooms.Font = new Font("Century Gothic", 9F);
+            numberofrooms.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            numberofrooms.Location = new Point(76, 166);
+            numberofrooms.Name = "numberofrooms";
+            numberofrooms.PasswordChar = '\0';
+            numberofrooms.PlaceholderText = "Number of Rooms";
+            numberofrooms.SelectedText = "";
+            numberofrooms.ShadowDecoration.CustomizableEdges = customizableEdges23;
+            numberofrooms.Size = new Size(168, 32);
+            numberofrooms.TabIndex = 46;
+            // 
+            // roomstatus
+            // 
+            roomstatus.BorderColor = Color.Gray;
+            roomstatus.BorderRadius = 10;
+            roomstatus.CustomizableEdges = customizableEdges24;
+            roomstatus.DefaultText = "";
+            roomstatus.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            roomstatus.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            roomstatus.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            roomstatus.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            roomstatus.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            roomstatus.Font = new Font("Century Gothic", 9F);
+            roomstatus.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            roomstatus.Location = new Point(261, 128);
+            roomstatus.Name = "roomstatus";
+            roomstatus.PasswordChar = '\0';
+            roomstatus.PlaceholderText = "Room Status";
+            roomstatus.SelectedText = "";
+            roomstatus.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            roomstatus.Size = new Size(262, 32);
+            roomstatus.TabIndex = 45;
             // 
             // occupancylimit
             // 
             occupancylimit.BorderColor = Color.Gray;
             occupancylimit.BorderRadius = 10;
-            occupancylimit.CustomizableEdges = customizableEdges7;
+            occupancylimit.CustomizableEdges = customizableEdges26;
             occupancylimit.DefaultText = "";
             occupancylimit.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             occupancylimit.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -105,40 +171,40 @@
             occupancylimit.PasswordChar = '\0';
             occupancylimit.PlaceholderText = "Occupancy limit";
             occupancylimit.SelectedText = "";
-            occupancylimit.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            occupancylimit.ShadowDecoration.CustomizableEdges = customizableEdges27;
             occupancylimit.Size = new Size(168, 32);
             occupancylimit.TabIndex = 44;
             // 
-            // Savebutton
+            // addRoomBtn
             // 
-            Savebutton.BackColor = Color.Transparent;
-            Savebutton.BorderRadius = 10;
-            Savebutton.CustomizableEdges = customizableEdges9;
-            Savebutton.DisabledState.BorderColor = Color.DarkGray;
-            Savebutton.DisabledState.CustomBorderColor = Color.DarkGray;
-            Savebutton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            Savebutton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            Savebutton.FillColor = Color.FromArgb(0, 64, 0);
-            Savebutton.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Savebutton.ForeColor = Color.White;
-            Savebutton.Location = new Point(200, 254);
-            Savebutton.Margin = new Padding(3, 2, 3, 2);
-            Savebutton.Name = "Savebutton";
-            Savebutton.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            Savebutton.Size = new Size(184, 34);
-            Savebutton.TabIndex = 42;
-            Savebutton.Text = "Save changes";
-            Savebutton.Click += Savebutton_Click_1;
+            addRoomBtn.BackColor = Color.Transparent;
+            addRoomBtn.BorderRadius = 10;
+            addRoomBtn.CustomizableEdges = customizableEdges28;
+            addRoomBtn.DisabledState.BorderColor = Color.DarkGray;
+            addRoomBtn.DisabledState.CustomBorderColor = Color.DarkGray;
+            addRoomBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            addRoomBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            addRoomBtn.FillColor = Color.FromArgb(0, 64, 0);
+            addRoomBtn.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addRoomBtn.ForeColor = Color.White;
+            addRoomBtn.Location = new Point(200, 254);
+            addRoomBtn.Margin = new Padding(3, 2, 3, 2);
+            addRoomBtn.Name = "addRoomBtn";
+            addRoomBtn.ShadowDecoration.CustomizableEdges = customizableEdges29;
+            addRoomBtn.Size = new Size(184, 34);
+            addRoomBtn.TabIndex = 42;
+            addRoomBtn.Text = "Add Room";
+            addRoomBtn.Click += addRoomBtn_Click;
             // 
             // guna2Panel2
             // 
             guna2Panel2.BackColor = Color.FromArgb(13, 22, 29);
             guna2Panel2.Controls.Add(label1);
-            guna2Panel2.CustomizableEdges = customizableEdges11;
+            guna2Panel2.CustomizableEdges = customizableEdges30;
             guna2Panel2.Location = new Point(105, 50);
             guna2Panel2.Margin = new Padding(3, 2, 3, 2);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges31;
             guna2Panel2.Size = new Size(397, 23);
             guna2Panel2.TabIndex = 41;
             // 
@@ -157,7 +223,7 @@
             // 
             roomprice.BorderColor = Color.Gray;
             roomprice.BorderRadius = 10;
-            roomprice.CustomizableEdges = customizableEdges13;
+            roomprice.CustomizableEdges = customizableEdges32;
             roomprice.DefaultText = "";
             roomprice.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             roomprice.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -171,7 +237,7 @@
             roomprice.PasswordChar = '\0';
             roomprice.PlaceholderText = "Room price:";
             roomprice.SelectedText = "";
-            roomprice.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            roomprice.ShadowDecoration.CustomizableEdges = customizableEdges33;
             roomprice.Size = new Size(262, 32);
             roomprice.TabIndex = 40;
             // 
@@ -179,7 +245,7 @@
             // 
             roomnumber.BorderColor = Color.Gray;
             roomnumber.BorderRadius = 10;
-            roomnumber.CustomizableEdges = customizableEdges15;
+            roomnumber.CustomizableEdges = customizableEdges34;
             roomnumber.DefaultText = "";
             roomnumber.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             roomnumber.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -193,7 +259,7 @@
             roomnumber.PasswordChar = '\0';
             roomnumber.PlaceholderText = "Room number:";
             roomnumber.SelectedText = "";
-            roomnumber.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            roomnumber.ShadowDecoration.CustomizableEdges = customizableEdges35;
             roomnumber.Size = new Size(168, 32);
             roomnumber.TabIndex = 38;
             // 
@@ -205,77 +271,11 @@
             NavBack.Location = new Point(46, 29);
             NavBack.Margin = new Padding(3, 2, 3, 2);
             NavBack.Name = "NavBack";
-            NavBack.ShadowDecoration.CustomizableEdges = customizableEdges17;
+            NavBack.ShadowDecoration.CustomizableEdges = customizableEdges36;
             NavBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             NavBack.Size = new Size(38, 23);
             NavBack.TabIndex = 34;
             NavBack.TabStop = false;
-            // 
-            // roomstatus
-            // 
-            roomstatus.BorderColor = Color.Gray;
-            roomstatus.BorderRadius = 10;
-            roomstatus.CustomizableEdges = customizableEdges5;
-            roomstatus.DefaultText = "";
-            roomstatus.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            roomstatus.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            roomstatus.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            roomstatus.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            roomstatus.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            roomstatus.Font = new Font("Century Gothic", 9F);
-            roomstatus.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            roomstatus.Location = new Point(261, 128);
-            roomstatus.Name = "roomstatus";
-            roomstatus.PasswordChar = '\0';
-            roomstatus.PlaceholderText = "Room Status";
-            roomstatus.SelectedText = "";
-            roomstatus.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            roomstatus.Size = new Size(262, 32);
-            roomstatus.TabIndex = 45;
-            // 
-            // numberofrooms
-            // 
-            numberofrooms.BorderColor = Color.Gray;
-            numberofrooms.BorderRadius = 10;
-            numberofrooms.CustomizableEdges = customizableEdges3;
-            numberofrooms.DefaultText = "";
-            numberofrooms.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            numberofrooms.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            numberofrooms.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            numberofrooms.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            numberofrooms.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            numberofrooms.Font = new Font("Century Gothic", 9F);
-            numberofrooms.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            numberofrooms.Location = new Point(76, 166);
-            numberofrooms.Name = "numberofrooms";
-            numberofrooms.PasswordChar = '\0';
-            numberofrooms.PlaceholderText = "Number of Rooms";
-            numberofrooms.SelectedText = "";
-            numberofrooms.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            numberofrooms.Size = new Size(168, 32);
-            numberofrooms.TabIndex = 46;
-            // 
-            // suitetype
-            // 
-            suitetype.BorderColor = Color.Gray;
-            suitetype.BorderRadius = 10;
-            suitetype.CustomizableEdges = customizableEdges1;
-            suitetype.DefaultText = "";
-            suitetype.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            suitetype.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            suitetype.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            suitetype.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            suitetype.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            suitetype.Font = new Font("Century Gothic", 9F);
-            suitetype.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            suitetype.Location = new Point(261, 166);
-            suitetype.Name = "suitetype";
-            suitetype.PasswordChar = '\0';
-            suitetype.PlaceholderText = "Type of Suite";
-            suitetype.SelectedText = "";
-            suitetype.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            suitetype.Size = new Size(262, 32);
-            suitetype.TabIndex = 47;
             // 
             // SuiteAddroom
             // 
@@ -300,7 +300,7 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2TextBox occupancylimit;
-        private Guna.UI2.WinForms.Guna2Button Savebutton;
+        private Guna.UI2.WinForms.Guna2Button addRoomBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Label label1;
         private Guna.UI2.WinForms.Guna2TextBox roomprice;

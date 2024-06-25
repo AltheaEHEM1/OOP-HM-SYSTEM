@@ -50,7 +50,7 @@
             typeofviewadd = new Guna.UI2.WinForms.Guna2TextBox();
             roomstatusadd = new Guna.UI2.WinForms.Guna2TextBox();
             occupancylimitadd = new Guna.UI2.WinForms.Guna2TextBox();
-            Savebutton = new Guna.UI2.WinForms.Guna2Button();
+            addRoomBtn = new Guna.UI2.WinForms.Guna2Button();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             label1 = new Label();
             roompriceadd = new Guna.UI2.WinForms.Guna2TextBox();
@@ -70,7 +70,7 @@
             guna2Panel1.Controls.Add(typeofviewadd);
             guna2Panel1.Controls.Add(roomstatusadd);
             guna2Panel1.Controls.Add(occupancylimitadd);
-            guna2Panel1.Controls.Add(Savebutton);
+            guna2Panel1.Controls.Add(addRoomBtn);
             guna2Panel1.Controls.Add(guna2Panel2);
             guna2Panel1.Controls.Add(roompriceadd);
             guna2Panel1.Controls.Add(roomnumberadd);
@@ -149,26 +149,26 @@
             occupancylimitadd.Size = new Size(168, 32);
             occupancylimitadd.TabIndex = 44;
             // 
-            // Savebutton
+            // addRoomBtn
             // 
-            Savebutton.BackColor = Color.Transparent;
-            Savebutton.BorderRadius = 10;
-            Savebutton.CustomizableEdges = customizableEdges24;
-            Savebutton.DisabledState.BorderColor = Color.DarkGray;
-            Savebutton.DisabledState.CustomBorderColor = Color.DarkGray;
-            Savebutton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            Savebutton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            Savebutton.FillColor = Color.FromArgb(0, 64, 0);
-            Savebutton.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Savebutton.ForeColor = Color.White;
-            Savebutton.Location = new Point(219, 268);
-            Savebutton.Margin = new Padding(3, 2, 3, 2);
-            Savebutton.Name = "Savebutton";
-            Savebutton.ShadowDecoration.CustomizableEdges = customizableEdges25;
-            Savebutton.Size = new Size(184, 34);
-            Savebutton.TabIndex = 42;
-            Savebutton.Text = "Save changes";
-            Savebutton.Click += Savebutton_Click;
+            addRoomBtn.BackColor = Color.Transparent;
+            addRoomBtn.BorderRadius = 10;
+            addRoomBtn.CustomizableEdges = customizableEdges24;
+            addRoomBtn.DisabledState.BorderColor = Color.DarkGray;
+            addRoomBtn.DisabledState.CustomBorderColor = Color.DarkGray;
+            addRoomBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            addRoomBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            addRoomBtn.FillColor = Color.FromArgb(0, 64, 0);
+            addRoomBtn.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addRoomBtn.ForeColor = Color.White;
+            addRoomBtn.Location = new Point(219, 268);
+            addRoomBtn.Margin = new Padding(3, 2, 3, 2);
+            addRoomBtn.Name = "addRoomBtn";
+            addRoomBtn.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            addRoomBtn.Size = new Size(184, 34);
+            addRoomBtn.TabIndex = 42;
+            addRoomBtn.Text = "Add Room";
+            addRoomBtn.Click += addRoomBtn_Click;
             // 
             // guna2Panel2
             // 
@@ -274,7 +274,7 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2TextBox occupancylimitadd;
-        private Guna.UI2.WinForms.Guna2Button Savebutton;
+        private Guna.UI2.WinForms.Guna2Button addRoomBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Label label1;
         private Guna.UI2.WinForms.Guna2TextBox roompriceadd;

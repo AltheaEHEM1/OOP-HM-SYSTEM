@@ -1,5 +1,6 @@
 ﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
 using HOTEL_MANAGEMENT_SYSTEM.Models;
+using HOTEL_MANAGEMENT_SYSTEM.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,47 +20,89 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void addRoomBtn_Click(object sender, EventArgs e)
         {
+            // checks if all fields are empty
+            if (roomnumber.Text == null)
+            {
+                MessageBox.Show("Room Number is required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                roomnumber.Focus();
+                return;
+            }
+            if (roomprice.Text == null)
+            {
+                MessageBox.Show("Room Price is required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                roomprice.Focus();
+                return;
+            }
+            if (occupancylimit.Text == null)
+            {
+                MessageBox.Show("Occupancy Limit is required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                occupancylimit.Focus();
+                return;
+            }
+            if (roomstatus.Text == null)
+            {
+                MessageBox.Show("Room Status is required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                roomstatus.Focus();
+                return;
+            }
+            if (numberofrooms.Text == null)
+            {
+                MessageBox.Show("Number of Rooms is required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                numberofrooms.Focus();
+                return;
+            }
+            if (suitetype.Text == null)
+            {
+                MessageBox.Show("Suite Type is required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                suitetype.Focus();
+                return;
+            }
 
-        }
 
-        private void Savebutton_Click(object sender, EventArgs e)
-        {
+            // create instance of Suite
+            Suite suiteRoom = new Suite();
 
-        }
+            // assign the value of the textboxes to the properties of the suiteRoom object
+            suiteRoom.RoomNumber = Convert.ToInt32(roomnumber.Text);
+            suiteRoom.RoomPrice = Convert.ToDouble(roomprice.Text);
+            suiteRoom.OccupancyLimit = Convert.ToInt32(occupancylimit.Text);
+            suiteRoom.RoomStatus = roomstatus.Text;
+            suiteRoom.NumberOfRooms = Convert.ToInt32(numberofrooms.Text);
+            suiteRoom.SuiteType = suitetype.Text;
 
-        private void guna2Panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Savebutton_Click_1(object sender, EventArgs e)
-        {
-            // assign the value to the variables
-            int roomNumber = Convert.ToInt32(roomnumber.Text);
-            double roomPrice = Convert.ToDouble(roomprice.Text);
-            int occupancyLimit = Convert.ToInt32(occupancylimit.Text);
-            string roomStatus = roomstatus.Text;
-            string suiteType = suitetype.Text;
-            int numberOfRooms = Convert.ToInt32(numberofrooms.Text);
-
-            // create DeluxeRoomController instance
+            // create SuiteRoomController instance
             SuiteRoomController suiteRoomController = new SuiteRoomController();
 
-            bool success = suiteRoomController.AddSuiteRoom(roomNumber, roomStatus, roomPrice, occupancyLimit, numberOfRooms, suiteType);
+            bool success = suiteRoomController.AddSuiteRoom(suiteRoom);
 
             // checks if added to the database
             if (success == true)
             {
                 // show success message
                 MessageBox.Show("Room Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+                SuitesRoom suiteRooms = new SuitesRoom();
+                suiteRooms.Show();
             }
             else
             {
                 // show error message
                 MessageBox.Show("Failed to Add Room", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Reset();
             }
+        }
+
+        // method to reset all fields
+        private void Reset()
+        {
+            roomnumber.Clear();
+            roomprice.Clear();
+            occupancylimit.Clear();
+            roomstatus.Clear();
+            numberofrooms.Clear();
+            suitetype.Clear();
         }
     }
 }

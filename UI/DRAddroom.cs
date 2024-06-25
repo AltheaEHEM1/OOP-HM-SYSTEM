@@ -1,4 +1,6 @@
 ﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using HOTEL_MANAGEMENT_SYSTEM.Models;
+using HOTEL_MANAGEMENT_SYSTEM.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,31 +20,81 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             InitializeComponent();
         }
 
-        private void Savebutton_Click(object sender, EventArgs e)
+        private void addRoomBtn_Click(object sender, EventArgs e)
         {
-            // assign the value to the variables
-            int roomNumber = Convert.ToInt32(roomnumberadd.Text);
-            double roomPrice = Convert.ToDouble(roompriceadd.Text);
-            int occupancyLimit = Convert.ToInt32(occupancylimitadd.Text);
-            string roomStatus = roomstatusadd.Text;
-            string typeOfView = typeofviewadd.Text;
+            // checks if all fields are empty
+            if (roomnumberadd.Text == null)
+            {
+                MessageBox.Show("Room Number is required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                roomnumberadd.Focus();
+                return;
+            }
+            if (roompriceadd.Text == null)
+            {
+                MessageBox.Show("Room Price is required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                roompriceadd.Focus();
+                return;
+            }
+            if (occupancylimitadd.Text == null)
+            {
+                MessageBox.Show("Occupancy Limit is required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                occupancylimitadd.Focus();
+                return;
+            }
+            if (roomstatusadd.Text == null)
+            {
+                MessageBox.Show("Room Status is required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                roomstatusadd.Focus();
+                return;
+            }
+            if (typeofviewadd.Text == null)
+            {
+                MessageBox.Show("Type of View is required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                typeofviewadd.Focus();
+                return;
+            }
+
+
+            // create instance of DeluxeRoom
+            DeluxeRoom deluxeRoom = new DeluxeRoom();
+
+            // assign the value of the textboxes to the properties of the standardRoom object
+            deluxeRoom.RoomNumber = Convert.ToInt32(roomnumberadd.Text);
+            deluxeRoom.RoomPrice = Convert.ToDouble(roompriceadd.Text);
+            deluxeRoom.OccupancyLimit = Convert.ToInt32(occupancylimitadd.Text);
+            deluxeRoom.RoomStatus = roomstatusadd.Text;
+            deluxeRoom.TypeOfView = typeofviewadd.Text;
 
             // create DeluxeRoomController instance
             DeluxeRoomController deluxeRoomController = new DeluxeRoomController();
 
-            bool success = deluxeRoomController.AddDeluxeRoom(roomNumber, roomStatus, roomPrice, occupancyLimit, typeOfView);
+            bool success = deluxeRoomController.AddDeluxeRoom(deluxeRoom);
 
             // checks if added to the database
             if (success == true)
             {
                 // show success message
                 MessageBox.Show("Room Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+                DeluxeRooms deluxeRoomlist = new DeluxeRooms();
+                deluxeRoomlist.Show();
             }
             else
             {
                 // show error message
                 MessageBox.Show("Failed to Add Room", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Reset();
             }
+        }
+
+        // method to reset all fields
+        private void Reset()
+        {
+            roomnumberadd.Clear();
+            roompriceadd.Clear();
+            occupancylimitadd.Clear();
+            roomstatusadd.Clear();
+            typeofviewadd.Clear();
         }
     }
 }

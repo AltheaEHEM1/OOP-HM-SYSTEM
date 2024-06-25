@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using System;
 using System.Windows.Forms;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.UI
@@ -52,6 +53,29 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             Deleteroom del = new Deleteroom();
             del.Show();
+        }
+
+        private void Standardroom_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                LoadData();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void LoadData()
+        {
+            // create instance of StandardRoomController
+            var standardRoomController = new StandardRoomController();
+
+            // get the list of rooms from the database and display in gridview
+            Standardroomgridview.DataSource = standardRoomController.GetStandardRooms();
+
+
         }
     }
 }

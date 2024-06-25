@@ -10,22 +10,10 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
     public class DeluxeRoomController
     {
         // Method to add a deluxe room
-        public bool AddDeluxeRoom(int roomNumber, string roomStatus, double roomPrice, int occupancyLimit, string typeOfView)
+        public bool AddDeluxeRoom(DeluxeRoom deluxeRoom)
         {
             try
             {
-                // Create instance of deluxe room
-                DeluxeRoom deluxeRoom = new DeluxeRoom
-                {
-                    // assign the value to the variables
-                    RoomNumber = roomNumber,
-                    RoomStatus = roomStatus,
-                    RoomPrice = roomPrice,
-                    OccupancyLimit = occupancyLimit,
-                    TypeOfView = typeOfView,
-                    IsDeleted = false
-                };
-
                 // Add the deluxe room to the database
                 using (var context = new DataContext())
                 {

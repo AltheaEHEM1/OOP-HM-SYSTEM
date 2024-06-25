@@ -11,22 +11,10 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
     public class StandardRoomController
     {
         // Method to add a standard room
-        public bool AddStandardRoom(int roomNumber, string roomStatus, double roomPrice, int occupancyLimit, string bedType, string bathroomInclusion)
+        public bool AddStandardRoom(StandardRoom standardRoom)
         {
             try
             {
-                // Create instance of StandardRoom
-                StandardRoom standardRoom = new StandardRoom
-                {
-                    RoomNumber = roomNumber,
-                    RoomStatus = roomStatus,
-                    RoomPrice = roomPrice,
-                    OccupancyLimit = occupancyLimit,
-                    BedType = bedType,
-                    BathroomInclusion = bathroomInclusion,
-                    IsDeleted = false
-                };
-
                 // Add the standard room to the database
                 using (var context = new DataContext())
                 {
