@@ -33,11 +33,15 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             headersuites = new Panel();
             philtext = new Label();
             QCTEXT = new Label();
@@ -45,15 +49,20 @@
             pictureBox1 = new PictureBox();
             transparentpanelsuites = new Panel();
             Addroomicon = new Panel();
-            Editbuttonsuite = new Guna.UI2.WinForms.Guna2Button();
-            Deletebuttondeluxe = new Guna.UI2.WinForms.Guna2Button();
+            disableDeleteButton = new Guna.UI2.WinForms.Guna2Button();
+            disableEditButton = new Guna.UI2.WinForms.Guna2Button();
+            enableEditButton = new Guna.UI2.WinForms.Guna2Button();
+            enableDeleteButton = new Guna.UI2.WinForms.Guna2Button();
             panelwhitebgforsuites = new Panel();
             suitesroomgridview = new Guna.UI2.WinForms.Guna2DataGridView();
+            roomId = new DataGridViewTextBoxColumn();
             Room_Number = new DataGridViewTextBoxColumn();
             Price = new DataGridViewTextBoxColumn();
-            HasJacuzzi = new DataGridViewTextBoxColumn();
+            occupancyLimit = new DataGridViewTextBoxColumn();
             NumberofRoom = new DataGridViewTextBoxColumn();
+            suiteType = new DataGridViewTextBoxColumn();
             Status = new DataGridViewTextBoxColumn();
+            isDeleted = new DataGridViewTextBoxColumn();
             Addroombutton = new Guna.UI2.WinForms.Guna2Button();
             Suitestext = new Label();
             backicon = new PictureBox();
@@ -77,8 +86,9 @@
             headersuites.Controls.Add(pictureBox1);
             headersuites.Dock = DockStyle.Top;
             headersuites.Location = new Point(0, 0);
+            headersuites.Margin = new Padding(3, 2, 3, 2);
             headersuites.Name = "headersuites";
-            headersuites.Size = new Size(1440, 141);
+            headersuites.Size = new Size(1213, 106);
             headersuites.TabIndex = 0;
             // 
             // philtext
@@ -86,9 +96,9 @@
             philtext.AutoSize = true;
             philtext.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             philtext.ForeColor = Color.White;
-            philtext.Location = new Point(55, 99);
+            philtext.Location = new Point(48, 74);
             philtext.Name = "philtext";
-            philtext.Size = new Size(84, 20);
+            philtext.Size = new Size(70, 17);
             philtext.TabIndex = 15;
             philtext.Text = "Philippines";
             // 
@@ -97,18 +107,19 @@
             QCTEXT.AutoSize = true;
             QCTEXT.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             QCTEXT.ForeColor = Color.White;
-            QCTEXT.Location = new Point(55, 79);
+            QCTEXT.Location = new Point(48, 59);
             QCTEXT.Name = "QCTEXT";
-            QCTEXT.Size = new Size(102, 20);
+            QCTEXT.Size = new Size(82, 17);
             QCTEXT.TabIndex = 14;
             QCTEXT.Text = "Quezon City.";
             // 
             // locationpic
             // 
             locationpic.Image = Properties.Resources.icons8_location_24;
-            locationpic.Location = new Point(55, 47);
+            locationpic.Location = new Point(48, 35);
+            locationpic.Margin = new Padding(3, 2, 3, 2);
             locationpic.Name = "locationpic";
-            locationpic.Size = new Size(31, 29);
+            locationpic.Size = new Size(27, 22);
             locationpic.TabIndex = 13;
             locationpic.TabStop = false;
             // 
@@ -117,8 +128,9 @@
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.headerpic_removebg_preview;
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1440, 141);
+            pictureBox1.Size = new Size(1213, 106);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -127,71 +139,114 @@
             // 
             transparentpanelsuites.BackColor = Color.DimGray;
             transparentpanelsuites.Dock = DockStyle.Top;
-            transparentpanelsuites.Location = new Point(0, 141);
+            transparentpanelsuites.Location = new Point(0, 106);
+            transparentpanelsuites.Margin = new Padding(3, 2, 3, 2);
             transparentpanelsuites.Name = "transparentpanelsuites";
-            transparentpanelsuites.Size = new Size(1440, 66);
+            transparentpanelsuites.Size = new Size(1213, 50);
             transparentpanelsuites.TabIndex = 1;
             transparentpanelsuites.Paint += transparentpanelsuites_Paint;
             // 
             // Addroomicon
             // 
             Addroomicon.BackColor = Color.White;
-            Addroomicon.Controls.Add(Editbuttonsuite);
-            Addroomicon.Controls.Add(Deletebuttondeluxe);
+            Addroomicon.Controls.Add(disableDeleteButton);
+            Addroomicon.Controls.Add(disableEditButton);
+            Addroomicon.Controls.Add(enableEditButton);
+            Addroomicon.Controls.Add(enableDeleteButton);
             Addroomicon.Controls.Add(panelwhitebgforsuites);
             Addroomicon.Controls.Add(Addroombutton);
             Addroomicon.Controls.Add(Suitestext);
             Addroomicon.Controls.Add(backicon);
             Addroomicon.Dock = DockStyle.Fill;
-            Addroomicon.Location = new Point(0, 207);
+            Addroomicon.Location = new Point(0, 156);
+            Addroomicon.Margin = new Padding(3, 2, 3, 2);
             Addroomicon.Name = "Addroomicon";
-            Addroomicon.Size = new Size(1440, 693);
+            Addroomicon.Size = new Size(1213, 492);
             Addroomicon.TabIndex = 2;
             // 
-            // Editbuttonsuite
+            // disableDeleteButton
             // 
-            Editbuttonsuite.BorderRadius = 10;
-            Editbuttonsuite.CustomizableEdges = customizableEdges1;
-            Editbuttonsuite.DisabledState.BorderColor = Color.DarkGray;
-            Editbuttonsuite.DisabledState.CustomBorderColor = Color.DarkGray;
-            Editbuttonsuite.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            Editbuttonsuite.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            Editbuttonsuite.FillColor = Color.FromArgb(214, 164, 38);
-            Editbuttonsuite.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Editbuttonsuite.ForeColor = Color.White;
-            Editbuttonsuite.Location = new Point(1020, 599);
-            Editbuttonsuite.Name = "Editbuttonsuite";
-            Editbuttonsuite.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            Editbuttonsuite.Size = new Size(133, 45);
-            Editbuttonsuite.TabIndex = 11;
-            Editbuttonsuite.Text = "Edit";
-            Editbuttonsuite.Click += Editbuttonsuite_Click;
+            disableDeleteButton.BorderRadius = 10;
+            disableDeleteButton.CustomizableEdges = customizableEdges1;
+            disableDeleteButton.DisabledState.BorderColor = Color.DarkGray;
+            disableDeleteButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            disableDeleteButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            disableDeleteButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            disableDeleteButton.FillColor = Color.DarkGray;
+            disableDeleteButton.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            disableDeleteButton.ForeColor = Color.White;
+            disableDeleteButton.Location = new Point(1019, 449);
+            disableDeleteButton.Margin = new Padding(3, 2, 3, 2);
+            disableDeleteButton.Name = "disableDeleteButton";
+            disableDeleteButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            disableDeleteButton.Size = new Size(116, 34);
+            disableDeleteButton.TabIndex = 14;
+            disableDeleteButton.Text = "Delete";
             // 
-            // Deletebuttondeluxe
+            // disableEditButton
             // 
-            Deletebuttondeluxe.BorderRadius = 10;
-            Deletebuttondeluxe.CustomizableEdges = customizableEdges3;
-            Deletebuttondeluxe.DisabledState.BorderColor = Color.DarkGray;
-            Deletebuttondeluxe.DisabledState.CustomBorderColor = Color.DarkGray;
-            Deletebuttondeluxe.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            Deletebuttondeluxe.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            Deletebuttondeluxe.FillColor = Color.FromArgb(126, 6, 6);
-            Deletebuttondeluxe.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Deletebuttondeluxe.ForeColor = Color.White;
-            Deletebuttondeluxe.Location = new Point(1165, 599);
-            Deletebuttondeluxe.Name = "Deletebuttondeluxe";
-            Deletebuttondeluxe.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            Deletebuttondeluxe.Size = new Size(133, 45);
-            Deletebuttondeluxe.TabIndex = 12;
-            Deletebuttondeluxe.Text = "Delete";
-            Deletebuttondeluxe.Click += Deletebuttondeluxe_Click;
+            disableEditButton.BorderRadius = 10;
+            disableEditButton.CustomizableEdges = customizableEdges3;
+            disableEditButton.DisabledState.BorderColor = Color.DarkGray;
+            disableEditButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            disableEditButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            disableEditButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            disableEditButton.FillColor = Color.DarkGray;
+            disableEditButton.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            disableEditButton.ForeColor = Color.White;
+            disableEditButton.Location = new Point(892, 449);
+            disableEditButton.Margin = new Padding(3, 2, 3, 2);
+            disableEditButton.Name = "disableEditButton";
+            disableEditButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            disableEditButton.Size = new Size(116, 34);
+            disableEditButton.TabIndex = 13;
+            disableEditButton.Text = "Edit";
+            // 
+            // enableEditButton
+            // 
+            enableEditButton.BorderRadius = 10;
+            enableEditButton.CustomizableEdges = customizableEdges5;
+            enableEditButton.DisabledState.BorderColor = Color.DarkGray;
+            enableEditButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            enableEditButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            enableEditButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            enableEditButton.FillColor = Color.FromArgb(214, 164, 38);
+            enableEditButton.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            enableEditButton.ForeColor = Color.White;
+            enableEditButton.Location = new Point(892, 449);
+            enableEditButton.Margin = new Padding(3, 2, 3, 2);
+            enableEditButton.Name = "enableEditButton";
+            enableEditButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            enableEditButton.Size = new Size(116, 34);
+            enableEditButton.TabIndex = 11;
+            enableEditButton.Text = "Edit";
+            // 
+            // enableDeleteButton
+            // 
+            enableDeleteButton.BorderRadius = 10;
+            enableDeleteButton.CustomizableEdges = customizableEdges7;
+            enableDeleteButton.DisabledState.BorderColor = Color.DarkGray;
+            enableDeleteButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            enableDeleteButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            enableDeleteButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            enableDeleteButton.FillColor = Color.FromArgb(126, 6, 6);
+            enableDeleteButton.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            enableDeleteButton.ForeColor = Color.White;
+            enableDeleteButton.Location = new Point(1019, 449);
+            enableDeleteButton.Margin = new Padding(3, 2, 3, 2);
+            enableDeleteButton.Name = "enableDeleteButton";
+            enableDeleteButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            enableDeleteButton.Size = new Size(116, 34);
+            enableDeleteButton.TabIndex = 12;
+            enableDeleteButton.Text = "Delete";
             // 
             // panelwhitebgforsuites
             // 
             panelwhitebgforsuites.Controls.Add(suitesroomgridview);
-            panelwhitebgforsuites.Location = new Point(55, 88);
+            panelwhitebgforsuites.Location = new Point(48, 66);
+            panelwhitebgforsuites.Margin = new Padding(3, 2, 3, 2);
             panelwhitebgforsuites.Name = "panelwhitebgforsuites";
-            panelwhitebgforsuites.Size = new Size(1310, 505);
+            panelwhitebgforsuites.Size = new Size(1146, 379);
             panelwhitebgforsuites.TabIndex = 10;
             // 
             // suitesroomgridview
@@ -210,7 +265,7 @@
             suitesroomgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             suitesroomgridview.ColumnHeadersHeight = 50;
             suitesroomgridview.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            suitesroomgridview.Columns.AddRange(new DataGridViewColumn[] { Room_Number, Price, HasJacuzzi, NumberofRoom, Status });
+            suitesroomgridview.Columns.AddRange(new DataGridViewColumn[] { roomId, Room_Number, Price, occupancyLimit, NumberofRoom, suiteType, Status, isDeleted });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
@@ -223,10 +278,12 @@
             suitesroomgridview.Enabled = false;
             suitesroomgridview.GridColor = Color.FromArgb(231, 229, 255);
             suitesroomgridview.Location = new Point(0, 0);
+            suitesroomgridview.Margin = new Padding(3, 2, 3, 2);
             suitesroomgridview.Name = "suitesroomgridview";
             suitesroomgridview.RowHeadersVisible = false;
             suitesroomgridview.RowHeadersWidth = 51;
-            suitesroomgridview.Size = new Size(1310, 505);
+            suitesroomgridview.RowTemplate.Height = 29;
+            suitesroomgridview.Size = new Size(1146, 379);
             suitesroomgridview.TabIndex = 2;
             suitesroomgridview.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             suitesroomgridview.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -249,6 +306,13 @@
             suitesroomgridview.ThemeStyle.RowsStyle.Height = 29;
             suitesroomgridview.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             suitesroomgridview.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            suitesroomgridview.CellContentClick += suitesroomgridview_CellContentClick;
+            // 
+            // roomId
+            // 
+            roomId.HeaderText = "Room Id";
+            roomId.Name = "roomId";
+            roomId.Visible = false;
             // 
             // Room_Number
             // 
@@ -264,12 +328,12 @@
             Price.MinimumWidth = 6;
             Price.Name = "Price";
             // 
-            // HasJacuzzi
+            // occupancyLimit
             // 
-            HasJacuzzi.FillWeight = 94.33156F;
-            HasJacuzzi.HeaderText = "Has Jacuzzi";
-            HasJacuzzi.MinimumWidth = 6;
-            HasJacuzzi.Name = "HasJacuzzi";
+            occupancyLimit.FillWeight = 94.33156F;
+            occupancyLimit.HeaderText = "Occupancy Limit";
+            occupancyLimit.MinimumWidth = 6;
+            occupancyLimit.Name = "occupancyLimit";
             // 
             // NumberofRoom
             // 
@@ -278,6 +342,11 @@
             NumberofRoom.MinimumWidth = 6;
             NumberofRoom.Name = "NumberofRoom";
             // 
+            // suiteType
+            // 
+            suiteType.HeaderText = "Suite Type";
+            suiteType.Name = "suiteType";
+            // 
             // Status
             // 
             Status.FillWeight = 94.33156F;
@@ -285,10 +354,16 @@
             Status.MinimumWidth = 6;
             Status.Name = "Status";
             // 
+            // isDeleted
+            // 
+            isDeleted.HeaderText = "Is Deleted";
+            isDeleted.Name = "isDeleted";
+            isDeleted.Visible = false;
+            // 
             // Addroombutton
             // 
             Addroombutton.BorderRadius = 10;
-            Addroombutton.CustomizableEdges = customizableEdges5;
+            Addroombutton.CustomizableEdges = customizableEdges9;
             Addroombutton.DisabledState.BorderColor = Color.DarkGray;
             Addroombutton.DisabledState.CustomBorderColor = Color.DarkGray;
             Addroombutton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -296,10 +371,11 @@
             Addroombutton.FillColor = Color.FromArgb(55, 73, 7);
             Addroombutton.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Addroombutton.ForeColor = Color.White;
-            Addroombutton.Location = new Point(1165, 37);
+            Addroombutton.Location = new Point(1019, 28);
+            Addroombutton.Margin = new Padding(3, 2, 3, 2);
             Addroombutton.Name = "Addroombutton";
-            Addroombutton.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            Addroombutton.Size = new Size(200, 45);
+            Addroombutton.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            Addroombutton.Size = new Size(175, 34);
             Addroombutton.TabIndex = 9;
             Addroombutton.Text = "Add Room";
             Addroombutton.Click += Addroombutton_Click;
@@ -308,18 +384,19 @@
             // 
             Suitestext.AutoSize = true;
             Suitestext.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Suitestext.Location = new Point(106, 45);
+            Suitestext.Location = new Point(93, 34);
             Suitestext.Name = "Suitestext";
-            Suitestext.Size = new Size(71, 23);
+            Suitestext.Size = new Size(55, 19);
             Suitestext.TabIndex = 2;
             Suitestext.Text = "Suites ";
             // 
             // backicon
             // 
             backicon.Image = Properties.Resources.icons8_back_64;
-            backicon.Location = new Point(48, 37);
+            backicon.Location = new Point(42, 28);
+            backicon.Margin = new Padding(3, 2, 3, 2);
             backicon.Name = "backicon";
-            backicon.Size = new Size(38, 38);
+            backicon.Size = new Size(33, 28);
             backicon.SizeMode = PictureBoxSizeMode.Zoom;
             backicon.TabIndex = 1;
             backicon.TabStop = false;
@@ -337,18 +414,19 @@
             // 
             // SuitesRoom
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bg;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1440, 900);
+            ClientSize = new Size(1213, 648);
             Controls.Add(Addroomicon);
             Controls.Add(transparentpanelsuites);
             Controls.Add(headersuites);
-            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "SuitesRoom";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SuitesRoom";
+            Load += SuitesRoom_Load;
             headersuites.ResumeLayout(false);
             headersuites.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)locationpic).EndInit();
@@ -377,12 +455,17 @@
         private Guna.UI2.WinForms.Guna2DataGridView suitesroomgridview;
         private Guna.UI2.WinForms.Guna2Elipse upperradius;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipsepanelinsuites;
-        private Guna.UI2.WinForms.Guna2Button Deletebuttondeluxe;
-        private Guna.UI2.WinForms.Guna2Button Editbuttonsuite;
+        private Guna.UI2.WinForms.Guna2Button enableDeleteButton;
+        private Guna.UI2.WinForms.Guna2Button enableEditButton;
+        private DataGridViewTextBoxColumn roomId;
         private DataGridViewTextBoxColumn Room_Number;
         private DataGridViewTextBoxColumn Price;
-        private DataGridViewTextBoxColumn HasJacuzzi;
+        private DataGridViewTextBoxColumn occupancyLimit;
         private DataGridViewTextBoxColumn NumberofRoom;
+        private DataGridViewTextBoxColumn suiteType;
         private DataGridViewTextBoxColumn Status;
+        private DataGridViewTextBoxColumn isDeleted;
+        private Guna.UI2.WinForms.Guna2Button disableEditButton;
+        private Guna.UI2.WinForms.Guna2Button disableDeleteButton;
     }
 }

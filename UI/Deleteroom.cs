@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,9 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class Deleteroom : Form
     {
+        // object to hold the room to delete
+        private StandardRoom roomToDelete = new StandardRoom();
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -24,17 +28,27 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             int nHeightEllipse // width of ellipse
         );
 
-        public Deleteroom()
+        public Deleteroom(StandardRoom room)
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            // assign the passed room to the roomToDelete object
+            this.roomToDelete = room;
         }
 
         private void deletebutton_Click(object sender, EventArgs e)
         {
-            DeletePassword deletePassword = new DeletePassword();
-            deletePassword.Show();
+            this.Close();
+            DeletePassword deletePassword = new DeletePassword(roomToDelete);
+            deletePassword.ShowDialog();
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Standardroom standardroom = new Standardroom();
+            standardroom.ShowDialog();
         }
     }
 }

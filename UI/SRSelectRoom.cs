@@ -17,7 +17,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             InitializeComponent();
             //InitializeParentForm();
-            
+
         }
         public void addUserControl(UserControl userControl)
         {
@@ -55,6 +55,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             ContactInfo contactInfo = new ContactInfo();
             contactInfo.Show();
             this.Close();
+        }
+
+        private void SRSelectRoom_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

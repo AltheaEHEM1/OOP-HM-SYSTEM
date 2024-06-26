@@ -1,10 +1,13 @@
-﻿using System;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using HOTEL_MANAGEMENT_SYSTEM.Models;
+using System;
 using System.Windows.Forms;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class SuitesRoom : Form
     {
+        private Suite suiteRoom = new Suite();
         public SuitesRoom()
         {
             InitializeComponent();
@@ -42,16 +45,114 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             suiteAddroom.Show();
         }
 
-        private void Editbuttonsuite_Click(object sender, EventArgs e)
+        private void enableEditButton_Click(object sender, EventArgs e)
         {
-            SuiteEditRoom suiteeditRoom = new SuiteEditRoom();
+            SuiteEditRoom suiteeditRoom = new SuiteEditRoom(suiteRoom);
             suiteeditRoom.Show();
         }
 
-        private void Deletebuttondeluxe_Click(object sender, EventArgs e)
+        private void enableDeleteButton_Click(object sender, EventArgs e)
         {
-            Deleteroom delroom = new Deleteroom();
+            SuiteRoomDelete delroom = new SuiteRoomDelete(suiteRoom);
             delroom.Show();
+        }
+
+        public void SuitesRoom_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                LoadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void LoadData()
+        {
+            try
+            {
+                var suiteRoomController = new SuiteRoomController();
+                var listSuiteRoom = suiteRoomController.GetSuiteRooms();
+
+                suitesroomgridview.Rows.Clear();
+
+                foreach (var room in listSuiteRoom)
+                {
+                    suitesroomgridview.Rows.Add(
+                        room.RoomId,
+                        room.RoomNumber,
+                        room.RoomPrice,
+                        room.OccupancyLimit,
+                        room.NumberOfRooms,
+                        room.SuiteType,
+                        room.RoomStatus,
+                        room.IsDeleted);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        private void suitesroomgridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                // get the row data and store it in variable
+                var row = suitesroomgridview.Rows[e.RowIndex].Cells;
+
+                // checks if the cell clicked is not null
+                if (row != null)
+                {
+                    // get the room id
+                    int roomId = Convert.ToInt32(row[0].Value);
+
+                    // get the room number
+                    int roomNumber = Convert.ToInt32(row[1].Value);
+
+                    // get the room price
+                    double roomPrice = Convert.ToDouble(row[2].Value);
+
+                    // get the occupancy limit
+                    int occupancyLimit = Convert.ToInt32(row[3].Value);
+
+                    // get the number of rooms
+                    int numberOfRooms = Convert.ToInt32(row[4].Value);
+
+                    // get the suite type
+                    string suiteType = row[5].Value.ToString();
+
+                    // get the room status
+                    string roomStatus = row[6].Value.ToString();
+
+                    // get the is deleted status
+                    bool isDeleted = Convert.ToBoolean(row[7].Value);
+
+                    // create an instance of StandardRoom
+                    suiteRoom = new Suite
+                    {
+                        RoomId = roomId,
+                        RoomNumber = roomNumber,
+                        RoomPrice = roomPrice,
+                        OccupancyLimit = occupancyLimit,
+                        NumberOfRooms = numberOfRooms,
+                        SuiteType = suiteType,
+                        RoomStatus = roomStatus,
+                        IsDeleted = isDeleted
+                    };
+
+                    // change the visibility of enableEditButton and enableDeleteButton
+                    enableEditButton.BringToFront();
+                    enableDeleteButton.BringToFront();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

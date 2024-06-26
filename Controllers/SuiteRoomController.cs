@@ -30,6 +30,101 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
         }
 
 
+        // Method to read or display all the standard rooms
+        public List<Suite> GetSuiteRooms()
+        {
+            try
+            {
+                // Create instance of DataContext
+                using (var context = new DataContext())
+                {
+                    // Assign list of suite rooms where IsDeleted column is false to variable
+                    var suiteRooms = context.Rooms
+                        .OfType<Suite>()
+                        .Where(sr => sr.IsDeleted == false)
+                        .ToList();
+
+                    // Return all suite rooms
+                    return suiteRooms;
+                }
+            }
+            catch (Exception ex)
+            {
+                HandleException(ex);
+                return null;
+            }
+        }
+
+        // Method to edit suite room
+        public bool EditSuiteRoom(Suite suiteRoom)
+        {
+            try
+            {
+                using (var context = new DataContext())
+                {
+                    // Check if the room exists by room number
+                    var existingSuiteRoom = context.Rooms
+                        .OfType<Suite>()
+                        .FirstOrDefault(sr => sr.RoomId == suiteRoom.RoomId);
+
+                    if (existingSuiteRoom == null || existingSuiteRoom.IsDeleted == true)
+                    {
+                        return false;
+                    }
+
+                    existingSuiteRoom.RoomNumber = suiteRoom.RoomNumber;
+                    existingSuiteRoom.RoomPrice = suiteRoom.RoomPrice;
+                    existingSuiteRoom.OccupancyLimit = suiteRoom.OccupancyLimit;
+                    existingSuiteRoom.RoomStatus = suiteRoom.RoomStatus;
+                    existingSuiteRoom.NumberOfRooms = suiteRoom.NumberOfRooms;
+                    existingSuiteRoom.SuiteType = suiteRoom.SuiteType;
+
+
+                    // Update the suite room record in the database
+                    context.Rooms.Update(existingSuiteRoom);
+                    context.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                HandleException(ex);
+                return false;
+            }
+        }
+
+        // Method to delete suite room
+        public bool DeleteSuiteRoom(Suite suiteRoom)
+        {
+            try
+            {
+                using (var context = new DataContext())
+                {
+                    // Check if the room id exists
+                    var suiteRoomToDelete = context.Rooms
+                        .OfType<Suite>()
+                        .FirstOrDefault(sr => sr.RoomId == suiteRoom.RoomId);
+
+                    if (suiteRoomToDelete == null || suiteRoomToDelete.IsDeleted == true)
+                    {
+                        return false;
+                    }
+
+                    // Soft delete the room from the database
+                    suiteRoomToDelete.IsDeleted = true;
+                    context.Rooms.Update(suiteRoomToDelete); // Update the record
+                    context.SaveChanges(); // Save changes
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                HandleException(ex);
+                return false;
+            }
+        }
+
+
         // Handle exceptions with error message
         private void HandleException(Exception ex)
         {

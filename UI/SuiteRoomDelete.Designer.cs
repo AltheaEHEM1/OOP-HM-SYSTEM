@@ -1,6 +1,6 @@
 ﻿namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
-    partial class Deleteroom
+    partial class SuiteRoomDelete
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deleteroom));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuiteRoomDelete));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -59,12 +59,12 @@
             guna2Panel1.Controls.Add(label1);
             guna2Panel1.Controls.Add(guna2Panel2);
             guna2Panel1.CustomizableEdges = customizableEdges7;
-            guna2Panel1.Location = new Point(43, 19);
+            guna2Panel1.Location = new Point(44, 19);
             guna2Panel1.Margin = new Padding(3, 2, 3, 2);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Panel1.Size = new Size(593, 309);
-            guna2Panel1.TabIndex = 3;
+            guna2Panel1.TabIndex = 5;
             // 
             // cancelButton
             // 
@@ -139,19 +139,16 @@
             label2.TabIndex = 0;
             label2.Text = "Confirm deletion";
             // 
-            // Deleteroom
+            // SuiteRoomDelete
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(680, 347);
             Controls.Add(guna2Panel1);
-            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "Deleteroom";
+            Name = "SuiteRoomDelete";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Deleteroom";
+            Text = "SuiteRoomDelete";
             guna2Panel1.ResumeLayout(false);
             guna2Panel1.PerformLayout();
             guna2Panel2.ResumeLayout(false);
@@ -162,10 +159,10 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Label label2;
         private Guna.UI2.WinForms.Guna2Button cancelButton;
         private Guna.UI2.WinForms.Guna2Button deletebutton;
         private Label label1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Label label2;
     }
 }

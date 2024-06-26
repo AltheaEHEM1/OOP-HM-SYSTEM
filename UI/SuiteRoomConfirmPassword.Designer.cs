@@ -1,6 +1,6 @@
 ﻿namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
-    partial class DeletePassword
+    partial class SuiteRoomConfirmPassword
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeletePassword));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuiteRoomConfirmPassword));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -63,12 +63,12 @@
             guna2Panel1.Controls.Add(guna2Panel2);
             guna2Panel1.Controls.Add(NavBack);
             guna2Panel1.CustomizableEdges = customizableEdges8;
-            guna2Panel1.Location = new Point(43, 19);
+            guna2Panel1.Location = new Point(44, 19);
             guna2Panel1.Margin = new Padding(3, 2, 3, 2);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges9;
             guna2Panel1.Size = new Size(593, 309);
-            guna2Panel1.TabIndex = 4;
+            guna2Panel1.TabIndex = 6;
             // 
             // confirmbutton
             // 
@@ -110,7 +110,6 @@
             PasswordTextbox.ShadowDecoration.CustomizableEdges = customizableEdges4;
             PasswordTextbox.Size = new Size(340, 34);
             PasswordTextbox.TabIndex = 44;
-            PasswordTextbox.TextChanged += guna2TextBox1_TextChanged;
             // 
             // label1
             // 
@@ -160,17 +159,16 @@
             NavBack.TabStop = false;
             NavBack.Click += NavBack_Click;
             // 
-            // DeletePassword
+            // SuiteRoomConfirmPassword
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(680, 347);
             Controls.Add(guna2Panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "DeletePassword";
+            Name = "SuiteRoomConfirmPassword";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "DeletePassword";
+            Text = "SuiteRoomConfirmPassword";
             guna2Panel1.ResumeLayout(false);
             guna2Panel1.PerformLayout();
             guna2Panel2.ResumeLayout(false);
@@ -182,11 +180,11 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button confirmbutton;
         private Guna.UI2.WinForms.Guna2TextBox PasswordTextbox;
         private Label label1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Label label2;
         private Guna.UI2.WinForms.Guna2CirclePictureBox NavBack;
-        private Guna.UI2.WinForms.Guna2Button confirmbutton;
     }
 }

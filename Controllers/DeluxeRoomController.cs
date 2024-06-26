@@ -29,6 +29,98 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
             }
         }
 
+        // Method to read or display all the deluxe rooms
+        public List<DeluxeRoom> GetDeluxeRooms()
+        {
+            try
+            {
+                // Create instance of DataContext
+                using (var context = new DataContext())
+                {
+                    // Assign list of deluxe rooms where IsDeleted column is false to variable
+                    var deluxeRooms = context.Rooms
+                        .OfType<DeluxeRoom>()
+                        .Where(sr => sr.IsDeleted == false)
+                        .ToList();
+
+                    // Return all deluxe rooms
+                    return deluxeRooms;
+                }
+            }
+            catch (Exception ex)
+            {
+                HandleException(ex);
+                return null;
+            }
+        }
+
+        // Method to edit deluxe room
+        public bool EditDeluxeRoom(DeluxeRoom deluxeRoom)
+        {
+            try
+            {
+                using (var context = new DataContext())
+                {
+                    // Check if the room exists by room id
+                    var existingDeluxeRoom = context.Rooms
+                        .OfType<DeluxeRoom>()
+                        .FirstOrDefault(sr => sr.RoomId == deluxeRoom.RoomId);
+
+                    if (existingDeluxeRoom == null || existingDeluxeRoom.IsDeleted == true)
+                    {
+                        return false;
+                    }
+
+                    existingDeluxeRoom.RoomNumber = deluxeRoom.RoomNumber;
+                    existingDeluxeRoom.RoomPrice = deluxeRoom.RoomPrice;
+                    existingDeluxeRoom.OccupancyLimit = deluxeRoom.OccupancyLimit;
+                    existingDeluxeRoom.RoomStatus = deluxeRoom.RoomStatus;
+                    existingDeluxeRoom.TypeOfView = deluxeRoom.TypeOfView;
+
+                    // Update the deluxe room record in the database
+                    context.Rooms.Update(existingDeluxeRoom);
+                    context.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                HandleException(ex);
+                return false;
+            }
+        }
+
+        // Method to delete deluxe room
+        public bool DeleteDeluxeRoom(DeluxeRoom deluxeRoom)
+        {
+            try
+            {
+                using (var context = new DataContext())
+                {
+                    // Check if the room id exists
+                    var deluxeRoomToDelete = context.Rooms
+                        .OfType<DeluxeRoom>()
+                        .FirstOrDefault(sr => sr.RoomId == deluxeRoom.RoomId);
+
+                    if (deluxeRoomToDelete == null || deluxeRoomToDelete.IsDeleted == true)
+                    {
+                        return false;
+                    }
+
+                    // Soft delete the room from the database
+                    deluxeRoomToDelete.IsDeleted = true;
+                    context.Rooms.Update(deluxeRoomToDelete); // Update the record
+                    context.SaveChanges(); // Save changes
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                HandleException(ex);
+                return false;
+            }
+        }
+
 
         // Handle exceptions with error message
         private void HandleException(Exception ex)

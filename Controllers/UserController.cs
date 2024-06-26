@@ -168,6 +168,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
             }
         }
 
+
         // Handle exceptions with error message
         private void HandleException(Exception ex)
         {

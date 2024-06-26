@@ -12,27 +12,13 @@ using System.Windows.Forms;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
-    public partial class DeletePassword : Form
+    public partial class SuiteRoomConfirmPassword : Form
     {
-        // object to hold the room to delete
-        private StandardRoom roomToDelete = new StandardRoom();
-
-        public DeletePassword(StandardRoom room)
+        private Suite suiteToDelete = new Suite();
+        public SuiteRoomConfirmPassword(Suite room)
         {
             InitializeComponent();
-            this.roomToDelete = room;
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NavBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Deleteroom backDeleteRoom = new Deleteroom(roomToDelete);
-            backDeleteRoom.ShowDialog();
+            this.suiteToDelete = room;
         }
 
         private void confirmbutton_Click(object sender, EventArgs e)
@@ -43,15 +29,17 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
                 if (successAuthenticate)
                 {
-                    StandardRoomController deleteStandardRoom = new StandardRoomController();
-                    bool deleteSuccess = deleteStandardRoom.DeleteStandardRoom(roomToDelete);
+                    SuiteRoomController deleteSuiteRoom = new SuiteRoomController();
+                    bool deleteSuccess = deleteSuiteRoom.DeleteSuiteRoom(suiteToDelete);
 
                     if (deleteSuccess)
                     {
                         MessageBox.Show("Room successfully deleted.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Standardroom standardroom = new Standardroom();
+                        SuitesRoom suiteroom = new SuitesRoom();
                         this.Close();
-                        standardroom.Show();
+                        // load the SuitesRoom
+                        suiteroom.Show();
+
                     }
                     else
                     {
@@ -59,10 +47,17 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void NavBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            SuiteRoomDelete backDeleteRoom = new SuiteRoomDelete(suiteToDelete);
+            backDeleteRoom.ShowDialog();
         }
     }
 }

@@ -1,10 +1,14 @@
-﻿using System;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using HOTEL_MANAGEMENT_SYSTEM.Models;
+using System;
 using System.Windows.Forms;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class DeluxeRooms : Form
     {
+        private DeluxeRoom deluxeRoom = new DeluxeRoom();
+
         public DeluxeRooms()
         {
             InitializeComponent();
@@ -39,19 +43,113 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         private void Addroomicon_Click(object sender, EventArgs e)
         {
             DRAddroom drAddroom = new DRAddroom();
-            drAddroom.Show();
+            drAddroom.ShowDialog();
         }
 
         private void Editbuttondeluxe_Click(object sender, EventArgs e)
         {
-            DREditRoom dreditRoom = new DREditRoom();
-            dreditRoom.Show();
+            DREditRoom dreditRoom = new DREditRoom(deluxeRoom);
+            dreditRoom.ShowDialog();
         }
 
         private void Deletebuttondeluxe_Click(object sender, EventArgs e)
         {
-            Deleteroom delroom = new Deleteroom();
-            delroom.Show();
+             DeluxeRoomDelete delroom = new DeluxeRoomDelete(deluxeRoom);
+             delroom.ShowDialog();
+        }
+
+        private void deluxeroomgridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                // get the row data and store it in variable
+                var row = deluxeroomgridview.Rows[e.RowIndex].Cells;
+
+                // checks if the cell clicked is not null
+                if (row != null)
+                {
+                    // get the room id
+                    int roomId = Convert.ToInt32(row[0].Value);
+
+                    // get the room number
+                    int roomNumber = Convert.ToInt32(row[1].Value);
+
+                    // get the room price
+                    double roomPrice = Convert.ToDouble(row[2].Value);
+
+                    // get the occupancy limit
+                    int occupancyLimit = Convert.ToInt32(row[3].Value);
+
+                    // get the type of view
+                    string typeOfView = row[4].Value.ToString();
+
+                    // get the room status
+                    string roomStatus = row[5].Value.ToString();
+
+                    // get the is deleted status
+                    bool isDeleted = Convert.ToBoolean(row[6].Value);
+
+                    // create an instance of StandardRoom
+                    deluxeRoom = new DeluxeRoom
+                    {
+                        RoomId = roomId,
+                        RoomNumber = roomNumber,
+                        RoomPrice = roomPrice,
+                        OccupancyLimit = occupancyLimit,
+                        TypeOfView = typeOfView,
+                        RoomStatus = roomStatus,
+                        IsDeleted = isDeleted
+                    };
+
+                    // change the visibility of enableEditButton and enableDeleteButton
+                    enableEditButton.BringToFront();
+                    enableDeleteButton.BringToFront();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void DeluxeRooms_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                LoadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void LoadData()
+        {
+            try
+            {
+                var deluxeRoomController = new DeluxeRoomController();
+                var listDeluxeRoom = deluxeRoomController.GetDeluxeRooms();
+
+                deluxeroomgridview.Rows.Clear();
+
+                foreach (var room in listDeluxeRoom)
+                {
+                    deluxeroomgridview.Rows.Add(
+                        room.RoomId,
+                        room.RoomNumber,
+                        room.RoomPrice,
+                        room.OccupancyLimit,
+                        room.TypeOfView,
+                        room.RoomStatus,
+                        room.IsDeleted);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

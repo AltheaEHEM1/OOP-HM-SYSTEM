@@ -104,5 +104,10 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             numberofrooms.Clear();
             suitetype.Clear();
         }
+
+        private void NavBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

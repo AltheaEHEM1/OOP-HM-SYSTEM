@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuiteAddroom));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             suitetype = new Guna.UI2.WinForms.Guna2TextBox();
             numberofrooms = new Guna.UI2.WinForms.Guna2TextBox();
@@ -79,11 +79,11 @@
             guna2Panel1.Controls.Add(roomprice);
             guna2Panel1.Controls.Add(roomnumber);
             guna2Panel1.Controls.Add(NavBack);
-            guna2Panel1.CustomizableEdges = customizableEdges37;
+            guna2Panel1.CustomizableEdges = customizableEdges18;
             guna2Panel1.Location = new Point(25, 14);
             guna2Panel1.Margin = new Padding(3, 2, 3, 2);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges19;
             guna2Panel1.Size = new Size(593, 309);
             guna2Panel1.TabIndex = 4;
             // 
@@ -91,7 +91,7 @@
             // 
             suitetype.BorderColor = Color.Gray;
             suitetype.BorderRadius = 10;
-            suitetype.CustomizableEdges = customizableEdges20;
+            suitetype.CustomizableEdges = customizableEdges1;
             suitetype.DefaultText = "";
             suitetype.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             suitetype.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -105,7 +105,7 @@
             suitetype.PasswordChar = '\0';
             suitetype.PlaceholderText = "Type of Suite";
             suitetype.SelectedText = "";
-            suitetype.ShadowDecoration.CustomizableEdges = customizableEdges21;
+            suitetype.ShadowDecoration.CustomizableEdges = customizableEdges2;
             suitetype.Size = new Size(262, 32);
             suitetype.TabIndex = 47;
             // 
@@ -113,7 +113,7 @@
             // 
             numberofrooms.BorderColor = Color.Gray;
             numberofrooms.BorderRadius = 10;
-            numberofrooms.CustomizableEdges = customizableEdges22;
+            numberofrooms.CustomizableEdges = customizableEdges3;
             numberofrooms.DefaultText = "";
             numberofrooms.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             numberofrooms.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -127,7 +127,7 @@
             numberofrooms.PasswordChar = '\0';
             numberofrooms.PlaceholderText = "Number of Rooms";
             numberofrooms.SelectedText = "";
-            numberofrooms.ShadowDecoration.CustomizableEdges = customizableEdges23;
+            numberofrooms.ShadowDecoration.CustomizableEdges = customizableEdges4;
             numberofrooms.Size = new Size(168, 32);
             numberofrooms.TabIndex = 46;
             // 
@@ -135,7 +135,7 @@
             // 
             roomstatus.BorderColor = Color.Gray;
             roomstatus.BorderRadius = 10;
-            roomstatus.CustomizableEdges = customizableEdges24;
+            roomstatus.CustomizableEdges = customizableEdges5;
             roomstatus.DefaultText = "";
             roomstatus.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             roomstatus.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -149,7 +149,7 @@
             roomstatus.PasswordChar = '\0';
             roomstatus.PlaceholderText = "Room Status";
             roomstatus.SelectedText = "";
-            roomstatus.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            roomstatus.ShadowDecoration.CustomizableEdges = customizableEdges6;
             roomstatus.Size = new Size(262, 32);
             roomstatus.TabIndex = 45;
             // 
@@ -157,7 +157,7 @@
             // 
             occupancylimit.BorderColor = Color.Gray;
             occupancylimit.BorderRadius = 10;
-            occupancylimit.CustomizableEdges = customizableEdges26;
+            occupancylimit.CustomizableEdges = customizableEdges7;
             occupancylimit.DefaultText = "";
             occupancylimit.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             occupancylimit.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -171,7 +171,7 @@
             occupancylimit.PasswordChar = '\0';
             occupancylimit.PlaceholderText = "Occupancy limit";
             occupancylimit.SelectedText = "";
-            occupancylimit.ShadowDecoration.CustomizableEdges = customizableEdges27;
+            occupancylimit.ShadowDecoration.CustomizableEdges = customizableEdges8;
             occupancylimit.Size = new Size(168, 32);
             occupancylimit.TabIndex = 44;
             // 
@@ -179,7 +179,7 @@
             // 
             addRoomBtn.BackColor = Color.Transparent;
             addRoomBtn.BorderRadius = 10;
-            addRoomBtn.CustomizableEdges = customizableEdges28;
+            addRoomBtn.CustomizableEdges = customizableEdges9;
             addRoomBtn.DisabledState.BorderColor = Color.DarkGray;
             addRoomBtn.DisabledState.CustomBorderColor = Color.DarkGray;
             addRoomBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -190,7 +190,7 @@
             addRoomBtn.Location = new Point(200, 254);
             addRoomBtn.Margin = new Padding(3, 2, 3, 2);
             addRoomBtn.Name = "addRoomBtn";
-            addRoomBtn.ShadowDecoration.CustomizableEdges = customizableEdges29;
+            addRoomBtn.ShadowDecoration.CustomizableEdges = customizableEdges10;
             addRoomBtn.Size = new Size(184, 34);
             addRoomBtn.TabIndex = 42;
             addRoomBtn.Text = "Add Room";
@@ -200,11 +200,11 @@
             // 
             guna2Panel2.BackColor = Color.FromArgb(13, 22, 29);
             guna2Panel2.Controls.Add(label1);
-            guna2Panel2.CustomizableEdges = customizableEdges30;
+            guna2Panel2.CustomizableEdges = customizableEdges11;
             guna2Panel2.Location = new Point(105, 50);
             guna2Panel2.Margin = new Padding(3, 2, 3, 2);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges31;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2Panel2.Size = new Size(397, 23);
             guna2Panel2.TabIndex = 41;
             // 
@@ -223,7 +223,7 @@
             // 
             roomprice.BorderColor = Color.Gray;
             roomprice.BorderRadius = 10;
-            roomprice.CustomizableEdges = customizableEdges32;
+            roomprice.CustomizableEdges = customizableEdges13;
             roomprice.DefaultText = "";
             roomprice.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             roomprice.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -237,7 +237,7 @@
             roomprice.PasswordChar = '\0';
             roomprice.PlaceholderText = "Room price:";
             roomprice.SelectedText = "";
-            roomprice.ShadowDecoration.CustomizableEdges = customizableEdges33;
+            roomprice.ShadowDecoration.CustomizableEdges = customizableEdges14;
             roomprice.Size = new Size(262, 32);
             roomprice.TabIndex = 40;
             // 
@@ -245,7 +245,7 @@
             // 
             roomnumber.BorderColor = Color.Gray;
             roomnumber.BorderRadius = 10;
-            roomnumber.CustomizableEdges = customizableEdges34;
+            roomnumber.CustomizableEdges = customizableEdges15;
             roomnumber.DefaultText = "";
             roomnumber.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             roomnumber.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -259,7 +259,7 @@
             roomnumber.PasswordChar = '\0';
             roomnumber.PlaceholderText = "Room number:";
             roomnumber.SelectedText = "";
-            roomnumber.ShadowDecoration.CustomizableEdges = customizableEdges35;
+            roomnumber.ShadowDecoration.CustomizableEdges = customizableEdges16;
             roomnumber.Size = new Size(168, 32);
             roomnumber.TabIndex = 38;
             // 
@@ -271,11 +271,12 @@
             NavBack.Location = new Point(46, 29);
             NavBack.Margin = new Padding(3, 2, 3, 2);
             NavBack.Name = "NavBack";
-            NavBack.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            NavBack.ShadowDecoration.CustomizableEdges = customizableEdges17;
             NavBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             NavBack.Size = new Size(38, 23);
             NavBack.TabIndex = 34;
             NavBack.TabStop = false;
+            NavBack.Click += NavBack_Click;
             // 
             // SuiteAddroom
             // 

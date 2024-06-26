@@ -56,31 +56,32 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
         }
 
         // Method to edit standard room
-        public bool EditStandardRoom(int? roomNumber = null, string roomStatus = null, double? roomPrice = null, int? occupancyLimit = null, string bedType = null, string bathroomInclusion = null)
+        public bool EditStandardRoom(StandardRoom standardRoom)
         {
             try
             {
                 using (var context = new DataContext())
                 {
-                    // Check if the standard room exists
-                    var standardRoom = context.Rooms
+                    // Check if the room exists by room number
+                    var existingStandardRoom = context.Rooms
                         .OfType<StandardRoom>()
-                        .FirstOrDefault(sr => sr.RoomNumber == roomNumber);
+                        .FirstOrDefault(sr => sr.RoomId == standardRoom.RoomId);
 
-                    if (standardRoom == null || standardRoom.IsDeleted)
+                    if (existingStandardRoom == null || existingStandardRoom.IsDeleted == true)
                     {
                         return false;
                     }
 
-                    // Update the properties if they have new values
-                    if (roomStatus != null) standardRoom.RoomStatus = roomStatus;
-                    if (roomPrice.HasValue) standardRoom.RoomPrice = roomPrice.Value;
-                    if (occupancyLimit.HasValue) standardRoom.OccupancyLimit = occupancyLimit.Value;
-                    if (bedType != null) standardRoom.BedType = bedType;
-                    if (bathroomInclusion != null) standardRoom.BathroomInclusion = bathroomInclusion;
+                    existingStandardRoom.RoomNumber = standardRoom.RoomNumber;
+                    existingStandardRoom.RoomPrice = standardRoom.RoomPrice;
+                    existingStandardRoom.OccupancyLimit = standardRoom.OccupancyLimit;
+                    existingStandardRoom.RoomStatus = standardRoom.RoomStatus;
+                    existingStandardRoom.BedType = standardRoom.BedType;
+                    existingStandardRoom.BathroomInclusion = standardRoom.BathroomInclusion;
+
 
                     // Update the standard room record in the database
-                    context.Rooms.Update(standardRoom);
+                    context.Rooms.Update(existingStandardRoom);
                     context.SaveChanges();
                     return true;
                 }
@@ -93,7 +94,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
         }
 
         // Method to delete standard room
-        public bool DeleteStandardRoom(int roomId)
+        public bool DeleteStandardRoom(StandardRoom room)
         {
             try
             {
@@ -102,9 +103,9 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
                     // Check if the room id exists
                     var standardRoom = context.Rooms
                         .OfType<StandardRoom>()
-                        .FirstOrDefault(sr => sr.RoomId == roomId);
+                        .FirstOrDefault(sr => sr.RoomId == room.RoomId);
 
-                    if (standardRoom == null)
+                    if (standardRoom == null || standardRoom.IsDeleted == true)
                     {
                         return false;
                     }

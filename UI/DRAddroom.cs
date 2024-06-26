@@ -96,5 +96,10 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             roomstatusadd.Clear();
             typeofviewadd.Clear();
         }
+
+        private void NavBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

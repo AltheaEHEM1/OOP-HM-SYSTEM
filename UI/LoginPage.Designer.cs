@@ -319,7 +319,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1213, 591);
+            ClientSize = new Size(1351, 591);
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "LoginPage";
