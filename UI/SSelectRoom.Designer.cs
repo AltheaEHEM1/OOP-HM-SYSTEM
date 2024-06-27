@@ -105,10 +105,11 @@
             guna2Panel2.Controls.Add(CheckinLabel);
             guna2Panel2.Controls.Add(CheckinDate);
             guna2Panel2.CustomizableEdges = customizableEdges16;
-            guna2Panel2.Location = new Point(56, 81);
+            guna2Panel2.Location = new Point(49, 61);
+            guna2Panel2.Margin = new Padding(3, 2, 3, 2);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges17;
-            guna2Panel2.Size = new Size(1310, 690);
+            guna2Panel2.Size = new Size(1146, 518);
             guna2Panel2.TabIndex = 3;
             // 
             // NavBack
@@ -116,11 +117,12 @@
             NavBack.BackgroundImageLayout = ImageLayout.Stretch;
             NavBack.Image = (Image)resources.GetObject("NavBack.Image");
             NavBack.ImageRotate = 0F;
-            NavBack.Location = new Point(54, 40);
+            NavBack.Location = new Point(47, 30);
+            NavBack.Margin = new Padding(3, 2, 3, 2);
             NavBack.Name = "NavBack";
             NavBack.ShadowDecoration.CustomizableEdges = customizableEdges1;
             NavBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            NavBack.Size = new Size(44, 36);
+            NavBack.Size = new Size(38, 27);
             NavBack.TabIndex = 33;
             NavBack.TabStop = false;
             NavBack.Click += NavBack_Click;
@@ -136,10 +138,11 @@
             NextNav.FillColor = Color.FromArgb(55, 73, 7);
             NextNav.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             NextNav.ForeColor = Color.White;
-            NextNav.Location = new Point(1103, 626);
+            NextNav.Location = new Point(965, 470);
+            NextNav.Margin = new Padding(3, 2, 3, 2);
             NextNav.Name = "NextNav";
             NextNav.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            NextNav.Size = new Size(162, 35);
+            NextNav.Size = new Size(142, 26);
             NextNav.TabIndex = 32;
             NextNav.Text = "Next";
             NextNav.Click += NextNav_Click;
@@ -148,9 +151,9 @@
             // 
             UM.AutoSize = true;
             UM.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            UM.Location = new Point(1103, 210);
+            UM.Location = new Point(965, 158);
             UM.Name = "UM";
-            UM.Size = new Size(155, 18);
+            UM.Size = new Size(123, 16);
             UM.TabIndex = 22;
             UM.Text = "Under Maintenance";
             // 
@@ -160,10 +163,11 @@
             guna2Panel4.Controls.Add(SRLabel);
             guna2Panel4.CustomizableEdges = customizableEdges4;
             guna2Panel4.FillColor = Color.FromArgb(13, 22, 29);
-            guna2Panel4.Location = new Point(48, 108);
+            guna2Panel4.Location = new Point(42, 81);
+            guna2Panel4.Margin = new Padding(3, 2, 3, 2);
             guna2Panel4.Name = "guna2Panel4";
             guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges5;
-            guna2Panel4.Size = new Size(929, 137);
+            guna2Panel4.Size = new Size(813, 103);
             guna2Panel4.TabIndex = 26;
             // 
             // SRLabel
@@ -171,9 +175,9 @@
             SRLabel.AutoSize = true;
             SRLabel.Font = new Font("Century Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SRLabel.ForeColor = Color.White;
-            SRLabel.Location = new Point(314, 44);
+            SRLabel.Location = new Point(275, 33);
             SRLabel.Name = "SRLabel";
-            SRLabel.Size = new Size(277, 51);
+            SRLabel.Size = new Size(219, 41);
             SRLabel.TabIndex = 11;
             SRLabel.Text = "Suites Room";
             // 
@@ -181,9 +185,9 @@
             // 
             Occupied.AutoSize = true;
             Occupied.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            Occupied.Location = new Point(1102, 159);
+            Occupied.Location = new Point(964, 119);
             Occupied.Name = "Occupied";
-            Occupied.Size = new Size(84, 18);
+            Occupied.Size = new Size(67, 16);
             Occupied.TabIndex = 21;
             Occupied.Text = "Occupied";
             // 
@@ -212,11 +216,13 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(596, 354);
+            guna2DataGridView1.Location = new Point(522, 266);
+            guna2DataGridView1.Margin = new Padding(3, 2, 3, 2);
             guna2DataGridView1.Name = "guna2DataGridView1";
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 51;
-            guna2DataGridView1.Size = new Size(632, 244);
+            guna2DataGridView1.RowTemplate.Height = 29;
+            guna2DataGridView1.Size = new Size(553, 183);
             guna2DataGridView1.TabIndex = 30;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -298,9 +304,9 @@
             // 
             Available.AutoSize = true;
             Available.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            Available.Location = new Point(1100, 108);
+            Available.Location = new Point(962, 81);
             Available.Name = "Available";
-            Available.Size = new Size(79, 18);
+            Available.Size = new Size(64, 16);
             Available.TabIndex = 20;
             Available.Text = "Available";
             // 
@@ -308,10 +314,11 @@
             // 
             guna2Panel3.CustomizableEdges = customizableEdges6;
             guna2Panel3.FillColor = Color.Maroon;
-            guna2Panel3.Location = new Point(1016, 204);
+            guna2Panel3.Location = new Point(889, 153);
+            guna2Panel3.Margin = new Padding(3, 2, 3, 2);
             guna2Panel3.Name = "guna2Panel3";
             guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            guna2Panel3.Size = new Size(66, 35);
+            guna2Panel3.Size = new Size(58, 26);
             guna2Panel3.TabIndex = 19;
             // 
             // label1
@@ -319,9 +326,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(57, 307);
+            label1.Location = new Point(50, 230);
             label1.Name = "label1";
-            label1.Size = new Size(390, 23);
+            label1.Size = new Size(305, 19);
             label1.TabIndex = 23;
             label1.Text = "Select date to check room availability.";
             // 
@@ -329,19 +336,20 @@
             // 
             guna2Panel5.CustomizableEdges = customizableEdges8;
             guna2Panel5.FillColor = Color.Gray;
-            guna2Panel5.Location = new Point(1015, 152);
+            guna2Panel5.Location = new Point(888, 114);
+            guna2Panel5.Margin = new Padding(3, 2, 3, 2);
             guna2Panel5.Name = "guna2Panel5";
             guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges9;
-            guna2Panel5.Size = new Size(67, 36);
+            guna2Panel5.Size = new Size(59, 27);
             guna2Panel5.TabIndex = 18;
             // 
             // SRLabel2
             // 
             SRLabel2.AutoSize = true;
             SRLabel2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SRLabel2.Location = new Point(596, 307);
+            SRLabel2.Location = new Point(522, 230);
             SRLabel2.Name = "SRLabel2";
-            SRLabel2.Size = new Size(129, 23);
+            SRLabel2.Size = new Size(101, 19);
             SRLabel2.TabIndex = 27;
             SRLabel2.Text = "Room Status";
             // 
@@ -349,19 +357,20 @@
             // 
             guna2Panel6.CustomizableEdges = customizableEdges10;
             guna2Panel6.FillColor = Color.FromArgb(0, 64, 0);
-            guna2Panel6.Location = new Point(1016, 101);
+            guna2Panel6.Location = new Point(889, 76);
+            guna2Panel6.Margin = new Padding(3, 2, 3, 2);
             guna2Panel6.Name = "guna2Panel6";
             guna2Panel6.ShadowDecoration.CustomizableEdges = customizableEdges11;
-            guna2Panel6.Size = new Size(66, 33);
+            guna2Panel6.Size = new Size(58, 25);
             guna2Panel6.TabIndex = 17;
             // 
             // CheckoutDte
             // 
             CheckoutDte.AutoSize = true;
             CheckoutDte.Font = new Font("Century Gothic", 10.2F);
-            CheckoutDte.Location = new Point(57, 494);
+            CheckoutDte.Location = new Point(50, 370);
             CheckoutDte.Name = "CheckoutDte";
-            CheckoutDte.Size = new Size(98, 21);
+            CheckoutDte.Size = new Size(81, 19);
             CheckoutDte.TabIndex = 29;
             CheckoutDte.Text = "Check out";
             // 
@@ -374,12 +383,13 @@
             CheckoutDate.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CheckoutDate.ForeColor = Color.White;
             CheckoutDate.Format = DateTimePickerFormat.Long;
-            CheckoutDate.Location = new Point(57, 523);
+            CheckoutDate.Location = new Point(50, 392);
+            CheckoutDate.Margin = new Padding(3, 2, 3, 2);
             CheckoutDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             CheckoutDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             CheckoutDate.Name = "CheckoutDate";
             CheckoutDate.ShadowDecoration.CustomizableEdges = customizableEdges13;
-            CheckoutDate.Size = new Size(247, 75);
+            CheckoutDate.Size = new Size(216, 56);
             CheckoutDate.TabIndex = 25;
             CheckoutDate.Value = new DateTime(2024, 6, 11, 22, 26, 12, 626);
             // 
@@ -387,9 +397,9 @@
             // 
             CheckinLabel.AutoSize = true;
             CheckinLabel.Font = new Font("Century Gothic", 10.2F);
-            CheckinLabel.Location = new Point(57, 354);
+            CheckinLabel.Location = new Point(50, 266);
             CheckinLabel.Name = "CheckinLabel";
-            CheckinLabel.Size = new Size(83, 21);
+            CheckinLabel.Size = new Size(70, 19);
             CheckinLabel.TabIndex = 28;
             CheckinLabel.Text = "Check in";
             // 
@@ -402,29 +412,30 @@
             CheckinDate.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CheckinDate.ForeColor = Color.White;
             CheckinDate.Format = DateTimePickerFormat.Long;
-            CheckinDate.Location = new Point(57, 384);
+            CheckinDate.Location = new Point(50, 288);
+            CheckinDate.Margin = new Padding(3, 2, 3, 2);
             CheckinDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             CheckinDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             CheckinDate.Name = "CheckinDate";
             CheckinDate.ShadowDecoration.CustomizableEdges = customizableEdges15;
-            CheckinDate.Size = new Size(244, 75);
+            CheckinDate.Size = new Size(214, 56);
             CheckinDate.TabIndex = 24;
             CheckinDate.Value = new DateTime(2024, 6, 11, 22, 25, 59, 198);
             // 
             // SSelectRoom
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1440, 900);
+            ClientSize = new Size(1213, 591);
             Controls.Add(guna2Panel2);
             DoubleBuffered = true;
-            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "SSelectRoom";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SSelectRoom";
-            //Load += SSelectRoom_Load;
+            Text = "Select Suites Room";
+            WindowState = FormWindowState.Maximized;
             guna2Panel2.ResumeLayout(false);
             guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)NavBack).EndInit();

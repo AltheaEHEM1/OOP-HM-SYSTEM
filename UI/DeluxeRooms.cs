@@ -54,11 +54,51 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void Deletebuttondeluxe_Click(object sender, EventArgs e)
         {
-             DeluxeRoomDelete delroom = new DeluxeRoomDelete(deluxeRoom);
-             delroom.ShowDialog();
+            DeluxeRoomDelete delroom = new DeluxeRoomDelete(deluxeRoom);
+            delroom.ShowDialog();
         }
 
-        private void deluxeroomgridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void DeluxeRooms_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                LoadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void LoadData()
+        {
+            try
+            {
+                var deluxeRoomController = new DeluxeRoomController();
+                var listDeluxeRoom = deluxeRoomController.GetDeluxeRooms();
+
+                deluxeroomgridview.Rows.Clear();
+
+                foreach (var room in listDeluxeRoom)
+                {
+                    deluxeroomgridview.Rows.Add(
+                        room.RoomId,
+                        room.RoomNumber,
+                        room.RoomPrice,
+                        room.OccupancyLimit,
+                        room.TypeOfView,
+                        room.RoomStatus,
+                        room.IsDeleted);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        private void deluxeroomgridview_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -109,46 +149,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-
-        private void DeluxeRooms_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                LoadData();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void LoadData()
-        {
-            try
-            {
-                var deluxeRoomController = new DeluxeRoomController();
-                var listDeluxeRoom = deluxeRoomController.GetDeluxeRooms();
-
-                deluxeroomgridview.Rows.Clear();
-
-                foreach (var room in listDeluxeRoom)
-                {
-                    deluxeroomgridview.Rows.Add(
-                        room.RoomId,
-                        room.RoomNumber,
-                        room.RoomPrice,
-                        room.OccupancyLimit,
-                        room.TypeOfView,
-                        room.RoomStatus,
-                        room.IsDeleted);
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
             }
         }
     }

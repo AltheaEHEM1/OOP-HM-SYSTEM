@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             philtext = new Label();
             QCTEXT = new Label();
@@ -58,15 +58,15 @@
             bathroomInclusion = new DataGridViewTextBoxColumn();
             roomStatus = new DataGridViewTextBoxColumn();
             isDeleted = new DataGridViewTextBoxColumn();
-            enableDeleteButton = new Guna.UI2.WinForms.Guna2Button();
-            enableEditButton = new Guna.UI2.WinForms.Guna2Button();
             Addroomicon = new Guna.UI2.WinForms.Guna2Button();
             standardtext = new Label();
             backicon = new PictureBox();
-            radiusup = new Guna.UI2.WinForms.Guna2Elipse(components);
-            guna2Elipseinpanel = new Guna.UI2.WinForms.Guna2Elipse(components);
             disableEditButton = new Guna.UI2.WinForms.Guna2Button();
             disableDeleteButton = new Guna.UI2.WinForms.Guna2Button();
+            enableDeleteButton = new Guna.UI2.WinForms.Guna2Button();
+            enableEditButton = new Guna.UI2.WinForms.Guna2Button();
+            radiusup = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2Elipseinpanel = new Guna.UI2.WinForms.Guna2Elipse(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)locationpic).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -164,27 +164,27 @@
             // Standardroomgridview
             // 
             Standardroomgridview.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = Color.White;
-            Standardroomgridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle5.ForeColor = Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            Standardroomgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            Standardroomgridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            Standardroomgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             Standardroomgridview.ColumnHeadersHeight = 17;
             Standardroomgridview.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             Standardroomgridview.Columns.AddRange(new DataGridViewColumn[] { id, roomNumber, roomPrice, occupancyLimit, bedType, bathroomInclusion, roomStatus, isDeleted });
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.White;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            Standardroomgridview.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            Standardroomgridview.DefaultCellStyle = dataGridViewCellStyle3;
             Standardroomgridview.GridColor = Color.FromArgb(231, 229, 255);
             Standardroomgridview.Location = new Point(42, 76);
             Standardroomgridview.Name = "Standardroomgridview";
@@ -265,50 +265,10 @@
             isDeleted.ReadOnly = true;
             isDeleted.Visible = false;
             // 
-            // enableDeleteButton
-            // 
-            enableDeleteButton.BorderRadius = 10;
-            enableDeleteButton.CustomizableEdges = customizableEdges17;
-            enableDeleteButton.DisabledState.BorderColor = Color.DarkGray;
-            enableDeleteButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            enableDeleteButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            enableDeleteButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            enableDeleteButton.FillColor = Color.FromArgb(126, 6, 6);
-            enableDeleteButton.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            enableDeleteButton.ForeColor = Color.White;
-            enableDeleteButton.Location = new Point(1019, 449);
-            enableDeleteButton.Margin = new Padding(3, 2, 3, 2);
-            enableDeleteButton.Name = "enableDeleteButton";
-            enableDeleteButton.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            enableDeleteButton.Size = new Size(116, 34);
-            enableDeleteButton.TabIndex = 11;
-            enableDeleteButton.Text = "Delete";
-            enableDeleteButton.Click += enableDeleteButton_Click;
-            // 
-            // enableEditButton
-            // 
-            enableEditButton.BorderRadius = 10;
-            enableEditButton.CustomizableEdges = customizableEdges19;
-            enableEditButton.DisabledState.BorderColor = Color.DarkGray;
-            enableEditButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            enableEditButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            enableEditButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            enableEditButton.FillColor = Color.FromArgb(214, 164, 38);
-            enableEditButton.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            enableEditButton.ForeColor = Color.White;
-            enableEditButton.Location = new Point(892, 449);
-            enableEditButton.Margin = new Padding(3, 2, 3, 2);
-            enableEditButton.Name = "enableEditButton";
-            enableEditButton.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            enableEditButton.Size = new Size(116, 34);
-            enableEditButton.TabIndex = 10;
-            enableEditButton.Text = "Edit";
-            enableEditButton.Click += enableEditButton_Click;
-            // 
             // Addroomicon
             // 
             Addroomicon.BorderRadius = 10;
-            Addroomicon.CustomizableEdges = customizableEdges11;
+            Addroomicon.CustomizableEdges = customizableEdges1;
             Addroomicon.DisabledState.BorderColor = Color.DarkGray;
             Addroomicon.DisabledState.CustomBorderColor = Color.DarkGray;
             Addroomicon.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -319,7 +279,7 @@
             Addroomicon.Location = new Point(1019, 28);
             Addroomicon.Margin = new Padding(3, 2, 3, 2);
             Addroomicon.Name = "Addroomicon";
-            Addroomicon.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            Addroomicon.ShadowDecoration.CustomizableEdges = customizableEdges2;
             Addroomicon.Size = new Size(175, 34);
             Addroomicon.TabIndex = 8;
             Addroomicon.Text = "Add Room";
@@ -347,18 +307,10 @@
             backicon.TabStop = false;
             backicon.Click += backicon_Click;
             // 
-            // radiusup
-            // 
-            radiusup.BorderRadius = 10;
-            // 
-            // guna2Elipseinpanel
-            // 
-            guna2Elipseinpanel.BorderRadius = 10;
-            // 
             // disableEditButton
             // 
             disableEditButton.BorderRadius = 10;
-            disableEditButton.CustomizableEdges = customizableEdges13;
+            disableEditButton.CustomizableEdges = customizableEdges3;
             disableEditButton.DisabledState.BorderColor = Color.DarkGray;
             disableEditButton.DisabledState.CustomBorderColor = Color.DarkGray;
             disableEditButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -369,7 +321,7 @@
             disableEditButton.Location = new Point(892, 449);
             disableEditButton.Margin = new Padding(3, 2, 3, 2);
             disableEditButton.Name = "disableEditButton";
-            disableEditButton.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            disableEditButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
             disableEditButton.Size = new Size(116, 34);
             disableEditButton.TabIndex = 14;
             disableEditButton.Text = "Edit";
@@ -377,7 +329,7 @@
             // disableDeleteButton
             // 
             disableDeleteButton.BorderRadius = 10;
-            disableDeleteButton.CustomizableEdges = customizableEdges15;
+            disableDeleteButton.CustomizableEdges = customizableEdges5;
             disableDeleteButton.DisabledState.BorderColor = Color.DarkGray;
             disableDeleteButton.DisabledState.CustomBorderColor = Color.DarkGray;
             disableDeleteButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -388,10 +340,58 @@
             disableDeleteButton.Location = new Point(1019, 449);
             disableDeleteButton.Margin = new Padding(3, 2, 3, 2);
             disableDeleteButton.Name = "disableDeleteButton";
-            disableDeleteButton.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            disableDeleteButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
             disableDeleteButton.Size = new Size(116, 34);
             disableDeleteButton.TabIndex = 15;
             disableDeleteButton.Text = "Delete";
+            // 
+            // enableDeleteButton
+            // 
+            enableDeleteButton.BorderRadius = 10;
+            enableDeleteButton.CustomizableEdges = customizableEdges7;
+            enableDeleteButton.DisabledState.BorderColor = Color.DarkGray;
+            enableDeleteButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            enableDeleteButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            enableDeleteButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            enableDeleteButton.FillColor = Color.FromArgb(126, 6, 6);
+            enableDeleteButton.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            enableDeleteButton.ForeColor = Color.White;
+            enableDeleteButton.Location = new Point(1019, 449);
+            enableDeleteButton.Margin = new Padding(3, 2, 3, 2);
+            enableDeleteButton.Name = "enableDeleteButton";
+            enableDeleteButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            enableDeleteButton.Size = new Size(116, 34);
+            enableDeleteButton.TabIndex = 11;
+            enableDeleteButton.Text = "Delete";
+            enableDeleteButton.Click += enableDeleteButton_Click;
+            // 
+            // enableEditButton
+            // 
+            enableEditButton.BorderRadius = 10;
+            enableEditButton.CustomizableEdges = customizableEdges9;
+            enableEditButton.DisabledState.BorderColor = Color.DarkGray;
+            enableEditButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            enableEditButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            enableEditButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            enableEditButton.FillColor = Color.FromArgb(214, 164, 38);
+            enableEditButton.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            enableEditButton.ForeColor = Color.White;
+            enableEditButton.Location = new Point(892, 449);
+            enableEditButton.Margin = new Padding(3, 2, 3, 2);
+            enableEditButton.Name = "enableEditButton";
+            enableEditButton.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            enableEditButton.Size = new Size(116, 34);
+            enableEditButton.TabIndex = 10;
+            enableEditButton.Text = "Edit";
+            enableEditButton.Click += enableEditButton_Click;
+            // 
+            // radiusup
+            // 
+            radiusup.BorderRadius = 10;
+            // 
+            // guna2Elipseinpanel
+            // 
+            guna2Elipseinpanel.BorderRadius = 10;
             // 
             // Standardroom
             // 
@@ -406,7 +406,8 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "Standardroom";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Standardroom";
+            Text = "Standard Rooms";
+            WindowState = FormWindowState.Maximized;
             Load += Standardroom_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

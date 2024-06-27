@@ -55,8 +55,9 @@
             transparentbg.Controls.Add(whitebg);
             transparentbg.Dock = DockStyle.Fill;
             transparentbg.Location = new Point(0, 0);
+            transparentbg.Margin = new Padding(3, 2, 3, 2);
             transparentbg.Name = "transparentbg";
-            transparentbg.Size = new Size(1440, 900);
+            transparentbg.Size = new Size(1213, 591);
             transparentbg.TabIndex = 0;
             transparentbg.Paint += transparentbg_Paint;
             // 
@@ -73,10 +74,11 @@
             whitebg.Controls.Add(backicon);
             whitebg.CustomizableEdges = customizableEdges5;
             whitebg.Font = new Font("Segoe UI Historic", 18F, FontStyle.Bold);
-            whitebg.Location = new Point(84, 76);
+            whitebg.Location = new Point(74, 57);
+            whitebg.Margin = new Padding(3, 2, 3, 2);
             whitebg.Name = "whitebg";
             whitebg.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            whitebg.Size = new Size(1272, 738);
+            whitebg.Size = new Size(1113, 554);
             whitebg.TabIndex = 0;
             // 
             // Confirmbutton
@@ -90,10 +92,11 @@
             Confirmbutton.FillColor = Color.FromArgb(55, 73, 7);
             Confirmbutton.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Confirmbutton.ForeColor = Color.White;
-            Confirmbutton.Location = new Point(519, 555);
+            Confirmbutton.Location = new Point(454, 416);
+            Confirmbutton.Margin = new Padding(3, 2, 3, 2);
             Confirmbutton.Name = "Confirmbutton";
             Confirmbutton.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            Confirmbutton.Size = new Size(234, 60);
+            Confirmbutton.Size = new Size(205, 45);
             Confirmbutton.TabIndex = 7;
             Confirmbutton.Text = "Confirm";
             Confirmbutton.Click += Confirmbutton_Click;
@@ -102,9 +105,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(401, 361);
+            label1.Location = new Point(351, 271);
             label1.Name = "label1";
-            label1.Size = new Size(62, 21);
+            label1.Size = new Size(53, 20);
             label1.TabIndex = 6;
             label1.Text = "label1";
             // 
@@ -112,9 +115,9 @@
             // 
             Totalammounttext.AutoSize = true;
             Totalammounttext.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Totalammounttext.Location = new Point(251, 361);
+            Totalammounttext.Location = new Point(220, 271);
             Totalammounttext.Name = "Totalammounttext";
-            Totalammounttext.Size = new Size(144, 23);
+            Totalammounttext.Size = new Size(115, 19);
             Totalammounttext.TabIndex = 5;
             Totalammounttext.Text = "Total Amount:";
             // 
@@ -134,14 +137,14 @@
             codetextbox.HoverState.BorderColor = Color.FromArgb(64, 64, 64);
             codetextbox.IconLeftOffset = new Point(10, 0);
             codetextbox.IconLeftSize = new Size(10, 10);
-            codetextbox.Location = new Point(235, 274);
-            codetextbox.Margin = new Padding(4);
+            codetextbox.Location = new Point(206, 206);
+            codetextbox.Margin = new Padding(4, 3, 4, 3);
             codetextbox.Name = "codetextbox";
             codetextbox.PasswordChar = '\0';
             codetextbox.PlaceholderText = "Enter code*";
             codetextbox.SelectedText = "";
             codetextbox.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            codetextbox.Size = new Size(803, 72);
+            codetextbox.Size = new Size(703, 54);
             codetextbox.TabIndex = 4;
             // 
             // Enterthecodetext
@@ -149,9 +152,9 @@
             Enterthecodetext.AutoSize = true;
             Enterthecodetext.BackColor = Color.Transparent;
             Enterthecodetext.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Enterthecodetext.Location = new Point(476, 199);
+            Enterthecodetext.Location = new Point(416, 149);
             Enterthecodetext.Name = "Enterthecodetext";
-            Enterthecodetext.Size = new Size(325, 37);
+            Enterthecodetext.Size = new Size(257, 28);
             Enterthecodetext.TabIndex = 3;
             Enterthecodetext.Text = "Enter the code below";
             // 
@@ -159,9 +162,10 @@
             // 
             headercash.BackColor = Color.FromArgb(13, 22, 29);
             headercash.Controls.Add(cashpaytext);
-            headercash.Location = new Point(147, 77);
+            headercash.Location = new Point(129, 58);
+            headercash.Margin = new Padding(3, 2, 3, 2);
             headercash.Name = "headercash";
-            headercash.Size = new Size(1041, 64);
+            headercash.Size = new Size(911, 48);
             headercash.TabIndex = 1;
             // 
             // cashpaytext
@@ -170,18 +174,19 @@
             cashpaytext.BackColor = Color.Transparent;
             cashpaytext.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cashpaytext.ForeColor = Color.White;
-            cashpaytext.Location = new Point(414, 21);
+            cashpaytext.Location = new Point(362, 16);
             cashpaytext.Name = "cashpaytext";
-            cashpaytext.Size = new Size(213, 23);
+            cashpaytext.Size = new Size(168, 19);
             cashpaytext.TabIndex = 2;
             cashpaytext.Text = "Cash Payment Code";
             // 
             // backicon
             // 
             backicon.Image = Properties.Resources.icons8_back_64;
-            backicon.Location = new Point(37, 35);
+            backicon.Location = new Point(32, 26);
+            backicon.Margin = new Padding(3, 2, 3, 2);
             backicon.Name = "backicon";
-            backicon.Size = new Size(47, 47);
+            backicon.Size = new Size(41, 35);
             backicon.SizeMode = PictureBoxSizeMode.Zoom;
             backicon.TabIndex = 0;
             backicon.TabStop = false;
@@ -189,16 +194,17 @@
             // 
             // CashPayment
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bg;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1440, 900);
+            ClientSize = new Size(1213, 591);
             Controls.Add(transparentbg);
-            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "CashPayment";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "CashPayment";
+            Text = "Cash Payment";
+            WindowState = FormWindowState.Maximized;
             transparentbg.ResumeLayout(false);
             whitebg.ResumeLayout(false);
             whitebg.PerformLayout();

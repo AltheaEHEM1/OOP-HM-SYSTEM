@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -37,9 +40,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             headersuites = new Panel();
@@ -49,20 +49,19 @@
             pictureBox1 = new PictureBox();
             transparentpanelsuites = new Panel();
             Addroomicon = new Panel();
+            suitesroomgridview = new Guna.UI2.WinForms.Guna2DataGridView();
+            roomId = new DataGridViewTextBoxColumn();
+            roomNumber = new DataGridViewTextBoxColumn();
+            roomPrice = new DataGridViewTextBoxColumn();
+            occupancyLimit = new DataGridViewTextBoxColumn();
+            numberOfRooms = new DataGridViewTextBoxColumn();
+            suiteType = new DataGridViewTextBoxColumn();
+            roomStatus = new DataGridViewTextBoxColumn();
+            isDeleted = new DataGridViewTextBoxColumn();
             disableDeleteButton = new Guna.UI2.WinForms.Guna2Button();
             disableEditButton = new Guna.UI2.WinForms.Guna2Button();
             enableEditButton = new Guna.UI2.WinForms.Guna2Button();
             enableDeleteButton = new Guna.UI2.WinForms.Guna2Button();
-            panelwhitebgforsuites = new Panel();
-            suitesroomgridview = new Guna.UI2.WinForms.Guna2DataGridView();
-            roomId = new DataGridViewTextBoxColumn();
-            Room_Number = new DataGridViewTextBoxColumn();
-            Price = new DataGridViewTextBoxColumn();
-            occupancyLimit = new DataGridViewTextBoxColumn();
-            NumberofRoom = new DataGridViewTextBoxColumn();
-            suiteType = new DataGridViewTextBoxColumn();
-            Status = new DataGridViewTextBoxColumn();
-            isDeleted = new DataGridViewTextBoxColumn();
             Addroombutton = new Guna.UI2.WinForms.Guna2Button();
             Suitestext = new Label();
             backicon = new PictureBox();
@@ -72,7 +71,6 @@
             ((System.ComponentModel.ISupportInitialize)locationpic).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             Addroomicon.SuspendLayout();
-            panelwhitebgforsuites.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)suitesroomgridview).BeginInit();
             ((System.ComponentModel.ISupportInitialize)backicon).BeginInit();
             SuspendLayout();
@@ -149,11 +147,11 @@
             // Addroomicon
             // 
             Addroomicon.BackColor = Color.White;
+            Addroomicon.Controls.Add(suitesroomgridview);
             Addroomicon.Controls.Add(disableDeleteButton);
             Addroomicon.Controls.Add(disableEditButton);
             Addroomicon.Controls.Add(enableEditButton);
             Addroomicon.Controls.Add(enableDeleteButton);
-            Addroomicon.Controls.Add(panelwhitebgforsuites);
             Addroomicon.Controls.Add(Addroombutton);
             Addroomicon.Controls.Add(Suitestext);
             Addroomicon.Controls.Add(backicon);
@@ -163,6 +161,100 @@
             Addroomicon.Name = "Addroomicon";
             Addroomicon.Size = new Size(1213, 492);
             Addroomicon.TabIndex = 2;
+            // 
+            // suitesroomgridview
+            // 
+            dataGridViewCellStyle1.BackColor = Color.White;
+            suitesroomgridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            suitesroomgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            suitesroomgridview.ColumnHeadersHeight = 17;
+            suitesroomgridview.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            suitesroomgridview.Columns.AddRange(new DataGridViewColumn[] { roomId, roomNumber, roomPrice, occupancyLimit, numberOfRooms, suiteType, roomStatus, isDeleted });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            suitesroomgridview.DefaultCellStyle = dataGridViewCellStyle3;
+            suitesroomgridview.GridColor = Color.FromArgb(231, 229, 255);
+            suitesroomgridview.Location = new Point(42, 67);
+            suitesroomgridview.Name = "suitesroomgridview";
+            suitesroomgridview.RowHeadersVisible = false;
+            suitesroomgridview.Size = new Size(1146, 379);
+            suitesroomgridview.TabIndex = 17;
+            suitesroomgridview.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            suitesroomgridview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            suitesroomgridview.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            suitesroomgridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            suitesroomgridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            suitesroomgridview.ThemeStyle.BackColor = Color.White;
+            suitesroomgridview.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            suitesroomgridview.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            suitesroomgridview.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            suitesroomgridview.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
+            suitesroomgridview.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            suitesroomgridview.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            suitesroomgridview.ThemeStyle.HeaderStyle.Height = 17;
+            suitesroomgridview.ThemeStyle.ReadOnly = false;
+            suitesroomgridview.ThemeStyle.RowsStyle.BackColor = Color.White;
+            suitesroomgridview.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            suitesroomgridview.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
+            suitesroomgridview.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            suitesroomgridview.ThemeStyle.RowsStyle.Height = 25;
+            suitesroomgridview.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            suitesroomgridview.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            suitesroomgridview.CellContentClick += suitesroomgridview_CellContentClick_1;
+            // 
+            // roomId
+            // 
+            roomId.HeaderText = "Room Id";
+            roomId.Name = "roomId";
+            roomId.Visible = false;
+            // 
+            // roomNumber
+            // 
+            roomNumber.HeaderText = "Room Number";
+            roomNumber.Name = "roomNumber";
+            // 
+            // roomPrice
+            // 
+            roomPrice.HeaderText = "Price";
+            roomPrice.Name = "roomPrice";
+            // 
+            // occupancyLimit
+            // 
+            occupancyLimit.HeaderText = "Occupancy Limit";
+            occupancyLimit.Name = "occupancyLimit";
+            // 
+            // numberOfRooms
+            // 
+            numberOfRooms.HeaderText = "Number of Rooms";
+            numberOfRooms.Name = "numberOfRooms";
+            // 
+            // suiteType
+            // 
+            suiteType.HeaderText = "Suite Type";
+            suiteType.Name = "suiteType";
+            // 
+            // roomStatus
+            // 
+            roomStatus.HeaderText = "RoomStatus";
+            roomStatus.Name = "roomStatus";
+            // 
+            // isDeleted
+            // 
+            isDeleted.HeaderText = "Is Deleted";
+            isDeleted.Name = "isDeleted";
+            isDeleted.Visible = false;
             // 
             // disableDeleteButton
             // 
@@ -240,126 +332,6 @@
             enableDeleteButton.TabIndex = 12;
             enableDeleteButton.Text = "Delete";
             // 
-            // panelwhitebgforsuites
-            // 
-            panelwhitebgforsuites.Controls.Add(suitesroomgridview);
-            panelwhitebgforsuites.Location = new Point(48, 66);
-            panelwhitebgforsuites.Margin = new Padding(3, 2, 3, 2);
-            panelwhitebgforsuites.Name = "panelwhitebgforsuites";
-            panelwhitebgforsuites.Size = new Size(1146, 379);
-            panelwhitebgforsuites.TabIndex = 10;
-            // 
-            // suitesroomgridview
-            // 
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(13, 22, 29);
-            dataGridViewCellStyle1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            suitesroomgridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(13, 22, 29);
-            dataGridViewCellStyle2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            suitesroomgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            suitesroomgridview.ColumnHeadersHeight = 50;
-            suitesroomgridview.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            suitesroomgridview.Columns.AddRange(new DataGridViewColumn[] { roomId, Room_Number, Price, occupancyLimit, NumberofRoom, suiteType, Status, isDeleted });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            suitesroomgridview.DefaultCellStyle = dataGridViewCellStyle3;
-            suitesroomgridview.Dock = DockStyle.Fill;
-            suitesroomgridview.Enabled = false;
-            suitesroomgridview.GridColor = Color.FromArgb(231, 229, 255);
-            suitesroomgridview.Location = new Point(0, 0);
-            suitesroomgridview.Margin = new Padding(3, 2, 3, 2);
-            suitesroomgridview.Name = "suitesroomgridview";
-            suitesroomgridview.RowHeadersVisible = false;
-            suitesroomgridview.RowHeadersWidth = 51;
-            suitesroomgridview.RowTemplate.Height = 29;
-            suitesroomgridview.Size = new Size(1146, 379);
-            suitesroomgridview.TabIndex = 2;
-            suitesroomgridview.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            suitesroomgridview.ThemeStyle.AlternatingRowsStyle.Font = null;
-            suitesroomgridview.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            suitesroomgridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            suitesroomgridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            suitesroomgridview.ThemeStyle.BackColor = Color.White;
-            suitesroomgridview.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
-            suitesroomgridview.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            suitesroomgridview.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            suitesroomgridview.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
-            suitesroomgridview.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            suitesroomgridview.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            suitesroomgridview.ThemeStyle.HeaderStyle.Height = 50;
-            suitesroomgridview.ThemeStyle.ReadOnly = false;
-            suitesroomgridview.ThemeStyle.RowsStyle.BackColor = Color.White;
-            suitesroomgridview.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            suitesroomgridview.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
-            suitesroomgridview.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
-            suitesroomgridview.ThemeStyle.RowsStyle.Height = 29;
-            suitesroomgridview.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            suitesroomgridview.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            suitesroomgridview.CellContentClick += suitesroomgridview_CellContentClick;
-            // 
-            // roomId
-            // 
-            roomId.HeaderText = "Room Id";
-            roomId.Name = "roomId";
-            roomId.Visible = false;
-            // 
-            // Room_Number
-            // 
-            Room_Number.FillWeight = 94.33156F;
-            Room_Number.HeaderText = "Room Number";
-            Room_Number.MinimumWidth = 6;
-            Room_Number.Name = "Room_Number";
-            // 
-            // Price
-            // 
-            Price.FillWeight = 94.33156F;
-            Price.HeaderText = "Price";
-            Price.MinimumWidth = 6;
-            Price.Name = "Price";
-            // 
-            // occupancyLimit
-            // 
-            occupancyLimit.FillWeight = 94.33156F;
-            occupancyLimit.HeaderText = "Occupancy Limit";
-            occupancyLimit.MinimumWidth = 6;
-            occupancyLimit.Name = "occupancyLimit";
-            // 
-            // NumberofRoom
-            // 
-            NumberofRoom.FillWeight = 94.33156F;
-            NumberofRoom.HeaderText = "Number of Room";
-            NumberofRoom.MinimumWidth = 6;
-            NumberofRoom.Name = "NumberofRoom";
-            // 
-            // suiteType
-            // 
-            suiteType.HeaderText = "Suite Type";
-            suiteType.Name = "suiteType";
-            // 
-            // Status
-            // 
-            Status.FillWeight = 94.33156F;
-            Status.HeaderText = "Status";
-            Status.MinimumWidth = 6;
-            Status.Name = "Status";
-            // 
-            // isDeleted
-            // 
-            isDeleted.HeaderText = "Is Deleted";
-            isDeleted.Name = "isDeleted";
-            isDeleted.Visible = false;
-            // 
             // Addroombutton
             // 
             Addroombutton.BorderRadius = 10;
@@ -405,12 +377,10 @@
             // upperradius
             // 
             upperradius.BorderRadius = 10;
-            upperradius.TargetControl = suitesroomgridview;
             // 
             // guna2Elipsepanelinsuites
             // 
             guna2Elipsepanelinsuites.BorderRadius = 10;
-            guna2Elipsepanelinsuites.TargetControl = panelwhitebgforsuites;
             // 
             // SuitesRoom
             // 
@@ -425,7 +395,8 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "SuitesRoom";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SuitesRoom";
+            Text = "Suites Rooms";
+            WindowState = FormWindowState.Maximized;
             Load += SuitesRoom_Load;
             headersuites.ResumeLayout(false);
             headersuites.PerformLayout();
@@ -433,7 +404,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             Addroomicon.ResumeLayout(false);
             Addroomicon.PerformLayout();
-            panelwhitebgforsuites.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)suitesroomgridview).EndInit();
             ((System.ComponentModel.ISupportInitialize)backicon).EndInit();
             ResumeLayout(false);
@@ -451,21 +421,20 @@
         private PictureBox backicon;
         private Label Suitestext;
         private Guna.UI2.WinForms.Guna2Button Addroombutton;
-        private Panel panelwhitebgforsuites;
-        private Guna.UI2.WinForms.Guna2DataGridView suitesroomgridview;
         private Guna.UI2.WinForms.Guna2Elipse upperradius;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipsepanelinsuites;
         private Guna.UI2.WinForms.Guna2Button enableDeleteButton;
         private Guna.UI2.WinForms.Guna2Button enableEditButton;
-        private DataGridViewTextBoxColumn roomId;
-        private DataGridViewTextBoxColumn Room_Number;
-        private DataGridViewTextBoxColumn Price;
-        private DataGridViewTextBoxColumn occupancyLimit;
-        private DataGridViewTextBoxColumn NumberofRoom;
-        private DataGridViewTextBoxColumn suiteType;
-        private DataGridViewTextBoxColumn Status;
-        private DataGridViewTextBoxColumn isDeleted;
         private Guna.UI2.WinForms.Guna2Button disableEditButton;
         private Guna.UI2.WinForms.Guna2Button disableDeleteButton;
+        private Guna.UI2.WinForms.Guna2DataGridView suitesroomgridview;
+        private DataGridViewTextBoxColumn roomId;
+        private DataGridViewTextBoxColumn roomNumber;
+        private DataGridViewTextBoxColumn roomPrice;
+        private DataGridViewTextBoxColumn occupancyLimit;
+        private DataGridViewTextBoxColumn numberOfRooms;
+        private DataGridViewTextBoxColumn suiteType;
+        private DataGridViewTextBoxColumn roomStatus;
+        private DataGridViewTextBoxColumn isDeleted;
     }
 }

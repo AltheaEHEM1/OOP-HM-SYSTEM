@@ -89,10 +89,11 @@
             guna2Panel2.Controls.Add(guna2Panel4);
             guna2Panel2.Controls.Add(SRNavback);
             guna2Panel2.CustomizableEdges = customizableEdges7;
-            guna2Panel2.Location = new Point(65, 105);
+            guna2Panel2.Location = new Point(57, 79);
+            guna2Panel2.Margin = new Padding(3, 2, 3, 2);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2Panel2.Size = new Size(1310, 690);
+            guna2Panel2.Size = new Size(1146, 518);
             guna2Panel2.TabIndex = 2;
             // 
             // CardConfirmPayment
@@ -107,10 +108,11 @@
             CardConfirmPayment.FillColor = Color.FromArgb(55, 73, 7);
             CardConfirmPayment.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             CardConfirmPayment.ForeColor = Color.White;
-            CardConfirmPayment.Location = new Point(591, 629);
+            CardConfirmPayment.Location = new Point(517, 472);
+            CardConfirmPayment.Margin = new Padding(3, 2, 3, 2);
             CardConfirmPayment.Name = "CardConfirmPayment";
             CardConfirmPayment.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            CardConfirmPayment.Size = new Size(210, 47);
+            CardConfirmPayment.Size = new Size(184, 35);
             CardConfirmPayment.TabIndex = 39;
             CardConfirmPayment.Text = "Confirm";
             // 
@@ -119,9 +121,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(985, 567);
+            label1.Location = new Point(862, 425);
             label1.Name = "label1";
-            label1.Size = new Size(66, 18);
+            label1.Size = new Size(56, 16);
             label1.TabIndex = 51;
             label1.Text = "PHP 0.00";
             // 
@@ -130,9 +132,9 @@
             TotalAmnt.AutoSize = true;
             TotalAmnt.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             TotalAmnt.ForeColor = Color.Black;
-            TotalAmnt.Location = new Point(233, 567);
+            TotalAmnt.Location = new Point(204, 425);
             TotalAmnt.Name = "TotalAmnt";
-            TotalAmnt.Size = new Size(51, 18);
+            TotalAmnt.Size = new Size(43, 16);
             TotalAmnt.TabIndex = 50;
             TotalAmnt.Text = "TOTAL";
             // 
@@ -141,9 +143,9 @@
             SCAmount.AutoSize = true;
             SCAmount.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             SCAmount.ForeColor = Color.Black;
-            SCAmount.Location = new Point(976, 505);
+            SCAmount.Location = new Point(854, 379);
             SCAmount.Name = "SCAmount";
-            SCAmount.Size = new Size(77, 18);
+            SCAmount.Size = new Size(62, 16);
             SCAmount.TabIndex = 49;
             SCAmount.Text = "(Amount)";
             // 
@@ -152,9 +154,9 @@
             LTAmount.AutoSize = true;
             LTAmount.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             LTAmount.ForeColor = Color.Black;
-            LTAmount.Location = new Point(976, 469);
+            LTAmount.Location = new Point(854, 352);
             LTAmount.Name = "LTAmount";
-            LTAmount.Size = new Size(77, 18);
+            LTAmount.Size = new Size(62, 16);
             LTAmount.TabIndex = 48;
             LTAmount.Text = "(Amount)";
             // 
@@ -163,9 +165,9 @@
             VATAmount.AutoSize = true;
             VATAmount.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             VATAmount.ForeColor = Color.Black;
-            VATAmount.Location = new Point(976, 429);
+            VATAmount.Location = new Point(854, 322);
             VATAmount.Name = "VATAmount";
-            VATAmount.Size = new Size(77, 18);
+            VATAmount.Size = new Size(62, 16);
             VATAmount.TabIndex = 47;
             VATAmount.Text = "(Amount)";
             // 
@@ -174,9 +176,9 @@
             RoomAmount.AutoSize = true;
             RoomAmount.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             RoomAmount.ForeColor = Color.Black;
-            RoomAmount.Location = new Point(976, 276);
+            RoomAmount.Location = new Point(854, 207);
             RoomAmount.Name = "RoomAmount";
-            RoomAmount.Size = new Size(77, 18);
+            RoomAmount.Size = new Size(62, 16);
             RoomAmount.TabIndex = 46;
             RoomAmount.Text = "(Amount)";
             // 
@@ -185,9 +187,9 @@
             ServiceCharge.AutoSize = true;
             ServiceCharge.Font = new Font("Century Gothic", 9F);
             ServiceCharge.ForeColor = Color.Black;
-            ServiceCharge.Location = new Point(221, 505);
+            ServiceCharge.Location = new Point(193, 379);
             ServiceCharge.Name = "ServiceCharge";
-            ServiceCharge.Size = new Size(124, 20);
+            ServiceCharge.Size = new Size(101, 17);
             ServiceCharge.TabIndex = 45;
             ServiceCharge.Text = "Service Charge";
             // 
@@ -196,9 +198,9 @@
             LocalTax.AutoSize = true;
             LocalTax.Font = new Font("Century Gothic", 9F);
             LocalTax.ForeColor = Color.Black;
-            LocalTax.Location = new Point(221, 468);
+            LocalTax.Location = new Point(193, 351);
             LocalTax.Name = "LocalTax";
-            LocalTax.Size = new Size(75, 20);
+            LocalTax.Size = new Size(63, 17);
             LocalTax.TabIndex = 44;
             LocalTax.Text = "Local tax";
             // 
@@ -207,9 +209,9 @@
             ValueAddedTax.AutoSize = true;
             ValueAddedTax.Font = new Font("Century Gothic", 9F);
             ValueAddedTax.ForeColor = Color.Black;
-            ValueAddedTax.Location = new Point(221, 428);
+            ValueAddedTax.Location = new Point(193, 321);
             ValueAddedTax.Name = "ValueAddedTax";
-            ValueAddedTax.Size = new Size(133, 20);
+            ValueAddedTax.Size = new Size(109, 17);
             ValueAddedTax.TabIndex = 43;
             ValueAddedTax.Text = "Value Added Tax";
             // 
@@ -218,9 +220,9 @@
             RoomType.AutoSize = true;
             RoomType.Font = new Font("Century Gothic", 9F);
             RoomType.ForeColor = Color.Black;
-            RoomType.Location = new Point(221, 363);
+            RoomType.Location = new Point(193, 272);
             RoomType.Name = "RoomType";
-            RoomType.Size = new Size(84, 20);
+            RoomType.Size = new Size(69, 17);
             RoomType.TabIndex = 42;
             RoomType.Text = "RoomType";
             // 
@@ -229,9 +231,9 @@
             NoofGuest.AutoSize = true;
             NoofGuest.Font = new Font("Century Gothic", 9F);
             NoofGuest.ForeColor = Color.Black;
-            NoofGuest.Location = new Point(221, 305);
+            NoofGuest.Location = new Point(193, 229);
             NoofGuest.Name = "NoofGuest";
-            NoofGuest.Size = new Size(100, 20);
+            NoofGuest.Size = new Size(81, 17);
             NoofGuest.TabIndex = 41;
             NoofGuest.Text = "No. of Guest";
             // 
@@ -240,9 +242,9 @@
             CheckinCheckoutDate.AutoSize = true;
             CheckinCheckoutDate.Font = new Font("Century Gothic", 9F);
             CheckinCheckoutDate.ForeColor = Color.Black;
-            CheckinCheckoutDate.Location = new Point(221, 274);
+            CheckinCheckoutDate.Location = new Point(193, 206);
             CheckinCheckoutDate.Name = "CheckinCheckoutDate";
-            CheckinCheckoutDate.Size = new Size(227, 20);
+            CheckinCheckoutDate.Size = new Size(181, 17);
             CheckinCheckoutDate.TabIndex = 40;
             CheckinCheckoutDate.Text = "Check in and Check out date";
             // 
@@ -251,9 +253,9 @@
             DateChckout.AutoSize = true;
             DateChckout.Font = new Font("Century Gothic", 9F);
             DateChckout.ForeColor = Color.Black;
-            DateChckout.Location = new Point(985, 217);
+            DateChckout.Location = new Point(862, 163);
             DateChckout.Name = "DateChckout";
-            DateChckout.Size = new Size(50, 20);
+            DateChckout.Size = new Size(44, 17);
             DateChckout.TabIndex = 38;
             DateChckout.Text = "(Time)";
             // 
@@ -262,9 +264,9 @@
             DateChckin.AutoSize = true;
             DateChckin.Font = new Font("Century Gothic", 9F);
             DateChckin.ForeColor = Color.Black;
-            DateChckin.Location = new Point(221, 217);
+            DateChckin.Location = new Point(193, 163);
             DateChckin.Name = "DateChckin";
-            DateChckin.Size = new Size(50, 20);
+            DateChckin.Size = new Size(44, 17);
             DateChckin.TabIndex = 37;
             DateChckin.Text = "(Time)";
             // 
@@ -273,9 +275,9 @@
             LabelCheckout.AutoSize = true;
             LabelCheckout.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             LabelCheckout.ForeColor = Color.Black;
-            LabelCheckout.Location = new Point(968, 177);
+            LabelCheckout.Location = new Point(847, 133);
             LabelCheckout.Name = "LabelCheckout";
-            LabelCheckout.Size = new Size(85, 18);
+            LabelCheckout.Size = new Size(67, 16);
             LabelCheckout.TabIndex = 36;
             LabelCheckout.Text = "Check out";
             // 
@@ -284,9 +286,9 @@
             LabelCheckin.AutoSize = true;
             LabelCheckin.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             LabelCheckin.ForeColor = Color.Black;
-            LabelCheckin.Location = new Point(221, 177);
+            LabelCheckin.Location = new Point(193, 133);
             LabelCheckin.Name = "LabelCheckin";
-            LabelCheckin.Size = new Size(75, 18);
+            LabelCheckin.Size = new Size(59, 16);
             LabelCheckin.TabIndex = 35;
             LabelCheckin.Text = "Check in";
             LabelCheckin.TextAlign = ContentAlignment.TopCenter;
@@ -297,10 +299,11 @@
             guna2Panel4.Controls.Add(SRLabel);
             guna2Panel4.CustomizableEdges = customizableEdges3;
             guna2Panel4.FillColor = Color.FromArgb(13, 22, 29);
-            guna2Panel4.Location = new Point(139, 70);
+            guna2Panel4.Location = new Point(122, 52);
+            guna2Panel4.Margin = new Padding(3, 2, 3, 2);
             guna2Panel4.Name = "guna2Panel4";
             guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Panel4.Size = new Size(1041, 64);
+            guna2Panel4.Size = new Size(911, 48);
             guna2Panel4.TabIndex = 34;
             // 
             // SRLabel
@@ -308,9 +311,9 @@
             SRLabel.AutoSize = true;
             SRLabel.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SRLabel.ForeColor = Color.White;
-            SRLabel.Location = new Point(439, 21);
+            SRLabel.Location = new Point(384, 16);
             SRLabel.Name = "SRLabel";
-            SRLabel.Size = new Size(187, 23);
+            SRLabel.Size = new Size(151, 19);
             SRLabel.TabIndex = 11;
             SRLabel.Text = "Booking Summary";
             SRLabel.TextAlign = ContentAlignment.MiddleCenter;
@@ -320,28 +323,30 @@
             SRNavback.CustomizableEdges = customizableEdges5;
             SRNavback.Image = (Image)resources.GetObject("SRNavback.Image");
             SRNavback.ImageRotate = 0F;
-            SRNavback.Location = new Point(59, 46);
+            SRNavback.Location = new Point(52, 34);
+            SRNavback.Margin = new Padding(3, 2, 3, 2);
             SRNavback.Name = "SRNavback";
             SRNavback.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            SRNavback.Size = new Size(49, 42);
+            SRNavback.Size = new Size(43, 32);
             SRNavback.TabIndex = 33;
             SRNavback.TabStop = false;
             SRNavback.Click += SRNavback_Click;
             // 
             // BookingSummary
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1440, 900);
+            ClientSize = new Size(1213, 591);
             Controls.Add(guna2Panel2);
             DoubleBuffered = true;
             ForeColor = Color.Silver;
-            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "BookingSummary";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "BookingSummary";
+            Text = "Booking Summary";
+            WindowState = FormWindowState.Maximized;
             guna2Panel2.ResumeLayout(false);
             guna2Panel2.PerformLayout();
             guna2Panel4.ResumeLayout(false);

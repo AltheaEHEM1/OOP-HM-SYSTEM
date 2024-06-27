@@ -96,8 +96,9 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 throw new Exception(ex.Message);
             }
         }
+            
 
-        private void suitesroomgridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void suitesroomgridview_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             try
             {

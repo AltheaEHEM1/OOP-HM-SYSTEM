@@ -612,7 +612,8 @@
             Controls.Add(Logo);
             Controls.Add(HeaderBox);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "TransactionDetails";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TransactionDetails";

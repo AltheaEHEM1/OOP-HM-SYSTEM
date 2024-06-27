@@ -73,10 +73,9 @@
             panel1.Controls.Add(Panel2);
             panel1.Controls.Add(BackButton);
             panel1.Controls.Add(EditProfileButton);
-            panel1.Location = new Point(80, 100);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(70, 75);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1272, 738);
+            panel1.Size = new Size(1113, 554);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
@@ -84,9 +83,9 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(355, 512);
+            label6.Location = new Point(311, 384);
             label6.Name = "label6";
-            label6.Size = new Size(112, 30);
+            label6.Size = new Size(88, 22);
             label6.TabIndex = 0;
             label6.Text = "Monday";
             // 
@@ -94,9 +93,9 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(355, 560);
+            label7.Location = new Point(311, 420);
             label7.Name = "label7";
-            label7.Size = new Size(237, 30);
+            label7.Size = new Size(185, 22);
             label7.TabIndex = 22;
             label7.Text = "9:00 am to 6:00 pm";
             // 
@@ -106,9 +105,9 @@
             label5.BackColor = Color.FromArgb(61, 68, 74);
             label5.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(355, 459);
+            label5.Location = new Point(311, 344);
             label5.Name = "label5";
-            label5.Size = new Size(135, 32);
+            label5.Size = new Size(107, 25);
             label5.TabIndex = 0;
             label5.Text = "Schedule";
             // 
@@ -118,12 +117,11 @@
             WorkIcon.BackgroundImageLayout = ImageLayout.Stretch;
             WorkIcon.FillColor = Color.Transparent;
             WorkIcon.ImageRotate = 0F;
-            WorkIcon.Location = new Point(889, 322);
-            WorkIcon.Margin = new Padding(3, 4, 3, 4);
+            WorkIcon.Location = new Point(778, 242);
             WorkIcon.Name = "WorkIcon";
             WorkIcon.ShadowDecoration.CustomizableEdges = customizableEdges1;
             WorkIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            WorkIcon.Size = new Size(33, 48);
+            WorkIcon.Size = new Size(29, 36);
             WorkIcon.TabIndex = 19;
             WorkIcon.TabStop = false;
             // 
@@ -133,19 +131,18 @@
             HeaderBox.BackColor = Color.FromArgb(61, 68, 74);
             HeaderBox.FillColor = Color.Transparent;
             HeaderBox.ForeColor = Color.Black;
-            HeaderBox.Location = new Point(0, 441);
-            HeaderBox.Margin = new Padding(3, 4, 3, 4);
+            HeaderBox.Location = new Point(0, 331);
             HeaderBox.Name = "HeaderBox";
-            HeaderBox.Size = new Size(1272, 67);
+            HeaderBox.Size = new Size(1113, 50);
             HeaderBox.TabIndex = 7;
             // 
             // JobPosition
             // 
             JobPosition.AutoSize = true;
             JobPosition.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            JobPosition.Location = new Point(921, 339);
+            JobPosition.Location = new Point(806, 254);
             JobPosition.Name = "JobPosition";
-            JobPosition.Size = new Size(245, 27);
+            JobPosition.Size = new Size(201, 23);
             JobPosition.TabIndex = 0;
             JobPosition.Text = "Front Desk Employee";
             JobPosition.Click += JobPosition_Click;
@@ -155,9 +152,9 @@
             Name.AutoSize = true;
             Name.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name.ForeColor = Color.Black;
-            Name.Location = new Point(355, 339);
+            Name.Location = new Point(311, 254);
             Name.Name = "Name";
-            Name.Size = new Size(327, 34);
+            Name.Size = new Size(257, 26);
             Name.TabIndex = 0;
             Name.Text = "Miyuki Mharie Parocha";
             // 
@@ -175,11 +172,10 @@
             ChangePasswordButton.ForeColor = Color.White;
             ChangePasswordButton.Image = (Image)resources.GetObject("ChangePasswordButton.Image");
             ChangePasswordButton.ImageSize = new Size(20, 30);
-            ChangePasswordButton.Location = new Point(964, 658);
-            ChangePasswordButton.Margin = new Padding(3, 4, 3, 4);
+            ChangePasswordButton.Location = new Point(844, 494);
             ChangePasswordButton.Name = "ChangePasswordButton";
             ChangePasswordButton.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            ChangePasswordButton.Size = new Size(250, 50);
+            ChangePasswordButton.Size = new Size(219, 38);
             ChangePasswordButton.TabIndex = 11;
             ChangePasswordButton.Text = "Change Password";
             ChangePasswordButton.Click += ChangePasswordButton_Click;
@@ -189,12 +185,11 @@
             ProfilePictureBox.BackColor = Color.Transparent;
             ProfilePictureBox.Image = (Image)resources.GetObject("ProfilePictureBox.Image");
             ProfilePictureBox.ImageRotate = 0F;
-            ProfilePictureBox.Location = new Point(126, 222);
-            ProfilePictureBox.Margin = new Padding(3, 4, 3, 4);
+            ProfilePictureBox.Location = new Point(110, 166);
             ProfilePictureBox.Name = "ProfilePictureBox";
             ProfilePictureBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
             ProfilePictureBox.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            ProfilePictureBox.Size = new Size(207, 187);
+            ProfilePictureBox.Size = new Size(181, 140);
             ProfilePictureBox.TabIndex = 0;
             ProfilePictureBox.TabStop = false;
             // 
@@ -204,11 +199,10 @@
             Panel2.BorderRadius = 20;
             Panel2.BorderThickness = 1;
             Panel2.CustomizableEdges = customizableEdges5;
-            Panel2.Location = new Point(105, 112);
-            Panel2.Margin = new Padding(3, 4, 3, 4);
+            Panel2.Location = new Point(92, 84);
             Panel2.Name = "Panel2";
             Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            Panel2.Size = new Size(1061, 197);
+            Panel2.Size = new Size(928, 148);
             Panel2.TabIndex = 2;
             // 
             // BackButton
@@ -222,12 +216,11 @@
             BackButton.ForeColor = Color.White;
             BackButton.Image = (Image)resources.GetObject("BackButton.Image");
             BackButton.ImageSize = new Size(70, 60);
-            BackButton.Location = new Point(47, 35);
-            BackButton.Margin = new Padding(3, 4, 3, 4);
+            BackButton.Location = new Point(41, 26);
             BackButton.Name = "BackButton";
             BackButton.ShadowDecoration.CustomizableEdges = customizableEdges7;
             BackButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            BackButton.Size = new Size(56, 69);
+            BackButton.Size = new Size(49, 52);
             BackButton.TabIndex = 1;
             BackButton.Click += BackButton_Click_1;
             // 
@@ -244,27 +237,25 @@
             EditProfileButton.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             EditProfileButton.ForeColor = Color.White;
             EditProfileButton.Image = (Image)resources.GetObject("EditProfileButton.Image");
-            EditProfileButton.Location = new Point(918, 51);
-            EditProfileButton.Margin = new Padding(3, 4, 3, 4);
+            EditProfileButton.Location = new Point(803, 38);
             EditProfileButton.Name = "EditProfileButton";
             EditProfileButton.ShadowDecoration.CustomizableEdges = customizableEdges9;
-            EditProfileButton.Size = new Size(230, 45);
+            EditProfileButton.Size = new Size(201, 34);
             EditProfileButton.TabIndex = 0;
             EditProfileButton.Text = "Edit Profile";
             EditProfileButton.Click += EditProfileButton_Click;
             // 
             // ProfilePage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1440, 900);
+            ClientSize = new Size(1213, 591);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             // Name = "ProfilePage";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "ProfilePage";
+            Text = "Profile";
+            WindowState = FormWindowState.Maximized;
             Load += ProfilePage_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

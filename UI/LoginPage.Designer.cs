@@ -148,12 +148,13 @@
             // 
             Createacc.BackColor = Color.Transparent;
             Createacc.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Createacc.ForeColor = SystemColors.Highlight;
             Createacc.Location = new Point(229, 255);
             Createacc.Margin = new Padding(3, 2, 3, 2);
             Createacc.Name = "Createacc";
-            Createacc.Size = new Size(62, 19);
+            Createacc.Size = new Size(100, 19);
             Createacc.TabIndex = 6;
-            Createacc.Text = "Click here";
+            Createacc.Text = "Create Account";
             Createacc.Click += Createacc_Click;
             // 
             // label4
@@ -324,7 +325,8 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "LoginPage";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Formloin";
+            Text = "Log In";
+            WindowState = FormWindowState.Maximized;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

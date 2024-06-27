@@ -432,11 +432,11 @@
             ClientSize = new Size(1213, 591);
             Controls.Add(guna2Panel2);
             DoubleBuffered = true;
-            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "SRSelectRoom";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SRSelectRoom";
+            Text = "Select Standard Room";
+            WindowState = FormWindowState.Maximized;
             Load += SRSelectRoom_Load;
             guna2Panel2.ResumeLayout(false);
             guna2Panel2.PerformLayout();

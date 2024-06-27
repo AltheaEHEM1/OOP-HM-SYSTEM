@@ -32,10 +32,9 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 
         private void Createacc_Click(object sender, EventArgs e)
         {
+            this.Hide();
             CreateAccountForm createAccountform = new CreateAccountForm();
             createAccountform.Show();
-
-            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

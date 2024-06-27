@@ -36,6 +36,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void label3_Click(object sender, EventArgs e)
         {
+            this.Close();
             LoginPage loginPage = new LoginPage();
             loginPage.Show();
         }
@@ -136,6 +137,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         }
 
         private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

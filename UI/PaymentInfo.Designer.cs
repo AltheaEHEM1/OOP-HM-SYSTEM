@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Transparentcontainer = new Panel();
             whitebg = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             Cardbutton = new Guna.UI2.WinForms.Guna2Button();
@@ -54,8 +54,9 @@
             Transparentcontainer.Controls.Add(whitebg);
             Transparentcontainer.Dock = DockStyle.Fill;
             Transparentcontainer.Location = new Point(0, 0);
+            Transparentcontainer.Margin = new Padding(3, 2, 3, 2);
             Transparentcontainer.Name = "Transparentcontainer";
-            Transparentcontainer.Size = new Size(1440, 900);
+            Transparentcontainer.Size = new Size(1213, 591);
             Transparentcontainer.TabIndex = 0;
             Transparentcontainer.Paint += Transparentcontainer_Paint;
             // 
@@ -68,18 +69,19 @@
             whitebg.Controls.Add(Whichpaymenttext);
             whitebg.Controls.Add(headerpaymentinfo);
             whitebg.Controls.Add(backicon);
-            whitebg.CustomizableEdges = customizableEdges5;
-            whitebg.Location = new Point(84, 76);
+            whitebg.CustomizableEdges = customizableEdges11;
+            whitebg.Location = new Point(74, 57);
+            whitebg.Margin = new Padding(3, 2, 3, 2);
             whitebg.Name = "whitebg";
-            whitebg.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            whitebg.Size = new Size(1272, 738);
+            whitebg.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            whitebg.Size = new Size(1113, 554);
             whitebg.TabIndex = 0;
             // 
             // Cardbutton
             // 
             Cardbutton.BorderRadius = 10;
             Cardbutton.BorderThickness = 2;
-            Cardbutton.CustomizableEdges = customizableEdges1;
+            Cardbutton.CustomizableEdges = customizableEdges7;
             Cardbutton.DisabledState.BorderColor = Color.DarkGray;
             Cardbutton.DisabledState.CustomBorderColor = Color.DarkGray;
             Cardbutton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -87,10 +89,11 @@
             Cardbutton.FillColor = Color.White;
             Cardbutton.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Cardbutton.ForeColor = Color.Black;
-            Cardbutton.Location = new Point(456, 505);
+            Cardbutton.Location = new Point(399, 379);
+            Cardbutton.Margin = new Padding(3, 2, 3, 2);
             Cardbutton.Name = "Cardbutton";
-            Cardbutton.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            Cardbutton.Size = new Size(407, 72);
+            Cardbutton.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            Cardbutton.Size = new Size(356, 54);
             Cardbutton.TabIndex = 6;
             Cardbutton.Text = "Card Payment";
             // 
@@ -99,9 +102,9 @@
             or.AutoSize = true;
             or.BackColor = Color.Transparent;
             or.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            or.Location = new Point(637, 423);
+            or.Location = new Point(557, 317);
             or.Name = "or";
-            or.Size = new Size(29, 23);
+            or.Size = new Size(24, 19);
             or.TabIndex = 5;
             or.Text = "or";
             // 
@@ -109,7 +112,7 @@
             // 
             Cashbutton.BorderRadius = 10;
             Cashbutton.BorderThickness = 2;
-            Cashbutton.CustomizableEdges = customizableEdges3;
+            Cashbutton.CustomizableEdges = customizableEdges9;
             Cashbutton.DisabledState.BorderColor = Color.DarkGray;
             Cashbutton.DisabledState.CustomBorderColor = Color.DarkGray;
             Cashbutton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -117,10 +120,11 @@
             Cashbutton.FillColor = Color.FromArgb(13, 22, 29);
             Cashbutton.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Cashbutton.ForeColor = Color.White;
-            Cashbutton.Location = new Point(456, 295);
+            Cashbutton.Location = new Point(399, 221);
+            Cashbutton.Margin = new Padding(3, 2, 3, 2);
             Cashbutton.Name = "Cashbutton";
-            Cashbutton.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            Cashbutton.Size = new Size(407, 72);
+            Cashbutton.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            Cashbutton.Size = new Size(356, 54);
             Cashbutton.TabIndex = 4;
             Cashbutton.Text = "Cash Payment";
             Cashbutton.Click += Cashbutton_Click;
@@ -130,9 +134,9 @@
             Whichpaymenttext.AutoSize = true;
             Whichpaymenttext.BackColor = Color.Transparent;
             Whichpaymenttext.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Whichpaymenttext.Location = new Point(505, 202);
+            Whichpaymenttext.Location = new Point(442, 152);
             Whichpaymenttext.Name = "Whichpaymenttext";
-            Whichpaymenttext.Size = new Size(313, 23);
+            Whichpaymenttext.Size = new Size(248, 19);
             Whichpaymenttext.TabIndex = 3;
             Whichpaymenttext.Text = "Which payment do you prefer?";
             // 
@@ -140,9 +144,10 @@
             // 
             headerpaymentinfo.BackColor = Color.FromArgb(13, 22, 29);
             headerpaymentinfo.Controls.Add(Paymentmodetext);
-            headerpaymentinfo.Location = new Point(147, 77);
+            headerpaymentinfo.Location = new Point(129, 58);
+            headerpaymentinfo.Margin = new Padding(3, 2, 3, 2);
             headerpaymentinfo.Name = "headerpaymentinfo";
-            headerpaymentinfo.Size = new Size(1041, 64);
+            headerpaymentinfo.Size = new Size(911, 48);
             headerpaymentinfo.TabIndex = 1;
             // 
             // Paymentmodetext
@@ -151,34 +156,36 @@
             Paymentmodetext.BackColor = Color.Transparent;
             Paymentmodetext.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Paymentmodetext.ForeColor = Color.White;
-            Paymentmodetext.Location = new Point(441, 21);
+            Paymentmodetext.Location = new Point(386, 16);
             Paymentmodetext.Name = "Paymentmodetext";
-            Paymentmodetext.Size = new Size(159, 23);
+            Paymentmodetext.Size = new Size(127, 19);
             Paymentmodetext.TabIndex = 2;
             Paymentmodetext.Text = "Payment Mode";
             // 
             // backicon
             // 
             backicon.Image = Properties.Resources.icons8_back_64;
-            backicon.Location = new Point(37, 35);
+            backicon.Location = new Point(32, 26);
+            backicon.Margin = new Padding(3, 2, 3, 2);
             backicon.Name = "backicon";
-            backicon.Size = new Size(47, 47);
+            backicon.Size = new Size(41, 35);
             backicon.SizeMode = PictureBoxSizeMode.Zoom;
             backicon.TabIndex = 0;
             backicon.TabStop = false;
             // 
             // PaymentInfo
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bg;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1440, 900);
+            ClientSize = new Size(1213, 591);
             Controls.Add(Transparentcontainer);
-            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "PaymentInfo";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "PaymentInfo";
+            Text = "Payment Information";
+            WindowState = FormWindowState.Maximized;
             Transparentcontainer.ResumeLayout(false);
             whitebg.ResumeLayout(false);
             whitebg.PerformLayout();
