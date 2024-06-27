@@ -312,6 +312,7 @@
             enableEditButton.Size = new Size(116, 34);
             enableEditButton.TabIndex = 11;
             enableEditButton.Text = "Edit";
+            enableEditButton.Click += enableEditButton_Click_1;
             // 
             // enableDeleteButton
             // 
@@ -331,6 +332,7 @@
             enableDeleteButton.Size = new Size(116, 34);
             enableDeleteButton.TabIndex = 12;
             enableDeleteButton.Text = "Delete";
+            enableDeleteButton.Click += enableDeleteButton_Click;
             // 
             // Addroombutton
             // 

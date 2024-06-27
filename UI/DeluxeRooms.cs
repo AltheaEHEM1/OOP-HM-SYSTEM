@@ -63,6 +63,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             try
             {
+                // reset the selected row
+                deluxeRoom = null;
                 LoadData();
             }
             catch (Exception ex)

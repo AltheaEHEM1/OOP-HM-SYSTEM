@@ -45,22 +45,13 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             suiteAddroom.Show();
         }
 
-        private void enableEditButton_Click(object sender, EventArgs e)
-        {
-            SuiteEditRoom suiteeditRoom = new SuiteEditRoom(suiteRoom);
-            suiteeditRoom.Show();
-        }
-
-        private void enableDeleteButton_Click(object sender, EventArgs e)
-        {
-            SuiteRoomDelete delroom = new SuiteRoomDelete(suiteRoom);
-            delroom.Show();
-        }
 
         public void SuitesRoom_Load(object sender, EventArgs e)
         {
             try
             {
+                // reset the selected row
+                suiteRoom = null;
                 LoadData();
             }
             catch (Exception ex)
@@ -96,7 +87,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 throw new Exception(ex.Message);
             }
         }
-            
+
 
         private void suitesroomgridview_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
@@ -154,6 +145,19 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void enableEditButton_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            SuiteEditRoom suiteeditRoom = new SuiteEditRoom(suiteRoom);
+            suiteeditRoom.Show();
+        }
+
+        private void enableDeleteButton_Click(object sender, EventArgs e)
+        {
+            SuiteRoomDelete delroom = new SuiteRoomDelete(suiteRoom);
+            delroom.Show();
         }
     }
 }
