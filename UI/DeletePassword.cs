@@ -49,9 +49,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                     if (deleteSuccess)
                     {
                         MessageBox.Show("Room successfully deleted.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Standardroom standardroom = new Standardroom();
                         this.Close();
-                        standardroom.Show();
                     }
                     else
                     {

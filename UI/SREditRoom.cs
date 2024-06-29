@@ -49,9 +49,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                 if (success)
                 {
                     MessageBox.Show("Room Updated Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Standardroom standardroom = new Standardroom();
                     this.Close();
-                    standardroom.Show();
                 }
                 else
                 {
@@ -67,8 +65,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM
         private void NavBack_Click(object sender, EventArgs e)
         {
             this.Close();
-            // Standardroom standardRoom = new Standardroom();
-            // standardRoom.Show();
         }
 
         private void SREditRoom_Load(object sender, EventArgs e)

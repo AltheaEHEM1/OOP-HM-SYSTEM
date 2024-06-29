@@ -445,7 +445,7 @@
         private DataGridViewTextBoxColumn bathroomInclusion;
         private DataGridViewTextBoxColumn roomStatus;
         private DataGridViewTextBoxColumn isDeleted;
-        private Guna.UI2.WinForms.Guna2Button disableDeleteButton;
-        private Guna.UI2.WinForms.Guna2Button disableEditButton;
+        public Guna.UI2.WinForms.Guna2Button disableDeleteButton;
+        public Guna.UI2.WinForms.Guna2Button disableEditButton;
     }
 }

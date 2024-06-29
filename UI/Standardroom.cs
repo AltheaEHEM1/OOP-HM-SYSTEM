@@ -20,8 +20,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             try
             {
-                // reset the selected row
-                standardRoom = null;
 
                 LoadData();
             }
@@ -35,6 +33,14 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             try
             {
+                // reset the selected row
+                standardRoom = null;
+
+                // reset the visibility of enableEditButton and enableDeleteButton
+                disableEditButton.BringToFront();
+                disableDeleteButton.BringToFront();
+
+                // display the content of gridview
                 var standardRoomController = new StandardRoomController();
                 var listStandardRoom = standardRoomController.GetStandardRooms();
 
@@ -65,6 +71,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             // pass the room to edit
             SREditRoom editForm = new SREditRoom(standardRoom);
             editForm.ShowDialog();
+            LoadData(); // Refresh data after editing a room
         }
 
         private void Addroomicon_Click(object sender, EventArgs e)
@@ -79,6 +86,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             // pass the room to delete
             Deleteroom deleteStandardRoom = new Deleteroom(standardRoom);
             deleteStandardRoom.ShowDialog();
+            LoadData(); // Refresh data after editing a room
         }
 
         private void backicon_Click(object sender, EventArgs e)
@@ -139,20 +147,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                     // change the visibility of enableEditButton and enableDeleteButton
                     enableEditButton.BringToFront();
                     enableDeleteButton.BringToFront();
-
-                    /*
-                    SREditRoom editForm = new SREditRoom();
-                    editForm.Roomnumberedit.Text = standardRoom.RoomNumber.ToString();
-                    editForm.Roompriceedit.Text = standardRoom.RoomPrice.ToString();
-                    editForm.Occupancylimitedit.Text = standardRoom.OccupancyLimit.ToString();
-                    editForm.bedtype.Text = standardRoom.BedType;
-                    editForm.bathroominclusion.Text = standardRoom.BathroomInclusion;
-                    editForm.roomstatus.Text = standardRoom.RoomStatus;
-                    editForm.roomId.Text = standardRoom.RoomId.ToString();
-                    editForm.isDeleted.Text = standardRoom.IsDeleted.ToString();
-
-                    editForm.Show();
-                    */
+                }
+                else
+                {
+                    // reset the visibility of enableEditButton and enableDeleteButton
+                    disableEditButton.BringToFront();
+                    disableDeleteButton.BringToFront();
                 }
             }
             catch (Exception ex)

@@ -36,9 +36,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                     if (deleteSuccess)
                     {
                         MessageBox.Show("Room successfully deleted.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        DeluxeRooms deluxeroom = new DeluxeRooms();
                         this.Close();
-                        deluxeroom.Show();
                     }
                     else
                     {

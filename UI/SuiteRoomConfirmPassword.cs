@@ -35,11 +35,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                     if (deleteSuccess)
                     {
                         MessageBox.Show("Room successfully deleted.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        SuitesRoom suiteroom = new SuitesRoom();
                         this.Close();
-                        // load the SuitesRoom
-                        suiteroom.Show();
-
                     }
                     else
                     {

@@ -71,9 +71,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                 if (success)
                 {
                     MessageBox.Show("Room Updated Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    DeluxeRooms deluxeroom = new DeluxeRooms();
                     this.Close();
-                    deluxeroom.Show();
                 }
                 else
                 {

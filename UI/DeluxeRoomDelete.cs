@@ -30,9 +30,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-           // DeluxeRooms deluxeroom = new DeluxeRooms();
             this.Close();
-            // deluxeroom.Show();
         }
     }
 }

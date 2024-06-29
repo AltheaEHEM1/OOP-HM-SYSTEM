@@ -83,8 +83,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                 // show success message
                 MessageBox.Show("Room Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
-                SuitesRoom suiteRooms = new SuitesRoom();
-                suiteRooms.Show();
             }
             else
             {

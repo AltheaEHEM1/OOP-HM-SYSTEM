@@ -58,13 +58,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                     // show success message
                     MessageBox.Show("Room Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
-                    Standardroom standardroom = new Standardroom();
-                    standardroom.Show();
                 }
                 else
                 {
                     // show error message
-                    MessageBox.Show("Failed to Add Room", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    throw new Exception("Failed to Add Room");
                     Reset();
                 }
             }
@@ -88,9 +86,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         private void NavBack_Click(object sender, EventArgs e)
         {
             this.Close();
-            // go back to standardRoom form
-            Standardroom standardroom = new Standardroom();
-            standardroom.Show();
         }
     }
 }

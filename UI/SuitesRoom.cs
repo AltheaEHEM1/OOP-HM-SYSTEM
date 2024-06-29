@@ -34,15 +34,14 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             Rooms_admin rooms = new Rooms_admin();
             rooms.Show();
-
-            // Hide the LoginPage form
             this.Hide();
         }
 
         private void Addroombutton_Click(object sender, EventArgs e)
         {
             SuiteAddroom suiteAddroom = new SuiteAddroom();
-            suiteAddroom.Show();
+            suiteAddroom.ShowDialog();
+            LoadData(); // refresh the data in gridview
         }
 
 
@@ -50,8 +49,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             try
             {
-                // reset the selected row
-                suiteRoom = null;
                 LoadData();
             }
             catch (Exception ex)
@@ -64,6 +61,13 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             try
             {
+                // reset the selected row
+                suiteRoom = null;
+
+                // reset the visibility of edit and delete button
+                disableEditButton.BringToFront();
+                disableDeleteButton.BringToFront();
+
                 var suiteRoomController = new SuiteRoomController();
                 var listSuiteRoom = suiteRoomController.GetSuiteRooms();
 
@@ -140,6 +144,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                     enableEditButton.BringToFront();
                     enableDeleteButton.BringToFront();
                 }
+                else
+                {
+                    // reset the visibility of edit and delete button
+                    disableEditButton.BringToFront();
+                    disableDeleteButton.BringToFront();
+                }
             }
             catch (Exception ex)
             {
@@ -149,15 +159,16 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void enableEditButton_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
             SuiteEditRoom suiteeditRoom = new SuiteEditRoom(suiteRoom);
-            suiteeditRoom.Show();
+            suiteeditRoom.ShowDialog();
+            LoadData(); // refresh the data in gridview
         }
 
         private void enableDeleteButton_Click(object sender, EventArgs e)
         {
             SuiteRoomDelete delroom = new SuiteRoomDelete(suiteRoom);
-            delroom.Show();
+            delroom.ShowDialog();
+            LoadData(); // refresh the data in gridview
         }
     }
 }

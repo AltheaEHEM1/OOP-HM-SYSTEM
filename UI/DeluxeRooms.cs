@@ -35,8 +35,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             Rooms_admin rooms = new Rooms_admin();
             rooms.Show();
-
-            // Hide the LoginPage form
             this.Hide();
         }
 
@@ -44,18 +42,21 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             DRAddroom drAddroom = new DRAddroom();
             drAddroom.ShowDialog();
+            LoadData(); // refresh the gridview
         }
 
         private void Editbuttondeluxe_Click(object sender, EventArgs e)
         {
             DREditRoom dreditRoom = new DREditRoom(deluxeRoom);
             dreditRoom.ShowDialog();
+            LoadData(); // refresh the gridview
         }
 
         private void Deletebuttondeluxe_Click(object sender, EventArgs e)
         {
             DeluxeRoomDelete delroom = new DeluxeRoomDelete(deluxeRoom);
             delroom.ShowDialog();
+            LoadData(); // refresh the gridview
         }
 
 
@@ -77,6 +78,14 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             try
             {
+                // reset selected row
+                deluxeRoom = null;
+
+                // reset the visibility of edit and delete button
+                disableEditButton.BringToFront();
+                disableDeleteButton.BringToFront();
+
+                // display the data
                 var deluxeRoomController = new DeluxeRoomController();
                 var listDeluxeRoom = deluxeRoomController.GetDeluxeRooms();
 
@@ -146,6 +155,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                     // change the visibility of enableEditButton and enableDeleteButton
                     enableEditButton.BringToFront();
                     enableDeleteButton.BringToFront();
+                }
+                else
+                {
+                    // reset the visibility of edit and delete button
+                    disableEditButton.BringToFront();
+                    disableDeleteButton.BringToFront();
                 }
             }
             catch (Exception ex)

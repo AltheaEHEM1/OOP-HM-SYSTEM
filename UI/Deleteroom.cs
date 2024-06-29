@@ -47,8 +47,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         private void cancelButton_Click(object sender, EventArgs e)
         {
             this.Close();
-            Standardroom standardroom = new Standardroom();
-            standardroom.ShowDialog();
         }
     }
 }

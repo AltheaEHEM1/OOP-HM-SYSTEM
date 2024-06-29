@@ -71,9 +71,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                 if (success)
                 {
                     MessageBox.Show("Room Updated Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    SuitesRoom suiteroom = new SuitesRoom();
                     this.Close();
-                    suiteroom.Show();
                 }
                 else
                 {

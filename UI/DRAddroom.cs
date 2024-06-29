@@ -76,8 +76,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                 // show success message
                 MessageBox.Show("Room Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
-                DeluxeRooms deluxeRoomlist = new DeluxeRooms();
-                deluxeRoomlist.Show();
             }
             else
             {
