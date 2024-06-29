@@ -20,7 +20,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM
         public LoginPage()
         {
             InitializeComponent();
-            panel2.Parent = pictureBox1;
             panel2.BackColor = Color.FromArgb(200, Color.White);
             panel2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel2.Width, panel2.Height, 20, 20));
         }
