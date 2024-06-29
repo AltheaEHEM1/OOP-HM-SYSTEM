@@ -36,18 +36,37 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             createAccountform.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void EmployeeID_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void login_Click(object sender, EventArgs e)
+        private void Createacc_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            CreateAccountForm createAccountForm = new CreateAccountForm();
+            createAccountForm.Show();
+        }
+
+        private void HidePassBttn_Click_1(object sender, EventArgs e)
+        {
+            ShowPassIcon.BringToFront();
+            PasswordTextbox.PasswordChar = '\0';
+        }
+
+        private void ShowPassIcon_Click_1(object sender, EventArgs e)
+        {
+            HidePassBttn.BringToFront();
+            PasswordTextbox.PasswordChar = '*';
+        }
+
+        private void login_Click_1(object sender, EventArgs e)
         {
             string employeeNumber = EmployeeNum.Text;
             string password = PasswordTextbox.Text;
 
             var controller = new UserController();
-       
+
             if (string.IsNullOrWhiteSpace(employeeNumber) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("All fields must be filled out.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -87,24 +106,5 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                 MessageBox.Show("Incorrect Email or Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void EmployeeID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ShowPassIcon_Click(object sender, EventArgs e)
-        {
-            HidePassBttn.BringToFront();
-            PasswordTextbox.PasswordChar = '*';
-        }
-        private void HidePassBttn_Click(object sender, EventArgs e)
-        {
-            ShowPassIcon.BringToFront();
-            PasswordTextbox.PasswordChar = '\0';
-        }
-
-
-       
     }
 }

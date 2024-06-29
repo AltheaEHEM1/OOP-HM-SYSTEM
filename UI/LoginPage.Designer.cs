@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -38,17 +35,14 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            panel1 = new Panel();
-            pictureBox3 = new PictureBox();
-            label2 = new Label();
-            label1 = new Label();
-            pictureBox2 = new PictureBox();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             panel2 = new Panel();
             login = new Guna.UI2.WinForms.Guna2Button();
@@ -60,81 +54,19 @@
             HidePassBttn = new Guna.UI2.WinForms.Guna2Button();
             ShowPassIcon = new Guna.UI2.WinForms.Guna2Button();
             PasswordTextbox = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2Panel1.SuspendLayout();
+            panel1 = new Panel();
+            pictureBox3 = new PictureBox();
+            label2 = new Label();
+            label1 = new Label();
+            pictureBox2 = new PictureBox();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            guna2Panel2.SuspendLayout();
+            panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            guna2Panel2.SuspendLayout();
-            panel2.SuspendLayout();
+            guna2Panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // guna2Panel1
-            // 
-            guna2Panel1.Controls.Add(panel1);
-            guna2Panel1.Controls.Add(guna2Panel2);
-            guna2Panel1.CustomizableEdges = customizableEdges13;
-            guna2Panel1.Dock = DockStyle.Fill;
-            guna2Panel1.Location = new Point(0, 0);
-            guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Panel1.Size = new Size(1351, 591);
-            guna2Panel1.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(13, 22, 29);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Dock = DockStyle.Top;
-            panel1.ForeColor = Color.Transparent;
-            panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1351, 135);
-            panel1.TabIndex = 11;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Location = new Point(52, 29);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(27, 22);
-            pictureBox3.TabIndex = 5;
-            pictureBox3.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(52, 68);
-            label2.Name = "label2";
-            label2.Size = new Size(65, 15);
-            label2.TabIndex = 4;
-            label2.Text = "Philippines";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(52, 53);
-            label1.Name = "label1";
-            label1.Size = new Size(75, 15);
-            label1.TabIndex = 3;
-            label1.Text = "Quezon City.";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Dock = DockStyle.Top;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1351, 135);
-            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
             // 
             // guna2Panel2
             // 
@@ -146,11 +78,12 @@
             guna2Panel2.Location = new Point(-3, 134);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Panel2.Size = new Size(1356, 457);
+            guna2Panel2.Size = new Size(1354, 509);
             guna2Panel2.TabIndex = 2;
             // 
             // panel2
             // 
+            panel2.Anchor = AnchorStyles.Right;
             panel2.Controls.Add(login);
             panel2.Controls.Add(Createacc);
             panel2.Controls.Add(label4);
@@ -160,7 +93,7 @@
             panel2.Controls.Add(HidePassBttn);
             panel2.Controls.Add(ShowPassIcon);
             panel2.Controls.Add(PasswordTextbox);
-            panel2.Location = new Point(886, 114);
+            panel2.Location = new Point(864, 196);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
             panel2.Size = new Size(383, 289);
@@ -184,6 +117,7 @@
             login.Size = new Size(180, 32);
             login.TabIndex = 6;
             login.Text = "Log in";
+            login.Click += login_Click_1;
             // 
             // Createacc
             // 
@@ -196,6 +130,7 @@
             Createacc.Size = new Size(100, 19);
             Createacc.TabIndex = 6;
             Createacc.Text = "Create Account";
+            Createacc.Click += Createacc_Click_1;
             // 
             // label4
             // 
@@ -281,6 +216,7 @@
             HidePassBttn.ShadowDecoration.CustomizableEdges = customizableEdges6;
             HidePassBttn.Size = new Size(20, 20);
             HidePassBttn.TabIndex = 7;
+            HidePassBttn.Click += HidePassBttn_Click_1;
             // 
             // ShowPassIcon
             // 
@@ -306,6 +242,7 @@
             ShowPassIcon.Size = new Size(20, 20);
             ShowPassIcon.TabIndex = 6;
             ShowPassIcon.Tag = "";
+            ShowPassIcon.Click += ShowPassIcon_Click_1;
             // 
             // PasswordTextbox
             // 
@@ -332,6 +269,74 @@
             PasswordTextbox.Size = new Size(250, 32);
             PasswordTextbox.TabIndex = 2;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(13, 22, 29);
+            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Dock = DockStyle.Top;
+            panel1.ForeColor = Color.Transparent;
+            panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1351, 135);
+            panel1.TabIndex = 11;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Location = new Point(52, 29);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(27, 22);
+            pictureBox3.TabIndex = 5;
+            pictureBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(52, 68);
+            label2.Name = "label2";
+            label2.Size = new Size(65, 15);
+            label2.TabIndex = 4;
+            label2.Text = "Philippines";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(52, 53);
+            label1.Name = "label1";
+            label1.Size = new Size(75, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Quezon City.";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Dock = DockStyle.Top;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(1351, 135);
+            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
+            // 
+            // guna2Panel1
+            // 
+            guna2Panel1.Controls.Add(panel1);
+            guna2Panel1.Controls.Add(guna2Panel2);
+            guna2Panel1.CustomizableEdges = customizableEdges13;
+            guna2Panel1.Dock = DockStyle.Fill;
+            guna2Panel1.Location = new Point(0, 0);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2Panel1.Size = new Size(1351, 591);
+            guna2Panel1.TabIndex = 0;
+            // 
             // LoginPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -345,26 +350,20 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Log In";
             WindowState = FormWindowState.Maximized;
-            guna2Panel1.ResumeLayout(false);
-            guna2Panel1.PerformLayout();
+            guna2Panel2.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            guna2Panel2.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            guna2Panel1.ResumeLayout(false);
+            guna2Panel1.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Panel panel1;
-        private PictureBox pictureBox3;
-        private Label label2;
-        private Label label1;
-        private PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Panel panel2;
         private Guna.UI2.WinForms.Guna2Button login;
@@ -376,5 +375,11 @@
         private Guna.UI2.WinForms.Guna2Button HidePassBttn;
         private Guna.UI2.WinForms.Guna2Button ShowPassIcon;
         private Guna.UI2.WinForms.Guna2TextBox PasswordTextbox;
+        private Panel panel1;
+        private PictureBox pictureBox3;
+        private Label label2;
+        private Label label1;
+        private PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }

@@ -46,23 +46,24 @@
             QCTEXT = new Label();
             philtext = new Label();
             logoheader_admin = new PictureBox();
+            panelforusercontroladmin = new Panel();
+            Naviationpanelinform_admin = new Panel();
             profilegroup = new Guna.UI2.WinForms.Guna2GroupBox();
             labelnameprofile = new Label();
+            labelname = new Label();
             labeljobposition = new Label();
             circilephotoprofile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            labelname = new Label();
-            Naviationpanelinform_admin = new Panel();
             Reports_Button = new Guna.UI2.WinForms.Guna2Button();
             Transactions_Button = new Guna.UI2.WinForms.Guna2Button();
             Rooms_Button = new Guna.UI2.WinForms.Guna2Button();
             Dashboard_button = new Guna.UI2.WinForms.Guna2Button();
-            panelforusercontroladmin = new Panel();
             Headerpanelforformadmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)locationpic).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logoheader_admin).BeginInit();
+            panelforusercontroladmin.SuspendLayout();
+            Naviationpanelinform_admin.SuspendLayout();
             profilegroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)circilephotoprofile).BeginInit();
-            Naviationpanelinform_admin.SuspendLayout();
             SuspendLayout();
             // 
             // Headerpanelforformadmin
@@ -115,7 +116,7 @@
             // 
             // logoheader_admin
             // 
-            logoheader_admin.Dock = DockStyle.Fill;
+            logoheader_admin.Dock = DockStyle.Top;
             logoheader_admin.Image = Properties.Resources.headerpic_removebg_preview;
             logoheader_admin.Location = new Point(0, 0);
             logoheader_admin.Margin = new Padding(3, 2, 3, 2);
@@ -125,29 +126,56 @@
             logoheader_admin.TabIndex = 15;
             logoheader_admin.TabStop = false;
             // 
+            // panelforusercontroladmin
+            // 
+            panelforusercontroladmin.Controls.Add(Naviationpanelinform_admin);
+            panelforusercontroladmin.Dock = DockStyle.Fill;
+            panelforusercontroladmin.Location = new Point(0, 106);
+            panelforusercontroladmin.Margin = new Padding(3, 2, 3, 2);
+            panelforusercontroladmin.Name = "panelforusercontroladmin";
+            panelforusercontroladmin.Size = new Size(1213, 485);
+            panelforusercontroladmin.TabIndex = 2;
+            panelforusercontroladmin.TabStop = true;
+            panelforusercontroladmin.Paint += panelforusercontroladmin_Paint;
+            // 
+            // Naviationpanelinform_admin
+            // 
+            Naviationpanelinform_admin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            Naviationpanelinform_admin.BackColor = Color.Black;
+            Naviationpanelinform_admin.Controls.Add(profilegroup);
+            Naviationpanelinform_admin.Controls.Add(Reports_Button);
+            Naviationpanelinform_admin.Controls.Add(Transactions_Button);
+            Naviationpanelinform_admin.Controls.Add(Rooms_Button);
+            Naviationpanelinform_admin.Controls.Add(Dashboard_button);
+            Naviationpanelinform_admin.Location = new Point(0, 0);
+            Naviationpanelinform_admin.Margin = new Padding(3, 2, 3, 2);
+            Naviationpanelinform_admin.Name = "Naviationpanelinform_admin";
+            Naviationpanelinform_admin.Size = new Size(1213, 60);
+            Naviationpanelinform_admin.TabIndex = 16;
+            // 
             // profilegroup
             // 
+            profilegroup.Anchor = AnchorStyles.Right;
             profilegroup.BackColor = Color.Transparent;
             profilegroup.BorderColor = Color.White;
             profilegroup.BorderRadius = 20;
             profilegroup.BorderThickness = 2;
             profilegroup.Controls.Add(labelnameprofile);
+            profilegroup.Controls.Add(labelname);
             profilegroup.Controls.Add(labeljobposition);
             profilegroup.Controls.Add(circilephotoprofile);
-            profilegroup.Controls.Add(labelname);
             profilegroup.CustomBorderColor = Color.White;
             profilegroup.CustomBorderThickness = new Padding(4);
             profilegroup.CustomizableEdges = customizableEdges4;
             profilegroup.FillColor = Color.Transparent;
             profilegroup.Font = new Font("Segoe UI", 9F);
             profilegroup.ForeColor = Color.FromArgb(125, 137, 149);
-            profilegroup.Location = new Point(1012, 7);
+            profilegroup.Location = new Point(975, 4);
             profilegroup.Margin = new Padding(3, 2, 3, 2);
             profilegroup.Name = "profilegroup";
             profilegroup.ShadowDecoration.CustomizableEdges = customizableEdges5;
             profilegroup.Size = new Size(238, 51);
-            profilegroup.TabIndex = 15;
-            profilegroup.Click += profilegroup_Click;
+            profilegroup.TabIndex = 16;
             // 
             // labelnameprofile
             // 
@@ -155,24 +183,34 @@
             labelnameprofile.BackColor = Color.Transparent;
             labelnameprofile.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelnameprofile.ForeColor = Color.White;
-            labelnameprofile.Location = new Point(76, 13);
+            labelnameprofile.Location = new Point(84, 26);
             labelnameprofile.Name = "labelnameprofile";
             labelnameprofile.Size = new Size(134, 16);
-            labelnameprofile.TabIndex = 15;
+            labelnameprofile.TabIndex = 19;
             labelnameprofile.Text = "Miyuki Mharie Parocha ";
-            labelnameprofile.Click += label1_Click;
+            // 
+            // labelname
+            // 
+            labelname.AutoSize = true;
+            labelname.BackColor = Color.Transparent;
+            labelname.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelname.ForeColor = Color.White;
+            labelname.Location = new Point(84, 10);
+            labelname.Name = "labelname";
+            labelname.Size = new Size(134, 16);
+            labelname.TabIndex = 18;
+            labelname.Text = "Miyuki Mharie Parocha ";
             // 
             // labeljobposition
             // 
             labeljobposition.AutoSize = true;
             labeljobposition.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labeljobposition.ForeColor = Color.White;
-            labeljobposition.Location = new Point(76, 26);
+            labeljobposition.Location = new Point(87, -12);
             labeljobposition.Name = "labeljobposition";
             labeljobposition.Size = new Size(142, 16);
-            labeljobposition.TabIndex = 1;
+            labeljobposition.TabIndex = 16;
             labeljobposition.Text = "miyukimharie@gmail.com";
-            labeljobposition.Click += labelemail_Click;
             // 
             // circilephotoprofile
             // 
@@ -187,38 +225,10 @@
             circilephotoprofile.SizeMode = PictureBoxSizeMode.StretchImage;
             circilephotoprofile.TabIndex = 2;
             circilephotoprofile.TabStop = false;
-            circilephotoprofile.Click += circilephotoprofile_Click;
-            // 
-            // labelname
-            // 
-            labelname.AutoSize = true;
-            labelname.BackColor = Color.Transparent;
-            labelname.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelname.ForeColor = Color.White;
-            labelname.Location = new Point(82, -14);
-            labelname.Name = "labelname";
-            labelname.Size = new Size(134, 16);
-            labelname.TabIndex = 0;
-            labelname.Text = "Miyuki Mharie Parocha ";
-            // 
-            // Naviationpanelinform_admin
-            // 
-            Naviationpanelinform_admin.BackColor = Color.Black;
-            Naviationpanelinform_admin.Controls.Add(profilegroup);
-            Naviationpanelinform_admin.Controls.Add(Reports_Button);
-            Naviationpanelinform_admin.Controls.Add(Transactions_Button);
-            Naviationpanelinform_admin.Controls.Add(Rooms_Button);
-            Naviationpanelinform_admin.Controls.Add(Dashboard_button);
-            Naviationpanelinform_admin.Dock = DockStyle.Top;
-            Naviationpanelinform_admin.Location = new Point(0, 106);
-            Naviationpanelinform_admin.Margin = new Padding(3, 2, 3, 2);
-            Naviationpanelinform_admin.Name = "Naviationpanelinform_admin";
-            Naviationpanelinform_admin.Size = new Size(1213, 60);
-            Naviationpanelinform_admin.TabIndex = 1;
-            Naviationpanelinform_admin.Paint += Naviationpanelinform_admin_Paint;
             // 
             // Reports_Button
             // 
+            Reports_Button.Anchor = AnchorStyles.Left;
             Reports_Button.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             Reports_Button.CheckedState.CustomBorderColor = Color.FromArgb(119, 85, 50);
             Reports_Button.CheckedState.FillColor = Color.FromArgb(100, 223, 182, 89);
@@ -240,10 +250,10 @@
             Reports_Button.Size = new Size(175, 58);
             Reports_Button.TabIndex = 3;
             Reports_Button.Text = "REPORTS";
-            Reports_Button.Click += Reports_Button_Click;
             // 
             // Transactions_Button
             // 
+            Transactions_Button.Anchor = AnchorStyles.Left;
             Transactions_Button.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             Transactions_Button.CheckedState.CustomBorderColor = Color.FromArgb(119, 85, 50);
             Transactions_Button.CheckedState.FillColor = Color.FromArgb(100, 223, 182, 89);
@@ -265,10 +275,10 @@
             Transactions_Button.Size = new Size(175, 58);
             Transactions_Button.TabIndex = 3;
             Transactions_Button.Text = "TRANSACTIONS";
-            Transactions_Button.Click += Transactions_Button_Click;
             // 
             // Rooms_Button
             // 
+            Rooms_Button.Anchor = AnchorStyles.Left;
             Rooms_Button.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             Rooms_Button.CheckedState.CustomBorderColor = Color.FromArgb(119, 85, 50);
             Rooms_Button.CheckedState.FillColor = Color.FromArgb(100, 223, 182, 89);
@@ -290,10 +300,10 @@
             Rooms_Button.Size = new Size(175, 58);
             Rooms_Button.TabIndex = 3;
             Rooms_Button.Text = "ROOMS";
-            Rooms_Button.Click += Rooms_Button_Click;
             // 
             // Dashboard_button
             // 
+            Dashboard_button.Anchor = AnchorStyles.Left;
             Dashboard_button.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             Dashboard_button.Checked = true;
             Dashboard_button.CheckedState.CustomBorderColor = Color.FromArgb(119, 85, 50);
@@ -316,18 +326,6 @@
             Dashboard_button.Size = new Size(175, 58);
             Dashboard_button.TabIndex = 2;
             Dashboard_button.Text = "DASHBOARD";
-            Dashboard_button.Click += Dashboard_button_Click;
-            // 
-            // panelforusercontroladmin
-            // 
-            panelforusercontroladmin.Dock = DockStyle.Fill;
-            panelforusercontroladmin.Location = new Point(0, 166);
-            panelforusercontroladmin.Margin = new Padding(3, 2, 3, 2);
-            panelforusercontroladmin.Name = "panelforusercontroladmin";
-            panelforusercontroladmin.Size = new Size(1213, 425);
-            panelforusercontroladmin.TabIndex = 2;
-            panelforusercontroladmin.TabStop = true;
-            panelforusercontroladmin.Paint += panelforusercontroladmin_Paint;
             // 
             // Form_Admin
             // 
@@ -337,7 +335,6 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1213, 591);
             Controls.Add(panelforusercontroladmin);
-            Controls.Add(Naviationpanelinform_admin);
             Controls.Add(Headerpanelforformadmin);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form_Admin";
@@ -348,10 +345,11 @@
             Headerpanelforformadmin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)locationpic).EndInit();
             ((System.ComponentModel.ISupportInitialize)logoheader_admin).EndInit();
+            panelforusercontroladmin.ResumeLayout(false);
+            Naviationpanelinform_admin.ResumeLayout(false);
             profilegroup.ResumeLayout(false);
             profilegroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)circilephotoprofile).EndInit();
-            Naviationpanelinform_admin.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -361,17 +359,17 @@
         private PictureBox locationpic;
         private Label QCTEXT;
         private Label philtext;
-        private Panel Naviationpanelinform_admin;
-        private Guna.UI2.WinForms.Guna2Button Dashboard_button;
         private Panel panelforusercontroladmin;
+        private PictureBox logoheader_admin;
+        private Panel Naviationpanelinform_admin;
+        private Guna.UI2.WinForms.Guna2GroupBox profilegroup;
+        private Label labelnameprofile;
+        private Label labelname;
+        private Label labeljobposition;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox circilephotoprofile;
         private Guna.UI2.WinForms.Guna2Button Reports_Button;
         private Guna.UI2.WinForms.Guna2Button Transactions_Button;
         private Guna.UI2.WinForms.Guna2Button Rooms_Button;
-        private Guna.UI2.WinForms.Guna2GroupBox profilegroup;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox circilephotoprofile;
-        private Label labelname;
-        private Label labelnameprofile;
-        private PictureBox logoheader_admin;
-        private Label labeljobposition;
+        private Guna.UI2.WinForms.Guna2Button Dashboard_button;
     }
 }

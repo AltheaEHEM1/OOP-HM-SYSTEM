@@ -41,7 +41,39 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             loginPage.Show();
         }
 
-        private void CreateAcc_Click(object sender, EventArgs e)
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage login = new LoginPage();
+            login.Show();
+        }
+
+        private void hideButton_Click_1(object sender, EventArgs e)
+        {
+            showButton.BringToFront();
+            password.PasswordChar = '\0';
+        }
+
+        private void showButton_Click_1(object sender, EventArgs e)
+        {
+            hideButton.BringToFront();
+            password.PasswordChar = '*';
+        }
+
+        private void confirmButtonShow_Click_1(object sender, EventArgs e)
+        {
+            confirmButtonHide.BringToFront();
+            confirmpassword.PasswordChar = '*';
+        }
+
+        private void confirmButtonHide_Click_1(object sender, EventArgs e)
+        {
+            confirmButtonShow.BringToFront();
+            confirmpassword.PasswordChar = '\0';
+        }
+
+        private void createAccButton_Click(object sender, EventArgs e)
         {
             try
             {
@@ -94,56 +126,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-        }
-
-        private void phonenum_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void employeeuser_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CreateShowPassBttn_Click(object sender, EventArgs e)
-        {
-            CreateHidePassBttn.BringToFront();
-            passacc.PasswordChar = '*';
-        }
-
-        private void CreateHidePassBttn_Click(object sender, EventArgs e)
-        {
-            CreateShowPassBttn.BringToFront();
-            passacc.PasswordChar = '\0';
-        }
-
-        private void ConfirmPassShowBttn_Click(object sender, EventArgs e)
-        {
-            ConfirmPassHideBttn.BringToFront();
-            confirmpass.PasswordChar = '*';
-        }
-
-        private void ConfirmPassHideBttn_Click(object sender, EventArgs e)
-        {
-            ConfirmPassShowBttn.BringToFront();
-            confirmpass.PasswordChar = '\0';
-        }
-
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
