@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -39,28 +36,31 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Header_recep = new Panel();
             philtext = new Label();
             QCTEXT = new Label();
             locationpic = new PictureBox();
             logoheader_recep = new PictureBox();
             panel_navigation_transparent_recep = new Panel();
-            profilegroup = new Guna.UI2.WinForms.Guna2GroupBox();
-            labelnameprofile = new Label();
-            labeljobposition = new Label();
-            circilephotoprofile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            labelname = new Label();
             Guest_button_recep = new Guna.UI2.WinForms.Guna2Button();
             Reservation_button_recep = new Guna.UI2.WinForms.Guna2Button();
             Booknow_button_recep = new Guna.UI2.WinForms.Guna2Button();
             Transaction_button_recep = new Guna.UI2.WinForms.Guna2Button();
             panelinformreceptionist_usercontrol = new Panel();
+            labelname = new Label();
+            circilephotoprofile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            labeljobposition = new Label();
+            labelnameprofile = new Label();
+            profilegroup = new Guna.UI2.WinForms.Guna2GroupBox();
             Header_recep.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)locationpic).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logoheader_recep).BeginInit();
             panel_navigation_transparent_recep.SuspendLayout();
-            profilegroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)circilephotoprofile).BeginInit();
+            profilegroup.SuspendLayout();
             SuspendLayout();
             // 
             // Header_recep
@@ -136,82 +136,6 @@
             panel_navigation_transparent_recep.Size = new Size(1213, 60);
             panel_navigation_transparent_recep.TabIndex = 1;
             panel_navigation_transparent_recep.Paint += panel_navigation_transparent_recep_Paint;
-            // 
-            // profilegroup
-            // 
-            profilegroup.BackColor = Color.Transparent;
-            profilegroup.BorderColor = Color.White;
-            profilegroup.BorderRadius = 20;
-            profilegroup.BorderThickness = 2;
-            profilegroup.Controls.Add(labelnameprofile);
-            profilegroup.Controls.Add(labeljobposition);
-            profilegroup.Controls.Add(circilephotoprofile);
-            profilegroup.Controls.Add(labelname);
-            profilegroup.CustomBorderColor = Color.White;
-            profilegroup.CustomBorderThickness = new Padding(4);
-            profilegroup.CustomizableEdges = customizableEdges2;
-            profilegroup.FillColor = Color.Transparent;
-            profilegroup.Font = new Font("Segoe UI", 9F);
-            profilegroup.ForeColor = Color.FromArgb(125, 137, 149);
-            profilegroup.Location = new Point(1020, 2);
-            profilegroup.Margin = new Padding(3, 2, 3, 2);
-            profilegroup.Name = "profilegroup";
-            profilegroup.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            profilegroup.Size = new Size(229, 51);
-            profilegroup.TabIndex = 18;
-            profilegroup.Click += profilegroup_Click;
-            // 
-            // labelnameprofile
-            // 
-            labelnameprofile.AutoSize = true;
-            labelnameprofile.BackColor = Color.Transparent;
-            labelnameprofile.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelnameprofile.ForeColor = Color.White;
-            labelnameprofile.Location = new Point(76, 13);
-            labelnameprofile.Name = "labelnameprofile";
-            labelnameprofile.Size = new Size(134, 16);
-            labelnameprofile.TabIndex = 16;
-            labelnameprofile.Text = "Miyuki Mharie Parocha ";
-            labelnameprofile.Click += label1name_Click;
-            // 
-            // labeljobposition
-            // 
-            labeljobposition.AutoSize = true;
-            labeljobposition.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labeljobposition.ForeColor = Color.White;
-            labeljobposition.Location = new Point(70, 26);
-            labeljobposition.Name = "labeljobposition";
-            labeljobposition.Size = new Size(142, 16);
-            labeljobposition.TabIndex = 1;
-            labeljobposition.Text = "miyukimharie@gmail.com";
-            labeljobposition.Click += labelemail_Click;
-            // 
-            // circilephotoprofile
-            // 
-            circilephotoprofile.Image = Properties.Resources.profile;
-            circilephotoprofile.ImageRotate = 0F;
-            circilephotoprofile.Location = new Point(18, 4);
-            circilephotoprofile.Margin = new Padding(3, 2, 3, 2);
-            circilephotoprofile.Name = "circilephotoprofile";
-            circilephotoprofile.ShadowDecoration.CustomizableEdges = customizableEdges1;
-            circilephotoprofile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            circilephotoprofile.Size = new Size(52, 41);
-            circilephotoprofile.SizeMode = PictureBoxSizeMode.StretchImage;
-            circilephotoprofile.TabIndex = 2;
-            circilephotoprofile.TabStop = false;
-            circilephotoprofile.Click += circilephotoprofile_Click;
-            // 
-            // labelname
-            // 
-            labelname.AutoSize = true;
-            labelname.BackColor = Color.Transparent;
-            labelname.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelname.ForeColor = Color.White;
-            labelname.Location = new Point(82, -14);
-            labelname.Name = "labelname";
-            labelname.Size = new Size(134, 16);
-            labelname.TabIndex = 0;
-            labelname.Text = "Miyuki Mharie Parocha ";
             // 
             // Guest_button_recep
             // 
@@ -324,6 +248,82 @@
             panelinformreceptionist_usercontrol.TabIndex = 2;
             panelinformreceptionist_usercontrol.Paint += panelinformreceptionist_usercontrol_Paint;
             // 
+            // labelname
+            // 
+            labelname.AutoSize = true;
+            labelname.BackColor = Color.Transparent;
+            labelname.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelname.ForeColor = Color.White;
+            labelname.Location = new Point(82, -14);
+            labelname.Name = "labelname";
+            labelname.Size = new Size(134, 16);
+            labelname.TabIndex = 0;
+            labelname.Text = "Miyuki Mharie Parocha ";
+            // 
+            // circilephotoprofile
+            // 
+            circilephotoprofile.Image = Properties.Resources.profile;
+            circilephotoprofile.ImageRotate = 0F;
+            circilephotoprofile.Location = new Point(18, 4);
+            circilephotoprofile.Margin = new Padding(3, 2, 3, 2);
+            circilephotoprofile.Name = "circilephotoprofile";
+            circilephotoprofile.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            circilephotoprofile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            circilephotoprofile.Size = new Size(52, 41);
+            circilephotoprofile.SizeMode = PictureBoxSizeMode.StretchImage;
+            circilephotoprofile.TabIndex = 2;
+            circilephotoprofile.TabStop = false;
+            circilephotoprofile.Click += circilephotoprofile_Click;
+            // 
+            // labeljobposition
+            // 
+            labeljobposition.AutoSize = true;
+            labeljobposition.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labeljobposition.ForeColor = Color.White;
+            labeljobposition.Location = new Point(70, 26);
+            labeljobposition.Name = "labeljobposition";
+            labeljobposition.Size = new Size(142, 16);
+            labeljobposition.TabIndex = 1;
+            labeljobposition.Text = "miyukimharie@gmail.com";
+            labeljobposition.Click += labelemail_Click;
+            // 
+            // labelnameprofile
+            // 
+            labelnameprofile.AutoSize = true;
+            labelnameprofile.BackColor = Color.Transparent;
+            labelnameprofile.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelnameprofile.ForeColor = Color.White;
+            labelnameprofile.Location = new Point(76, 13);
+            labelnameprofile.Name = "labelnameprofile";
+            labelnameprofile.Size = new Size(134, 16);
+            labelnameprofile.TabIndex = 16;
+            labelnameprofile.Text = "Miyuki Mharie Parocha ";
+            labelnameprofile.Click += label1name_Click;
+            // 
+            // profilegroup
+            // 
+            profilegroup.BackColor = Color.Transparent;
+            profilegroup.BorderColor = Color.White;
+            profilegroup.BorderRadius = 20;
+            profilegroup.BorderThickness = 2;
+            profilegroup.Controls.Add(labelnameprofile);
+            profilegroup.Controls.Add(labeljobposition);
+            profilegroup.Controls.Add(circilephotoprofile);
+            profilegroup.Controls.Add(labelname);
+            profilegroup.CustomBorderColor = Color.White;
+            profilegroup.CustomBorderThickness = new Padding(4);
+            profilegroup.CustomizableEdges = customizableEdges2;
+            profilegroup.FillColor = Color.Transparent;
+            profilegroup.Font = new Font("Segoe UI", 9F);
+            profilegroup.ForeColor = Color.FromArgb(125, 137, 149);
+            profilegroup.Location = new Point(1020, 2);
+            profilegroup.Margin = new Padding(3, 2, 3, 2);
+            profilegroup.Name = "profilegroup";
+            profilegroup.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            profilegroup.Size = new Size(229, 51);
+            profilegroup.TabIndex = 18;
+            profilegroup.Click += profilegroup_Click;
+            // 
             // Form_receptionist
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -344,9 +344,9 @@
             ((System.ComponentModel.ISupportInitialize)locationpic).EndInit();
             ((System.ComponentModel.ISupportInitialize)logoheader_recep).EndInit();
             panel_navigation_transparent_recep.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)circilephotoprofile).EndInit();
             profilegroup.ResumeLayout(false);
             profilegroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)circilephotoprofile).EndInit();
             ResumeLayout(false);
         }
 
@@ -362,11 +362,11 @@
         private Guna.UI2.WinForms.Guna2Button Reservation_button_recep;
         private Guna.UI2.WinForms.Guna2Button Booknow_button_recep;
         private Guna.UI2.WinForms.Guna2Button Transaction_button_recep;
+        private Panel panelinformreceptionist_usercontrol;
         private Guna.UI2.WinForms.Guna2GroupBox profilegroup;
+        private Label labelnameprofile;
         private Label labeljobposition;
         private Guna.UI2.WinForms.Guna2CirclePictureBox circilephotoprofile;
         private Label labelname;
-        private Label labelnameprofile;
-        private Panel panelinformreceptionist_usercontrol;
     }
 }

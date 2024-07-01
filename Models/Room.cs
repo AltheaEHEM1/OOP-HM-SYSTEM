@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HOTEL_MANAGEMENT_SYSTEM.Models
@@ -14,6 +15,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
         public double RoomPrice { get; set; }
         public int OccupancyLimit { get; set; }
         public bool IsDeleted { get; set; }
+
+        public virtual ObservableCollectionListSource<Booking> Bookings { get; set; } = new();
 
     }
 }

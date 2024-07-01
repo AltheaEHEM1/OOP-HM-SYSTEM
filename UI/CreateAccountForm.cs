@@ -78,11 +78,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             try
             {
                 // Get the values from the input fields
-                string EmployeeNumber = employeenumber.Text;
-                string FullName = fullname.Text;
-                string Birthdate = dob.Text;
-                string Password = passacc.Text;
-                string ConfirmPass = confirmpass.Text;
+                string EmployeeNumber = EmployeeNumberTextBox.Text;
+                string FullName = nameTextBox.Text;
+                string Birthdate = dobTextBox.Text;
+                string Password = password.Text;
+                string ConfirmPass = confirmpassword.Text;
 
                 // Validate fields are not empty
                 if (string.IsNullOrWhiteSpace(EmployeeNumber) || string.IsNullOrWhiteSpace(FullName) || string.IsNullOrWhiteSpace(Birthdate) ||

@@ -37,9 +37,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -51,22 +48,13 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            standardRoomPanel = new Panel();
             SRNavback = new Guna.UI2.WinForms.Guna2PictureBox();
             NextNav = new Guna.UI2.WinForms.Guna2Button();
             UM = new Label();
             guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             SRLabel = new Label();
             Occupied = new Label();
-            listOfStandardRooms = new Guna.UI2.WinForms.Guna2DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column7 = new DataGridViewTextBoxColumn();
-            Column8 = new DataGridViewTextBoxColumn();
-            Column9 = new DataGridViewTextBoxColumn();
             Available = new Label();
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             label1 = new Label();
@@ -80,7 +68,6 @@
             guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)SRNavback).BeginInit();
             guna2Panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)listOfStandardRooms).BeginInit();
             SuspendLayout();
             // 
             // guna2Panel2
@@ -89,12 +76,12 @@
             guna2Panel2.BackgroundImage = (Image)resources.GetObject("guna2Panel2.BackgroundImage");
             guna2Panel2.BackgroundImageLayout = ImageLayout.Stretch;
             guna2Panel2.BorderRadius = 20;
+            guna2Panel2.Controls.Add(standardRoomPanel);
             guna2Panel2.Controls.Add(SRNavback);
             guna2Panel2.Controls.Add(NextNav);
             guna2Panel2.Controls.Add(UM);
             guna2Panel2.Controls.Add(guna2Panel4);
             guna2Panel2.Controls.Add(Occupied);
-            guna2Panel2.Controls.Add(listOfStandardRooms);
             guna2Panel2.Controls.Add(Available);
             guna2Panel2.Controls.Add(guna2Panel3);
             guna2Panel2.Controls.Add(label1);
@@ -112,6 +99,13 @@
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges18;
             guna2Panel2.Size = new Size(1146, 518);
             guna2Panel2.TabIndex = 2;
+            // 
+            // standardRoomPanel
+            // 
+            standardRoomPanel.Location = new Point(522, 266);
+            standardRoomPanel.Name = "standardRoomPanel";
+            standardRoomPanel.Size = new Size(585, 182);
+            standardRoomPanel.TabIndex = 34;
             // 
             // SRNavback
             // 
@@ -191,116 +185,6 @@
             Occupied.TabIndex = 21;
             Occupied.Text = "Occupied";
             // 
-            // listOfStandardRooms
-            // 
-            listOfStandardRooms.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = Color.White;
-            listOfStandardRooms.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            listOfStandardRooms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            listOfStandardRooms.ColumnHeadersHeight = 22;
-            listOfStandardRooms.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            listOfStandardRooms.ColumnHeadersVisible = false;
-            listOfStandardRooms.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9 });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            listOfStandardRooms.DefaultCellStyle = dataGridViewCellStyle3;
-            listOfStandardRooms.GridColor = Color.FromArgb(231, 229, 255);
-            listOfStandardRooms.Location = new Point(522, 266);
-            listOfStandardRooms.Margin = new Padding(3, 2, 3, 2);
-            listOfStandardRooms.Name = "listOfStandardRooms";
-            listOfStandardRooms.RowHeadersVisible = false;
-            listOfStandardRooms.RowHeadersWidth = 51;
-            listOfStandardRooms.RowTemplate.Height = 29;
-            listOfStandardRooms.Size = new Size(553, 183);
-            listOfStandardRooms.TabIndex = 30;
-            listOfStandardRooms.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            listOfStandardRooms.ThemeStyle.AlternatingRowsStyle.Font = null;
-            listOfStandardRooms.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            listOfStandardRooms.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            listOfStandardRooms.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            listOfStandardRooms.ThemeStyle.BackColor = Color.White;
-            listOfStandardRooms.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
-            listOfStandardRooms.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            listOfStandardRooms.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            listOfStandardRooms.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
-            listOfStandardRooms.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            listOfStandardRooms.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            listOfStandardRooms.ThemeStyle.HeaderStyle.Height = 22;
-            listOfStandardRooms.ThemeStyle.ReadOnly = false;
-            listOfStandardRooms.ThemeStyle.RowsStyle.BackColor = Color.White;
-            listOfStandardRooms.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            listOfStandardRooms.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
-            listOfStandardRooms.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
-            listOfStandardRooms.ThemeStyle.RowsStyle.Height = 29;
-            listOfStandardRooms.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            listOfStandardRooms.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Column1";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Column2";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Column3";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Column4";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Column5";
-            Column5.MinimumWidth = 6;
-            Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Column6";
-            Column6.MinimumWidth = 6;
-            Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            Column7.HeaderText = "Column7";
-            Column7.MinimumWidth = 6;
-            Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            Column8.HeaderText = "Column8";
-            Column8.MinimumWidth = 6;
-            Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            Column9.HeaderText = "Column9";
-            Column9.MinimumWidth = 6;
-            Column9.Name = "Column9";
-            // 
             // Available
             // 
             Available.AutoSize = true;
@@ -314,7 +198,7 @@
             // guna2Panel3
             // 
             guna2Panel3.CustomizableEdges = customizableEdges7;
-            guna2Panel3.FillColor = Color.Maroon;
+            guna2Panel3.FillColor = Color.Gray;
             guna2Panel3.Location = new Point(889, 153);
             guna2Panel3.Margin = new Padding(3, 2, 3, 2);
             guna2Panel3.Name = "guna2Panel3";
@@ -336,7 +220,7 @@
             // guna2Panel5
             // 
             guna2Panel5.CustomizableEdges = customizableEdges9;
-            guna2Panel5.FillColor = Color.Gray;
+            guna2Panel5.FillColor = Color.Maroon;
             guna2Panel5.Location = new Point(888, 114);
             guna2Panel5.Margin = new Padding(3, 2, 3, 2);
             guna2Panel5.Name = "guna2Panel5";
@@ -443,7 +327,6 @@
             ((System.ComponentModel.ISupportInitialize)SRNavback).EndInit();
             guna2Panel4.ResumeLayout(false);
             guna2Panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)listOfStandardRooms).EndInit();
             ResumeLayout(false);
         }
 
@@ -456,16 +339,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Label SRLabel;
         private Label Occupied;
-        private Guna.UI2.WinForms.Guna2DataGridView listOfStandardRooms;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column7;
-        private DataGridViewTextBoxColumn Column8;
-        private DataGridViewTextBoxColumn Column9;
         private Label Available;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Label label1;
@@ -476,5 +349,6 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker CheckoutDate;
         private Label CheckinLabel;
         private Guna.UI2.WinForms.Guna2DateTimePicker CheckinDate;
+        private Panel standardRoomPanel;
     }
 }

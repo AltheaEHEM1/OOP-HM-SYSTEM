@@ -8,12 +8,20 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
         [Key] // indication that this is primary key
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // auto increment
         public int BookingId { get; set; }
+        // foreign key room id
         public int RoomId { get; set; }
+
+        // foreign key guest id
         public int GuestId { get; set; }
-        public string CheckInDate { get; set; }
-        public string CheckOutDate { get; set; }
-        public string BookingDate { get; set; }
+
+        public DateTime CheckInDate { get; set; }
+        public DateTime CheckOutDate { get; set; }
+        public DateTime BookingDate { get; set; }
         public int NumberOfGuest { get; set; }
-        public string BookingStatus { get; set; }
+        public bool IsCancelled { get; set; }
+
+        // Navigation properties
+        public virtual Room Room { get; set; }
+        public virtual Guest Guest { get; set; }
     }
 }

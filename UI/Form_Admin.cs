@@ -26,72 +26,49 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             userControl.BringToFront();
         }
 
-        private void Naviationpanelinform_admin_Paint(object sender, PaintEventArgs e)
+        private void profilegroup_Click_1(object sender, EventArgs e)
+        {
+            ProfilePopUp profilePopUp = new ProfilePopUp();
+            profilePopUp.Show();
+        }
+
+        private void Dashboard_button_Click_1(object sender, EventArgs e)
+        {
+            Dashboard_admin uc = new Dashboard_admin();
+            addUserControl(uc);
+        }
+
+        private void Rooms_Button_Click_1(object sender, EventArgs e)
+        {
+            Rooms_admin uc = new Rooms_admin();
+            addUserControl(uc);
+        }
+
+        private void Transactions_Button_Click_1(object sender, EventArgs e)
+        {
+            Transactions uc = new Transactions();
+            addUserControl(uc);
+        }
+
+        private void Reports_Button_Click_1(object sender, EventArgs e)
+        {
+            Reports_admin uc = new Reports_admin();
+            addUserControl(uc);
+        }
+
+        private void Form_Admin_Load(object sender, EventArgs e)
+        {
+            labelname.Text = UserSession.EmployeeName;
+            labeljobposition.Text = UserSession.JobPosition;
+        }
+
+        private void Naviationpanelinform_admin_Paint_1(object sender, PaintEventArgs e)
         {
             Naviationpanelinform_admin.BackColor = Color.Transparent;
             using (SolidBrush brush = new SolidBrush(Color.FromArgb(200, 30, 30, 30))) // Transparency
             {
                 e.Graphics.FillRectangle(brush, Naviationpanelinform_admin.ClientRectangle);
             }
-        }
-
-        private void Dashboard_button_Click(object sender, EventArgs e)
-        {
-            Dashboard_admin uc = new Dashboard_admin();
-            addUserControl(uc);
-        }
-
-        private void Rooms_Button_Click(object sender, EventArgs e)
-        {
-            Rooms_admin uc = new Rooms_admin();
-            addUserControl(uc);
-        }
-
-        private void Transactions_Button_Click(object sender, EventArgs e)
-        {
-            Transactions uc = new Transactions();
-            addUserControl(uc);
-        }
-
-        private void Reports_Button_Click(object sender, EventArgs e)
-        {
-            Reports_admin uc = new Reports_admin();
-            addUserControl(uc);
-        }
-
-        private void circilephotoprofile_Click(object sender, EventArgs e)
-        {
-            ProfilePopUp profilePopUp = new ProfilePopUp();
-            profilePopUp.Show();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            ProfilePopUp profilePopUp = new ProfilePopUp();
-            profilePopUp.Show();
-        }
-
-        private void labelemail_Click(object sender, EventArgs e)
-        {
-            ProfilePopUp profilePopUp = new ProfilePopUp();
-            profilePopUp.Show();
-        }
-
-        private void profilegroup_Click(object sender, EventArgs e)
-        {
-            ProfilePopUp profilePopUp = new ProfilePopUp();
-            profilePopUp.Show();
-        }
-
-        private void panelforusercontroladmin_Paint(object sender, PaintEventArgs e)
-        {
-            labelnameprofile.Text = UserSession.EmployeeName;
-            labeljobposition.Text = UserSession.JobPosition;
-        }
-
-        private void Form_admin_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

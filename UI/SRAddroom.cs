@@ -47,7 +47,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 standardRoom.BedType = bedTypeadd.Text;
                 standardRoom.BathroomInclusion = bathroomInclusionadd.Text;
 
-                // create standardRoomController instance
+                // create standardRoomController instance 
                 StandardRoomController standardRoomController = new StandardRoomController();
 
                 bool success = standardRoomController.AddStandardRoom(standardRoom);
