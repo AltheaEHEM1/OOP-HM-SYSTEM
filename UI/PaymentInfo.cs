@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,19 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class PaymentInfo : Form
     {
-        public PaymentInfo()
+        // variable that will hold the parameters from the previous form
+        private int selectedRoomId;
+        private Guest guestInfo;
+        private Booking newBooking;
+        private string roomType;
+
+        public PaymentInfo(int roomId, Guest guest, Booking booking, string roomType)
         {
             InitializeComponent();
+            selectedRoomId = roomId;
+            guestInfo = guest;
+            newBooking = booking;
+            this.roomType = roomType;
         }
 
         private void Transparentcontainer_Paint(object sender, PaintEventArgs e)
@@ -28,11 +39,16 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void Cashbutton_Click(object sender, EventArgs e)
         {
-            CashPayment cashPayment = new CashPayment();
-            cashPayment.Show();
-
-            // Hide the LoginPage form
             this.Hide();
+            CashPayment cashPayment = new CashPayment(selectedRoomId, guestInfo, newBooking, roomType);
+            cashPayment.Show();
+        }
+
+        private void Cardbutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CardPayment cardPayment = new CardPayment();
+            cardPayment.Show();
         }
     }
 }

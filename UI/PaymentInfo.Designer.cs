@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Transparentcontainer = new Panel();
             whitebg = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             Cardbutton = new Guna.UI2.WinForms.Guna2Button();
@@ -69,11 +69,11 @@
             whitebg.Controls.Add(Whichpaymenttext);
             whitebg.Controls.Add(headerpaymentinfo);
             whitebg.Controls.Add(backicon);
-            whitebg.CustomizableEdges = customizableEdges11;
+            whitebg.CustomizableEdges = customizableEdges5;
             whitebg.Location = new Point(74, 57);
             whitebg.Margin = new Padding(3, 2, 3, 2);
             whitebg.Name = "whitebg";
-            whitebg.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            whitebg.ShadowDecoration.CustomizableEdges = customizableEdges6;
             whitebg.Size = new Size(1113, 554);
             whitebg.TabIndex = 0;
             // 
@@ -81,7 +81,7 @@
             // 
             Cardbutton.BorderRadius = 10;
             Cardbutton.BorderThickness = 2;
-            Cardbutton.CustomizableEdges = customizableEdges7;
+            Cardbutton.CustomizableEdges = customizableEdges1;
             Cardbutton.DisabledState.BorderColor = Color.DarkGray;
             Cardbutton.DisabledState.CustomBorderColor = Color.DarkGray;
             Cardbutton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -92,10 +92,11 @@
             Cardbutton.Location = new Point(399, 379);
             Cardbutton.Margin = new Padding(3, 2, 3, 2);
             Cardbutton.Name = "Cardbutton";
-            Cardbutton.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            Cardbutton.ShadowDecoration.CustomizableEdges = customizableEdges2;
             Cardbutton.Size = new Size(356, 54);
             Cardbutton.TabIndex = 6;
             Cardbutton.Text = "Card Payment";
+            Cardbutton.Click += Cardbutton_Click;
             // 
             // or
             // 
@@ -112,7 +113,7 @@
             // 
             Cashbutton.BorderRadius = 10;
             Cashbutton.BorderThickness = 2;
-            Cashbutton.CustomizableEdges = customizableEdges9;
+            Cashbutton.CustomizableEdges = customizableEdges3;
             Cashbutton.DisabledState.BorderColor = Color.DarkGray;
             Cashbutton.DisabledState.CustomBorderColor = Color.DarkGray;
             Cashbutton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -123,7 +124,7 @@
             Cashbutton.Location = new Point(399, 221);
             Cashbutton.Margin = new Padding(3, 2, 3, 2);
             Cashbutton.Name = "Cashbutton";
-            Cashbutton.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            Cashbutton.ShadowDecoration.CustomizableEdges = customizableEdges4;
             Cashbutton.Size = new Size(356, 54);
             Cashbutton.TabIndex = 4;
             Cashbutton.Text = "Cash Payment";

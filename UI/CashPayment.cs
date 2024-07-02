@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using HOTEL_MANAGEMENT_SYSTEM.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,19 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class CashPayment : Form
     {
-        public CashPayment()
+        // variable that will hold the parameters from the previous form
+        private int selectedRoomId;
+        private Guest guestInfo;
+        private Booking newBooking;
+        private string roomType;
+
+        public CashPayment(int roomId, Guest guest, Booking booking, string roomType)
         {
             InitializeComponent();
+            selectedRoomId = roomId;
+            guestInfo = guest;
+            newBooking = booking;
+            this.roomType = roomType;
         }
 
         private void transparentbg_Paint(object sender, PaintEventArgs e)
@@ -28,17 +40,33 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void backicon_Click(object sender, EventArgs e)
         {
-            PaymentInfo paymentInfo = new PaymentInfo();
+            PaymentInfo paymentInfo = new PaymentInfo(selectedRoomId, guestInfo, newBooking, roomType);
             paymentInfo.Show();
-
-            // Hide the LoginPage form
             this.Hide();
         }
 
         private void Confirmbutton_Click(object sender, EventArgs e)
         {
-            successmessagebk Successmessagebk = new successmessagebk();
-            Successmessagebk.Show();
+            this.Hide();
+
+            // naviagate to booking summary form
+            BookingSummary bookingSummary = new BookingSummary(selectedRoomId, guestInfo, newBooking, roomType);
+            this.Show();
+            
+        }
+
+        private void CashPayment_Load(object sender, EventArgs e)
+        {
+            
+            using (var context = new DataContext())
+            {
+                // get the room price of the selected roomId
+                var roomPrice = context.Rooms.Where(r => r.RoomId == selectedRoomId).Select(r => r.RoomPrice).FirstOrDefault();
+
+                // display the room price
+                totalAmountLabel.Text = roomPrice.ToString();
+            }
+
         }
     }
 }

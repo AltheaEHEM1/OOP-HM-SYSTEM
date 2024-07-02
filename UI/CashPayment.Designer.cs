@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             transparentbg = new Panel();
             whitebg = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             Confirmbutton = new Guna.UI2.WinForms.Guna2Button();
-            label1 = new Label();
+            totalAmountLabel = new Label();
             Totalammounttext = new Label();
             codetextbox = new Guna.UI2.WinForms.Guna2TextBox();
             Enterthecodetext = new Label();
@@ -66,25 +66,25 @@
             whitebg.BackColor = Color.Transparent;
             whitebg.BorderRadius = 10;
             whitebg.Controls.Add(Confirmbutton);
-            whitebg.Controls.Add(label1);
+            whitebg.Controls.Add(totalAmountLabel);
             whitebg.Controls.Add(Totalammounttext);
             whitebg.Controls.Add(codetextbox);
             whitebg.Controls.Add(Enterthecodetext);
             whitebg.Controls.Add(headercash);
             whitebg.Controls.Add(backicon);
-            whitebg.CustomizableEdges = customizableEdges5;
+            whitebg.CustomizableEdges = customizableEdges11;
             whitebg.Font = new Font("Segoe UI Historic", 18F, FontStyle.Bold);
             whitebg.Location = new Point(74, 57);
             whitebg.Margin = new Padding(3, 2, 3, 2);
             whitebg.Name = "whitebg";
-            whitebg.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            whitebg.ShadowDecoration.CustomizableEdges = customizableEdges12;
             whitebg.Size = new Size(1113, 554);
             whitebg.TabIndex = 0;
             // 
             // Confirmbutton
             // 
             Confirmbutton.BorderRadius = 10;
-            Confirmbutton.CustomizableEdges = customizableEdges1;
+            Confirmbutton.CustomizableEdges = customizableEdges7;
             Confirmbutton.DisabledState.BorderColor = Color.DarkGray;
             Confirmbutton.DisabledState.CustomBorderColor = Color.DarkGray;
             Confirmbutton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -95,21 +95,21 @@
             Confirmbutton.Location = new Point(454, 416);
             Confirmbutton.Margin = new Padding(3, 2, 3, 2);
             Confirmbutton.Name = "Confirmbutton";
-            Confirmbutton.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            Confirmbutton.ShadowDecoration.CustomizableEdges = customizableEdges8;
             Confirmbutton.Size = new Size(205, 45);
             Confirmbutton.TabIndex = 7;
             Confirmbutton.Text = "Confirm";
             Confirmbutton.Click += Confirmbutton_Click;
             // 
-            // label1
+            // totalAmountLabel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(351, 271);
-            label1.Name = "label1";
-            label1.Size = new Size(53, 20);
-            label1.TabIndex = 6;
-            label1.Text = "label1";
+            totalAmountLabel.AutoSize = true;
+            totalAmountLabel.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            totalAmountLabel.Location = new Point(351, 271);
+            totalAmountLabel.Name = "totalAmountLabel";
+            totalAmountLabel.Size = new Size(53, 20);
+            totalAmountLabel.TabIndex = 6;
+            totalAmountLabel.Text = "label1";
             // 
             // Totalammounttext
             // 
@@ -126,7 +126,7 @@
             codetextbox.BorderColor = Color.FromArgb(64, 64, 64);
             codetextbox.BorderRadius = 10;
             codetextbox.BorderThickness = 3;
-            codetextbox.CustomizableEdges = customizableEdges3;
+            codetextbox.CustomizableEdges = customizableEdges9;
             codetextbox.DefaultText = "";
             codetextbox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             codetextbox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -143,7 +143,7 @@
             codetextbox.PasswordChar = '\0';
             codetextbox.PlaceholderText = "Enter code*";
             codetextbox.SelectedText = "";
-            codetextbox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            codetextbox.ShadowDecoration.CustomizableEdges = customizableEdges10;
             codetextbox.Size = new Size(703, 54);
             codetextbox.TabIndex = 4;
             // 
@@ -205,6 +205,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cash Payment";
             WindowState = FormWindowState.Maximized;
+            Load += CashPayment_Load;
             transparentbg.ResumeLayout(false);
             whitebg.ResumeLayout(false);
             whitebg.PerformLayout();
@@ -224,7 +225,7 @@
         private Label cashpaytext;
         private Guna.UI2.WinForms.Guna2TextBox codetextbox;
         private Guna.UI2.WinForms.Guna2Button Confirmbutton;
-        private Label label1;
+        private Label totalAmountLabel;
         private Label Totalammounttext;
     }
 }

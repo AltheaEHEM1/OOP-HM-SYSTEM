@@ -38,21 +38,24 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            totalAmountPHP = new Label();
+            label2 = new Label();
+            roomTypeLabel = new Label();
+            numberOfGuestLabel = new Label();
             CardConfirmPayment = new Guna.UI2.WinForms.Guna2Button();
-            label1 = new Label();
+            totalAmountLabel = new Label();
             TotalAmnt = new Label();
             SCAmount = new Label();
             LTAmount = new Label();
             VATAmount = new Label();
-            RoomAmount = new Label();
+            roomPriceLabel = new Label();
             ServiceCharge = new Label();
             LocalTax = new Label();
             ValueAddedTax = new Label();
             RoomType = new Label();
-            NoofGuest = new Label();
-            CheckinCheckoutDate = new Label();
-            DateChckout = new Label();
-            DateChckin = new Label();
+            numberOfGuest = new Label();
+            dateCheckout = new Label();
+            dateCheckin = new Label();
             LabelCheckout = new Label();
             LabelCheckin = new Label();
             guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
@@ -69,21 +72,24 @@
             guna2Panel2.BackgroundImage = (Image)resources.GetObject("guna2Panel2.BackgroundImage");
             guna2Panel2.BackgroundImageLayout = ImageLayout.Stretch;
             guna2Panel2.BorderRadius = 20;
+            guna2Panel2.Controls.Add(totalAmountPHP);
+            guna2Panel2.Controls.Add(label2);
+            guna2Panel2.Controls.Add(roomTypeLabel);
+            guna2Panel2.Controls.Add(numberOfGuestLabel);
             guna2Panel2.Controls.Add(CardConfirmPayment);
-            guna2Panel2.Controls.Add(label1);
+            guna2Panel2.Controls.Add(totalAmountLabel);
             guna2Panel2.Controls.Add(TotalAmnt);
             guna2Panel2.Controls.Add(SCAmount);
             guna2Panel2.Controls.Add(LTAmount);
             guna2Panel2.Controls.Add(VATAmount);
-            guna2Panel2.Controls.Add(RoomAmount);
+            guna2Panel2.Controls.Add(roomPriceLabel);
             guna2Panel2.Controls.Add(ServiceCharge);
             guna2Panel2.Controls.Add(LocalTax);
             guna2Panel2.Controls.Add(ValueAddedTax);
             guna2Panel2.Controls.Add(RoomType);
-            guna2Panel2.Controls.Add(NoofGuest);
-            guna2Panel2.Controls.Add(CheckinCheckoutDate);
-            guna2Panel2.Controls.Add(DateChckout);
-            guna2Panel2.Controls.Add(DateChckin);
+            guna2Panel2.Controls.Add(numberOfGuest);
+            guna2Panel2.Controls.Add(dateCheckout);
+            guna2Panel2.Controls.Add(dateCheckin);
             guna2Panel2.Controls.Add(LabelCheckout);
             guna2Panel2.Controls.Add(LabelCheckin);
             guna2Panel2.Controls.Add(guna2Panel4);
@@ -95,6 +101,50 @@
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Panel2.Size = new Size(1146, 518);
             guna2Panel2.TabIndex = 2;
+            // 
+            // totalAmountPHP
+            // 
+            totalAmountPHP.AutoSize = true;
+            totalAmountPHP.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            totalAmountPHP.ForeColor = Color.Black;
+            totalAmountPHP.Location = new Point(854, 425);
+            totalAmountPHP.Name = "totalAmountPHP";
+            totalAmountPHP.Size = new Size(29, 16);
+            totalAmountPHP.TabIndex = 55;
+            totalAmountPHP.Text = "PHP";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 9F);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(193, 292);
+            label2.Name = "label2";
+            label2.Size = new Size(75, 17);
+            label2.TabIndex = 54;
+            label2.Text = "Room Price";
+            // 
+            // roomTypeLabel
+            // 
+            roomTypeLabel.AutoSize = true;
+            roomTypeLabel.Font = new Font("Century Gothic", 9F);
+            roomTypeLabel.ForeColor = Color.Black;
+            roomTypeLabel.Location = new Point(275, 225);
+            roomTypeLabel.Name = "roomTypeLabel";
+            roomTypeLabel.Size = new Size(81, 17);
+            roomTypeLabel.TabIndex = 53;
+            roomTypeLabel.Text = "(Room Type)";
+            // 
+            // numberOfGuestLabel
+            // 
+            numberOfGuestLabel.AutoSize = true;
+            numberOfGuestLabel.Font = new Font("Century Gothic", 9F);
+            numberOfGuestLabel.ForeColor = Color.Black;
+            numberOfGuestLabel.Location = new Point(279, 194);
+            numberOfGuestLabel.Name = "numberOfGuestLabel";
+            numberOfGuestLabel.Size = new Size(117, 17);
+            numberOfGuestLabel.TabIndex = 52;
+            numberOfGuestLabel.Text = "(Number of Guest)";
             // 
             // CardConfirmPayment
             // 
@@ -115,17 +165,18 @@
             CardConfirmPayment.Size = new Size(184, 35);
             CardConfirmPayment.TabIndex = 39;
             CardConfirmPayment.Text = "Confirm";
+            CardConfirmPayment.Click += CardConfirmPayment_Click;
             // 
-            // label1
+            // totalAmountLabel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(862, 425);
-            label1.Name = "label1";
-            label1.Size = new Size(56, 16);
-            label1.TabIndex = 51;
-            label1.Text = "PHP 0.00";
+            totalAmountLabel.AutoSize = true;
+            totalAmountLabel.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            totalAmountLabel.ForeColor = Color.Black;
+            totalAmountLabel.Location = new Point(883, 425);
+            totalAmountLabel.Name = "totalAmountLabel";
+            totalAmountLabel.Size = new Size(31, 16);
+            totalAmountLabel.TabIndex = 51;
+            totalAmountLabel.Text = "0.00";
             // 
             // TotalAmnt
             // 
@@ -165,22 +216,22 @@
             VATAmount.AutoSize = true;
             VATAmount.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             VATAmount.ForeColor = Color.Black;
-            VATAmount.Location = new Point(854, 322);
+            VATAmount.Location = new Point(854, 321);
             VATAmount.Name = "VATAmount";
             VATAmount.Size = new Size(62, 16);
             VATAmount.TabIndex = 47;
             VATAmount.Text = "(Amount)";
             // 
-            // RoomAmount
+            // roomPriceLabel
             // 
-            RoomAmount.AutoSize = true;
-            RoomAmount.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            RoomAmount.ForeColor = Color.Black;
-            RoomAmount.Location = new Point(854, 207);
-            RoomAmount.Name = "RoomAmount";
-            RoomAmount.Size = new Size(62, 16);
-            RoomAmount.TabIndex = 46;
-            RoomAmount.Text = "(Amount)";
+            roomPriceLabel.AutoSize = true;
+            roomPriceLabel.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            roomPriceLabel.ForeColor = Color.Black;
+            roomPriceLabel.Location = new Point(854, 292);
+            roomPriceLabel.Name = "roomPriceLabel";
+            roomPriceLabel.Size = new Size(62, 16);
+            roomPriceLabel.TabIndex = 46;
+            roomPriceLabel.Text = "(Amount)";
             // 
             // ServiceCharge
             // 
@@ -218,68 +269,57 @@
             // RoomType
             // 
             RoomType.AutoSize = true;
-            RoomType.Font = new Font("Century Gothic", 9F);
+            RoomType.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             RoomType.ForeColor = Color.Black;
-            RoomType.Location = new Point(193, 272);
+            RoomType.Location = new Point(193, 225);
             RoomType.Name = "RoomType";
-            RoomType.Size = new Size(69, 17);
+            RoomType.Size = new Size(76, 16);
             RoomType.TabIndex = 42;
-            RoomType.Text = "RoomType";
+            RoomType.Text = "Room Type:";
             // 
-            // NoofGuest
+            // numberOfGuest
             // 
-            NoofGuest.AutoSize = true;
-            NoofGuest.Font = new Font("Century Gothic", 9F);
-            NoofGuest.ForeColor = Color.Black;
-            NoofGuest.Location = new Point(193, 229);
-            NoofGuest.Name = "NoofGuest";
-            NoofGuest.Size = new Size(81, 17);
-            NoofGuest.TabIndex = 41;
-            NoofGuest.Text = "No. of Guest";
+            numberOfGuest.AutoSize = true;
+            numberOfGuest.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            numberOfGuest.ForeColor = Color.Black;
+            numberOfGuest.Location = new Point(193, 194);
+            numberOfGuest.Name = "numberOfGuest";
+            numberOfGuest.Size = new Size(80, 16);
+            numberOfGuest.TabIndex = 41;
+            numberOfGuest.Text = "No. of Guest:";
             // 
-            // CheckinCheckoutDate
+            // dateCheckout
             // 
-            CheckinCheckoutDate.AutoSize = true;
-            CheckinCheckoutDate.Font = new Font("Century Gothic", 9F);
-            CheckinCheckoutDate.ForeColor = Color.Black;
-            CheckinCheckoutDate.Location = new Point(193, 206);
-            CheckinCheckoutDate.Name = "CheckinCheckoutDate";
-            CheckinCheckoutDate.Size = new Size(181, 17);
-            CheckinCheckoutDate.TabIndex = 40;
-            CheckinCheckoutDate.Text = "Check in and Check out date";
+            dateCheckout.AutoSize = true;
+            dateCheckout.Font = new Font("Century Gothic", 9F);
+            dateCheckout.ForeColor = Color.Black;
+            dateCheckout.Location = new Point(269, 163);
+            dateCheckout.Name = "dateCheckout";
+            dateCheckout.Size = new Size(74, 17);
+            dateCheckout.TabIndex = 38;
+            dateCheckout.Text = "(DateTime)";
             // 
-            // DateChckout
+            // dateCheckin
             // 
-            DateChckout.AutoSize = true;
-            DateChckout.Font = new Font("Century Gothic", 9F);
-            DateChckout.ForeColor = Color.Black;
-            DateChckout.Location = new Point(862, 163);
-            DateChckout.Name = "DateChckout";
-            DateChckout.Size = new Size(44, 17);
-            DateChckout.TabIndex = 38;
-            DateChckout.Text = "(Time)";
-            // 
-            // DateChckin
-            // 
-            DateChckin.AutoSize = true;
-            DateChckin.Font = new Font("Century Gothic", 9F);
-            DateChckin.ForeColor = Color.Black;
-            DateChckin.Location = new Point(193, 163);
-            DateChckin.Name = "DateChckin";
-            DateChckin.Size = new Size(44, 17);
-            DateChckin.TabIndex = 37;
-            DateChckin.Text = "(Time)";
+            dateCheckin.AutoSize = true;
+            dateCheckin.Font = new Font("Century Gothic", 9F);
+            dateCheckin.ForeColor = Color.Black;
+            dateCheckin.Location = new Point(261, 133);
+            dateCheckin.Name = "dateCheckin";
+            dateCheckin.Size = new Size(74, 17);
+            dateCheckin.TabIndex = 37;
+            dateCheckin.Text = "(DateTime)";
             // 
             // LabelCheckout
             // 
             LabelCheckout.AutoSize = true;
             LabelCheckout.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             LabelCheckout.ForeColor = Color.Black;
-            LabelCheckout.Location = new Point(847, 133);
+            LabelCheckout.Location = new Point(193, 163);
             LabelCheckout.Name = "LabelCheckout";
-            LabelCheckout.Size = new Size(67, 16);
+            LabelCheckout.Size = new Size(70, 16);
             LabelCheckout.TabIndex = 36;
-            LabelCheckout.Text = "Check out";
+            LabelCheckout.Text = "Check out:";
             // 
             // LabelCheckin
             // 
@@ -288,9 +328,9 @@
             LabelCheckin.ForeColor = Color.Black;
             LabelCheckin.Location = new Point(193, 133);
             LabelCheckin.Name = "LabelCheckin";
-            LabelCheckin.Size = new Size(59, 16);
+            LabelCheckin.Size = new Size(62, 16);
             LabelCheckin.TabIndex = 35;
-            LabelCheckin.Text = "Check in";
+            LabelCheckin.Text = "Check in:";
             LabelCheckin.TextAlign = ContentAlignment.TopCenter;
             // 
             // guna2Panel4
@@ -347,6 +387,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Booking Summary";
             WindowState = FormWindowState.Maximized;
+            Load += BookingSummary_Load;
             guna2Panel2.ResumeLayout(false);
             guna2Panel2.PerformLayout();
             guna2Panel4.ResumeLayout(false);
@@ -363,20 +404,23 @@
         private Label LabelCheckin;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Label SRLabel;
-        private Label RoomAmount;
+        private Label roomPriceLabel;
         private Label ServiceCharge;
         private Label LocalTax;
         private Label ValueAddedTax;
         private Label RoomType;
-        private Label NoofGuest;
-        private Label CheckinCheckoutDate;
-        private Label DateChckout;
-        private Label DateChckin;
+        private Label numberOfGuest;
+        private Label dateCheckout;
+        private Label dateCheckin;
         private Label SCAmount;
         private Label LTAmount;
         private Label VATAmount;
-        private Label label1;
+        private Label totalAmountLabel;
         private Label TotalAmnt;
         private Guna.UI2.WinForms.Guna2Button CardConfirmPayment;
+        private Label numberOfGuestLabel;
+        private Label label2;
+        private Label roomTypeLabel;
+        private Label totalAmountPHP;
     }
 }

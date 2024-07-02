@@ -17,11 +17,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         private DateTime checkinDate;
         private DateTime checkOutDate;
         private int selectedRoomId;
+        private int numberOfGuests;
+        private string roomType = "Standard Room";
 
         public SRSelectRoom()
         {
             InitializeComponent();
-            //InitializeParentForm();
 
         }
         public void addUserControl(UserControl userControl)
@@ -60,16 +61,27 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             try
             {
                 // check if the user selected a room
-                if (selectedRoomId != null)
+                if (selectedRoomId != 0)
                 {
+                    // add the selected room and booking details to the booking
+
+                    // create a new booking
+                    Booking booking = new Booking();
+                    booking.CheckInDate = checkinDate;
+                    booking.CheckOutDate = checkOutDate;
+                    booking.BookingDate  = DateTime.Now;
+                    booking.NumberOfGuest = numberOfGuests; 
+                    booking.RoomId = selectedRoomId;
+                    booking.IsCancelled = false;
+
                     // navigate to the next page
                     this.Close();
-                    ContactInfo contactInfo = new ContactInfo();
+                    ContactInfo contactInfo = new ContactInfo(selectedRoomId, booking, roomType);
                     contactInfo.Show();
                 }
                 else
                 {
-                    throw new Exception("Please select a room first.")
+                    throw new Exception("Please select a room first.");
                 }
             }
             catch (Exception ex)
@@ -92,25 +104,25 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             }
         }
 
-        private void LoadAvailableRooms()
+        private void LoadAvailableRooms(DateTime? checkInDate = null, DateTime? checkOutDate = null)
         {
             try
             {
-                // reset the selectedRoomId
-                selectedRoomId = null;
+                // reset the selectedRoomId and numberOfGuests
+                selectedRoomId = 0;
+                numberOfGuests = 0;
 
-                // load room numbers that are available depending on the checkin and checkout date that was selected
+                // load room numbers that are available depending -on the checkin and checkout date that was selected
                 using (var context = new DataContext())
                 {
 
-                    // get the room numbers that are available
+                    // Get the room numbers that are available and can accommodate the number of guests
                     var availableRooms = context.Rooms
                         .OfType<StandardRoom>()
-                        .Where(sr => !sr.IsDeleted && !sr.Bookings.Any(b => b.CheckInDate < checkOutDate && b.CheckOutDate > checkinDate))
+                        .Where(sr => !sr.IsDeleted &&
+                                     sr.OccupancyLimit >= numberOfGuests &&
+                                     !sr.Bookings.Any(b => b.CheckInDate < checkOutDate && b.CheckOutDate > checkInDate))
                         .ToList();
-
-                    // bind the available rooms to the grid view
-                    // listOfStandardRooms.DataSource = availableRooms;
 
                     // clear the existing controls in the panel
                     standardRoomPanel.Controls.Clear();
@@ -185,8 +197,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             selectedRoomId = roomId;
         }
 
-
-        private void CheckinDate_ValueChanged(object sender, EventArgs e)
+        private void CheckinDate_ValueChanged_1(object sender, EventArgs e)
         {
             // Assign the selected date to the checkinDate variable
             checkinDate = CheckinDate.Value;
@@ -194,12 +205,26 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             LoadAvailableRooms();
         }
 
-        private void CheckoutDate_ValueChanged(object sender, EventArgs e)
+        private void CheckoutDate_ValueChanged_1(object sender, EventArgs e)
         {
             // Assign the selected date to the checkOutDate variable
             checkOutDate = CheckoutDate.Value;
             // Reload the available rooms
             LoadAvailableRooms();
+        }
+
+        private void numberOfGuestText_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                // get the number of guest
+                numberOfGuests = Convert.ToInt32(numberOfGuestText.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
     }
 }

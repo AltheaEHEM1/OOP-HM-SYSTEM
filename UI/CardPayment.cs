@@ -19,8 +19,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void CardConfirmPayment_Click(object sender, EventArgs e)
         {
-            BookingSummary bookingSummary = new BookingSummary();
-            bookingSummary.Show();
+            // BookingSummary bookingSummary = new BookingSummary();
+           // bookingSummary.Show();
 
             // Close the parent form
             Form parentForm = this.FindForm();

@@ -55,9 +55,9 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 
         private void NextNav_Click(object sender, EventArgs e)
         {
-            ContactInfo contactInfo = new ContactInfo();
-            contactInfo.Show();
-            this.Close();
+            // ContactInfo contactInfo = new ContactInfo();
+            // contactInfo.Show();
+            // this.Close();
         }
     }
 }

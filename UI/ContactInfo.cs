@@ -13,9 +13,18 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
     public partial class ContactInfo : Form
     {
-        public ContactInfo()
+        // variable that will hold the parameters from the previous form
+        private int selectedRoomId;
+        private Booking newBooking;
+        private string roomType;
+
+
+        public ContactInfo(int roomId, Booking booking, string roomType)
         {
             InitializeComponent();
+            selectedRoomId = roomId;
+            newBooking = booking;
+            this.roomType = roomType;
         }
 
         private void NextNavSummary_Click(object sender, EventArgs e)
@@ -23,18 +32,25 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             try
             {
                 // create instance of Guest to store the information from text box
-                Guest guest = new Guest();
+                Guest guestInfo = new Guest();
 
-                guest.LastName = lastNameText.Text;
-                guest.FirstName = firstNameText.Text;
-                guest.DateOfBirth = Convert.ToDateTime(birthdayText.Text);
-                guest.PhoneNumber = Convert.ToInt32(phoneNumText.Text);
-                guest.Email = emailAddressText.Text;
-                guest.City = cityText.Text;
-                guest.Country = countryText.Text;
-                guest.HouseAddress = houseAddressText.Text;
-                guest.ZipCode = Convert.ToInt32(zipcodeText.Text);
+                guestInfo.LastName = lastNameText.Text;
+                guestInfo.FirstName = firstNameText.Text;
+                guestInfo.DateOfBirth = Convert.ToDateTime(birthdayText.Text);
+                guestInfo.PhoneNumber = Convert.ToInt32(phoneNumText.Text);
+                guestInfo.Email = emailAddressText.Text;
+                guestInfo.City = cityText.Text;
+                guestInfo.Country = countryText.Text;
+                guestInfo.HouseAddress = houseAddressText.Text;
+                guestInfo.ZipCode = Convert.ToInt32(zipcodeText.Text);
 
+                // choose payment information
+                PaymentInfo payment = new PaymentInfo(selectedRoomId, guestInfo, newBooking, roomType);
+                payment.Show();
+
+                // Close the parent form
+                Form parentForm = this.FindForm();
+                parentForm.Hide();
 
             }
             catch (Exception ex)
@@ -42,12 +58,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            CardPayment cardPayment = new CardPayment();
-            cardPayment.Show();
-
-            // Close the parent form
-            Form parentForm = this.FindForm();
-            parentForm.Hide();
+            
         }
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
@@ -60,9 +71,5 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             parentForm.Hide();
         }
 
-        private void ContactInfo_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
