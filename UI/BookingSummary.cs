@@ -22,6 +22,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         private double valueAddedTax = 100.00;
         private double localTax = 50.00;
         private double serviceCharge = 200.00;
+        private double roomPrice;
 
         public BookingSummary(int roomId, Guest guest, Booking booking, string roomType)
         {
@@ -58,8 +59,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 {
                     var selectedRoom = context.Rooms.Find(selectedRoomId);
 
-                    // get and display the roomprice
-                    roomPriceLabel.Text = selectedRoom.RoomPrice.ToString();
+                    // assign the room price to variable to be used for calculation
+                    roomPrice = selectedRoom.RoomPrice;
+
+                    // get and display the roomprice and room number
+                    roomPriceLabel.Text = roomPrice.ToString();
+                    roomNumberLabel.Text = selectedRoom.RoomNumber.ToString();
                 }
 
                 // check the room type and assign to roomTypeLabel
@@ -104,7 +109,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             try
             {
                 // return the sum
-                return valueAddedTax + localTax + serviceCharge;
+                return roomPrice + valueAddedTax + localTax + serviceCharge;
             }
             catch (Exception ex)
             {
@@ -134,10 +139,14 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
                         if (bookingAdded)
                         {
-                            // show the success message
-                            MessageBox.Show("Booking successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            // update the status of the selected room to occupied
+                           // RoomController roomController = new RoomController();
+                           // roomController.UpdateRoomStatus(selectedRoomId);
 
-                            // navigate to the next page
+
+                            // show the success messsage
+                            successmessagebk bookingSuccess = new successmessagebk();
+                            bookingSuccess.ShowDialog();
                             this.Close();
                         }
                     }

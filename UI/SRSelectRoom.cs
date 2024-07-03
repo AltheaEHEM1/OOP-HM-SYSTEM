@@ -15,7 +15,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
     {
         private Form_receptionist parentForm;
         private DateTime checkinDate;
-        private DateTime checkOutDate;
+        private DateTime checkoutDate;
         private int selectedRoomId;
         private int numberOfGuests;
         private string roomType = "Standard Room";
@@ -63,21 +63,35 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 // check if the user selected a room
                 if (selectedRoomId != 0)
                 {
-                    // add the selected room and booking details to the booking
+                    // get the room status of the selected room
+                    var roomStatus = new DataContext().Rooms.Find(selectedRoomId).RoomStatus.ToLower();
 
-                    // create a new booking
-                    Booking booking = new Booking();
-                    booking.CheckInDate = checkinDate;
-                    booking.CheckOutDate = checkOutDate;
-                    booking.BookingDate  = DateTime.Now;
-                    booking.NumberOfGuest = numberOfGuests; 
-                    booking.RoomId = selectedRoomId;
-                    booking.IsCancelled = false;
+                    // proceed if selected room id is available, if not ask the user to choose again
+                    if (roomStatus == "available")
+                    {
+                        // create a new booking
+                        Booking booking = new Booking();
+                        booking.CheckInDate = checkinDate;
+                        booking.CheckOutDate = checkoutDate;
+                        booking.BookingDate = DateTime.Now;
+                        booking.NumberOfGuest = numberOfGuests;
+                        booking.RoomId = selectedRoomId;
+                        booking.IsCancelled = false;
 
-                    // navigate to the next page
-                    this.Close();
-                    ContactInfo contactInfo = new ContactInfo(selectedRoomId, booking, roomType);
-                    contactInfo.Show();
+                        // navigate to the next page
+                        this.Close();
+                        ContactInfo contactInfo = new ContactInfo(selectedRoomId, booking, roomType);
+                        contactInfo.Show();
+                    }
+                    else if (roomStatus == "occupied")
+                    {
+                        MessageBox.Show("Room is currently occupied. Please select another room.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    else if (roomStatus == "under maintenance")
+                    {
+                        MessageBox.Show("Room is currently under maintenance. Please select another room.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
@@ -94,8 +108,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             try
             {
+                checkinDate = DateTime.Now;
+                checkoutDate = DateTime.Now;
+
                 // load the available rooms
-                LoadAvailableRooms();
+                LoadAvailableRooms(checkinDate, checkoutDate);
             }
             catch (Exception ex)
             {
@@ -104,25 +121,35 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             }
         }
 
-        private void LoadAvailableRooms(DateTime? checkInDate = null, DateTime? checkOutDate = null)
+        private void LoadAvailableRooms(DateTime? checkInDate, DateTime? checkOutDate, int numberOfGuest = 1)
         {
             try
             {
-                // reset the selectedRoomId and numberOfGuests
+                // reset the selectedRoomId
                 selectedRoomId = 0;
-                numberOfGuests = 0;
+                numberOfGuests = numberOfGuest;
 
-                // load room numbers that are available depending -on the checkin and checkout date that was selected
+                // load room numbers that are available depending on the checkin and checkout date that was selected
                 using (var context = new DataContext())
                 {
-
-                    // Get the room numbers that are available and can accommodate the number of guests
+                    //get the available rooms that can accomodate number of guest and does not overlap to existing checkin and checkout date on that room
                     var availableRooms = context.Rooms
                         .OfType<StandardRoom>()
-                        .Where(sr => !sr.IsDeleted &&
-                                     sr.OccupancyLimit >= numberOfGuests &&
-                                     !sr.Bookings.Any(b => b.CheckInDate < checkOutDate && b.CheckOutDate > checkInDate))
+                        .Where(sr => !sr.IsDeleted && sr.OccupancyLimit >= numberOfGuest)
+                        .ToList()
+                        .Where(r => !context.Bookings
+                            .Where(b => b.RoomId == r.RoomId && !b.IsCancelled)
+                            .Any(b => (checkInDate >= b.CheckInDate && checkInDate <= b.CheckOutDate) ||
+                                      (checkOutDate >= b.CheckInDate && checkOutDate <= b.CheckOutDate) ||
+                                      (checkInDate <= b.CheckInDate && checkOutDate >= b.CheckOutDate)))
+                        .Select(r => new
+                        {
+                            RoomId = r.RoomId,
+                            RoomNumber = r.RoomNumber,
+                            RoomStatus = r.RoomStatus
+                        })
                         .ToList();
+
 
                     // clear the existing controls in the panel
                     standardRoomPanel.Controls.Clear();
@@ -135,41 +162,40 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                     int roomHeight = 50;
                     int padding = 10; // distance between each room representation
 
-                    // loop through the available rooms and create a representation for each row
+                    // loop through the available rooms and create a representation for each room
                     foreach (var room in availableRooms)
                     {
-                        // create label to represent the room
-                        Label roomLabel = new Label();
-                        roomLabel.Size = new Size(roomWidth, roomHeight);
-                        roomLabel.BorderStyle = BorderStyle.FixedSingle;
-                        roomLabel.TextAlign = ContentAlignment.MiddleCenter;
-                        roomLabel.Text = room.RoomNumber.ToString();
+                        // create button to represent the room
+                        Button roomButton = new Button();
+                        roomButton.Size = new Size(roomWidth, roomHeight);
+                        roomButton.TextAlign = ContentAlignment.MiddleCenter;
+                        roomButton.Text = room.RoomNumber.ToString();
 
                         // set the background color based on the status
                         string status = room.RoomStatus.ToLower();
                         switch (status)
                         {
                             case "available":
-                                roomLabel.BackColor = Color.Green;
+                                roomButton.BackColor = Color.Green;
                                 break;
                             case "occupied":
-                                roomLabel.BackColor = Color.Maroon;
+                                roomButton.BackColor = Color.Maroon;
                                 break;
                             case "under maintenance":
-                                roomLabel.BackColor = Color.Gray;
+                                roomButton.BackColor = Color.Gray;
                                 break;
                             default:
-                                roomLabel.BackColor = Color.White;
+                                roomButton.BackColor = Color.White;
                                 break;
                         }
 
                         // calculate position of the room representation
                         int xPosition = columnIndex * (roomWidth + padding);
                         int yPosition = rowIndex * (roomHeight + padding);
-                        roomLabel.Location = new Point(xPosition, yPosition);
+                        roomButton.Location = new Point(xPosition, yPosition);
 
-                        // Add the label to the pannel
-                        standardRoomPanel.Controls.Add(roomLabel);
+                        // Add the button to the panel
+                        standardRoomPanel.Controls.Add(roomButton);
 
                         // update rowIndex and columnIndex
                         columnIndex++;
@@ -180,10 +206,9 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                         }
 
                         // add click event handler to handle room selection
-                        roomLabel.Click += (sender, e) => RoomLabel_Click(sender, e, room.RoomId);
+                        roomButton.Click += (sender, e) => RoomButton_Click(sender, e, room.RoomId);
                     }
                 }
-
             }
             catch (Exception ex)
             {
@@ -191,7 +216,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             }
         }
 
-        private void RoomLabel_Click(object sender, EventArgs e, int roomId)
+        private void RoomButton_Click(object sender, EventArgs e, int roomId)
         {
             // assign the roomId to the selectedRoomId variable
             selectedRoomId = roomId;
@@ -201,24 +226,23 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             // Assign the selected date to the checkinDate variable
             checkinDate = CheckinDate.Value;
-            // Reload the available rooms
-            LoadAvailableRooms();
         }
 
         private void CheckoutDate_ValueChanged_1(object sender, EventArgs e)
         {
             // Assign the selected date to the checkOutDate variable
-            checkOutDate = CheckoutDate.Value;
-            // Reload the available rooms
-            LoadAvailableRooms();
+            checkoutDate = CheckoutDate.Value;
         }
 
-        private void numberOfGuestText_TextChanged(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             try
             {
                 // get the number of guest
                 numberOfGuests = Convert.ToInt32(numberOfGuestText.Text);
+
+                // Reload the available rooms
+                LoadAvailableRooms(checkinDate, checkoutDate, numberOfGuests);
             }
             catch (Exception ex)
             {

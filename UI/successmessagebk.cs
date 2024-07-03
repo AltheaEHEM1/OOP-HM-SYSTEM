@@ -31,9 +31,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
-        private void successmessagebk_Load(object sender, EventArgs e)
+        private void okButton_Click(object sender, EventArgs e)
         {
-
+            // go back to form receptionist
+            this.Close();
+            Form_receptionist formReceptionist = new Form_receptionist();
+            formReceptionist.Show();
         }
     }
 }

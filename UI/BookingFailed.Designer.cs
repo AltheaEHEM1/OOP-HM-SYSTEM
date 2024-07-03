@@ -1,6 +1,6 @@
 ﻿namespace HOTEL_MANAGEMENT_SYSTEM.UI
 {
-    partial class successmessagebk
+    partial class BookingFailed
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(successmessagebk));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            checkmark = new PictureBox();
-            LABELBOOK = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookingFailed));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             okButton = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)checkmark).BeginInit();
+            LABELBOOK = new Label();
+            ErrorLogo = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            ((System.ComponentModel.ISupportInitialize)ErrorLogo).BeginInit();
             SuspendLayout();
-            // 
-            // checkmark
-            // 
-            checkmark.Image = (Image)resources.GetObject("checkmark.Image");
-            checkmark.Location = new Point(139, 21);
-            checkmark.Margin = new Padding(3, 2, 3, 2);
-            checkmark.Name = "checkmark";
-            checkmark.Size = new Size(127, 104);
-            checkmark.SizeMode = PictureBoxSizeMode.Zoom;
-            checkmark.TabIndex = 0;
-            checkmark.TabStop = false;
-            // 
-            // LABELBOOK
-            // 
-            LABELBOOK.AutoSize = true;
-            LABELBOOK.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LABELBOOK.Location = new Point(110, 142);
-            LABELBOOK.Name = "LABELBOOK";
-            LABELBOOK.Size = new Size(167, 19);
-            LABELBOOK.TabIndex = 1;
-            LABELBOOK.Text = "Successfully Booked!";
             // 
             // okButton
             // 
@@ -69,38 +49,60 @@
             okButton.FillColor = Color.RoyalBlue;
             okButton.Font = new Font("Segoe UI", 9F);
             okButton.ForeColor = Color.White;
-            okButton.Location = new Point(152, 194);
+            okButton.Location = new Point(151, 193);
             okButton.Name = "okButton";
             okButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
             okButton.Size = new Size(95, 32);
-            okButton.TabIndex = 2;
+            okButton.TabIndex = 5;
             okButton.Text = "OK";
             okButton.Click += okButton_Click;
             // 
-            // successmessagebk
+            // LABELBOOK
+            // 
+            LABELBOOK.AutoSize = true;
+            LABELBOOK.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LABELBOOK.Location = new Point(137, 141);
+            LABELBOOK.Name = "LABELBOOK";
+            LABELBOOK.Size = new Size(128, 19);
+            LABELBOOK.TabIndex = 4;
+            LABELBOOK.Text = "Booking Failed!";
+            // 
+            // ErrorLogo
+            // 
+            ErrorLogo.BackgroundImage = (Image)resources.GetObject("ErrorLogo.BackgroundImage");
+            ErrorLogo.BackgroundImageLayout = ImageLayout.Stretch;
+            ErrorLogo.FillColor = Color.Transparent;
+            ErrorLogo.ImageRotate = 0F;
+            ErrorLogo.Location = new Point(154, 30);
+            ErrorLogo.Margin = new Padding(3, 2, 3, 2);
+            ErrorLogo.Name = "ErrorLogo";
+            ErrorLogo.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            ErrorLogo.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            ErrorLogo.Size = new Size(90, 90);
+            ErrorLogo.TabIndex = 6;
+            ErrorLogo.TabStop = false;
+            // 
+            // BookingFailed
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(410, 250);
+            ClientSize = new Size(400, 250);
+            Controls.Add(ErrorLogo);
             Controls.Add(okButton);
             Controls.Add(LABELBOOK);
-            Controls.Add(checkmark);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "successmessagebk";
-            StartPosition = FormStartPosition.CenterScreen;
-            ((System.ComponentModel.ISupportInitialize)checkmark).EndInit();
+            Name = "BookingFailed";
+            Text = "BookingFailed";
+            ((System.ComponentModel.ISupportInitialize)ErrorLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox checkmark;
-        private Label LABELBOOK;
         private Guna.UI2.WinForms.Guna2Button okButton;
+        private Label LABELBOOK;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox ErrorLogo;
     }
 }

@@ -11,7 +11,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
         public string LastName { get; set; }
         public string FirstName { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public int PhoneNumber { get; set; }
+        public long PhoneNumber { get; set; }
         public string Email { get; set; }
         public string HouseAddress { get; set; }
         public string City { get; set; }

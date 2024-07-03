@@ -47,11 +47,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void Confirmbutton_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
 
             // naviagate to booking summary form
             BookingSummary bookingSummary = new BookingSummary(selectedRoomId, guestInfo, newBooking, roomType);
-            this.Show();
+            bookingSummary.Show();
             
         }
 

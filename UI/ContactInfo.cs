@@ -37,7 +37,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 guestInfo.LastName = lastNameText.Text;
                 guestInfo.FirstName = firstNameText.Text;
                 guestInfo.DateOfBirth = Convert.ToDateTime(birthdayText.Text);
-                guestInfo.PhoneNumber = Convert.ToInt32(phoneNumText.Text);
+                guestInfo.PhoneNumber = Convert.ToInt64(phoneNumText.Text);
                 guestInfo.Email = emailAddressText.Text;
                 guestInfo.City = cityText.Text;
                 guestInfo.Country = countryText.Text;
@@ -45,12 +45,13 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 guestInfo.ZipCode = Convert.ToInt32(zipcodeText.Text);
 
                 // choose payment information
+                this.Close();
                 PaymentInfo payment = new PaymentInfo(selectedRoomId, guestInfo, newBooking, roomType);
                 payment.Show();
 
                 // Close the parent form
-                Form parentForm = this.FindForm();
-                parentForm.Hide();
+                // Form parentForm = this.FindForm();
+               // parentForm.Hide();
 
             }
             catch (Exception ex)
@@ -67,8 +68,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             // selectRoom.Show();
 
             // Close the parent form
-            Form parentForm = this.FindForm();
-            parentForm.Hide();
+            // Form parentForm = this.FindForm();
+            // parentForm.Hide();
         }
 
     }

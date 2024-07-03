@@ -39,14 +39,14 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void Cashbutton_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             CashPayment cashPayment = new CashPayment(selectedRoomId, guestInfo, newBooking, roomType);
             cashPayment.Show();
         }
 
         private void Cardbutton_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             CardPayment cardPayment = new CardPayment();
             cardPayment.Show();
         }

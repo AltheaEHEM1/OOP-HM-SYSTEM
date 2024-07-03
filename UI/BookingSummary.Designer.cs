@@ -61,6 +61,8 @@
             guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             SRLabel = new Label();
             SRNavback = new Guna.UI2.WinForms.Guna2PictureBox();
+            roomNumber = new Label();
+            roomNumberLabel = new Label();
             guna2Panel2.SuspendLayout();
             guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)SRNavback).BeginInit();
@@ -72,6 +74,8 @@
             guna2Panel2.BackgroundImage = (Image)resources.GetObject("guna2Panel2.BackgroundImage");
             guna2Panel2.BackgroundImageLayout = ImageLayout.Stretch;
             guna2Panel2.BorderRadius = 20;
+            guna2Panel2.Controls.Add(roomNumberLabel);
+            guna2Panel2.Controls.Add(roomNumber);
             guna2Panel2.Controls.Add(totalAmountPHP);
             guna2Panel2.Controls.Add(label2);
             guna2Panel2.Controls.Add(roomTypeLabel);
@@ -372,6 +376,28 @@
             SRNavback.TabStop = false;
             SRNavback.Click += SRNavback_Click;
             // 
+            // roomNumber
+            // 
+            roomNumber.AutoSize = true;
+            roomNumber.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            roomNumber.ForeColor = Color.Black;
+            roomNumber.Location = new Point(193, 254);
+            roomNumber.Name = "roomNumber";
+            roomNumber.Size = new Size(94, 16);
+            roomNumber.TabIndex = 56;
+            roomNumber.Text = "Room Number:";
+            // 
+            // roomNumberLabel
+            // 
+            roomNumberLabel.AutoSize = true;
+            roomNumberLabel.Font = new Font("Century Gothic", 9F);
+            roomNumberLabel.ForeColor = Color.Black;
+            roomNumberLabel.Location = new Point(293, 253);
+            roomNumberLabel.Name = "roomNumberLabel";
+            roomNumberLabel.Size = new Size(101, 17);
+            roomNumberLabel.TabIndex = 57;
+            roomNumberLabel.Text = "(Room Number)";
+            // 
             // BookingSummary
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -422,5 +448,7 @@
         private Label label2;
         private Label roomTypeLabel;
         private Label totalAmountPHP;
+        private Label roomNumberLabel;
+        private Label roomNumber;
     }
 }
