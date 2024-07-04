@@ -285,9 +285,9 @@
             SRLabel2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SRLabel2.Location = new Point(46, 328);
             SRLabel2.Name = "SRLabel2";
-            SRLabel2.Size = new Size(140, 19);
+            SRLabel2.Size = new Size(101, 19);
             SRLabel2.TabIndex = 27;
-            SRLabel2.Text = "Available Rooms";
+            SRLabel2.Text = "Room Status";
             // 
             // guna2Panel6
             // 
@@ -384,8 +384,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2PictureBox SRNavback;
         private Guna.UI2.WinForms.Guna2Button NextNav;
         private Label UM;
@@ -405,5 +403,6 @@
         private Panel standardRoomPanel;
         private Guna.UI2.WinForms.Guna2TextBox numberOfGuestText;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        public Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }

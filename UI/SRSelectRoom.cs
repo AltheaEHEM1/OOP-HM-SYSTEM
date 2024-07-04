@@ -137,11 +137,13 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                         .OfType<StandardRoom>()
                         .Where(sr => !sr.IsDeleted && sr.OccupancyLimit >= numberOfGuest)
                         .ToList()
+                        /*
                         .Where(r => !context.Bookings
                             .Where(b => b.RoomId == r.RoomId && !b.IsCancelled)
                             .Any(b => (checkInDate >= b.CheckInDate && checkInDate <= b.CheckOutDate) ||
                                       (checkOutDate >= b.CheckInDate && checkOutDate <= b.CheckOutDate) ||
                                       (checkInDate <= b.CheckInDate && checkOutDate >= b.CheckOutDate)))
+                        */
                         .Select(r => new
                         {
                             RoomId = r.RoomId,
@@ -241,6 +243,9 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 // get the number of guest
                 numberOfGuests = Convert.ToInt32(numberOfGuestText.Text);
 
+                // update the room status based on filtered checkin and checkout date
+                UpdateRoomStatus();
+
                 // Reload the available rooms
                 LoadAvailableRooms(checkinDate, checkoutDate, numberOfGuests);
             }
@@ -248,6 +253,56 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
+            }
+        }
+
+        // method to update the room status based on the filtered checkin and checkout date on that same room
+        private void UpdateRoomStatus()
+        {
+            try
+            {
+                using (var context = new DataContext())
+                {
+                    // get all the rooms
+                    var rooms = context.Rooms.ToList();
+
+                    // loop through each room
+                    foreach (var room in rooms)
+                    {
+                        // get the room status
+                        var roomStatus = room.RoomStatus.ToLower();
+
+                        // get the bookings that are not cancelled
+                        var bookings = context.Bookings
+                            .Where(b => b.RoomId == room.RoomId && !b.IsCancelled)
+                            .ToList();
+
+                        // loop through each booking
+                        foreach (var booking in bookings)
+                        {
+                            // check if the checkin and checkout date overlaps to the existing booking
+                            if ((checkinDate >= booking.CheckInDate && checkinDate <= booking.CheckOutDate) ||
+                                (checkoutDate >= booking.CheckInDate && checkoutDate <= booking.CheckOutDate) ||
+                                (checkinDate <= booking.CheckInDate && checkoutDate >= booking.CheckOutDate))
+                            {
+                                // update the room status to occupied
+                                room.RoomStatus = "Occupied";
+                            }
+                            else
+                            {
+                                // update the room status to available
+                                room.RoomStatus = "Available";
+                            }
+                        }
+                    }
+
+                    // save the changes
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -35,27 +35,28 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             SearchBar = new Guna.UI2.WinForms.Guna2TextBox();
             ReservationCalendar = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            TablePanelSample = new Guna.UI2.WinForms.Guna2Panel();
-            ReservationsTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            Room = new DataGridViewTextBoxColumn();
-            Guest = new DataGridViewTextBoxColumn();
-            RoomType = new DataGridViewTextBoxColumn();
-            Checkin = new DataGridViewTextBoxColumn();
-            Checkout = new DataGridViewTextBoxColumn();
             ReservationEditBttn = new Guna.UI2.WinForms.Guna2Button();
             ReservationCancelBttn = new Guna.UI2.WinForms.Guna2Button();
-            TablePanelSample.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)ReservationsTable).BeginInit();
+            ReservationGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            bookingID = new DataGridViewTextBoxColumn();
+            roomID = new DataGridViewTextBoxColumn();
+            guestID = new DataGridViewTextBoxColumn();
+            roomNumber = new DataGridViewTextBoxColumn();
+            guestName = new DataGridViewTextBoxColumn();
+            roomType = new DataGridViewTextBoxColumn();
+            noOfGuest = new DataGridViewTextBoxColumn();
+            checkInDate = new DataGridViewTextBoxColumn();
+            checkOutDate = new DataGridViewTextBoxColumn();
+            bookingDate = new DataGridViewTextBoxColumn();
+            isCancelled = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)ReservationGridView).BeginInit();
             SuspendLayout();
             // 
             // SearchBar
@@ -75,15 +76,14 @@
             SearchBar.HoverState.BorderColor = Color.Black;
             SearchBar.IconLeft = (Image)resources.GetObject("SearchBar.IconLeft");
             SearchBar.IconLeftOffset = new Point(10, 0);
-            SearchBar.Location = new Point(990, 47);
-            SearchBar.Margin = new Padding(3, 4, 3, 4);
+            SearchBar.Location = new Point(866, 35);
             SearchBar.Name = "SearchBar";
             SearchBar.PasswordChar = '\0';
             SearchBar.PlaceholderForeColor = Color.Gray;
             SearchBar.PlaceholderText = "Search by guest, reservation";
             SearchBar.SelectedText = "";
             SearchBar.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            SearchBar.Size = new Size(338, 42);
+            SearchBar.Size = new Size(296, 32);
             SearchBar.TabIndex = 0;
             SearchBar.TextChanged += SearchBar_TextChanged_1;
             // 
@@ -96,159 +96,21 @@
             ReservationCalendar.ForeColor = Color.WhiteSmoke;
             ReservationCalendar.Format = DateTimePickerFormat.Custom;
             ReservationCalendar.HoverState.FillColor = Color.FromArgb(13, 22, 29);
-            ReservationCalendar.Location = new Point(124, 47);
-            ReservationCalendar.Margin = new Padding(3, 4, 3, 4);
+            ReservationCalendar.Location = new Point(108, 35);
             ReservationCalendar.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             ReservationCalendar.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             ReservationCalendar.Name = "ReservationCalendar";
             ReservationCalendar.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            ReservationCalendar.Size = new Size(212, 42);
+            ReservationCalendar.Size = new Size(186, 32);
             ReservationCalendar.TabIndex = 1;
             ReservationCalendar.TextOffset = new Point(10, 0);
             ReservationCalendar.Value = new DateTime(2024, 6, 15, 20, 50, 37, 914);
             ReservationCalendar.ValueChanged += ReservationCalendar_ValueChanged;
             // 
-            // TablePanelSample
-            // 
-            TablePanelSample.BackColor = Color.Transparent;
-            TablePanelSample.BorderColor = Color.Black;
-            TablePanelSample.BorderRadius = 20;
-            TablePanelSample.BorderThickness = 1;
-            TablePanelSample.Controls.Add(ReservationsTable);
-            TablePanelSample.CustomizableEdges = customizableEdges5;
-            TablePanelSample.Location = new Point(82, 133);
-            TablePanelSample.Margin = new Padding(3, 4, 3, 4);
-            TablePanelSample.Name = "TablePanelSample";
-            TablePanelSample.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            TablePanelSample.Size = new Size(1277, 443);
-            TablePanelSample.TabIndex = 2;
-            // 
-            // ReservationsTable
-            // 
-            ReservationsTable.AllowUserToResizeColumns = false;
-            ReservationsTable.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = Color.White;
-            dataGridViewCellStyle1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = Color.Silver;
-            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
-            ReservationsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            ReservationsTable.BackgroundColor = SystemColors.Control;
-            ReservationsTable.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(12, 22, 29);
-            dataGridViewCellStyle2.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(12, 22, 29);
-            dataGridViewCellStyle2.SelectionForeColor = Color.White;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            ReservationsTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            ReservationsTable.ColumnHeadersHeight = 50;
-            ReservationsTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            ReservationsTable.Columns.AddRange(new DataGridViewColumn[] { Room, Guest, RoomType, Checkin, Checkout });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(224, 224, 224);
-            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            ReservationsTable.DefaultCellStyle = dataGridViewCellStyle3;
-            ReservationsTable.Dock = DockStyle.Fill;
-            ReservationsTable.Enabled = false;
-            ReservationsTable.GridColor = Color.WhiteSmoke;
-            ReservationsTable.Location = new Point(0, 0);
-            ReservationsTable.Margin = new Padding(3, 4, 3, 4);
-            ReservationsTable.Name = "ReservationsTable";
-            ReservationsTable.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = SystemColors.Control;
-            dataGridViewCellStyle4.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            ReservationsTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            ReservationsTable.RowHeadersVisible = false;
-            ReservationsTable.RowHeadersWidth = 51;
-            ReservationsTable.RowTemplate.DefaultCellStyle.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ReservationsTable.RowTemplate.DividerHeight = 2;
-            ReservationsTable.RowTemplate.Height = 50;
-            ReservationsTable.ScrollBars = ScrollBars.Vertical;
-            ReservationsTable.Size = new Size(1277, 443);
-            ReservationsTable.TabIndex = 0;
-            ReservationsTable.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            ReservationsTable.ThemeStyle.AlternatingRowsStyle.Font = null;
-            ReservationsTable.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            ReservationsTable.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            ReservationsTable.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            ReservationsTable.ThemeStyle.BackColor = SystemColors.Control;
-            ReservationsTable.ThemeStyle.GridColor = Color.WhiteSmoke;
-            ReservationsTable.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            ReservationsTable.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.Single;
-            ReservationsTable.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
-            ReservationsTable.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            ReservationsTable.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            ReservationsTable.ThemeStyle.HeaderStyle.Height = 50;
-            ReservationsTable.ThemeStyle.ReadOnly = false;
-            ReservationsTable.ThemeStyle.RowsStyle.BackColor = Color.White;
-            ReservationsTable.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            ReservationsTable.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
-            ReservationsTable.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
-            ReservationsTable.ThemeStyle.RowsStyle.Height = 50;
-            ReservationsTable.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            ReservationsTable.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            ReservationsTable.CellContentClick += ReservationsTable_CellContentClick;
-            // 
-            // Room
-            // 
-            Room.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Room.HeaderText = "Room";
-            Room.MinimumWidth = 6;
-            Room.Name = "Room";
-            Room.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Room.Width = 200;
-            // 
-            // Guest
-            // 
-            Guest.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Guest.HeaderText = "Guest";
-            Guest.MinimumWidth = 6;
-            Guest.Name = "Guest";
-            Guest.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Guest.Width = 400;
-            // 
-            // RoomType
-            // 
-            RoomType.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            RoomType.HeaderText = "Room Type";
-            RoomType.MinimumWidth = 6;
-            RoomType.Name = "RoomType";
-            RoomType.SortMode = DataGridViewColumnSortMode.NotSortable;
-            RoomType.Width = 290;
-            // 
-            // Checkin
-            // 
-            Checkin.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Checkin.HeaderText = "Check-in";
-            Checkin.MinimumWidth = 6;
-            Checkin.Name = "Checkin";
-            Checkin.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Checkin.Width = 205;
-            // 
-            // Checkout
-            // 
-            Checkout.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Checkout.HeaderText = "Check-out";
-            Checkout.MinimumWidth = 6;
-            Checkout.Name = "Checkout";
-            Checkout.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Checkout.Width = 205;
-            // 
             // ReservationEditBttn
             // 
             ReservationEditBttn.BorderRadius = 10;
-            ReservationEditBttn.CustomizableEdges = customizableEdges7;
+            ReservationEditBttn.CustomizableEdges = customizableEdges5;
             ReservationEditBttn.DisabledState.BorderColor = Color.DarkGray;
             ReservationEditBttn.DisabledState.CustomBorderColor = Color.DarkGray;
             ReservationEditBttn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -256,11 +118,10 @@
             ReservationEditBttn.FillColor = Color.FromArgb(213, 171, 97);
             ReservationEditBttn.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             ReservationEditBttn.ForeColor = Color.White;
-            ReservationEditBttn.Location = new Point(1067, 613);
-            ReservationEditBttn.Margin = new Padding(3, 4, 3, 4);
+            ReservationEditBttn.Location = new Point(934, 460);
             ReservationEditBttn.Name = "ReservationEditBttn";
-            ReservationEditBttn.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            ReservationEditBttn.Size = new Size(133, 45);
+            ReservationEditBttn.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            ReservationEditBttn.Size = new Size(116, 34);
             ReservationEditBttn.TabIndex = 3;
             ReservationEditBttn.Text = "Edit";
             ReservationEditBttn.Click += ReservationEditBttn_Click;
@@ -268,7 +129,7 @@
             // ReservationCancelBttn
             // 
             ReservationCancelBttn.BorderRadius = 10;
-            ReservationCancelBttn.CustomizableEdges = customizableEdges9;
+            ReservationCancelBttn.CustomizableEdges = customizableEdges7;
             ReservationCancelBttn.DisabledState.BorderColor = Color.DarkGray;
             ReservationCancelBttn.DisabledState.CustomBorderColor = Color.DarkGray;
             ReservationCancelBttn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -276,30 +137,139 @@
             ReservationCancelBttn.FillColor = Color.FromArgb(126, 6, 6);
             ReservationCancelBttn.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             ReservationCancelBttn.ForeColor = Color.White;
-            ReservationCancelBttn.Location = new Point(1226, 613);
-            ReservationCancelBttn.Margin = new Padding(3, 4, 3, 4);
+            ReservationCancelBttn.Location = new Point(1073, 460);
             ReservationCancelBttn.Name = "ReservationCancelBttn";
-            ReservationCancelBttn.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            ReservationCancelBttn.Size = new Size(133, 45);
+            ReservationCancelBttn.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            ReservationCancelBttn.Size = new Size(116, 34);
             ReservationCancelBttn.TabIndex = 4;
             ReservationCancelBttn.Text = "Cancel";
             ReservationCancelBttn.Click += ReservationCancelBttn_Click;
             // 
+            // ReservationGridView
+            // 
+            dataGridViewCellStyle1.BackColor = Color.White;
+            ReservationGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            ReservationGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            ReservationGridView.ColumnHeadersHeight = 40;
+            ReservationGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            ReservationGridView.Columns.AddRange(new DataGridViewColumn[] { bookingID, roomID, guestID, roomNumber, guestName, roomType, noOfGuest, checkInDate, checkOutDate, bookingDate, isCancelled });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            ReservationGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            ReservationGridView.GridColor = Color.FromArgb(231, 229, 255);
+            ReservationGridView.Location = new Point(72, 88);
+            ReservationGridView.Name = "ReservationGridView";
+            ReservationGridView.RowHeadersVisible = false;
+            ReservationGridView.Size = new Size(1117, 332);
+            ReservationGridView.TabIndex = 5;
+            ReservationGridView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            ReservationGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            ReservationGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            ReservationGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            ReservationGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            ReservationGridView.ThemeStyle.BackColor = Color.White;
+            ReservationGridView.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            ReservationGridView.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            ReservationGridView.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            ReservationGridView.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
+            ReservationGridView.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            ReservationGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            ReservationGridView.ThemeStyle.HeaderStyle.Height = 40;
+            ReservationGridView.ThemeStyle.ReadOnly = false;
+            ReservationGridView.ThemeStyle.RowsStyle.BackColor = Color.White;
+            ReservationGridView.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            ReservationGridView.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
+            ReservationGridView.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            ReservationGridView.ThemeStyle.RowsStyle.Height = 25;
+            ReservationGridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            ReservationGridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            // 
+            // bookingID
+            // 
+            bookingID.HeaderText = "Booking Id";
+            bookingID.Name = "bookingID";
+            bookingID.Visible = false;
+            // 
+            // roomID
+            // 
+            roomID.HeaderText = "Room ID";
+            roomID.Name = "roomID";
+            roomID.Visible = false;
+            // 
+            // guestID
+            // 
+            guestID.HeaderText = "Guest ID";
+            guestID.Name = "guestID";
+            guestID.Visible = false;
+            // 
+            // roomNumber
+            // 
+            roomNumber.HeaderText = "Room Number";
+            roomNumber.Name = "roomNumber";
+            // 
+            // guestName
+            // 
+            guestName.HeaderText = "Guest Name";
+            guestName.Name = "guestName";
+            // 
+            // roomType
+            // 
+            roomType.HeaderText = "Room Type";
+            roomType.Name = "roomType";
+            // 
+            // noOfGuest
+            // 
+            noOfGuest.HeaderText = "Number of Occupants";
+            noOfGuest.Name = "noOfGuest";
+            // 
+            // checkInDate
+            // 
+            checkInDate.HeaderText = "Check In Date";
+            checkInDate.Name = "checkInDate";
+            // 
+            // checkOutDate
+            // 
+            checkOutDate.HeaderText = "Check Out Date";
+            checkOutDate.Name = "checkOutDate";
+            // 
+            // bookingDate
+            // 
+            bookingDate.HeaderText = "Booking Date";
+            bookingDate.Name = "bookingDate";
+            // 
+            // isCancelled
+            // 
+            isCancelled.HeaderText = "IsCancelled";
+            isCancelled.Name = "isCancelled";
+            isCancelled.Visible = false;
+            // 
             // Reservations
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
+            Controls.Add(ReservationGridView);
             Controls.Add(ReservationCancelBttn);
             Controls.Add(ReservationEditBttn);
-            Controls.Add(TablePanelSample);
             Controls.Add(ReservationCalendar);
             Controls.Add(SearchBar);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Reservations";
-            Size = new Size(1440, 679);
+            Size = new Size(1260, 509);
             Load += Reservations_Load;
-            TablePanelSample.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)ReservationsTable).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ReservationGridView).EndInit();
             ResumeLayout(false);
         }
 
@@ -307,14 +277,19 @@
         // private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TextBox SearchBar;
         private Guna.UI2.WinForms.Guna2DateTimePicker ReservationCalendar;
-        private Guna.UI2.WinForms.Guna2Panel TablePanelSample;
-        private Guna.UI2.WinForms.Guna2DataGridView ReservationsTable;
         private Guna.UI2.WinForms.Guna2Button ReservationEditBttn;
         private Guna.UI2.WinForms.Guna2Button ReservationCancelBttn;
-        private DataGridViewTextBoxColumn Room;
-        private DataGridViewTextBoxColumn Guest;
-        private DataGridViewTextBoxColumn RoomType;
-        private DataGridViewTextBoxColumn Checkin;
-        private DataGridViewTextBoxColumn Checkout;
+        private Guna.UI2.WinForms.Guna2DataGridView ReservationGridView;
+        private DataGridViewTextBoxColumn bookingID;
+        private DataGridViewTextBoxColumn roomID;
+        private DataGridViewTextBoxColumn guestID;
+        private DataGridViewTextBoxColumn roomNumber;
+        private DataGridViewTextBoxColumn guestName;
+        private DataGridViewTextBoxColumn roomType;
+        private DataGridViewTextBoxColumn noOfGuest;
+        private DataGridViewTextBoxColumn checkInDate;
+        private DataGridViewTextBoxColumn checkOutDate;
+        private DataGridViewTextBoxColumn bookingDate;
+        private DataGridViewTextBoxColumn isCancelled;
     }
 }

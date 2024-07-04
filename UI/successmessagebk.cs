@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,10 +34,23 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void okButton_Click(object sender, EventArgs e)
         {
-            // go back to form receptionist
-            this.Close();
-            Form_receptionist formReceptionist = new Form_receptionist();
-            formReceptionist.Show();
+            Booknow uc = new Booknow();
+            addUserControl(uc);
+
+            // Close the parent form
+            Form parentForm = this.FindForm();
+            this.Hide();
+        }
+
+        public void addUserControl(UserControl userControl)
+        {
+            // create SRselectroom instance
+            SRSelectRoom sRSelectRoom = new SRSelectRoom();
+
+            userControl.Dock = DockStyle.Fill;
+            sRSelectRoom.guna2Panel2.Controls.Clear();
+            sRSelectRoom.guna2Panel2.Controls.Add(userControl);
+            userControl.BringToFront();
         }
     }
 }

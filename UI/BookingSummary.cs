@@ -73,12 +73,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                     // display the room type
                     roomTypeLabel.Text = roomType;
                 }
-                else if (roomType.ToLower() == "Deluxe Room")
+                else if (roomType.ToLower() == "deluxe room")
                 {
                     // display the room type
                     roomTypeLabel.Text = roomType;
                 }
-                else if (roomType.ToLower() == "Suite")
+                else if (roomType.ToLower() == "suite")
                 {
                     // display the room type
                     roomTypeLabel.Text = roomType;
@@ -140,8 +140,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                         if (bookingAdded)
                         {
                             // update the status of the selected room to occupied
-                           // RoomController roomController = new RoomController();
-                           // roomController.UpdateRoomStatus(selectedRoomId);
+                           RoomController roomController = new RoomController();
+                           roomController.UpdateRoomStatus(selectedRoomId);
 
 
                             // show the success messsage

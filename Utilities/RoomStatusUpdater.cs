@@ -49,7 +49,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Utilities
             catch (Exception ex)
             {
                 // Handle exceptions (e.g., log the error)
-                Console.WriteLine("Error updating room statuses: " + ex.Message);
+                MessageBox.Show("Error updating room statuses: " + ex.Message);
             }
         }
 
