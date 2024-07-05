@@ -1,4 +1,5 @@
-﻿using HOTEL_MANAGEMENT_SYSTEM.UI;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Models;
+using HOTEL_MANAGEMENT_SYSTEM.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,30 +14,14 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 {
     public partial class ModifyPage : Form
     {
+        // instance of booking to store the booking to edit
+        private Booking bookingToEdit = new Booking();
 
-        public ModifyPage()
+
+        public ModifyPage(Booking booking)
         {
             InitializeComponent();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EmailAddTxt_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
+            bookingToEdit = booking;
         }
 
         private void BackBttn_Click(object sender, EventArgs e)
@@ -44,7 +29,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             this.Close(); // Close the ModifyPage form
         }
 
-       
+
 
         private void SaveChangesBttn_Click(object sender, EventArgs e)
         {
@@ -100,54 +85,41 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             this.Close();
         }
 
-        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void BedroomTypeComBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void ModifyPage_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                // display the data from the bookingToEdit instance
+                DisplayData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        private void HeaderTtilePanel_Paint(object sender, PaintEventArgs e)
+        private void DisplayData()
         {
+            try
+            {
+                // display the data, assign it to their appropriate label
+                bookingIdTxt.Text = bookingToEdit.BookingId.ToString();
+                roomIdTxt.Text = bookingToEdit.RoomId.ToString();
+                guestIdTxt.Text = bookingToEdit.GuestId.ToString();
+                emailTxt.Text = bookingToEdit.Guest.Email;
+                nameTxt.Text = bookingToEdit.Guest.FirstName;
+                addressTxt.Text = bookingToEdit.Guest.HouseAddress + " " + bookingToEdit.Guest.City + " " + bookingToEdit.Guest.Country + " " + bookingToEdit.Guest.ZipCode.ToString();
+                phoneTxt.Text = bookingToEdit.Guest.PhoneNumber.ToString();
+                roomNumberTxt.Text = bookingToEdit.Room.RoomNumber.ToString();
+                CheckInDatePicker.Value = bookingToEdit.CheckInDate;
+                CheckOutDatePicker.Value = bookingToEdit.CheckOutDate;
+                isCancelledTxt.Text = bookingToEdit.IsCancelled.ToString();
 
-        }
+            }
+            catch (Exception ex)
+            {
 
-        private void OtherServicesTxtBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EmailAdLab_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void headerTxt_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EmailAdLab_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RoomTypeLbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RoomTypeTxt_Click(object sender, EventArgs e)
-        {
-
+            }
         }
     }
 }

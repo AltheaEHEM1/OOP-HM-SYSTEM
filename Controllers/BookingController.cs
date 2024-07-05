@@ -33,7 +33,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
 
 
         // method to read or display all the booking records
-        public List<Booking> GetBookingRecords()
+        public List<Booking> GetBookingRecords(DateTime filterDate)
         {
             // create instance of DataContext
             using (var context = new DataContext())
@@ -42,7 +42,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Controllers
                 var bookingRecords = context.Bookings
                     .Include(b => b.Room)
                     .Include(b => b.Guest)
-                    .Where(b => b.IsCancelled == false)
+                    .Where(b => !b.IsCancelled && b.CheckInDate > filterDate)
                     .ToList();
 
                 // return all booking records

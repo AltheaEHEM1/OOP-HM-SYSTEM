@@ -108,6 +108,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             try
             {
+                // assign values to date time picker
+                CheckinDate.Value = DateTime.Now;
+                CheckoutDate.Value = DateTime.Now;
+
+
+                // reset dates
                 checkinDate = DateTime.Now;
                 checkoutDate = DateTime.Now;
 

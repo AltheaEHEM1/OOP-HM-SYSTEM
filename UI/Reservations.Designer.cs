@@ -104,7 +104,7 @@
             ReservationCalendar.Size = new Size(186, 32);
             ReservationCalendar.TabIndex = 1;
             ReservationCalendar.TextOffset = new Point(10, 0);
-            ReservationCalendar.Value = new DateTime(2024, 6, 15, 20, 50, 37, 914);
+            ReservationCalendar.Value = new DateTime(2024, 7, 5, 0, 0, 0, 0);
             ReservationCalendar.ValueChanged += ReservationCalendar_ValueChanged;
             // 
             // ReservationEditBttn
@@ -115,7 +115,7 @@
             ReservationEditBttn.DisabledState.CustomBorderColor = Color.DarkGray;
             ReservationEditBttn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             ReservationEditBttn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            ReservationEditBttn.FillColor = Color.FromArgb(213, 171, 97);
+            ReservationEditBttn.FillColor = Color.FromArgb(214, 164, 38);
             ReservationEditBttn.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             ReservationEditBttn.ForeColor = Color.White;
             ReservationEditBttn.Location = new Point(934, 460);
@@ -150,7 +150,7 @@
             dataGridViewCellStyle1.BackColor = Color.White;
             ReservationGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.BackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
@@ -195,6 +195,7 @@
             ReservationGridView.ThemeStyle.RowsStyle.Height = 25;
             ReservationGridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             ReservationGridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            ReservationGridView.CellContentClick += ReservationGridView_CellContentClick;
             // 
             // bookingID
             // 

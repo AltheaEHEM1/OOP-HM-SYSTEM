@@ -29,48 +29,54 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifyPage));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             BackBttn = new Guna.UI2.WinForms.Guna2CircleButton();
             HeaderTtilePanel = new Guna.UI2.WinForms.Guna2Panel();
             headerTxt = new Guna.UI2.WinForms.Guna2HtmlLabel();
             EmailAdLab = new Label();
-            EmailAddTxt = new Label();
+            emailTxt = new Label();
             NameLab = new Label();
-            label1 = new Label();
+            nameTxt = new Label();
             PhoneNoLbl = new Label();
-            label3 = new Label();
+            phoneTxt = new Label();
             AddressLbl = new Label();
-            AddrexxTxt = new Label();
+            addressTxt = new Label();
             MOPLbl = new Label();
-            CashTxt = new Label();
+            modePaymentTxt = new Label();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             label4 = new Label();
-            ReservationIDTxt = new Label();
+            noOfOccupantsTxt = new Label();
             CILbl = new Label();
             COLbl = new Label();
             RoomTypeLbl = new Label();
             label8 = new Label();
             SaveChangesBttn = new Guna.UI2.WinForms.Guna2Button();
-            CIComBox = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            COComBox = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            CheckInDatePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            CheckOutDatePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             GIPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            RoomTypeTxt = new Label();
+            isCancelledTxt = new Label();
+            guestIdTxt = new Label();
+            roomIdTxt = new Label();
+            bookingIdTxt = new Label();
+            roomTypeTxt = new Label();
             label2 = new Label();
             OtherServicesTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
+            roomNumberTxt = new Label();
+            label3 = new Label();
             HeaderTtilePanel.SuspendLayout();
             GIPanel.SuspendLayout();
             SuspendLayout();
@@ -88,7 +94,7 @@
             BackBttn.ImageSize = new Size(30, 30);
             BackBttn.Location = new Point(37, 35);
             BackBttn.Name = "BackBttn";
-            BackBttn.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            BackBttn.ShadowDecoration.CustomizableEdges = customizableEdges16;
             BackBttn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             BackBttn.Size = new Size(39, 35);
             BackBttn.TabIndex = 0;
@@ -97,14 +103,13 @@
             // HeaderTtilePanel
             // 
             HeaderTtilePanel.Controls.Add(headerTxt);
-            HeaderTtilePanel.CustomizableEdges = customizableEdges2;
+            HeaderTtilePanel.CustomizableEdges = customizableEdges17;
             HeaderTtilePanel.FillColor = Color.FromArgb(13, 22, 29);
             HeaderTtilePanel.Location = new Point(121, 77);
             HeaderTtilePanel.Name = "HeaderTtilePanel";
-            HeaderTtilePanel.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            HeaderTtilePanel.ShadowDecoration.CustomizableEdges = customizableEdges18;
             HeaderTtilePanel.Size = new Size(1100, 64);
             HeaderTtilePanel.TabIndex = 1;
-            HeaderTtilePanel.Paint += HeaderTtilePanel_Paint;
             // 
             // headerTxt
             // 
@@ -116,7 +121,6 @@
             headerTxt.Size = new Size(177, 25);
             headerTxt.TabIndex = 0;
             headerTxt.Text = "Guest Information";
-            headerTxt.Click += headerTxt_Click;
             // 
             // EmailAdLab
             // 
@@ -127,18 +131,16 @@
             EmailAdLab.Size = new Size(117, 19);
             EmailAdLab.TabIndex = 2;
             EmailAdLab.Text = "Email Address";
-            EmailAdLab.Click += EmailAdLab_Click_1;
             // 
-            // EmailAddTxt
+            // emailTxt
             // 
-            EmailAddTxt.AutoSize = true;
-            EmailAddTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            EmailAddTxt.Location = new Point(151, 181);
-            EmailAddTxt.Name = "EmailAddTxt";
-            EmailAddTxt.Size = new Size(217, 21);
-            EmailAddTxt.TabIndex = 3;
-            EmailAddTxt.Text = "altheaamor12@gmail.com";
-            EmailAddTxt.Click += EmailAddTxt_Click;
+            emailTxt.AutoSize = true;
+            emailTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            emailTxt.Location = new Point(151, 181);
+            emailTxt.Name = "emailTxt";
+            emailTxt.Size = new Size(64, 21);
+            emailTxt.TabIndex = 3;
+            emailTxt.Text = "[email]";
             // 
             // NameLab
             // 
@@ -150,15 +152,15 @@
             NameLab.TabIndex = 4;
             NameLab.Text = "Name";
             // 
-            // label1
+            // nameTxt
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(151, 250);
-            label1.Name = "label1";
-            label1.Size = new Size(159, 21);
-            label1.TabIndex = 5;
-            label1.Text = "Althea Amor J. Asis";
+            nameTxt.AutoSize = true;
+            nameTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            nameTxt.Location = new Point(151, 250);
+            nameTxt.Name = "nameTxt";
+            nameTxt.Size = new Size(70, 21);
+            nameTxt.TabIndex = 5;
+            nameTxt.Text = "[Name]";
             // 
             // PhoneNoLbl
             // 
@@ -169,17 +171,16 @@
             PhoneNoLbl.Size = new Size(126, 19);
             PhoneNoLbl.TabIndex = 6;
             PhoneNoLbl.Text = "Phone Number";
-            PhoneNoLbl.Click += label4_Click;
             // 
-            // label3
+            // phoneTxt
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(151, 329);
-            label3.Name = "label3";
-            label3.Size = new Size(118, 21);
-            label3.TabIndex = 7;
-            label3.Text = "098546653536";
+            phoneTxt.AutoSize = true;
+            phoneTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            phoneTxt.Location = new Point(151, 329);
+            phoneTxt.Name = "phoneTxt";
+            phoneTxt.Size = new Size(138, 21);
+            phoneTxt.TabIndex = 7;
+            phoneTxt.Text = "[Phone Number]";
             // 
             // AddressLbl
             // 
@@ -191,43 +192,42 @@
             AddressLbl.TabIndex = 8;
             AddressLbl.Text = "Address";
             // 
-            // AddrexxTxt
+            // addressTxt
             // 
-            AddrexxTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            AddrexxTxt.Location = new Point(794, 181);
-            AddrexxTxt.Name = "AddrexxTxt";
-            AddrexxTxt.Size = new Size(367, 52);
-            AddrexxTxt.TabIndex = 9;
-            AddrexxTxt.Text = "203 Pinaglaban Street, Brgy. Iniwan Republic Ave, Q.C.";
+            addressTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            addressTxt.Location = new Point(794, 181);
+            addressTxt.Name = "addressTxt";
+            addressTxt.Size = new Size(367, 52);
+            addressTxt.TabIndex = 9;
+            addressTxt.Text = "[Address]";
             // 
             // MOPLbl
             // 
             MOPLbl.AutoSize = true;
             MOPLbl.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            MOPLbl.Location = new Point(794, 251);
+            MOPLbl.Location = new Point(794, 244);
             MOPLbl.Name = "MOPLbl";
             MOPLbl.Size = new Size(145, 19);
             MOPLbl.TabIndex = 10;
             MOPLbl.Text = "Mode of Payment";
             // 
-            // CashTxt
+            // modePaymentTxt
             // 
-            CashTxt.AutoSize = true;
-            CashTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            CashTxt.Location = new Point(794, 282);
-            CashTxt.Name = "CashTxt";
-            CashTxt.Size = new Size(126, 21);
-            CashTxt.TabIndex = 11;
-            CashTxt.Text = "Cash payment";
-            CashTxt.Click += label5_Click;
+            modePaymentTxt.AutoSize = true;
+            modePaymentTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            modePaymentTxt.Location = new Point(794, 273);
+            modePaymentTxt.Name = "modePaymentTxt";
+            modePaymentTxt.Size = new Size(161, 21);
+            modePaymentTxt.TabIndex = 11;
+            modePaymentTxt.Text = "[Mode of Payment]";
             // 
             // guna2Panel2
             // 
-            guna2Panel2.CustomizableEdges = customizableEdges4;
+            guna2Panel2.CustomizableEdges = customizableEdges19;
             guna2Panel2.FillColor = Color.Black;
             guna2Panel2.Location = new Point(141, 359);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges20;
             guna2Panel2.Size = new Size(1080, 3);
             guna2Panel2.TabIndex = 12;
             // 
@@ -238,19 +238,19 @@
             label4.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(151, 378);
             label4.Name = "label4";
-            label4.Size = new Size(116, 19);
+            label4.Size = new Size(180, 19);
             label4.TabIndex = 13;
-            label4.Text = "Reservation ID";
+            label4.Text = "Number of Occupants";
             // 
-            // ReservationIDTxt
+            // noOfOccupantsTxt
             // 
-            ReservationIDTxt.AutoSize = true;
-            ReservationIDTxt.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ReservationIDTxt.Location = new Point(151, 409);
-            ReservationIDTxt.Name = "ReservationIDTxt";
-            ReservationIDTxt.Size = new Size(88, 19);
-            ReservationIDTxt.TabIndex = 14;
-            ReservationIDTxt.Text = "7656GRFG";
+            noOfOccupantsTxt.AutoSize = true;
+            noOfOccupantsTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            noOfOccupantsTxt.Location = new Point(151, 409);
+            noOfOccupantsTxt.Name = "noOfOccupantsTxt";
+            noOfOccupantsTxt.Size = new Size(197, 21);
+            noOfOccupantsTxt.TabIndex = 14;
+            noOfOccupantsTxt.Text = "[Number of Occupants]";
             // 
             // CILbl
             // 
@@ -279,12 +279,11 @@
             RoomTypeLbl.AccessibleDescription = "bedroomTypeLbl";
             RoomTypeLbl.AutoSize = true;
             RoomTypeLbl.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            RoomTypeLbl.Location = new Point(156, 480);
+            RoomTypeLbl.Location = new Point(156, 452);
             RoomTypeLbl.Name = "RoomTypeLbl";
-            RoomTypeLbl.Size = new Size(121, 19);
+            RoomTypeLbl.Size = new Size(95, 19);
             RoomTypeLbl.TabIndex = 19;
-            RoomTypeLbl.Text = "Bedroom Type";
-            RoomTypeLbl.Click += RoomTypeLbl_Click;
+            RoomTypeLbl.Text = "Room Type";
             // 
             // label8
             // 
@@ -300,7 +299,7 @@
             // SaveChangesBttn
             // 
             SaveChangesBttn.BorderRadius = 10;
-            SaveChangesBttn.CustomizableEdges = customizableEdges6;
+            SaveChangesBttn.CustomizableEdges = customizableEdges21;
             SaveChangesBttn.DisabledState.BorderColor = Color.DarkGray;
             SaveChangesBttn.DisabledState.CustomBorderColor = Color.DarkGray;
             SaveChangesBttn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -310,58 +309,57 @@
             SaveChangesBttn.ForeColor = Color.White;
             SaveChangesBttn.Location = new Point(507, 640);
             SaveChangesBttn.Name = "SaveChangesBttn";
-            SaveChangesBttn.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            SaveChangesBttn.ShadowDecoration.CustomizableEdges = customizableEdges22;
             SaveChangesBttn.Size = new Size(258, 40);
             SaveChangesBttn.TabIndex = 23;
             SaveChangesBttn.Text = "Save Changes";
             SaveChangesBttn.Click += SaveChangesBttn_Click;
             // 
-            // CIComBox
+            // CheckInDatePicker
             // 
-            CIComBox.BackColor = Color.Transparent;
-            CIComBox.BorderRadius = 5;
-            CIComBox.BorderThickness = 1;
-            CIComBox.Checked = true;
-            CIComBox.CheckedState.FillColor = Color.White;
-            CIComBox.CheckedState.ForeColor = Color.Black;
-            CIComBox.CustomFormat = "MM DD yyyy ";
-            CIComBox.CustomizableEdges = customizableEdges8;
-            CIComBox.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            CIComBox.ForeColor = Color.Black;
-            CIComBox.Format = DateTimePickerFormat.Short;
-            CIComBox.Location = new Point(589, 409);
-            CIComBox.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            CIComBox.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            CIComBox.Name = "CIComBox";
-            CIComBox.ShadowDecoration.CustomizableEdges = customizableEdges9;
-            CIComBox.Size = new Size(200, 36);
-            CIComBox.TabIndex = 25;
-            CIComBox.TextAlign = HorizontalAlignment.Center;
-            CIComBox.Value = new DateTime(2024, 6, 15, 0, 0, 0, 0);
-            CIComBox.ValueChanged += guna2DateTimePicker1_ValueChanged;
+            CheckInDatePicker.BackColor = Color.Transparent;
+            CheckInDatePicker.BorderRadius = 5;
+            CheckInDatePicker.BorderThickness = 1;
+            CheckInDatePicker.Checked = true;
+            CheckInDatePicker.CheckedState.FillColor = Color.White;
+            CheckInDatePicker.CheckedState.ForeColor = Color.Black;
+            CheckInDatePicker.CustomFormat = "MM DD yyyy ";
+            CheckInDatePicker.CustomizableEdges = customizableEdges23;
+            CheckInDatePicker.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CheckInDatePicker.ForeColor = Color.Black;
+            CheckInDatePicker.Format = DateTimePickerFormat.Short;
+            CheckInDatePicker.Location = new Point(589, 409);
+            CheckInDatePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            CheckInDatePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            CheckInDatePicker.Name = "CheckInDatePicker";
+            CheckInDatePicker.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            CheckInDatePicker.Size = new Size(200, 36);
+            CheckInDatePicker.TabIndex = 25;
+            CheckInDatePicker.TextAlign = HorizontalAlignment.Center;
+            CheckInDatePicker.Value = new DateTime(2024, 6, 15, 0, 0, 0, 0);
             // 
-            // COComBox
+            // CheckOutDatePicker
             // 
-            COComBox.BackColor = Color.Transparent;
-            COComBox.BorderRadius = 5;
-            COComBox.BorderThickness = 1;
-            COComBox.Checked = true;
-            COComBox.CheckedState.FillColor = Color.White;
-            COComBox.CheckedState.ForeColor = Color.Black;
-            COComBox.CustomFormat = "MM DD yyyy";
-            COComBox.CustomizableEdges = customizableEdges10;
-            COComBox.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            COComBox.ForeColor = Color.Black;
-            COComBox.Format = DateTimePickerFormat.Short;
-            COComBox.Location = new Point(969, 409);
-            COComBox.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            COComBox.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            COComBox.Name = "COComBox";
-            COComBox.ShadowDecoration.CustomizableEdges = customizableEdges11;
-            COComBox.Size = new Size(200, 36);
-            COComBox.TabIndex = 26;
-            COComBox.TextAlign = HorizontalAlignment.Center;
-            COComBox.Value = new DateTime(2024, 6, 11, 21, 44, 38, 836);
+            CheckOutDatePicker.BackColor = Color.Transparent;
+            CheckOutDatePicker.BorderRadius = 5;
+            CheckOutDatePicker.BorderThickness = 1;
+            CheckOutDatePicker.Checked = true;
+            CheckOutDatePicker.CheckedState.FillColor = Color.White;
+            CheckOutDatePicker.CheckedState.ForeColor = Color.Black;
+            CheckOutDatePicker.CustomFormat = "MM DD yyyy";
+            CheckOutDatePicker.CustomizableEdges = customizableEdges25;
+            CheckOutDatePicker.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CheckOutDatePicker.ForeColor = Color.Black;
+            CheckOutDatePicker.Format = DateTimePickerFormat.Short;
+            CheckOutDatePicker.Location = new Point(969, 409);
+            CheckOutDatePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            CheckOutDatePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            CheckOutDatePicker.Name = "CheckOutDatePicker";
+            CheckOutDatePicker.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            CheckOutDatePicker.Size = new Size(200, 36);
+            CheckOutDatePicker.TabIndex = 26;
+            CheckOutDatePicker.TextAlign = HorizontalAlignment.Center;
+            CheckOutDatePicker.Value = new DateTime(2024, 6, 11, 21, 44, 38, 836);
             // 
             // GIPanel
             // 
@@ -369,50 +367,97 @@
             GIPanel.BorderColor = Color.Black;
             GIPanel.BorderRadius = 10;
             GIPanel.BorderThickness = 2;
-            GIPanel.Controls.Add(RoomTypeTxt);
+            GIPanel.Controls.Add(roomNumberTxt);
+            GIPanel.Controls.Add(label3);
+            GIPanel.Controls.Add(isCancelledTxt);
+            GIPanel.Controls.Add(guestIdTxt);
+            GIPanel.Controls.Add(roomIdTxt);
+            GIPanel.Controls.Add(bookingIdTxt);
+            GIPanel.Controls.Add(roomTypeTxt);
             GIPanel.Controls.Add(label2);
             GIPanel.Controls.Add(OtherServicesTxtBox);
-            GIPanel.Controls.Add(COComBox);
-            GIPanel.Controls.Add(CIComBox);
+            GIPanel.Controls.Add(CheckOutDatePicker);
+            GIPanel.Controls.Add(CheckInDatePicker);
             GIPanel.Controls.Add(SaveChangesBttn);
             GIPanel.Controls.Add(label8);
             GIPanel.Controls.Add(RoomTypeLbl);
             GIPanel.Controls.Add(COLbl);
             GIPanel.Controls.Add(CILbl);
-            GIPanel.Controls.Add(ReservationIDTxt);
+            GIPanel.Controls.Add(noOfOccupantsTxt);
             GIPanel.Controls.Add(label4);
             GIPanel.Controls.Add(guna2Panel2);
-            GIPanel.Controls.Add(CashTxt);
+            GIPanel.Controls.Add(modePaymentTxt);
             GIPanel.Controls.Add(MOPLbl);
-            GIPanel.Controls.Add(AddrexxTxt);
+            GIPanel.Controls.Add(addressTxt);
             GIPanel.Controls.Add(AddressLbl);
-            GIPanel.Controls.Add(label3);
+            GIPanel.Controls.Add(phoneTxt);
             GIPanel.Controls.Add(PhoneNoLbl);
-            GIPanel.Controls.Add(label1);
+            GIPanel.Controls.Add(nameTxt);
             GIPanel.Controls.Add(NameLab);
-            GIPanel.Controls.Add(EmailAddTxt);
+            GIPanel.Controls.Add(emailTxt);
             GIPanel.Controls.Add(EmailAdLab);
             GIPanel.Controls.Add(HeaderTtilePanel);
             GIPanel.Controls.Add(BackBttn);
-            GIPanel.CustomizableEdges = customizableEdges14;
+            GIPanel.CustomizableEdges = customizableEdges29;
             GIPanel.Font = new Font("Microsoft Sans Serif", 8.25F);
             GIPanel.Location = new Point(84, 81);
             GIPanel.Name = "GIPanel";
-            GIPanel.ShadowDecoration.CustomizableEdges = customizableEdges15;
+            GIPanel.ShadowDecoration.CustomizableEdges = customizableEdges30;
             GIPanel.Size = new Size(1272, 738);
             GIPanel.TabIndex = 0;
-            GIPanel.Paint += guna2CustomGradientPanel1_Paint;
             // 
-            // RoomTypeTxt
+            // isCancelledTxt
             // 
-            RoomTypeTxt.AutoSize = true;
-            RoomTypeTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            RoomTypeTxt.Location = new Point(157, 509);
-            RoomTypeTxt.Name = "RoomTypeTxt";
-            RoomTypeTxt.Size = new Size(112, 21);
-            RoomTypeTxt.TabIndex = 29;
-            RoomTypeTxt.Text = "Deluxe Room";
-            RoomTypeTxt.Click += RoomTypeTxt_Click;
+            isCancelledTxt.AutoSize = true;
+            isCancelledTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            isCancelledTxt.Location = new Point(194, 613);
+            isCancelledTxt.Name = "isCancelledTxt";
+            isCancelledTxt.Size = new Size(100, 21);
+            isCancelledTxt.TabIndex = 33;
+            isCancelledTxt.Text = "isCancelled";
+            isCancelledTxt.Visible = false;
+            // 
+            // guestIdTxt
+            // 
+            guestIdTxt.AutoSize = true;
+            guestIdTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guestIdTxt.Location = new Point(37, 600);
+            guestIdTxt.Name = "guestIdTxt";
+            guestIdTxt.Size = new Size(70, 21);
+            guestIdTxt.TabIndex = 32;
+            guestIdTxt.Text = "guestId";
+            // 
+            // roomIdTxt
+            // 
+            roomIdTxt.AutoSize = true;
+            roomIdTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            roomIdTxt.Location = new Point(194, 562);
+            roomIdTxt.Name = "roomIdTxt";
+            roomIdTxt.Size = new Size(66, 21);
+            roomIdTxt.TabIndex = 31;
+            roomIdTxt.Text = "roomId";
+            roomIdTxt.Visible = false;
+            // 
+            // bookingIdTxt
+            // 
+            bookingIdTxt.AutoSize = true;
+            bookingIdTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            bookingIdTxt.Location = new Point(55, 562);
+            bookingIdTxt.Name = "bookingIdTxt";
+            bookingIdTxt.Size = new Size(89, 21);
+            bookingIdTxt.TabIndex = 30;
+            bookingIdTxt.Text = "bookingId";
+            bookingIdTxt.Visible = false;
+            // 
+            // roomTypeTxt
+            // 
+            roomTypeTxt.AutoSize = true;
+            roomTypeTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            roomTypeTxt.Location = new Point(157, 481);
+            roomTypeTxt.Name = "roomTypeTxt";
+            roomTypeTxt.Size = new Size(133, 21);
+            roomTypeTxt.TabIndex = 29;
+            roomTypeTxt.Text = "[Bedroom Type]";
             // 
             // label2
             // 
@@ -428,7 +473,7 @@
             // 
             OtherServicesTxtBox.BorderColor = Color.Black;
             OtherServicesTxtBox.BorderRadius = 10;
-            OtherServicesTxtBox.CustomizableEdges = customizableEdges12;
+            OtherServicesTxtBox.CustomizableEdges = customizableEdges27;
             OtherServicesTxtBox.DefaultText = "";
             OtherServicesTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             OtherServicesTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -444,10 +489,30 @@
             OtherServicesTxtBox.PasswordChar = '\0';
             OtherServicesTxtBox.PlaceholderText = "";
             OtherServicesTxtBox.SelectedText = "";
-            OtherServicesTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges13;
+            OtherServicesTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges28;
             OtherServicesTxtBox.Size = new Size(586, 69);
             OtherServicesTxtBox.TabIndex = 27;
-            OtherServicesTxtBox.TextChanged += OtherServicesTxtBox_TextChanged;
+            // 
+            // roomNumberTxt
+            // 
+            roomNumberTxt.AutoSize = true;
+            roomNumberTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            roomNumberTxt.Location = new Point(282, 522);
+            roomNumberTxt.Name = "roomNumberTxt";
+            roomNumberTxt.Size = new Size(129, 21);
+            roomNumberTxt.TabIndex = 35;
+            roomNumberTxt.Text = "[room Number]";
+            // 
+            // label3
+            // 
+            label3.AccessibleDescription = "bedroomTypeLbl";
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(155, 522);
+            label3.Name = "label3";
+            label3.Size = new Size(126, 19);
+            label3.TabIndex = 34;
+            label3.Text = "Room Number:";
             // 
             // ModifyPage
             // 
@@ -455,7 +520,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1386, 788);
+            ClientSize = new Size(1370, 749);
             Controls.Add(GIPanel);
             Name = "ModifyPage";
             StartPosition = FormStartPosition.CenterScreen;
@@ -475,28 +540,34 @@
         private Guna.UI2.WinForms.Guna2Panel HeaderTtilePanel;
         private Guna.UI2.WinForms.Guna2HtmlLabel headerTxt;
         private Label EmailAdLab;
-        private Label EmailAddTxt;
+        private Label emailTxt;
         private Label NameLab;
-        private Label label1;
+        private Label nameTxt;
         private Label PhoneNoLbl;
-        private Label label3;
+        private Label phoneTxt;
         private Label AddressLbl;
-        private Label AddrexxTxt;
+        private Label addressTxt;
         private Label MOPLbl;
-        private Label CashTxt;
+        private Label modePaymentTxt;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Label label4;
-        private Label ReservationIDTxt;
+        private Label noOfOccupantsTxt;
         private Label CILbl;
         private Label COLbl;
         private Label RoomTypeLbl;
         private Label label8;
         private Guna.UI2.WinForms.Guna2Button SaveChangesBttn;
-        private Guna.UI2.WinForms.Guna2DateTimePicker CIComBox;
-        private Guna.UI2.WinForms.Guna2DateTimePicker COComBox;
+        private Guna.UI2.WinForms.Guna2DateTimePicker CheckInDatePicker;
+        private Guna.UI2.WinForms.Guna2DateTimePicker CheckOutDatePicker;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel GIPanel;
         private Guna.UI2.WinForms.Guna2TextBox OtherServicesTxtBox;
         private Label label2;
-        private Label RoomTypeTxt;
+        private Label roomTypeTxt;
+        private Label guestIdTxt;
+        private Label roomIdTxt;
+        private Label bookingIdTxt;
+        private Label isCancelledTxt;
+        private Label roomNumberTxt;
+        private Label label3;
     }
 }
