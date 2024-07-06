@@ -13,6 +13,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
 
         // foreign key guest id
         public int GuestId { get; set; }
+        public string RoomType { get; set; }
+        public string ModeOfPayment { get; set; }
 
         public DateTime CheckInDate { get; set; }
         public DateTime CheckOutDate { get; set; }

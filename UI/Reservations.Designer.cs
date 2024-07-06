@@ -52,6 +52,7 @@
             guestName = new DataGridViewTextBoxColumn();
             roomType = new DataGridViewTextBoxColumn();
             noOfGuest = new DataGridViewTextBoxColumn();
+            modeOfPayment = new DataGridViewTextBoxColumn();
             checkInDate = new DataGridViewTextBoxColumn();
             checkOutDate = new DataGridViewTextBoxColumn();
             bookingDate = new DataGridViewTextBoxColumn();
@@ -159,7 +160,7 @@
             ReservationGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             ReservationGridView.ColumnHeadersHeight = 40;
             ReservationGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            ReservationGridView.Columns.AddRange(new DataGridViewColumn[] { bookingID, roomID, guestID, roomNumber, guestName, roomType, noOfGuest, checkInDate, checkOutDate, bookingDate, isCancelled });
+            ReservationGridView.Columns.AddRange(new DataGridViewColumn[] { bookingID, roomID, guestID, roomNumber, guestName, roomType, noOfGuest, modeOfPayment, checkInDate, checkOutDate, bookingDate, isCancelled });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
@@ -235,6 +236,11 @@
             noOfGuest.HeaderText = "Number of Occupants";
             noOfGuest.Name = "noOfGuest";
             // 
+            // modeOfPayment
+            // 
+            modeOfPayment.HeaderText = "Mode of Payment";
+            modeOfPayment.Name = "modeOfPayment";
+            // 
             // checkInDate
             // 
             checkInDate.HeaderText = "Check In Date";
@@ -288,6 +294,7 @@
         private DataGridViewTextBoxColumn guestName;
         private DataGridViewTextBoxColumn roomType;
         private DataGridViewTextBoxColumn noOfGuest;
+        private DataGridViewTextBoxColumn modeOfPayment;
         private DataGridViewTextBoxColumn checkInDate;
         private DataGridViewTextBoxColumn checkOutDate;
         private DataGridViewTextBoxColumn bookingDate;

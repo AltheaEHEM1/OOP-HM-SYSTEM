@@ -18,19 +18,17 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         private int selectedRoomId;
         private Guest guestInfo;
         private Booking newBooking;
-        private string roomType;
         private double valueAddedTax = 100.00;
         private double localTax = 50.00;
         private double serviceCharge = 200.00;
         private double roomPrice;
 
-        public BookingSummary(int roomId, Guest guest, Booking booking, string roomType)
+        public BookingSummary(int roomId, Guest guest, Booking booking)
         {
             InitializeComponent();
             selectedRoomId = roomId;
             guestInfo = guest;
             newBooking = booking;
-            this.roomType = roomType;
         }
 
         private void SRNavback_Click(object sender, EventArgs e)
@@ -68,20 +66,20 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 }
 
                 // check the room type and assign to roomTypeLabel
-                if (roomType.ToLower() == "standard room")
+                if (newBooking.RoomType.ToLower() == "standard room")
                 {
                     // display the room type
-                    roomTypeLabel.Text = roomType;
+                    roomTypeLabel.Text = newBooking.RoomType;
                 }
-                else if (roomType.ToLower() == "deluxe room")
+                else if (newBooking.RoomType.ToLower() == "deluxe room")
                 {
                     // display the room type
-                    roomTypeLabel.Text = roomType;
+                    roomTypeLabel.Text = newBooking.RoomType;
                 }
-                else if (roomType.ToLower() == "suite")
+                else if (newBooking.RoomType.ToLower() == "suite")
                 {
                     // display the room type
-                    roomTypeLabel.Text = roomType;
+                    roomTypeLabel.Text = newBooking.RoomType;
                 }
 
                 // display the taxes

@@ -17,15 +17,13 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         private int selectedRoomId;
         private Guest guestInfo;
         private Booking newBooking;
-        private string roomType;
 
-        public PaymentInfo(int roomId, Guest guest, Booking booking, string roomType)
+        public PaymentInfo(int roomId, Guest guest, Booking booking)
         {
             InitializeComponent();
             selectedRoomId = roomId;
             guestInfo = guest;
             newBooking = booking;
-            this.roomType = roomType;
         }
 
         private void Transparentcontainer_Paint(object sender, PaintEventArgs e)
@@ -39,13 +37,19 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void Cashbutton_Click(object sender, EventArgs e)
         {
+            // assign the mode of payment to the booking
+            newBooking.ModeOfPayment = "Cash Payment";
+
             this.Close();
-            CashPayment cashPayment = new CashPayment(selectedRoomId, guestInfo, newBooking, roomType);
+            CashPayment cashPayment = new CashPayment(selectedRoomId, guestInfo, newBooking);
             cashPayment.Show();
         }
 
         private void Cardbutton_Click(object sender, EventArgs e)
         {
+            // assign the mode of payment to the booking
+            newBooking.ModeOfPayment = "Card Payment";
+
             this.Close();
             CardPayment cardPayment = new CardPayment();
             cardPayment.Show();

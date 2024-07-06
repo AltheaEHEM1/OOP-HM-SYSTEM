@@ -55,17 +55,17 @@
             ShowPassIcon = new Guna.UI2.WinForms.Guna2Button();
             PasswordTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            pictureBox2 = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
-            pictureBox3 = new PictureBox();
             panel1 = new Panel();
+            pictureBox3 = new PictureBox();
+            label2 = new Label();
+            label1 = new Label();
+            pictureBox2 = new PictureBox();
             guna2Panel2.SuspendLayout();
             panel2.SuspendLayout();
             guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // guna2Panel2
@@ -281,47 +281,6 @@
             guna2Panel1.Size = new Size(1351, 591);
             guna2Panel1.TabIndex = 0;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Dock = DockStyle.Top;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1351, 135);
-            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(52, 53);
-            label1.Name = "label1";
-            label1.Size = new Size(75, 15);
-            label1.TabIndex = 3;
-            label1.Text = "Quezon City.";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(52, 68);
-            label2.Name = "label2";
-            label2.Size = new Size(65, 15);
-            label2.TabIndex = 4;
-            label2.Text = "Philippines";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Location = new Point(52, 29);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(27, 22);
-            pictureBox3.TabIndex = 5;
-            pictureBox3.TabStop = false;
-            // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(13, 22, 29);
@@ -337,8 +296,50 @@
             panel1.Size = new Size(1351, 135);
             panel1.TabIndex = 11;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Location = new Point(52, 29);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(27, 22);
+            pictureBox3.TabIndex = 5;
+            pictureBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(52, 68);
+            label2.Name = "label2";
+            label2.Size = new Size(65, 15);
+            label2.TabIndex = 4;
+            label2.Text = "Philippines";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(52, 53);
+            label1.Name = "label1";
+            label1.Size = new Size(75, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Quezon City.";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Dock = DockStyle.Top;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(1351, 135);
+            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
+            // 
             // LoginPage
             // 
+            AcceptButton = login;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 22, 29);
@@ -355,10 +356,10 @@
             panel2.PerformLayout();
             guna2Panel1.ResumeLayout(false);
             guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 

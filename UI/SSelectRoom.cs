@@ -70,11 +70,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                         booking.BookingDate = DateTime.Now;
                         booking.NumberOfGuest = numberOfGuests;
                         booking.RoomId = selectedRoomId;
+                        booking.RoomType = roomType;
                         booking.IsCancelled = false;
 
                         // navigate to the next page
                         this.Close();
-                        ContactInfo contactInfo = new ContactInfo(selectedRoomId, booking, roomType);
+                        ContactInfo contactInfo = new ContactInfo(selectedRoomId, booking);
                         contactInfo.Show();
                     }
                     else if (roomStatus == "occupied")

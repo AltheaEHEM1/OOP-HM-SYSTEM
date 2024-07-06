@@ -111,6 +111,9 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                 addressTxt.Text = bookingToEdit.Guest.HouseAddress + " " + bookingToEdit.Guest.City + " " + bookingToEdit.Guest.Country + " " + bookingToEdit.Guest.ZipCode.ToString();
                 phoneTxt.Text = bookingToEdit.Guest.PhoneNumber.ToString();
                 roomNumberTxt.Text = bookingToEdit.Room.RoomNumber.ToString();
+                roomTypeTxt.Text = bookingToEdit.RoomType;
+                noOfOccupantsTxt.Text = bookingToEdit.NumberOfGuest.ToString();
+                modePaymentTxt.Text = bookingToEdit.ModeOfPayment;
                 CheckInDatePicker.Value = bookingToEdit.CheckInDate;
                 CheckOutDatePicker.Value = bookingToEdit.CheckOutDate;
                 isCancelledTxt.Text = bookingToEdit.IsCancelled.ToString();
@@ -118,7 +121,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
     }

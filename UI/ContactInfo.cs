@@ -16,15 +16,13 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         // variable that will hold the parameters from the previous form
         private int selectedRoomId;
         private Booking newBooking;
-        private string roomType;
 
 
-        public ContactInfo(int roomId, Booking booking, string roomType)
+        public ContactInfo(int roomId, Booking booking)
         {
             InitializeComponent();
             selectedRoomId = roomId;
             newBooking = booking;
-            this.roomType = roomType;
         }
 
         private void NextNavSummary_Click(object sender, EventArgs e)
@@ -46,12 +44,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
                 // choose payment information
                 this.Close();
-                PaymentInfo payment = new PaymentInfo(selectedRoomId, guestInfo, newBooking, roomType);
+                PaymentInfo payment = new PaymentInfo(selectedRoomId, guestInfo, newBooking);
                 payment.Show();
 
                 // Close the parent form
                 // Form parentForm = this.FindForm();
-               // parentForm.Hide();
+                // parentForm.Hide();
 
             }
             catch (Exception ex)
@@ -59,7 +57,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            
+
         }
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)

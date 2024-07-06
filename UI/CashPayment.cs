@@ -18,15 +18,13 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         private int selectedRoomId;
         private Guest guestInfo;
         private Booking newBooking;
-        private string roomType;
 
-        public CashPayment(int roomId, Guest guest, Booking booking, string roomType)
+        public CashPayment(int roomId, Guest guest, Booking booking)
         {
             InitializeComponent();
             selectedRoomId = roomId;
             guestInfo = guest;
             newBooking = booking;
-            this.roomType = roomType;
         }
 
         private void transparentbg_Paint(object sender, PaintEventArgs e)
@@ -40,7 +38,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
 
         private void backicon_Click(object sender, EventArgs e)
         {
-            PaymentInfo paymentInfo = new PaymentInfo(selectedRoomId, guestInfo, newBooking, roomType);
+            PaymentInfo paymentInfo = new PaymentInfo(selectedRoomId, guestInfo, newBooking);
             paymentInfo.Show();
             this.Hide();
         }
@@ -50,7 +48,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             this.Close();
 
             // naviagate to booking summary form
-            BookingSummary bookingSummary = new BookingSummary(selectedRoomId, guestInfo, newBooking, roomType);
+            BookingSummary bookingSummary = new BookingSummary(selectedRoomId, guestInfo, newBooking);
             bookingSummary.Show();
             
         }

@@ -36,8 +36,13 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             try
             {
+                
+                // assign the value of calendard as date today
+                ReservationCalendar.Value = DateTime.Now;
+
                 // reset the filter date to the current date
-                filterDate = DateTime.Now;
+                filterDate = ReservationCalendar.Value;
+
 
                 LoadUpcomingBookings(filterDate); // load bookings
             }
@@ -84,8 +89,9 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                         , booking.GuestId
                         , booking.Room.RoomNumber
                         , booking.Guest.FirstName + " " + booking.Guest.LastName
-                        , "Standard Room"
+                        , booking.RoomType
                         , booking.NumberOfGuest
+                        , booking.ModeOfPayment
                         , booking.CheckInDate
                         , booking.CheckOutDate
                         , booking.BookingDate
@@ -204,23 +210,69 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 if (selectedRow != null)
                 {
                     // assign the data to selected booking
-                    selectedBooking.BookingId = Convert.ToInt32(selectedRow.Cells[0].Value);
-                    selectedBooking.RoomId = Convert.ToInt32(selectedRow.Cells[1].Value);
-                    selectedBooking.GuestId = Convert.ToInt32(selectedRow.Cells[2].Value);
-                    selectedBooking.Room.RoomNumber = Convert.ToInt32(selectedRow.Cells[3].Value);
-                    selectedBooking.Guest.FirstName = selectedRow.Cells[4].Value.ToString();
-                    selectedBooking.Room.RoomType = selectedRow.Cells[5].Value.ToString();
-                    selectedBooking.NumberOfGuest = Convert.ToInt32(selectedRow.Cells[6].Value);
-                    selectedBooking.CheckInDate = Convert.ToDateTime(selectedRow.Cells[7].Value);
-                    selectedBooking.CheckOutDate = Convert.ToDateTime(selectedRow.Cells[8].Value);
-                    selectedBooking.BookingDate = Convert.ToDateTime(selectedRow.Cells[9].Value);
-                    selectedBooking.IsCancelled = Convert.ToBoolean(selectedRow.Cells[10].Value);
+                    int bookingId = Convert.ToInt32(selectedRow.Cells[0].Value);
+                    int roomId = Convert.ToInt32(selectedRow.Cells[1].Value);
+                    int guestId = Convert.ToInt32(selectedRow.Cells[2].Value);
+                    int roomNumber = Convert.ToInt32(selectedRow.Cells[3].Value);
+                    string fullName = selectedRow.Cells[4].Value.ToString();
+                    string roomType = selectedRow.Cells[5].Value.ToString();
+                    int numberOfGuest = Convert.ToInt32(selectedRow.Cells[6].Value);
+                    string modeOfPayment = selectedRow.Cells[7].Value.ToString();
+                    var checkInDate = Convert.ToDateTime(selectedRow.Cells[8].Value);
+                    var checkOutDate = Convert.ToDateTime(selectedRow.Cells[9].Value);
+                    var bookingDate = Convert.ToDateTime(selectedRow.Cells[10].Value);
+                    bool isCancelled = Convert.ToBoolean(selectedRow.Cells[11].Value);
+
+                    // check the roomType to assign room number
+                    Room room = CheckRoomType(roomType, roomNumber);
+
+
+                    // assign to instance of booking
+                    selectedBooking = new Booking
+                    {
+                        BookingId = bookingId,
+                        RoomId = roomId,
+                        GuestId = guestId,
+                        Room = room,
+                        Guest = new Guest { FirstName = fullName },
+                        RoomType = roomType,
+                        NumberOfGuest = numberOfGuest,
+                        ModeOfPayment = modeOfPayment,
+                        CheckInDate = checkInDate,
+                        CheckOutDate = checkOutDate,
+                        BookingDate = bookingDate,
+                        IsCancelled = isCancelled
+                    };
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        // method to check the roomType and return the room instance
+        private Room CheckRoomType(string roomType, int roomNumber)
+        {
+            // Determine the specific room type
+            Room room;
+
+            switch (roomType.ToLower())
+            {
+                case "standard room":
+                    room = new StandardRoom { RoomNumber = roomNumber };
+                    break;
+                case "deluxe room":
+                    room = new DeluxeRoom { RoomNumber = roomNumber };
+                    break;
+                case "suite":
+                    room = new Suite { RoomNumber = roomNumber };
+                    break;
+                default:
+                    throw new InvalidOperationException("Unknown room type");
+            }
+
+            return room;
         }
     }
 }
