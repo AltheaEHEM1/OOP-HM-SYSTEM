@@ -1,4 +1,5 @@
-﻿using HOTEL_MANAGEMENT_SYSTEM.Models;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using HOTEL_MANAGEMENT_SYSTEM.Models;
 using HOTEL_MANAGEMENT_SYSTEM.UI;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,9 @@ namespace HOTEL_MANAGEMENT_SYSTEM
         // instance of booking to store the booking to edit
         private Booking bookingToEdit = new Booking();
 
+        // variable that will hold the new check in and check out date
+        private DateTime newCheckInDate;
+        private DateTime newCheckOutDate;
 
         public ModifyPage(Booking booking)
         {
@@ -24,21 +28,52 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             bookingToEdit = booking;
         }
 
-        private void BackBttn_Click(object sender, EventArgs e)
-        {
-            this.Close(); // Close the ModifyPage form
-        }
-
 
 
         private void SaveChangesBttn_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // check if user make changes
+                if (newCheckInDate != bookingToEdit.CheckInDate || newCheckOutDate != bookingToEdit.CheckOutDate)
+                {
+                    // assign the new checkin and checkout date to the booking instance
+                    bookingToEdit.CheckInDate = newCheckInDate;
+                    bookingToEdit.CheckOutDate = newCheckOutDate;
+
+                    // update the booking record
+                    BookingController bookingController = new BookingController();
+                    bool successEdit = bookingController.UpdateBookingRecord(bookingToEdit);
+
+                    if (successEdit)
+                    {
+                        MessageBox.Show("Booking record updated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+
+                    }
+                    else
+                    {
+                        throw new Exception("Failed to update booking record");
+                    }
+                }
+                else
+                {
+                    throw new Exception("No changes made"); 
+                }
+            }
+            catch (Exception ex)
+            {
+               MessageBox.Show(ex.Message);
+            }
+
+            /*
+
             ChangesSaved callChangesSaved = new ChangesSaved();
             callChangesSaved.FormClosed += ChangesSaved_FormClosed;
             callChangesSaved.Show();
 
             //this.Hide();
-
+            */
 
 
 
@@ -89,8 +124,12 @@ namespace HOTEL_MANAGEMENT_SYSTEM
         {
             try
             {
+
                 // display the data from the bookingToEdit instance
                 DisplayData();
+
+                // assign the date range for the checkin and checkout date time picker
+                AssignDateTimePickerRange();
             }
             catch (Exception ex)
             {
@@ -106,10 +145,10 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                 bookingIdTxt.Text = bookingToEdit.BookingId.ToString();
                 roomIdTxt.Text = bookingToEdit.RoomId.ToString();
                 guestIdTxt.Text = bookingToEdit.GuestId.ToString();
-                emailTxt.Text = bookingToEdit.Guest.Email;
+                emailTxt.Text = GetGuestEmail();
                 nameTxt.Text = bookingToEdit.Guest.FirstName;
-                addressTxt.Text = bookingToEdit.Guest.HouseAddress + " " + bookingToEdit.Guest.City + " " + bookingToEdit.Guest.Country + " " + bookingToEdit.Guest.ZipCode.ToString();
-                phoneTxt.Text = bookingToEdit.Guest.PhoneNumber.ToString();
+                addressTxt.Text = GetGuestAddress();
+                phoneTxt.Text = GetGuestPhoneNumber();
                 roomNumberTxt.Text = bookingToEdit.Room.RoomNumber.ToString();
                 roomTypeTxt.Text = bookingToEdit.RoomType;
                 noOfOccupantsTxt.Text = bookingToEdit.NumberOfGuest.ToString();
@@ -123,6 +162,63 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        // method to get guest email
+        private string GetGuestEmail()
+        {
+            // get the email of the guest
+            var guestEmail = new DataContext().Guests.Where(g => g.GuestId == bookingToEdit.GuestId).Select(g => g.Email).FirstOrDefault();
+            return guestEmail;
+        }
+
+        // method to get guest phone number
+        private string GetGuestPhoneNumber()
+        {
+            // get the phone number of the guest
+            var guestPhoneNumber = new DataContext().Guests.Where(g => g.GuestId == bookingToEdit.GuestId).Select(g => g.PhoneNumber).FirstOrDefault();
+            return guestPhoneNumber.ToString();
+        }
+
+        // method to get guest address
+        private string GetGuestAddress()
+        {
+            using (var context = new DataContext())
+            {
+                // Get the address of the guest
+                var guestAddress = context.Guests
+                    .Where(g => g.GuestId == bookingToEdit.GuestId)
+                    .Select(g => String.Concat(g.HouseAddress, ", ", g.City, ", ", g.Country, ", ", g.ZipCode.ToString()))
+                    .FirstOrDefault();
+
+                return guestAddress;
+            }
+        }
+
+        // method to assign date range in checkin and checkout date time picker
+        private void AssignDateTimePickerRange()
+        {
+            // assign the min value for checkin datetime picker
+            CheckInDatePicker.MinDate = DateTime.Now;
+
+            // assign min value for checkout datetime picker
+            CheckOutDatePicker.MinDate = bookingToEdit.CheckInDate;
+
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close(); // Close the ModifyPage form
+        }
+
+        private void CheckInDatePicker_ValueChanged(object sender, EventArgs e)
+        {
+            newCheckInDate = CheckInDatePicker.Value;
+        }
+
+        private void CheckOutDatePicker_ValueChanged(object sender, EventArgs e)
+        {
+            newCheckOutDate = CheckOutDatePicker.Value;
         }
     }
 }

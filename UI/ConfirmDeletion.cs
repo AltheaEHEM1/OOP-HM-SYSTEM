@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HOTEL_MANAGEMENT_SYSTEM.Controllers;
+using HOTEL_MANAGEMENT_SYSTEM.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,28 +14,51 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 {
     public partial class ConfirmDeletion : Form
     {
-        public ConfirmDeletion()
+        private Booking bookingToDelete = new Booking();
+
+
+        public ConfirmDeletion(Booking booking)
         {
             InitializeComponent();
+            bookingToDelete = booking;
         }
 
-        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ConfirmDeletion_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void ConfirmBttn_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Delete the booking record
+                BookingController bookingController = new BookingController();
+                bool successDelete = bookingController.DeleteBookingRecord(bookingToDelete);
+
+                // check if success
+                if (successDelete)
+                {
+                    MessageBox.Show("Booking succesfully cancelled", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            /*
+
             ConfirmCancellation callConfirmCancellation = new ConfirmCancellation();
             callConfirmCancellation.Show();
 
             this.Close();
+            */
+        }
 
+        private void NavBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TermsandCondition termsandCondition = new TermsandCondition(bookingToDelete);
+            termsandCondition.ShowDialog();
+            
         }
     }
 }

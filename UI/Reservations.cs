@@ -15,9 +15,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
     public partial class Reservations : UserControl
     {
         private DateTime filterDate;
-
-
         private Booking selectedBooking = new Booking();
+
 
         public Reservations()
         {
@@ -36,46 +35,39 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
         {
             try
             {
-                
                 // assign the value of calendard as date today
                 ReservationCalendar.Value = DateTime.Now;
 
-                // reset the filter date to the current date
-                filterDate = ReservationCalendar.Value;
-
-
-                LoadUpcomingBookings(filterDate); // load bookings
+                LoadUpcomingBookings(); // load bookings
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-            /*
-            ReservationsTable.Rows.Add("1000", "Shanella Amara Cagulang", "Standard Room", "12.31.24", "12.25.24");
-            ReservationsTable.Rows.Add("1", "Maria Nadine Aureus Borja", "Standard Room", "12.31.24", "12.25.24");
-            ReservationsTable.Rows.Add("1002", "Darben Lamonte", "Deluxe Room", "12.31.24", "12.25.24");
-            ReservationsTable.Rows.Add("2", "Althea Amor Asis", "Suites", "12.31.24", "12.25.24");
-            ReservationsTable.Rows.Add("13", "Miyuki Mharie Parocha", "Standard Room", "12.31.24", "12.25.24");
-            ReservationsTable.Rows.Add("10", "Maria Nadine Aureus Borja", "Standard Room", "12.31.24", "12.25.24");
-            ReservationsTable.Rows.Add("5", "Darben Lamonte", "Deluxe Room", "12.31.24", "12.25.24");
-            ReservationsTable.Rows.Add("27", "Maria Nadine Aureus Borja", "Standard Room", "12.31.24", "12.25.24");
-            **/
         }
 
 
-        // Load booking data from the database
-        private void LoadUpcomingBookings(DateTime dateToFilter)
+        // load all upcoming booking records
+        private void LoadUpcomingBookings()
+        {
+            // reset the selected booking
+            selectedBooking = null;
+
+            // access the method to load the bookings
+            BookingController upcomingBookings = new BookingController();
+            var listOfBookings = upcomingBookings.LoadUpcomingBookingRecords();
+
+            // load the data to datagridview
+            AddBookingRecords(listOfBookings);
+        }
+
+
+        // method to add booking records in datagridview
+        private void AddBookingRecords(List<Booking> bookingRecords)
         {
             try
             {
-                // reset the selected booking
-                selectedBooking = null;
-
-                // load booking data from the database if the booking is not cancelled and the checkin date is greater than to the current time
-                BookingController bookingController = new BookingController();
-                var bookings = bookingController.GetBookingRecords(dateToFilter);
+                var bookings = bookingRecords;
 
                 // clear the gridview
                 ReservationGridView.Rows.Clear();
@@ -98,53 +90,70 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                         , booking.IsCancelled
                     );
                 }
-
-                /*
-                using (var context = new DataContext())
-                {
-                    var bookings = context.Bookings
-                        .Where(b => b.CheckInDate > filterDate && !b.IsCancelled)
-                        .ToList();
-
-                    foreach (var booking in bookings)
-                    {
-                        // get the booked room to get room number and room type
-                        var room = context.Rooms.Find(booking.RoomId);
-
-                        // get the guest name
-                        var guest = context.Guests.Find(booking.GuestId);
-
-                        // create a variable that will hold the full name of the guest
-                        string guestName = guest.FirstName + " " + guest.LastName;
-
-                        if (room != null)
-                        {
-                            ReservationGridView.Rows.Add(
-                                booking.BookingId
-                                , booking.RoomId
-                                , booking.GuestId
-                                , room.RoomNumber
-                                , guestName
-                                , "Standard Room"
-                                , booking.NumberOfGuest
-                                // room.RoomType,
-                                , booking.CheckInDate
-                                , booking.CheckOutDate
-                                , booking.BookingDate
-                                , booking.IsCancelled
-                            );
-                        }
-                    }
-                }
-                */
-
-
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
+
+        // Load booking data from the database
+        private void FilterBookings(DateTime dateToFilter)
+        {
+            try
+            {
+                // reset the selected booking
+                selectedBooking = null;
+
+                // load filtered booking records based on date to filter
+                BookingController bookingController = new BookingController();
+                var filteredBookings = bookingController.FilterBookingRecords(dateToFilter);
+
+                // load the data to datagridview
+                AddBookingRecords(filteredBookings);
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        // method to search for booking records
+        private void SearchBookingRecords(string searchText)
+        {
+            try
+            {
+                // reset the selected booking
+                selectedBooking = null;
+
+                // Check if the search text is empty or whitespace
+                if (string.IsNullOrWhiteSpace(searchText))
+                {
+                    // Load all bookings
+                    LoadUpcomingBookings();
+                }
+                else
+                {
+                    // load filtered booking records based on date to filter
+                    BookingController bookingController = new BookingController();
+                    var searchedBookings = bookingController.SearchBookingRecord(searchText);
+
+                    // check if searchedBookings is not null
+                    if (searchedBookings != null)
+                    {
+                        // load the data to datagridview
+                        AddBookingRecords(searchedBookings);
+                    }
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }   
 
         private void ReservationEditBttn_Click(object sender, EventArgs e)
         {
@@ -155,6 +164,9 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 {
                     ModifyPage callModifyPage = new ModifyPage(selectedBooking);
                     callModifyPage.ShowDialog();
+
+                    // load the data grid view after editing
+                    LoadUpcomingBookings();
                 }
                 else
                 {
@@ -175,8 +187,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
                 // check if there is a selected booking
                 if (selectedBooking != null)
                 {
-                    TermsandCondition callTermsandCondition = new TermsandCondition();
+                    TermsandCondition callTermsandCondition = new TermsandCondition(selectedBooking);
                     callTermsandCondition.ShowDialog();
+
+                    // load the data grid view after cancelation
+                    LoadUpcomingBookings();
                 }
                 else
                 {
@@ -196,7 +211,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             filterDate = ReservationCalendar.Value;
 
             // load the data
-            LoadUpcomingBookings(filterDate);
+            FilterBookings(filterDate);
         }
 
         private void ReservationGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -273,6 +288,21 @@ namespace HOTEL_MANAGEMENT_SYSTEM.UI
             }
 
             return room;
+        }
+
+        private void SearchBar_KeyDown(object sender, KeyEventArgs e)
+        {
+            SearchBookingRecords(SearchBar.Text);
+
+            /*
+            // needs to press enter key
+            if (e.KeyCode == Keys.Enter)
+            {
+                SearchBookingRecords(SearchBar.Text);
+                e.Handled = true;
+                e.SuppressKeyPress = true; // Prevents the ding sound on Enter key press
+            }
+            */
         }
     }
 }

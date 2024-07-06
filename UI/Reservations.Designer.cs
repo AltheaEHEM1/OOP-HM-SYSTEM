@@ -87,6 +87,7 @@
             SearchBar.Size = new Size(296, 32);
             SearchBar.TabIndex = 0;
             SearchBar.TextChanged += SearchBar_TextChanged_1;
+            SearchBar.KeyDown += SearchBar_KeyDown;
             // 
             // ReservationCalendar
             // 

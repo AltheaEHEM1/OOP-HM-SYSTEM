@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifyPage));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            BackBttn = new Guna.UI2.WinForms.Guna2CircleButton();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifyPage));
             HeaderTtilePanel = new Guna.UI2.WinForms.Guna2Panel();
             headerTxt = new Guna.UI2.WinForms.Guna2HtmlLabel();
             EmailAdLab = new Label();
@@ -68,6 +68,9 @@
             CheckInDatePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             CheckOutDatePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             GIPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            cancelButton = new Guna.UI2.WinForms.Guna2Button();
+            roomNumberTxt = new Label();
+            label3 = new Label();
             isCancelledTxt = new Label();
             guestIdTxt = new Label();
             roomIdTxt = new Label();
@@ -75,40 +78,20 @@
             roomTypeTxt = new Label();
             label2 = new Label();
             OtherServicesTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
-            roomNumberTxt = new Label();
-            label3 = new Label();
             HeaderTtilePanel.SuspendLayout();
             GIPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // BackBttn
-            // 
-            BackBttn.DisabledState.BorderColor = Color.DarkGray;
-            BackBttn.DisabledState.CustomBorderColor = Color.DarkGray;
-            BackBttn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            BackBttn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            BackBttn.FillColor = Color.FromArgb(213, 171, 97);
-            BackBttn.Font = new Font("Segoe UI", 9F);
-            BackBttn.ForeColor = Color.White;
-            BackBttn.Image = (Image)resources.GetObject("BackBttn.Image");
-            BackBttn.ImageSize = new Size(30, 30);
-            BackBttn.Location = new Point(37, 35);
-            BackBttn.Name = "BackBttn";
-            BackBttn.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            BackBttn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            BackBttn.Size = new Size(39, 35);
-            BackBttn.TabIndex = 0;
-            BackBttn.Click += BackBttn_Click;
-            // 
             // HeaderTtilePanel
             // 
+            HeaderTtilePanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             HeaderTtilePanel.Controls.Add(headerTxt);
-            HeaderTtilePanel.CustomizableEdges = customizableEdges17;
+            HeaderTtilePanel.CustomizableEdges = customizableEdges1;
             HeaderTtilePanel.FillColor = Color.FromArgb(13, 22, 29);
-            HeaderTtilePanel.Location = new Point(121, 77);
+            HeaderTtilePanel.Location = new Point(50, 77);
             HeaderTtilePanel.Name = "HeaderTtilePanel";
-            HeaderTtilePanel.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            HeaderTtilePanel.Size = new Size(1100, 64);
+            HeaderTtilePanel.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            HeaderTtilePanel.Size = new Size(1080, 64);
             HeaderTtilePanel.TabIndex = 1;
             // 
             // headerTxt
@@ -223,12 +206,12 @@
             // 
             // guna2Panel2
             // 
-            guna2Panel2.CustomizableEdges = customizableEdges19;
+            guna2Panel2.CustomizableEdges = customizableEdges3;
             guna2Panel2.FillColor = Color.Black;
-            guna2Panel2.Location = new Point(141, 359);
+            guna2Panel2.Location = new Point(50, 359);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            guna2Panel2.Size = new Size(1080, 3);
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Panel2.Size = new Size(1080, 2);
             guna2Panel2.TabIndex = 12;
             // 
             // label4
@@ -299,7 +282,7 @@
             // SaveChangesBttn
             // 
             SaveChangesBttn.BorderRadius = 10;
-            SaveChangesBttn.CustomizableEdges = customizableEdges21;
+            SaveChangesBttn.CustomizableEdges = customizableEdges5;
             SaveChangesBttn.DisabledState.BorderColor = Color.DarkGray;
             SaveChangesBttn.DisabledState.CustomBorderColor = Color.DarkGray;
             SaveChangesBttn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -307,9 +290,9 @@
             SaveChangesBttn.FillColor = Color.FromArgb(55, 73, 7);
             SaveChangesBttn.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SaveChangesBttn.ForeColor = Color.White;
-            SaveChangesBttn.Location = new Point(507, 640);
+            SaveChangesBttn.Location = new Point(650, 640);
             SaveChangesBttn.Name = "SaveChangesBttn";
-            SaveChangesBttn.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            SaveChangesBttn.ShadowDecoration.CustomizableEdges = customizableEdges6;
             SaveChangesBttn.Size = new Size(258, 40);
             SaveChangesBttn.TabIndex = 23;
             SaveChangesBttn.Text = "Save Changes";
@@ -324,7 +307,7 @@
             CheckInDatePicker.CheckedState.FillColor = Color.White;
             CheckInDatePicker.CheckedState.ForeColor = Color.Black;
             CheckInDatePicker.CustomFormat = "MM DD yyyy ";
-            CheckInDatePicker.CustomizableEdges = customizableEdges23;
+            CheckInDatePicker.CustomizableEdges = customizableEdges7;
             CheckInDatePicker.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CheckInDatePicker.ForeColor = Color.Black;
             CheckInDatePicker.Format = DateTimePickerFormat.Short;
@@ -332,11 +315,12 @@
             CheckInDatePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             CheckInDatePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             CheckInDatePicker.Name = "CheckInDatePicker";
-            CheckInDatePicker.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            CheckInDatePicker.ShadowDecoration.CustomizableEdges = customizableEdges8;
             CheckInDatePicker.Size = new Size(200, 36);
             CheckInDatePicker.TabIndex = 25;
             CheckInDatePicker.TextAlign = HorizontalAlignment.Center;
             CheckInDatePicker.Value = new DateTime(2024, 6, 15, 0, 0, 0, 0);
+            CheckInDatePicker.ValueChanged += CheckInDatePicker_ValueChanged;
             // 
             // CheckOutDatePicker
             // 
@@ -347,7 +331,7 @@
             CheckOutDatePicker.CheckedState.FillColor = Color.White;
             CheckOutDatePicker.CheckedState.ForeColor = Color.Black;
             CheckOutDatePicker.CustomFormat = "MM DD yyyy";
-            CheckOutDatePicker.CustomizableEdges = customizableEdges25;
+            CheckOutDatePicker.CustomizableEdges = customizableEdges9;
             CheckOutDatePicker.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CheckOutDatePicker.ForeColor = Color.Black;
             CheckOutDatePicker.Format = DateTimePickerFormat.Short;
@@ -355,11 +339,12 @@
             CheckOutDatePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             CheckOutDatePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             CheckOutDatePicker.Name = "CheckOutDatePicker";
-            CheckOutDatePicker.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            CheckOutDatePicker.ShadowDecoration.CustomizableEdges = customizableEdges10;
             CheckOutDatePicker.Size = new Size(200, 36);
             CheckOutDatePicker.TabIndex = 26;
             CheckOutDatePicker.TextAlign = HorizontalAlignment.Center;
             CheckOutDatePicker.Value = new DateTime(2024, 6, 11, 21, 44, 38, 836);
+            CheckOutDatePicker.ValueChanged += CheckOutDatePicker_ValueChanged;
             // 
             // GIPanel
             // 
@@ -367,6 +352,7 @@
             GIPanel.BorderColor = Color.Black;
             GIPanel.BorderRadius = 10;
             GIPanel.BorderThickness = 2;
+            GIPanel.Controls.Add(cancelButton);
             GIPanel.Controls.Add(roomNumberTxt);
             GIPanel.Controls.Add(label3);
             GIPanel.Controls.Add(isCancelledTxt);
@@ -397,14 +383,57 @@
             GIPanel.Controls.Add(emailTxt);
             GIPanel.Controls.Add(EmailAdLab);
             GIPanel.Controls.Add(HeaderTtilePanel);
-            GIPanel.Controls.Add(BackBttn);
-            GIPanel.CustomizableEdges = customizableEdges29;
+            GIPanel.CustomizableEdges = customizableEdges15;
+            GIPanel.Dock = DockStyle.Fill;
             GIPanel.Font = new Font("Microsoft Sans Serif", 8.25F);
-            GIPanel.Location = new Point(84, 81);
+            GIPanel.Location = new Point(0, 0);
+            GIPanel.Margin = new Padding(0);
+            GIPanel.MaximumSize = new Size(1187, 738);
+            GIPanel.MinimumSize = new Size(1187, 738);
             GIPanel.Name = "GIPanel";
-            GIPanel.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            GIPanel.Size = new Size(1272, 738);
+            GIPanel.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            GIPanel.Size = new Size(1187, 738);
             GIPanel.TabIndex = 0;
+            // 
+            // cancelButton
+            // 
+            cancelButton.BorderRadius = 10;
+            cancelButton.CustomizableEdges = customizableEdges11;
+            cancelButton.DisabledState.BorderColor = Color.DarkGray;
+            cancelButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            cancelButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            cancelButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            cancelButton.FillColor = Color.Maroon;
+            cancelButton.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cancelButton.ForeColor = Color.White;
+            cancelButton.Location = new Point(350, 640);
+            cancelButton.Name = "cancelButton";
+            cancelButton.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            cancelButton.Size = new Size(258, 40);
+            cancelButton.TabIndex = 36;
+            cancelButton.Text = "Cancel";
+            cancelButton.Click += cancelButton_Click;
+            // 
+            // roomNumberTxt
+            // 
+            roomNumberTxt.AutoSize = true;
+            roomNumberTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            roomNumberTxt.Location = new Point(282, 522);
+            roomNumberTxt.Name = "roomNumberTxt";
+            roomNumberTxt.Size = new Size(129, 21);
+            roomNumberTxt.TabIndex = 35;
+            roomNumberTxt.Text = "[room Number]";
+            // 
+            // label3
+            // 
+            label3.AccessibleDescription = "bedroomTypeLbl";
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(155, 522);
+            label3.Name = "label3";
+            label3.Size = new Size(126, 19);
+            label3.TabIndex = 34;
+            label3.Text = "Room Number:";
             // 
             // isCancelledTxt
             // 
@@ -426,6 +455,7 @@
             guestIdTxt.Size = new Size(70, 21);
             guestIdTxt.TabIndex = 32;
             guestIdTxt.Text = "guestId";
+            guestIdTxt.Visible = false;
             // 
             // roomIdTxt
             // 
@@ -473,7 +503,7 @@
             // 
             OtherServicesTxtBox.BorderColor = Color.Black;
             OtherServicesTxtBox.BorderRadius = 10;
-            OtherServicesTxtBox.CustomizableEdges = customizableEdges27;
+            OtherServicesTxtBox.CustomizableEdges = customizableEdges13;
             OtherServicesTxtBox.DefaultText = "";
             OtherServicesTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             OtherServicesTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -489,30 +519,9 @@
             OtherServicesTxtBox.PasswordChar = '\0';
             OtherServicesTxtBox.PlaceholderText = "";
             OtherServicesTxtBox.SelectedText = "";
-            OtherServicesTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            OtherServicesTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
             OtherServicesTxtBox.Size = new Size(586, 69);
             OtherServicesTxtBox.TabIndex = 27;
-            // 
-            // roomNumberTxt
-            // 
-            roomNumberTxt.AutoSize = true;
-            roomNumberTxt.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            roomNumberTxt.Location = new Point(282, 522);
-            roomNumberTxt.Name = "roomNumberTxt";
-            roomNumberTxt.Size = new Size(129, 21);
-            roomNumberTxt.TabIndex = 35;
-            roomNumberTxt.Text = "[room Number]";
-            // 
-            // label3
-            // 
-            label3.AccessibleDescription = "bedroomTypeLbl";
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(155, 522);
-            label3.Name = "label3";
-            label3.Size = new Size(126, 19);
-            label3.TabIndex = 34;
-            label3.Text = "Room Number:";
             // 
             // ModifyPage
             // 
@@ -535,8 +544,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2CircleButton BackBttn;
         private Guna.UI2.WinForms.Guna2Panel HeaderTtilePanel;
         private Guna.UI2.WinForms.Guna2HtmlLabel headerTxt;
         private Label EmailAdLab;
@@ -569,5 +576,6 @@
         private Label isCancelledTxt;
         private Label roomNumberTxt;
         private Label label3;
+        private Guna.UI2.WinForms.Guna2Button cancelButton;
     }
 }

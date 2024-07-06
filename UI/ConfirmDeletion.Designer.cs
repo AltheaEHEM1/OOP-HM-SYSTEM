@@ -29,15 +29,19 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfirmDeletion));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             ConfirmDelLab = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ContinueTxt = new Guna.UI2.WinForms.Guna2HtmlLabel();
             PasswordPanel = new Guna.UI2.WinForms.Guna2TextBox();
             ConfirmBttn = new Guna.UI2.WinForms.Guna2Button();
+            NavBack = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            ((System.ComponentModel.ISupportInitialize)NavBack).BeginInit();
             SuspendLayout();
             // 
             // guna2Elipse1
@@ -69,7 +73,7 @@
             // 
             PasswordPanel.BorderColor = Color.Black;
             PasswordPanel.BorderRadius = 10;
-            PasswordPanel.CustomizableEdges = customizableEdges7;
+            PasswordPanel.CustomizableEdges = customizableEdges4;
             PasswordPanel.DefaultText = "";
             PasswordPanel.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             PasswordPanel.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -84,14 +88,14 @@
             PasswordPanel.PlaceholderForeColor = Color.DimGray;
             PasswordPanel.PlaceholderText = "Password";
             PasswordPanel.SelectedText = "";
-            PasswordPanel.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            PasswordPanel.ShadowDecoration.CustomizableEdges = customizableEdges5;
             PasswordPanel.Size = new Size(430, 57);
             PasswordPanel.TabIndex = 2;
             // 
             // ConfirmBttn
             // 
             ConfirmBttn.BorderRadius = 10;
-            ConfirmBttn.CustomizableEdges = customizableEdges5;
+            ConfirmBttn.CustomizableEdges = customizableEdges2;
             ConfirmBttn.DisabledState.BorderColor = Color.DarkGray;
             ConfirmBttn.DisabledState.CustomBorderColor = Color.DarkGray;
             ConfirmBttn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -101,11 +105,26 @@
             ConfirmBttn.ForeColor = Color.White;
             ConfirmBttn.Location = new Point(195, 306);
             ConfirmBttn.Name = "ConfirmBttn";
-            ConfirmBttn.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            ConfirmBttn.ShadowDecoration.CustomizableEdges = customizableEdges3;
             ConfirmBttn.Size = new Size(210, 45);
             ConfirmBttn.TabIndex = 3;
             ConfirmBttn.Text = "Confirm";
             ConfirmBttn.Click += ConfirmBttn_Click;
+            // 
+            // NavBack
+            // 
+            NavBack.BackgroundImageLayout = ImageLayout.Stretch;
+            NavBack.Image = (Image)resources.GetObject("NavBack.Image");
+            NavBack.ImageRotate = 0F;
+            NavBack.Location = new Point(28, 31);
+            NavBack.Margin = new Padding(3, 2, 3, 2);
+            NavBack.Name = "NavBack";
+            NavBack.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            NavBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            NavBack.Size = new Size(38, 23);
+            NavBack.TabIndex = 35;
+            NavBack.TabStop = false;
+            NavBack.Click += NavBack_Click;
             // 
             // ConfirmDeletion
             // 
@@ -113,6 +132,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(600, 400);
+            Controls.Add(NavBack);
             Controls.Add(ConfirmBttn);
             Controls.Add(PasswordPanel);
             Controls.Add(ContinueTxt);
@@ -121,7 +141,7 @@
             Name = "ConfirmDeletion";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ConfirmDeletion";
-            Load += ConfirmDeletion_Load;
+            ((System.ComponentModel.ISupportInitialize)NavBack).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -133,5 +153,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel ContinueTxt;
         private Guna.UI2.WinForms.Guna2TextBox PasswordPanel;
         private Guna.UI2.WinForms.Guna2Button ConfirmBttn;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox NavBack;
     }
 }
