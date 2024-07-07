@@ -351,6 +351,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Log In";
             WindowState = FormWindowState.Maximized;
+            Load += LoginPage_Load;
             guna2Panel2.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();

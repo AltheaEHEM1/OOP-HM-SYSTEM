@@ -20,7 +20,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM.Models
         public DateTime CheckOutDate { get; set; }
         public DateTime BookingDate { get; set; }
         public int NumberOfGuest { get; set; }
-        public bool IsCancelled { get; set; }
+        public string Status { get; set; }
 
         // Navigation properties
         public virtual Room Room { get; set; }

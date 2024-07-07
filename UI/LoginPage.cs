@@ -106,5 +106,18 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                 MessageBox.Show("Incorrect Email or Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        // a methor that will update the status of booking and its corresponding room status
+        private void BookingUpdater()
+        {
+            BookingController bookingController = new BookingController();
+            bookingController.UpdateBookingStatus();
+        }
+
+        private void LoginPage_Load(object sender, EventArgs e)
+        {
+            // call the booking updater method on page load
+            BookingUpdater();
+        }
     }
 }

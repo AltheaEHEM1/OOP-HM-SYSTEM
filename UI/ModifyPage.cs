@@ -56,6 +56,11 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                         throw new Exception("Failed to update booking record");
                     }
                 }
+                // check if checkout date is greater than checkin date
+                else if (newCheckOutDate <= newCheckInDate)
+                {
+                    throw new Exception("Checkout date must be greater than checkin date.");
+                }
                 else
                 {
                     throw new Exception("No changes made"); 
@@ -64,6 +69,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
             catch (Exception ex)
             {
                MessageBox.Show(ex.Message);
+                return;
             }
 
             /*
@@ -127,9 +133,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 
                 // display the data from the bookingToEdit instance
                 DisplayData();
-
-                // assign the date range for the checkin and checkout date time picker
-                AssignDateTimePickerRange();
             }
             catch (Exception ex)
             {
@@ -155,7 +158,7 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                 modePaymentTxt.Text = bookingToEdit.ModeOfPayment;
                 CheckInDatePicker.Value = bookingToEdit.CheckInDate;
                 CheckOutDatePicker.Value = bookingToEdit.CheckOutDate;
-                isCancelledTxt.Text = bookingToEdit.IsCancelled.ToString();
+                isCancelledTxt.Text = bookingToEdit.Status.ToString();
 
             }
             catch (Exception ex)
@@ -193,17 +196,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 
                 return guestAddress;
             }
-        }
-
-        // method to assign date range in checkin and checkout date time picker
-        private void AssignDateTimePickerRange()
-        {
-            // assign the min value for checkin datetime picker
-            CheckInDatePicker.MinDate = DateTime.Now;
-
-            // assign min value for checkout datetime picker
-            CheckOutDatePicker.MinDate = bookingToEdit.CheckInDate;
-
         }
 
         private void cancelButton_Click(object sender, EventArgs e)

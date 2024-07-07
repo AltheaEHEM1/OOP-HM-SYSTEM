@@ -25,20 +25,8 @@ namespace HOTEL_MANAGEMENT_SYSTEM
                 context.Database.EnsureCreated();
             }
 
-            // Start the RoomStatusUpdater
-            roomStatusUpdater = new RoomStatusUpdater();
-            roomStatusUpdater.Start();
-
             // Start the application
             Application.Run(new LoginPage());
-
-            // Ensure RoomStatusUpdater is stopped when application exits
-            Application.ApplicationExit += OnApplicationExit;
-        }
-
-        private static void OnApplicationExit(object sender, EventArgs e)
-        {
-            roomStatusUpdater?.Stop();
         }
     }
 }
