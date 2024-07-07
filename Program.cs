@@ -7,8 +7,6 @@ namespace HOTEL_MANAGEMENT_SYSTEM
 {
     internal static class Program
     {
-        private static RoomStatusUpdater roomStatusUpdater;
-
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
